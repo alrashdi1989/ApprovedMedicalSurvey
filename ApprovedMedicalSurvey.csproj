@@ -95,8 +95,17 @@
     <EmbeddedResource Include="UI\FlatLightTheme.resx">
       <DependentUpon>FlatLightTheme.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Scans.resx">
       <DependentUpon>Scans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Surveys.resx">
+      <DependentUpon>Surveys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

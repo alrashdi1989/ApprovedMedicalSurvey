@@ -35,7 +35,7 @@ namespace ApprovedMedicalSurvey.UI
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -102,15 +102,16 @@ namespace ApprovedMedicalSurvey.UI
             this.comboBox3.Size = new System.Drawing.Size(200, 21);
             this.comboBox3.TabIndex = 1;
             // 
-            // button1
+            // btnShowResults
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(195, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 36);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnShowResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnShowResults.Location = new System.Drawing.Point(195, 22);
+            this.btnShowResults.Name = "btnShowResults";
+            this.btnShowResults.Size = new System.Drawing.Size(153, 36);
+            this.btnShowResults.TabIndex = 3;
+            this.btnShowResults.Text = "button1";
+            this.btnShowResults.UseVisualStyleBackColor = true;
+            this.btnShowResults.Click += new System.EventHandler(this.btnShowResults_Click);
             // 
             // panel4
             // 
@@ -138,7 +139,7 @@ namespace ApprovedMedicalSurvey.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 474);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnShowResults);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -163,7 +164,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnShowResults;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
     }

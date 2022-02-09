@@ -21,5 +21,13 @@ namespace ApprovedMedicalSurvey.UI
         {
             
         }
+
+        private void btnShowResults_Click(object sender, EventArgs e)
+        {
+            Surveys f = new Surveys();
+            f.MdiParent = this.ParentForm;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+        }
     }
 }
