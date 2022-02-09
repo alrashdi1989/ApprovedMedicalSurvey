@@ -16,5 +16,23 @@ namespace ApprovedMedicalSurvey.UI
         {
             InitializeComponent();
         }
+
+        private void FillingTheGridWithData()
+        {
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج","ابتدائي","يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+            dataGridView1.Rows.Add("مهنا حمدان خليفة المعولي", "ذكر", "55", "الأب", "متزوج", "ابتدائي", "يعمل");
+
+            dataGridView1.ClearSelection();
+        }
+
+        private void Surveys_Load(object sender, EventArgs e)
+        {
+            FillingTheGridWithData();
+        }
     }
 }

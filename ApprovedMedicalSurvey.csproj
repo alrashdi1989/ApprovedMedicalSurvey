@@ -92,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\FlatLightTheme.resx">
       <DependentUpon>FlatLightTheme.cs</DependentUpon>
     </EmbeddedResource>
