@@ -40,10 +40,10 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnScans = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,10 +54,10 @@ namespace ApprovedMedicalSurvey.UI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.IndianRed;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnUsers);
+            this.panel1.Controls.Add(this.btnScans);
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Controls.Add(this.btnReports);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(998, 0);
@@ -157,56 +157,64 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage2.Text = "معلومات الأسر";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnReports
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnReports.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(-3, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(261, 63);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnReports.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnReports.Location = new System.Drawing.Point(13, 240);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(226, 63);
+            this.btnReports.TabIndex = 11;
+            this.btnReports.Text = "التقارير";
+            this.btnReports.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnLogOut
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnLogOut.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 961);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(251, 63);
+            this.btnLogOut.TabIndex = 13;
+            this.btnLogOut.Text = "تسجيل الخروج";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
+            // btnScans
+            // 
+            this.btnScans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(-3, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 63);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnScans.FlatAppearance.BorderSize = 0;
+            this.btnScans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnScans.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnScans.Location = new System.Drawing.Point(13, 171);
+            this.btnScans.Name = "btnScans";
+            this.btnScans.Size = new System.Drawing.Size(226, 63);
+            this.btnScans.TabIndex = 14;
+            this.btnScans.Text = "المسوحات";
+            this.btnScans.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnUsers
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(261, 63);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 961);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(251, 63);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnUsers.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnUsers.Location = new System.Drawing.Point(13, 309);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(226, 63);
+            this.btnUsers.TabIndex = 15;
+            this.btnUsers.Text = "المستخدمين";
+            this.btnUsers.UseVisualStyleBackColor = true;
             // 
             // FlatLightTheme
             // 
@@ -245,9 +253,9 @@ namespace ApprovedMedicalSurvey.UI
       
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.Button btnScans;
     }
 }

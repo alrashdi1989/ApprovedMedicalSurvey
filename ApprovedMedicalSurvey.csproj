@@ -59,6 +59,12 @@
     <Compile Include="UI\FlatLightTheme.Designer.cs">
       <DependentUpon>FlatLightTheme.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Scans.cs">
       <SubType>Form</SubType>
     </Compile>
