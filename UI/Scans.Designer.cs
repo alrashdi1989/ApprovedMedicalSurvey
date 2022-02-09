@@ -30,6 +30,10 @@ namespace ApprovedMedicalSurvey.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Scans));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -39,6 +43,12 @@ namespace ApprovedMedicalSurvey.UI
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,10 +88,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(95)))), ((int)(((byte)(65)))));
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "اختر المحافظة..."});
@@ -95,10 +105,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // comboBox2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(95)))), ((int)(((byte)(65)))));
+            this.comboBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.Control;
+            this.comboBox2.ForeColor = System.Drawing.Color.White;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(0, 0);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
@@ -110,10 +120,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // comboBox3
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(95)))), ((int)(((byte)(65)))));
+            this.comboBox3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.Control;
+            this.comboBox3.ForeColor = System.Drawing.Color.White;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(0, 0);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
@@ -130,10 +140,10 @@ namespace ApprovedMedicalSurvey.UI
             this.btnShowResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowResults.Image = ((System.Drawing.Image)(resources.GetObject("btnShowResults.Image")));
             this.btnShowResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowResults.Location = new System.Drawing.Point(570, 41);
+            this.btnShowResults.Location = new System.Drawing.Point(570, 30);
             this.btnShowResults.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnShowResults.Name = "btnShowResults";
-            this.btnShowResults.Size = new System.Drawing.Size(120, 66);
+            this.btnShowResults.Size = new System.Drawing.Size(120, 52);
             this.btnShowResults.TabIndex = 3;
             this.btnShowResults.Text = "بحث";
             this.btnShowResults.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,14 +164,92 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(1802, 720);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "رقم المسح ";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "القرية";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "رقم المبنى";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "المكلف";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "تاريخ المسح";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column6.HeaderText = "التفاصيل";
+            this.Column6.Image = ((System.Drawing.Image)(resources.GetObject("Column6.Image")));
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 69;
             // 
             // Scans
             // 
@@ -175,7 +263,7 @@ namespace ApprovedMedicalSurvey.UI
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Scans";
@@ -201,5 +289,11 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Button btnShowResults;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewImageColumn Column6;
     }
 }
