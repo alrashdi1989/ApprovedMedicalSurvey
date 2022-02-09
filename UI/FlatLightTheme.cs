@@ -77,7 +77,7 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
-
+            label2.Text = f.Text;
             DisposeAllButThis(f);
         }
 
@@ -87,6 +87,7 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+            label2.Text = f.Text;
 
             DisposeAllButThis(f);
         }
@@ -97,6 +98,7 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+            label2.Text = f.Text;
 
             DisposeAllButThis(f);
         }

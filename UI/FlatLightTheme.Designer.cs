@@ -31,6 +31,10 @@ namespace ApprovedMedicalSurvey.UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlatLightTheme));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUsers = new System.Windows.Forms.Button();
+            this.btnScans = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,10 +44,6 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnReports = new System.Windows.Forms.Button();
-            this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnScans = new System.Windows.Forms.Button();
-            this.btnUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -64,6 +64,80 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 1024);
             this.panel1.TabIndex = 1;
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnUsers.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsers.Location = new System.Drawing.Point(13, 309);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(226, 63);
+            this.btnUsers.TabIndex = 15;
+            this.btnUsers.Text = "المستخدمين";
+            this.btnUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUsers.UseVisualStyleBackColor = true;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
+            // 
+            // btnScans
+            // 
+            this.btnScans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScans.FlatAppearance.BorderSize = 0;
+            this.btnScans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnScans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnScans.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnScans.Image = ((System.Drawing.Image)(resources.GetObject("btnScans.Image")));
+            this.btnScans.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnScans.Location = new System.Drawing.Point(13, 171);
+            this.btnScans.Name = "btnScans";
+            this.btnScans.Size = new System.Drawing.Size(226, 63);
+            this.btnScans.TabIndex = 14;
+            this.btnScans.Text = "المسوحات";
+            this.btnScans.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnScans.UseVisualStyleBackColor = true;
+            this.btnScans.Click += new System.EventHandler(this.btnScans_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnLogOut.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
+            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogOut.Location = new System.Drawing.Point(0, 961);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(251, 63);
+            this.btnLogOut.TabIndex = 13;
+            this.btnLogOut.Text = "تسجيل الخروج";
+            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
+            // btnReports
+            // 
+            this.btnReports.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnReports.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
+            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReports.Location = new System.Drawing.Point(13, 240);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(226, 63);
+            this.btnReports.TabIndex = 11;
+            this.btnReports.Text = "التقارير";
+            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // panel3
             // 
@@ -122,9 +196,8 @@ namespace ApprovedMedicalSurvey.UI
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(22, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 24);
+            this.label2.Size = new System.Drawing.Size(0, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "شاشة عرض المسوحات";
             // 
             // pictureBox2
             // 
@@ -156,80 +229,6 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "معلومات الأسر";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnReports
-            // 
-            this.btnReports.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnReports.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
-            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(13, 240);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(226, 63);
-            this.btnReports.TabIndex = 11;
-            this.btnReports.Text = "التقارير";
-            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReports.UseVisualStyleBackColor = true;
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnLogOut.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
-            this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 961);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(251, 63);
-            this.btnLogOut.TabIndex = 13;
-            this.btnLogOut.Text = "تسجيل الخروج";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            // 
-            // btnScans
-            // 
-            this.btnScans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScans.FlatAppearance.BorderSize = 0;
-            this.btnScans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnScans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnScans.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnScans.Image = ((System.Drawing.Image)(resources.GetObject("btnScans.Image")));
-            this.btnScans.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnScans.Location = new System.Drawing.Point(13, 171);
-            this.btnScans.Name = "btnScans";
-            this.btnScans.Size = new System.Drawing.Size(226, 63);
-            this.btnScans.TabIndex = 14;
-            this.btnScans.Text = "المسوحات";
-            this.btnScans.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnScans.UseVisualStyleBackColor = true;
-            this.btnScans.Click += new System.EventHandler(this.btnScans_Click);
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUsers.FlatAppearance.BorderSize = 0;
-            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnUsers.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
-            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(13, 309);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(226, 63);
-            this.btnUsers.TabIndex = 15;
-            this.btnUsers.Text = "المستخدمين";
-            this.btnUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsers.UseVisualStyleBackColor = true;
-            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // FlatLightTheme
             // 

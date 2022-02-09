@@ -265,7 +265,7 @@ namespace ApprovedMedicalSurvey.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Scans";
-            this.Text = "Scans";
+            this.Text = "شاشة عرض المسوحات";
             this.Load += new System.EventHandler(this.Scans_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

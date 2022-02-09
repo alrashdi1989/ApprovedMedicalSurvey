@@ -38,7 +38,7 @@ namespace ApprovedMedicalSurvey.UI
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reports";
-            this.Text = "Reports";
+            this.Text = "شاشة التقارير";
             this.ResumeLayout(false);
 
         }
