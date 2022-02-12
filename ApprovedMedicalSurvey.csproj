@@ -83,6 +83,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\Govenance.cs" />
     <Compile Include="UI\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,7 @@
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ApprovedMedicalSurvey_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\ApprovedMedicalSurvey.Shared.Govenance.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,9 +163,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
