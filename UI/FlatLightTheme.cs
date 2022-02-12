@@ -105,6 +105,11 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            SingingOut();
+        }
+
+        private void SingingOut()
+        {
             DialogResult dr = MessageBox.Show("هل تود تسجيل الخروج من النظام؟", "تسجيل الخروج", MessageBoxButtons.YesNo,
       MessageBoxIcon.Information);
 
@@ -112,6 +117,33 @@ namespace ApprovedMedicalSurvey.UI
             {
                 this.Close();
             }
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SingingOut();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState== FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else {
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
         }
     }
 }
