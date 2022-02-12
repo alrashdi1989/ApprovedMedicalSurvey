@@ -79,6 +79,9 @@ namespace ApprovedMedicalSurvey.UI
             f.Dock = DockStyle.Fill;
             label2.Text = f.Text;
             DisposeAllButThis(f);
+            btnSan.Appearance.Normal.BackColor = Color.LightPink;
+            btnReports.Appearance.Normal.BackColor = Color.IndianRed;
+            btnUsers.Appearance.Normal.BackColor = Color.IndianRed;
         }
 
         private void btnReports_Click(object sender, EventArgs e)
@@ -88,6 +91,9 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             label2.Text = f.Text;
+            btnSan.Appearance.Normal.BackColor = Color.IndianRed;
+            btnReports.Appearance.Normal.BackColor = Color.LightPink;
+            btnUsers.Appearance.Normal.BackColor = Color.IndianRed;
 
             DisposeAllButThis(f);
         }
@@ -99,6 +105,9 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             label2.Text = f.Text;
+            btnSan.Appearance.Normal.BackColor = Color.IndianRed;
+            btnReports.Appearance.Normal.BackColor = Color.IndianRed;
+            btnUsers.Appearance.Normal.BackColor = Color.LightPink;
 
             DisposeAllButThis(f);
         }
@@ -143,6 +152,11 @@ namespace ApprovedMedicalSurvey.UI
         private void button3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void navBarItem1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
 
         }
     }

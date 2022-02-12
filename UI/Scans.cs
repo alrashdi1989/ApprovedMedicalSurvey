@@ -20,7 +20,6 @@ namespace ApprovedMedicalSurvey.UI
         private void Scans_Load(object sender, EventArgs e)
         {
             FillingTheGridWithData();
-            FillingComboBoXWithData();
 
         }
 
@@ -42,21 +41,7 @@ namespace ApprovedMedicalSurvey.UI
             dataGridView1.ClearSelection();
         }
 
-        private void FillingComboBoXWithData()
-        {
-            comboBox1.Items.Insert(0, "مسقط");
-            comboBox1.Items.Insert(1, "جنوب الباطنة");
-            comboBox1.Items.Insert(2, "شمال الباطنة");
-            comboBox1.Items.Insert(3, "الوسطى");
-            comboBox1.Items.Insert(4, "ظفار");
-            comboBox1.Items.Insert(5, "مسندم");
-            comboBox1.Items.Insert(6, "الشرقية شمال");
-            comboBox1.Items.Insert(7, "الشرقية جنوب");
-            comboBox1.Items.Insert(8, "البريمي");
-            comboBox1.Items.Insert(9, "الظاهرة");
-            comboBox1.Items.Insert(10, "ظفار");
-            comboBox1.Items.Insert(11, "الداخلية");
-        }
+      
 
         private void btnShowResults_Click(object sender, EventArgs e)
         {
