@@ -36,8 +36,11 @@ namespace ApprovedMedicalSurvey.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -47,18 +50,19 @@ namespace ApprovedMedicalSurvey.UI
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.vIllagesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.statesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.govenanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIllagesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +76,41 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Size = new System.Drawing.Size(367, 81);
             this.panel1.TabIndex = 0;
             // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEdit1.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit1.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit1.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseBackColor = true;
+            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseForeColor = true;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 41, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 59, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.lookUpEdit1.Properties.DataSource = this.govenanceBindingSource;
+            this.lookUpEdit1.Properties.DisplayMember = "Name";
+            this.lookUpEdit1.Properties.NullText = "اختر المحافظة...";
+            this.lookUpEdit1.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoComplete;
+            this.lookUpEdit1.Properties.ShowFooter = false;
+            this.lookUpEdit1.Properties.ShowHeader = false;
+            this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.lookUpEdit1.Properties.ValueMember = "Id";
+            this.lookUpEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lookUpEdit1.Size = new System.Drawing.Size(367, 30);
+            this.lookUpEdit1.TabIndex = 0;
+            this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -82,6 +121,42 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Size = new System.Drawing.Size(367, 81);
             this.panel2.TabIndex = 1;
             // 
+            // lookUpEdit2
+            // 
+            this.lookUpEdit2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lookUpEdit2.Location = new System.Drawing.Point(0, 0);
+            this.lookUpEdit2.Name = "lookUpEdit2";
+            this.lookUpEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.lookUpEdit2.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEdit2.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit2.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit2.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit2.Properties.AppearanceDropDown.Options.UseBackColor = true;
+            this.lookUpEdit2.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.lookUpEdit2.Properties.AppearanceDropDown.Options.UseForeColor = true;
+            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id", "id", 5, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("name", "name", 5, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("govenanceID", "govenance ID", 5, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.lookUpEdit2.Properties.DataSource = this.statesBindingSource;
+            this.lookUpEdit2.Properties.DisplayMember = "name";
+            this.lookUpEdit2.Properties.NullText = "اختر الولاية...";
+            this.lookUpEdit2.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoComplete;
+            this.lookUpEdit2.Properties.ShowFooter = false;
+            this.lookUpEdit2.Properties.ShowHeader = false;
+            this.lookUpEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.lookUpEdit2.Properties.ValueMember = "id";
+            this.lookUpEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lookUpEdit2.Size = new System.Drawing.Size(367, 30);
+            this.lookUpEdit2.TabIndex = 0;
+            this.lookUpEdit2.EditValueChanged += new System.EventHandler(this.lookUpEdit2_EditValueChanged);
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -91,6 +166,42 @@ namespace ApprovedMedicalSurvey.UI
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(367, 81);
             this.panel3.TabIndex = 2;
+            // 
+            // lookUpEdit3
+            // 
+            this.lookUpEdit3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lookUpEdit3.Location = new System.Drawing.Point(0, 0);
+            this.lookUpEdit3.Name = "lookUpEdit3";
+            this.lookUpEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.lookUpEdit3.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.lookUpEdit3.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit3.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit3.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
+            this.lookUpEdit3.Properties.AppearanceDropDown.Options.UseBackColor = true;
+            this.lookUpEdit3.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.lookUpEdit3.Properties.AppearanceDropDown.Options.UseForeColor = true;
+            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit3.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id", "id", 5, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("name", "name", 5, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StateID", "State ID", 5, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.lookUpEdit3.Properties.DataSource = this.vIllagesBindingSource;
+            this.lookUpEdit3.Properties.DisplayMember = "name";
+            this.lookUpEdit3.Properties.NullText = "اختر القرية...";
+            this.lookUpEdit3.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoComplete;
+            this.lookUpEdit3.Properties.ShowFooter = false;
+            this.lookUpEdit3.Properties.ShowHeader = false;
+            this.lookUpEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.lookUpEdit3.Properties.ValueMember = "id";
+            this.lookUpEdit3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lookUpEdit3.Size = new System.Drawing.Size(367, 30);
+            this.lookUpEdit3.TabIndex = 0;
+            this.lookUpEdit3.EditValueChanged += new System.EventHandler(this.lookUpEdit3_EditValueChanged);
             // 
             // btnShowResults
             // 
@@ -176,6 +287,7 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.Size = new System.Drawing.Size(1802, 720);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -210,75 +322,13 @@ namespace ApprovedMedicalSurvey.UI
             this.Column6.Name = "Column6";
             this.Column6.Width = 69;
             // 
-            // lookUpEdit1
+            // vIllagesBindingSource
             // 
-            this.lookUpEdit1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.lookUpEdit1.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit1.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.lookUpEdit1.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
-            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseFont = true;
-            this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseForeColor = true;
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 41, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 59, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.lookUpEdit1.Properties.DataSource = this.govenanceBindingSource;
-            this.lookUpEdit1.Properties.DisplayMember = "Name";
-            this.lookUpEdit1.Properties.NullText = "اختر المحافظة...";
-            this.lookUpEdit1.Properties.SearchMode = DevExpress.XtraEditors.Controls.SearchMode.AutoComplete;
-            this.lookUpEdit1.Properties.ShowFooter = false;
-            this.lookUpEdit1.Properties.ShowHeader = false;
-            this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.lookUpEdit1.Properties.ValueMember = "Id";
-            this.lookUpEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit1.Size = new System.Drawing.Size(367, 30);
-            this.lookUpEdit1.TabIndex = 1;
+            this.vIllagesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Shared.VIllages);
             // 
-            // lookUpEdit2
+            // statesBindingSource
             // 
-            this.lookUpEdit2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lookUpEdit2.Location = new System.Drawing.Point(0, 0);
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.lookUpEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lookUpEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.lookUpEdit2.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.NullText = "اختر الولاية...";
-            this.lookUpEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit2.Size = new System.Drawing.Size(367, 30);
-            this.lookUpEdit2.TabIndex = 2;
-            // 
-            // lookUpEdit3
-            // 
-            this.lookUpEdit3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lookUpEdit3.Location = new System.Drawing.Point(0, 0);
-            this.lookUpEdit3.Name = "lookUpEdit3";
-            this.lookUpEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.lookUpEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.White;
-            this.lookUpEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.lookUpEdit3.Properties.Appearance.Options.UseFont = true;
-            this.lookUpEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit3.Properties.NullText = "اخترالقرية...";
-            this.lookUpEdit3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit3.Size = new System.Drawing.Size(367, 30);
-            this.lookUpEdit3.TabIndex = 2;
+            this.statesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Shared.States);
             // 
             // govenanceBindingSource
             // 
@@ -303,13 +353,15 @@ namespace ApprovedMedicalSurvey.UI
             this.Text = "قائمة المسوحات";
             this.Load += new System.EventHandler(this.Scans_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vIllagesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -330,8 +382,10 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private System.Windows.Forms.BindingSource govenanceBindingSource;
+        private System.Windows.Forms.BindingSource statesBindingSource;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
-        private System.Windows.Forms.BindingSource govenanceBindingSource;
+        private System.Windows.Forms.BindingSource vIllagesBindingSource;
     }
 }

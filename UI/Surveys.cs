@@ -44,5 +44,13 @@ namespace ApprovedMedicalSurvey.UI
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Scans f = new Scans();
+            f.MdiParent = this.ParentForm ;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+        }
     }
 }
