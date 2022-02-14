@@ -278,7 +278,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit16.Location = new System.Drawing.Point(732, 108);
             this.textEdit16.Name = "textEdit16";
-            this.textEdit16.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit16.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit16.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit16.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit16.Properties.Appearance.Options.UseBackColor = true;
@@ -293,7 +293,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit15.Location = new System.Drawing.Point(12, 108);
             this.textEdit15.Name = "textEdit15";
-            this.textEdit15.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit15.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit15.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit15.Properties.Appearance.Options.UseBackColor = true;
@@ -308,7 +308,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit14.Location = new System.Drawing.Point(372, 108);
             this.textEdit14.Name = "textEdit14";
-            this.textEdit14.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit14.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit14.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit14.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit14.Properties.Appearance.Options.UseBackColor = true;
@@ -323,7 +323,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit13.Location = new System.Drawing.Point(1092, 108);
             this.textEdit13.Name = "textEdit13";
-            this.textEdit13.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit13.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit13.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit13.Properties.Appearance.Options.UseBackColor = true;
@@ -338,7 +338,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit12.Location = new System.Drawing.Point(732, 76);
             this.textEdit12.Name = "textEdit12";
-            this.textEdit12.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit12.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit12.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit12.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit12.Properties.Appearance.Options.UseBackColor = true;
@@ -353,7 +353,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit11.Location = new System.Drawing.Point(12, 76);
             this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit11.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit11.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit11.Properties.Appearance.Options.UseBackColor = true;
@@ -368,7 +368,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit10.Location = new System.Drawing.Point(372, 76);
             this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit10.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit10.Properties.Appearance.Options.UseBackColor = true;
@@ -383,7 +383,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit9.Location = new System.Drawing.Point(1092, 76);
             this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit9.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit9.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit9.Properties.Appearance.Options.UseBackColor = true;
@@ -398,7 +398,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit8.Location = new System.Drawing.Point(732, 44);
             this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit8.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit8.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit8.Properties.Appearance.Options.UseBackColor = true;
@@ -413,7 +413,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit7.Location = new System.Drawing.Point(12, 44);
             this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit7.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit7.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit7.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit7.Properties.Appearance.Options.UseBackColor = true;
@@ -428,7 +428,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit6.Location = new System.Drawing.Point(372, 44);
             this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit6.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit6.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit6.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit6.Properties.Appearance.Options.UseBackColor = true;
@@ -443,7 +443,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit5.Location = new System.Drawing.Point(1092, 44);
             this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit5.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit5.Properties.Appearance.Options.UseBackColor = true;
@@ -458,7 +458,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit4.Location = new System.Drawing.Point(732, 12);
             this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
@@ -473,7 +473,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit3.Location = new System.Drawing.Point(12, 12);
             this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -488,7 +488,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit2.Location = new System.Drawing.Point(372, 12);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -503,7 +503,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.textEdit1.Location = new System.Drawing.Point(1092, 12);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -516,13 +516,12 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // Root
             // 
-            this.Root.AppearanceGroup.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Root.AppearanceGroup.BackColor = System.Drawing.Color.Gainsboro;
             this.Root.AppearanceGroup.Options.UseBackColor = true;
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
-            this.emptySpaceItem1,
             this.layoutControlItem2,
             this.layoutControlItem3,
             this.layoutControlItem4,
@@ -537,7 +536,8 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem13,
             this.layoutControlItem14,
             this.layoutControlItem15,
-            this.layoutControlItem16});
+            this.layoutControlItem16,
+            this.emptySpaceItem1});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(1461, 721);
             this.Root.TextVisible = false;
@@ -545,7 +545,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem1
             // 
             this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem1.Control = this.textEdit1;
@@ -566,7 +566,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem2.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem2.Control = this.textEdit2;
@@ -579,7 +579,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem3
             // 
             this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem3.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem3.Control = this.textEdit3;
@@ -592,7 +592,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem4
             // 
             this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem4.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem4.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem4.Control = this.textEdit4;
@@ -605,7 +605,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem5
             // 
             this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem5.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem5.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem5.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem5.Control = this.textEdit5;
@@ -618,7 +618,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem6
             // 
             this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem6.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem6.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem6.Control = this.textEdit6;
@@ -631,7 +631,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem7
             // 
             this.layoutControlItem7.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem7.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem7.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem7.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem7.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem7.Control = this.textEdit7;
@@ -644,7 +644,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem8
             // 
             this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem8.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem8.Control = this.textEdit8;
@@ -657,7 +657,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem9
             // 
             this.layoutControlItem9.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem9.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem9.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem9.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem9.Control = this.textEdit9;
@@ -670,7 +670,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem10
             // 
             this.layoutControlItem10.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem10.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem10.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem10.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem10.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem10.Control = this.textEdit10;
@@ -683,7 +683,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem11
             // 
             this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem11.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem11.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem11.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem11.Control = this.textEdit11;
@@ -696,7 +696,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem12
             // 
             this.layoutControlItem12.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem12.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem12.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem12.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem12.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem12.Control = this.textEdit12;
@@ -709,7 +709,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem13
             // 
             this.layoutControlItem13.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem13.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem13.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem13.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem13.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem13.Control = this.textEdit13;
@@ -722,7 +722,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem14
             // 
             this.layoutControlItem14.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem14.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem14.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem14.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem14.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem14.Control = this.textEdit14;
@@ -735,7 +735,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem15
             // 
             this.layoutControlItem15.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem15.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem15.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem15.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem15.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem15.Control = this.textEdit15;
@@ -748,7 +748,7 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem16
             // 
             this.layoutControlItem16.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.layoutControlItem16.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.layoutControlItem16.AppearanceItemCaption.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.layoutControlItem16.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem16.AppearanceItemCaption.Options.UseForeColor = true;
             this.layoutControlItem16.Control = this.textEdit16;
@@ -882,7 +882,7 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;

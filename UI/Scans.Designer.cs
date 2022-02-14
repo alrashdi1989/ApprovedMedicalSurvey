@@ -81,7 +81,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Dock = System.Windows.Forms.DockStyle.Top;
             this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -126,7 +126,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.Dock = System.Windows.Forms.DockStyle.Top;
             this.lookUpEdit2.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.lookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.lookUpEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit2.Properties.Appearance.Options.UseBackColor = true;
@@ -172,7 +172,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit3.Dock = System.Windows.Forms.DockStyle.Top;
             this.lookUpEdit3.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit3.Name = "lookUpEdit3";
-            this.lookUpEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lookUpEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.lookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.lookUpEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit3.Properties.Appearance.Options.UseBackColor = true;
@@ -236,14 +236,14 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gray;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -276,9 +276,9 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlDarkDark;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -338,7 +338,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1846, 875);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnShowResults);
