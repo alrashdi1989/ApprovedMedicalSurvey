@@ -53,9 +53,6 @@ namespace ApprovedMedicalSurvey.UI
             f.Dock = DockStyle.Fill;
         }
 
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ApprovedMedicalSurvey.Models;
+using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using DevExpress.Utils.Extensions;
 using Flurl.Http;
@@ -18,7 +19,7 @@ using System.Web.Helpers;
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
-{ 
+{
     public partial class Scans : Form
     {
         public Scans()
@@ -33,40 +34,60 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Governance()
         {
-          
+            governorateBindingSource.DataSource = GovernantesServices.GetAllGovernorate("governorates");
         }
         private void States()
         {
-           
+            willayatBindingSource.DataSource = WillayatServices.GetAllWillayatbyId("willayat", lookUpEdit1.EditValue.ToString());
+
 
         }
 
         private void Villages()
         {
-            
+
+            villageBindingSource.DataSource = VillageServices.GetAllVIllagesbyStateID("villages", lookUpEdit2.EditValue.ToString());
+
+
+        }
+
+
+
+
+
+
+        private void btnShowResults_Click(object sender, EventArgs e)
+        {
+            //Surveys f = new Surveys();
+            //f.MdiParent = this.ParentForm;
+            //f.Show();
+            //f.Dock = DockStyle.Fill;
+            try
+            {
+                dataGridView1.Rows.Clear();
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+                dataGridView1.Rows.Add("1234", "5457", lookUpEdit3.Text, "28-09-2022", "سامح محمد", "جديد");
+
+                dataGridView1.ClearSelection();
+
+                //  dataGridView1.DataSource = SurveyServices.GetAllSurveys("surveys");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
             }
 
 
-     
-
-      
-
-        private async void btnShowResults_Click(object sender, EventArgs e)
-        {
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            Surveys f = new Surveys();
-            f.MdiParent = this.ParentForm;
-            f.Show();
-            f.Dock = DockStyle.Fill;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
         {
@@ -75,7 +96,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void lookUpEdit3_EditValueChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void lookUpEdit2_EditValueChanged(object sender, EventArgs e)
@@ -86,6 +107,20 @@ namespace ApprovedMedicalSurvey.UI
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.CurrentCell.ColumnIndex.Equals(6) && e.RowIndex != -1)
+            {
+                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                {
+                    Surveys f = new Surveys();
+                    f.MdiParent = this.ParentForm;
+                    f.Show();
+                    f.Dock = DockStyle.Fill;
+                }
+            }
         }
     }
 }

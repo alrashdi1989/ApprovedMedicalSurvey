@@ -15,6 +15,7 @@ namespace ApprovedMedicalSurvey.Models
 
         public  List<Willayat> willayat { get; set; }
 
+        public List<Surveys> surveys { get; set; }
 
     }
 }

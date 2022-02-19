@@ -12,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace ApprovedMedicalSurvey.Services
 {
-    public static class GovernantesServices
+   public static  class SurveyServices
     {
-        public static List<Governorate> GetAllGovernorate(string baseurl)
+        public static List<Surveys> GetAllSurveys(string baseurl)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(GlobalVariables.BaseUrl + baseurl);
@@ -22,14 +22,15 @@ namespace ApprovedMedicalSurvey.Services
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             var response = client.GetAsync(client.BaseAddress).Result;
-            List<Governorate> res = new List<Governorate>();
+            List<Models.Surveys> res = new List<Models.Surveys>();
             if (response.IsSuccessStatusCode)
             {
                 var data = response.Content.ReadAsStringAsync().Result;
                 Roots result = JsonConvert.DeserializeObject<Roots>(data);
-                res = result.governorates;
+                res = result.surveys;
 
             }
+
             return res;
 
         }
