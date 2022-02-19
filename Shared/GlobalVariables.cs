@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ApprovedMedicalSurvey.Shared
 {
-    class Govenance
+   public static  class GlobalVariables
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public static string BaseUrl { get; set; } = "https://gql.formon.io/api/rest/";
     }
 }

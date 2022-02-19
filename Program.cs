@@ -17,7 +17,7 @@ namespace ApprovedMedicalSurvey
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UI.frmSplash());
+            Application.Run(new UI.FlatLightTheme());
         }
     }
 }

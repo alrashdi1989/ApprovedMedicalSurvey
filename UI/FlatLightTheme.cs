@@ -19,12 +19,6 @@ namespace ApprovedMedicalSurvey.UI
             InitializeComponent();
         }
 
-        private void close(object sender, EventArgs e)
-        {
-            Close();
-
-        }
-
         private void FlatDarkTheme_Load(object sender, EventArgs e)
         {
             Scans f = new Scans();
@@ -33,31 +27,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Dock = DockStyle.Fill;
         }
 
-        private void lookUpEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void simpleButton4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+     
         public void DisposeAllButThis(Form form)
         {
             foreach (Form frm in this.MdiChildren)
@@ -71,51 +41,8 @@ namespace ApprovedMedicalSurvey.UI
             }
         }
 
-        private void btnScans_Click(object sender, EventArgs e)
-        {
-            Scans f = new Scans();
-            f.MdiParent = this;
-            f.Show();
-            f.Dock = DockStyle.Fill;
-            label2.Text = f.Text;
-            DisposeAllButThis(f);
-            btnSan.Appearance.Normal.BackColor = Color.LightPink;
-            btnReports.Appearance.Normal.BackColor = Color.IndianRed;
-            btnUsers.Appearance.Normal.BackColor = Color.IndianRed;
-        }
 
-        private void btnReports_Click(object sender, EventArgs e)
-        {
-            Reports f = new Reports();
-            f.MdiParent = this;
-            f.Show();
-            f.Dock = DockStyle.Fill;
-            label2.Text = f.Text;
-            btnSan.Appearance.Normal.BackColor = Color.IndianRed;
-            btnReports.Appearance.Normal.BackColor = Color.LightPink;
-            btnUsers.Appearance.Normal.BackColor = Color.IndianRed;
-
-            DisposeAllButThis(f);
-        }
-
-        private void btnUsers_Click(object sender, EventArgs e)
-        {
-            Users f = new Users();
-            f.MdiParent = this;
-            f.Show();
-            f.Dock = DockStyle.Fill;
-            label2.Text = f.Text;
-            btnSan.Appearance.Normal.BackColor = Color.IndianRed;
-            btnReports.Appearance.Normal.BackColor = Color.IndianRed;
-            btnUsers.Appearance.Normal.BackColor = Color.LightPink;
-
-            DisposeAllButThis(f);
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            SingingOut();
-        }
+      
 
         private void SingingOut()
         {
@@ -127,37 +54,64 @@ namespace ApprovedMedicalSurvey.UI
                 this.Close();
             }
         }
+        
 
-        private void pbClose_Click(object sender, EventArgs e)
+       
+
+
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Scans f = new Scans();
+            f.MdiParent = this;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+            DisposeAllButThis(f);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Reports f = new Reports();
+            f.MdiParent = this;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+            DisposeAllButThis(f);
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            Users f = new Users();
+            f.MdiParent = this;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+            DisposeAllButThis(f);
+        }
+
+        private void SingingOut(object sender, EventArgs e)
         {
             SingingOut();
+
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void simpleButton5_Click(object sender, EventArgs e)
         {
-            if (this.WindowState== FormWindowState.Maximized)
+            if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
             }
-            else {
+            else
+            {
                 this.WindowState = FormWindowState.Maximized;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void simpleButton4_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-
+            SingingOut();
         }
 
-        private void navBarItem1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void simpleButton6_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

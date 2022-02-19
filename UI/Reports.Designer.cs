@@ -54,7 +54,6 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // govenanceBindingSource
             // 
-            this.govenanceBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Shared.Govenance);
             // 
             // gridView1
             // 
