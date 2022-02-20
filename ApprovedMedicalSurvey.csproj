@@ -229,7 +229,6 @@
     <EmbeddedResource Include="UI\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ApprovedMedicalSurvey_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Governorate.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Surveys.datasource" />

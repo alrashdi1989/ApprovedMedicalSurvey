@@ -21,7 +21,7 @@ namespace ApprovedMedicalSurvey.Models
         public string username { get; set; }
         public string uuid { get; set; }
         [DisplayName("البريد الالكتروني")]
-        public object email { get; set; }
+        public string email { get; set; }
     }
 
    
