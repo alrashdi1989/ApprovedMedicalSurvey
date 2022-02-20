@@ -42,10 +42,13 @@ namespace ApprovedMedicalSurvey.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Scans));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.governorateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.willayatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -56,21 +59,18 @@ namespace ApprovedMedicalSurvey.UI
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.willayatBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.governorateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.surveysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surveysBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +121,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.TabIndex = 0;
             this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
             // 
+            // governorateBindingSource
+            // 
+            this.governorateBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Governorate);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -169,6 +173,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.TabIndex = 0;
             this.lookUpEdit2.EditValueChanged += new System.EventHandler(this.lookUpEdit2_EditValueChanged);
             // 
+            // willayatBindingSource
+            // 
+            this.willayatBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Willayat);
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -216,6 +224,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit3.Size = new System.Drawing.Size(222, 30);
             this.lookUpEdit3.TabIndex = 0;
             this.lookUpEdit3.EditValueChanged += new System.EventHandler(this.lookUpEdit3_EditValueChanged);
+            // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
             // 
             // btnShowResults
             // 
@@ -343,21 +355,9 @@ namespace ApprovedMedicalSurvey.UI
             this.Column7.Name = "Column7";
             this.Column7.Width = 69;
             // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
-            // 
-            // willayatBindingSource
-            // 
-            this.willayatBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Willayat);
-            // 
-            // governorateBindingSource
-            // 
-            this.governorateBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Governorate);
-            // 
             // surveysBindingSource
             // 
-            this.surveysBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Surveys);
+            this.surveysBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.OperationOrder);
             // 
             // Scans
             // 
@@ -379,15 +379,15 @@ namespace ApprovedMedicalSurvey.UI
             this.Load += new System.EventHandler(this.Scans_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surveysBindingSource)).EndInit();
             this.ResumeLayout(false);
 

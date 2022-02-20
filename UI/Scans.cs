@@ -2,8 +2,6 @@
 using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using DevExpress.Utils.Extensions;
-using Flurl.Http;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +13,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Helpers;
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
@@ -58,10 +55,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnShowResults_Click(object sender, EventArgs e)
         {
-            //Surveys f = new Surveys();
-            //f.MdiParent = this.ParentForm;
-            //f.Show();
-            //f.Dock = DockStyle.Fill;
+          
             try
             {
                 dataGridView1.Rows.Clear();
@@ -76,7 +70,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 dataGridView1.ClearSelection();
 
-                //  dataGridView1.DataSource = SurveyServices.GetAllSurveys("surveys");
+                 surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
 
             }
             catch (Exception ex)

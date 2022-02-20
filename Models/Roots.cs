@@ -9,13 +9,12 @@ namespace ApprovedMedicalSurvey.Models
   public  class Roots
     {
         public  List<Governorate> governorates { get; set; }
-        public  List<Users> Users { get; set; }
+        public   List<Users> Users { get; set; }
 
         public  List<Village> villages { get; set; }
 
         public  List<Willayat> willayat { get; set; }
 
-        public List<Surveys> surveys { get; set; }
-
+        public List<OperationOrder> operationOrders { get; set; }
     }
 }

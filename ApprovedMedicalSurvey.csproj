@@ -49,10 +49,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>54207FB1A87C8CAE0A4E51459D1CD563C4DECEFF</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>EEEBE733F6E9DA7B02559DA9980C5A8E3D36853E</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ApprovedMedicalSurvey_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -133,7 +134,7 @@
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\Governorate.cs" />
     <Compile Include="Models\Roots.cs" />
-    <Compile Include="Models\Surveys.cs" />
+    <Compile Include="Models\OperationOrder.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\Village.cs" />
     <Compile Include="Models\Willayat.cs" />
@@ -246,7 +247,6 @@
     <EmbeddedResource Include="UI\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ApprovedMedicalSurvey_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Governorate.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Surveys.datasource" />
