@@ -14,7 +14,7 @@ namespace ApprovedMedicalSurvey.Services
 {
    public static  class SurveyServices
     {
-        public static List<Surveys> GetAllSurveys(string baseurl)
+        public static List<OperationOrder> GetAllSurveys(string baseurl)
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri(GlobalVariables.BaseUrl + baseurl);
@@ -22,12 +22,12 @@ namespace ApprovedMedicalSurvey.Services
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             var response = client.GetAsync(client.BaseAddress).Result;
-            List<Models.Surveys> res = new List<Models.Surveys>();
+            List<OperationOrder> res = new List<OperationOrder>();
             if (response.IsSuccessStatusCode)
             {
                 var data = response.Content.ReadAsStringAsync().Result;
                 Roots result = JsonConvert.DeserializeObject<Roots>(data);
-                res = result.surveys;
+                res = result.operationOrders;
 
             }
 

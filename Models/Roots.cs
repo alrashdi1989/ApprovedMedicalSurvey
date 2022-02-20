@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApprovedMedicalSurvey.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,6 @@ namespace ApprovedMedicalSurvey.Models
 
         public  List<Willayat> willayat { get; set; }
 
-        public List<Surveys> surveys { get; set; }
-
+        public List<OperationOrder> operationOrders { get; set; }
     }
 }

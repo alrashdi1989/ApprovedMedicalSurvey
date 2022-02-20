@@ -134,7 +134,7 @@
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\Governorate.cs" />
     <Compile Include="Models\Roots.cs" />
-    <Compile Include="Models\Surveys.cs" />
+    <Compile Include="Models\OperationOrder.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\Village.cs" />
     <Compile Include="Models\Willayat.cs" />
