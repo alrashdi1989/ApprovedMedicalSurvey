@@ -11,21 +11,17 @@ namespace ApprovedMedicalSurvey.Models
     public class Users
     {
         [DisplayName("الصلاحيات")]
-        public string Role { get; set; }
-
-        [DisplayName("تاريخ التسجيل")]
-        public DateTime CreatedAt { get; set; }
-
-        [DisplayName("الحالة")]
-        public string Status { get; set; }
-
+        public string role { get; set; }
+       
+        [DisplayName("تارخ التسجيل")]
+        public DateTime created_at { get; set; }
+        [DisplayName("الحاله")]
+        public string status { get; set; }
         [DisplayName("اسم المستخدم")]
-        public string Username { get; set; }
-
-        [DisplayName("رقم المستخدم")]
-        public string Uuid { get; set; }
+        public string username { get; set; }
+        public string uuid { get; set; }
         [DisplayName("البريد الالكتروني")]
-        public string Email { get; set; }
+        public object email { get; set; }
     }
 
    

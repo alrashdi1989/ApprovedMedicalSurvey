@@ -49,10 +49,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>54207FB1A87C8CAE0A4E51459D1CD563C4DECEFF</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>EEEBE733F6E9DA7B02559DA9980C5A8E3D36853E</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ApprovedMedicalSurvey_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>

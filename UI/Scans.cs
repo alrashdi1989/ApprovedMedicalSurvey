@@ -2,8 +2,6 @@
 using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using DevExpress.Utils.Extensions;
-using Flurl.Http;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +13,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Helpers;
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI

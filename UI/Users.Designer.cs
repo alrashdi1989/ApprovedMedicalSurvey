@@ -35,12 +35,12 @@ namespace ApprovedMedicalSurvey.UI
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colRole = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCreatedAt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStatus = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colUsername = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colUuid = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colEmail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colrole = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colcreated_at = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colstatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colusername = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coluuid = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colemail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -104,12 +104,12 @@ namespace ApprovedMedicalSurvey.UI
             this.gridView1.Appearance.Row.Options.UseTextOptions = true;
             this.gridView1.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colRole,
-            this.colCreatedAt,
-            this.colStatus,
-            this.colUsername,
-            this.colUuid,
-            this.colEmail});
+            this.colrole,
+            this.colcreated_at,
+            this.colstatus,
+            this.colusername,
+            this.coluuid,
+            this.colemail});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -120,45 +120,45 @@ namespace ApprovedMedicalSurvey.UI
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             // 
-            // colRole
+            // colrole
             // 
-            this.colRole.FieldName = "Role";
-            this.colRole.Name = "colRole";
-            this.colRole.Visible = true;
-            this.colRole.VisibleIndex = 0;
+            this.colrole.FieldName = "role";
+            this.colrole.Name = "colrole";
+            this.colrole.Visible = true;
+            this.colrole.VisibleIndex = 0;
             // 
-            // colCreatedAt
+            // colcreated_at
             // 
-            this.colCreatedAt.FieldName = "CreatedAt";
-            this.colCreatedAt.Name = "colCreatedAt";
-            this.colCreatedAt.Visible = true;
-            this.colCreatedAt.VisibleIndex = 1;
+            this.colcreated_at.FieldName = "created_at";
+            this.colcreated_at.Name = "colcreated_at";
+            this.colcreated_at.Visible = true;
+            this.colcreated_at.VisibleIndex = 1;
             // 
-            // colStatus
+            // colstatus
             // 
-            this.colStatus.FieldName = "Status";
-            this.colStatus.Name = "colStatus";
-            this.colStatus.Visible = true;
-            this.colStatus.VisibleIndex = 2;
+            this.colstatus.FieldName = "status";
+            this.colstatus.Name = "colstatus";
+            this.colstatus.Visible = true;
+            this.colstatus.VisibleIndex = 2;
             // 
-            // colUsername
+            // colusername
             // 
-            this.colUsername.FieldName = "Username";
-            this.colUsername.Name = "colUsername";
-            this.colUsername.Visible = true;
-            this.colUsername.VisibleIndex = 4;
+            this.colusername.FieldName = "username";
+            this.colusername.Name = "colusername";
+            this.colusername.Visible = true;
+            this.colusername.VisibleIndex = 4;
             // 
-            // colUuid
+            // coluuid
             // 
-            this.colUuid.FieldName = "Uuid";
-            this.colUuid.Name = "colUuid";
+            this.coluuid.FieldName = "uuid";
+            this.coluuid.Name = "coluuid";
             // 
-            // colEmail
+            // colemail
             // 
-            this.colEmail.FieldName = "Email";
-            this.colEmail.Name = "colEmail";
-            this.colEmail.Visible = true;
-            this.colEmail.VisibleIndex = 3;
+            this.colemail.FieldName = "email";
+            this.colemail.Name = "colemail";
+            this.colemail.Visible = true;
+            this.colemail.VisibleIndex = 3;
             // 
             // btnNewUser
             // 
@@ -205,11 +205,11 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.BindingSource usersBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colRole;
-        private DevExpress.XtraGrid.Columns.GridColumn colCreatedAt;
-        private DevExpress.XtraGrid.Columns.GridColumn colStatus;
-        private DevExpress.XtraGrid.Columns.GridColumn colUsername;
-        private DevExpress.XtraGrid.Columns.GridColumn colUuid;
-        private DevExpress.XtraGrid.Columns.GridColumn colEmail;
+        private DevExpress.XtraGrid.Columns.GridColumn colrole;
+        private DevExpress.XtraGrid.Columns.GridColumn colcreated_at;
+        private DevExpress.XtraGrid.Columns.GridColumn colstatus;
+        private DevExpress.XtraGrid.Columns.GridColumn colusername;
+        private DevExpress.XtraGrid.Columns.GridColumn coluuid;
+        private DevExpress.XtraGrid.Columns.GridColumn colemail;
     }
 }

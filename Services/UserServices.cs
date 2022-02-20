@@ -30,7 +30,8 @@ namespace ApprovedMedicalSurvey.Services
             if (response.IsSuccessStatusCode)
             {
                 var data = response.Content.ReadAsStringAsync().Result;
-               Roots    result = JsonConvert.DeserializeObject<Roots>(data);
+                Roots    result = JsonConvert.DeserializeObject<Roots>(data.ToString());
+
                 res = result.Users;
                
             }
