@@ -145,6 +145,12 @@
     <Compile Include="Services\VillageServices.cs" />
     <Compile Include="Services\WillayatServices.cs" />
     <Compile Include="Shared\GlobalVariables.cs" />
+    <Compile Include="UI\ActivateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ActivateForm.designer.cs">
+      <DependentUpon>ActivateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,12 @@
     </Compile>
     <Compile Include="UI\LoginForm.designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OTPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OTPForm.designer.cs">
+      <DependentUpon>OTPForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Reports.cs">
       <SubType>Form</SubType>
@@ -204,6 +216,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\ActivateForm.resx">
+      <DependentUpon>ActivateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OTPForm.resx">
+      <DependentUpon>OTPForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
@@ -254,10 +272,18 @@
   <ItemGroup>
     <Content Include="Resources\card.PNG" />
     <Content Include="Resources\card1.PNG" />
+    <Content Include="Resources\CBI-logo.png" />
+    <Content Include="Resources\Close.PNG" />
+    <Content Include="Resources\cross.png" />
+    <Content Include="Resources\cross1.png" />
+    <Content Include="Resources\cross2.png" />
     <Content Include="Resources\mobile.png" />
+    <Content Include="Resources\MOH Logo.png" />
     <Content Include="Resources\MOH_Logo.png" />
     <Content Include="Resources\User-blue.png" />
     <Content Include="Resources\who.png" />
+    <Content Include="Resources\WHO_new_logo.jpg" />
+    <Content Include="Resources\WHO_new_logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
