@@ -2,7 +2,6 @@
 using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using DevExpress.Utils.Extensions;
-using Nancy.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +14,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 
@@ -112,12 +112,13 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.Columns[5].HeaderText = "القرية";
                 dataGridView1.Columns[6].HeaderText = "تاريخ المسح";
                 DataGridViewImageColumn img = new DataGridViewImageColumn();
-                Image image = Properties.Resources.cross;
+                Image image = Properties.Resources.search;
+                
                 img.Image = image;
                 dataGridView1.Columns.Add(img);
                 img.HeaderText = "التفاصيل";
                 img.Name = "img";
-
+                img.Width = 60;
                 this.Cursor = Cursors.Default;
                 lblsurveycount.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
 

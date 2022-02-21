@@ -264,6 +264,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem76 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem77 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem78 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
@@ -272,7 +273,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.layoutConverter1 = new DevExpress.XtraLayout.Converter.LayoutConverter(this.components);
-            this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.panel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -460,8 +460,8 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem76)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -523,6 +523,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tabControl1.Controls.Add(this.tabPage11);
             this.tabControl1.Controls.Add(this.tabPage12);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
@@ -862,33 +863,39 @@ namespace ApprovedMedicalSurvey.UI
             // txt_97
             // 
             this.txt_97.Enabled = false;
-            this.txt_97.Location = new System.Drawing.Point(923, 188);
+            this.txt_97.Location = new System.Drawing.Point(923, 219);
             this.txt_97.Name = "txt_97";
             this.txt_97.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_97.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_97.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_97.Size = new System.Drawing.Size(250, 20);
+            this.txt_97.Properties.Appearance.Options.UseFont = true;
+            this.txt_97.Size = new System.Drawing.Size(250, 28);
             this.txt_97.StyleController = this.layoutControl1;
             this.txt_97.TabIndex = 11;
             // 
             // txt_96
             // 
             this.txt_96.Enabled = false;
-            this.txt_96.Location = new System.Drawing.Point(14, 159);
+            this.txt_96.Location = new System.Drawing.Point(14, 183);
             this.txt_96.Name = "txt_96";
             this.txt_96.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_96.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_96.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_96.Size = new System.Drawing.Size(726, 20);
+            this.txt_96.Properties.Appearance.Options.UseFont = true;
+            this.txt_96.Size = new System.Drawing.Size(726, 28);
             this.txt_96.StyleController = this.layoutControl1;
             this.txt_96.TabIndex = 9;
             // 
             // txt_95
             // 
             this.txt_95.Enabled = false;
-            this.txt_95.Location = new System.Drawing.Point(14, 130);
+            this.txt_95.Location = new System.Drawing.Point(14, 147);
             this.txt_95.Name = "txt_95";
             this.txt_95.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_95.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_95.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_95.Size = new System.Drawing.Size(563, 20);
+            this.txt_95.Properties.Appearance.Options.UseFont = true;
+            this.txt_95.Size = new System.Drawing.Size(563, 28);
             this.txt_95.StyleController = this.layoutControl1;
             this.txt_95.TabIndex = 10;
             // 
@@ -898,36 +905,43 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_92.Location = new System.Drawing.Point(14, 43);
             this.txt_92.Name = "txt_92";
             this.txt_92.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_92.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_92.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_92.Size = new System.Drawing.Size(559, 20);
+            this.txt_92.Properties.Appearance.Options.UseFont = true;
+            this.txt_92.Size = new System.Drawing.Size(559, 28);
             this.txt_92.StyleController = this.layoutControl1;
             this.txt_92.TabIndex = 8;
             // 
             // txt_94
             // 
             this.txt_94.Enabled = false;
-            this.txt_94.Location = new System.Drawing.Point(12, 99);
+            this.txt_94.Location = new System.Drawing.Point(12, 113);
             this.txt_94.Name = "txt_94";
             this.txt_94.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_94.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_94.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_94.Size = new System.Drawing.Size(554, 20);
+            this.txt_94.Properties.Appearance.Options.UseFont = true;
+            this.txt_94.Size = new System.Drawing.Size(554, 28);
             this.txt_94.StyleController = this.layoutControl1;
             this.txt_94.TabIndex = 13;
             // 
             // txt_93
             // 
             this.txt_93.Enabled = false;
-            this.txt_93.Location = new System.Drawing.Point(14, 72);
+            this.txt_93.Location = new System.Drawing.Point(14, 79);
             this.txt_93.Name = "txt_93";
             this.txt_93.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_93.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_93.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_93.Size = new System.Drawing.Size(657, 20);
+            this.txt_93.Properties.Appearance.Options.UseFont = true;
+            this.txt_93.Size = new System.Drawing.Size(657, 28);
             this.txt_93.StyleController = this.layoutControl1;
             this.txt_93.TabIndex = 12;
             // 
             // txt_91
             // 
             this.txt_91.Enabled = false;
+            this.txt_91.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_91.Location = new System.Drawing.Point(14, 14);
             this.txt_91.Margin = new System.Windows.Forms.Padding(2);
             this.txt_91.Name = "txt_91";
@@ -938,7 +952,8 @@ namespace ApprovedMedicalSurvey.UI
             // txt_90
             // 
             this.txt_90.Enabled = false;
-            this.txt_90.Location = new System.Drawing.Point(923, 159);
+            this.txt_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_90.Location = new System.Drawing.Point(923, 183);
             this.txt_90.Margin = new System.Windows.Forms.Padding(2);
             this.txt_90.Name = "txt_90";
             this.txt_90.ReadOnly = true;
@@ -948,7 +963,8 @@ namespace ApprovedMedicalSurvey.UI
             // txt_89
             // 
             this.txt_89.Enabled = false;
-            this.txt_89.Location = new System.Drawing.Point(923, 130);
+            this.txt_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_89.Location = new System.Drawing.Point(923, 147);
             this.txt_89.Margin = new System.Windows.Forms.Padding(2);
             this.txt_89.Name = "txt_89";
             this.txt_89.ReadOnly = true;
@@ -958,7 +974,8 @@ namespace ApprovedMedicalSurvey.UI
             // txt_88
             // 
             this.txt_88.Enabled = false;
-            this.txt_88.Location = new System.Drawing.Point(923, 101);
+            this.txt_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_88.Location = new System.Drawing.Point(923, 115);
             this.txt_88.Margin = new System.Windows.Forms.Padding(2);
             this.txt_88.Name = "txt_88";
             this.txt_88.ReadOnly = true;
@@ -968,6 +985,7 @@ namespace ApprovedMedicalSurvey.UI
             // txt_133
             // 
             this.txt_133.Enabled = false;
+            this.txt_133.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_133.Location = new System.Drawing.Point(923, 14);
             this.txt_133.Margin = new System.Windows.Forms.Padding(2);
             this.txt_133.Name = "txt_133";
@@ -978,7 +996,8 @@ namespace ApprovedMedicalSurvey.UI
             // txt_87
             // 
             this.txt_87.Enabled = false;
-            this.txt_87.Location = new System.Drawing.Point(923, 72);
+            this.txt_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_87.Location = new System.Drawing.Point(923, 79);
             this.txt_87.Margin = new System.Windows.Forms.Padding(2);
             this.txt_87.Name = "txt_87";
             this.txt_87.ReadOnly = true;
@@ -988,6 +1007,7 @@ namespace ApprovedMedicalSurvey.UI
             // txt_86
             // 
             this.txt_86.Enabled = false;
+            this.txt_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_86.Location = new System.Drawing.Point(923, 43);
             this.txt_86.Margin = new System.Windows.Forms.Padding(2);
             this.txt_86.Name = "txt_86";
@@ -1027,7 +1047,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem14.Location = new System.Drawing.Point(909, 29);
             this.layoutControlItem14.Name = "layoutControlItem14";
             this.layoutControlItem14.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem14.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem14.Size = new System.Drawing.Size(514, 36);
             this.layoutControlItem14.Text = "هل لديك أطفال؟";
             this.layoutControlItem14.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem14.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1039,10 +1059,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem15.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem15.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem15.Control = this.txt_87;
-            this.layoutControlItem15.Location = new System.Drawing.Point(909, 58);
+            this.layoutControlItem15.Location = new System.Drawing.Point(909, 65);
             this.layoutControlItem15.Name = "layoutControlItem15";
             this.layoutControlItem15.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem15.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem15.Size = new System.Drawing.Size(514, 36);
             this.layoutControlItem15.Text = "هل انت حامل";
             this.layoutControlItem15.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1052,9 +1072,9 @@ namespace ApprovedMedicalSurvey.UI
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 203);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 241);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(1423, 278);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1423, 240);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem2
@@ -1076,10 +1096,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem16.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem16.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem16.Control = this.txt_88;
-            this.layoutControlItem16.Location = new System.Drawing.Point(909, 87);
+            this.layoutControlItem16.Location = new System.Drawing.Point(909, 101);
             this.layoutControlItem16.Name = "layoutControlItem16";
             this.layoutControlItem16.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem16.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem16.Size = new System.Drawing.Size(514, 32);
             this.layoutControlItem16.Text = "ما هو الفاصل الزمني بين هذا الحمل والحمل السابق";
             this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem16.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1091,10 +1111,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem17.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem17.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem17.Control = this.txt_89;
-            this.layoutControlItem17.Location = new System.Drawing.Point(909, 116);
+            this.layoutControlItem17.Location = new System.Drawing.Point(909, 133);
             this.layoutControlItem17.Name = "layoutControlItem17";
             this.layoutControlItem17.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem17.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem17.Size = new System.Drawing.Size(514, 36);
             this.layoutControlItem17.Text = "هل سبق أن استخدمت أي وسيلة من وسائل المباعدة بين الولادات";
             this.layoutControlItem17.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem17.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1106,10 +1126,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem18.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem18.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem18.Control = this.txt_90;
-            this.layoutControlItem18.Location = new System.Drawing.Point(909, 145);
+            this.layoutControlItem18.Location = new System.Drawing.Point(909, 169);
             this.layoutControlItem18.Name = "layoutControlItem18";
             this.layoutControlItem18.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem18.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem18.Size = new System.Drawing.Size(514, 36);
             this.layoutControlItem18.Text = "إذا لم تستعملي أي وسيلة من وسائل المباعدة بين الولادات، ما هو السبب؟";
             this.layoutControlItem18.TextLocation = DevExpress.Utils.Locations.Right;
             this.layoutControlItem18.TextSize = new System.Drawing.Size(430, 21);
@@ -1137,7 +1157,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 29);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem4.Size = new System.Drawing.Size(909, 29);
+            this.layoutControlItem4.Size = new System.Drawing.Size(909, 36);
             this.layoutControlItem4.Text = "كم مرة تمت مراجعة عيادة الحوامل خلال الحمل الأخير؟ ";
             this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(337, 21);
@@ -1148,10 +1168,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem1.Control = this.txt_93;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 58);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 65);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem1.Size = new System.Drawing.Size(909, 29);
+            this.layoutControlItem1.Size = new System.Drawing.Size(909, 36);
             this.layoutControlItem1.Text = "إذا لم تتم متابعتك ما هو السبب الرئيسي؟";
             this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(239, 21);
@@ -1162,9 +1182,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem3.Control = this.txt_94;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 87);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 101);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(909, 29);
+            this.layoutControlItem3.Size = new System.Drawing.Size(909, 32);
             this.layoutControlItem3.Text = "هل تم تطعيمك ضد الكزاز (التيتانوس) بجرعتين أو أكثر؟ ";
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(346, 21);
@@ -1175,10 +1195,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem6.Control = this.txt_96;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 145);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 169);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem6.Size = new System.Drawing.Size(909, 29);
+            this.layoutControlItem6.Size = new System.Drawing.Size(909, 36);
             this.layoutControlItem6.Text = "أين تمت ولادة آخر طفل لك؟";
             this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(170, 21);
@@ -1189,10 +1209,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem7.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem7.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem7.Control = this.txt_97;
-            this.layoutControlItem7.Location = new System.Drawing.Point(909, 174);
+            this.layoutControlItem7.Location = new System.Drawing.Point(909, 205);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem7.Size = new System.Drawing.Size(514, 29);
+            this.layoutControlItem7.Size = new System.Drawing.Size(514, 36);
             this.layoutControlItem7.Text = "هل راجعت المؤسسة الصحية بعد الولادة؟ ";
             this.layoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(251, 21);
@@ -1201,9 +1221,9 @@ namespace ApprovedMedicalSurvey.UI
             // emptySpaceItem6
             // 
             this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 174);
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 205);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(909, 29);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(909, 36);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
@@ -1211,10 +1231,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem5.Control = this.txt_95;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 116);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 133);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem5.Size = new System.Drawing.Size(909, 29);
+            this.layoutControlItem5.Size = new System.Drawing.Size(909, 36);
             this.layoutControlItem5.Text = "هل تم تشخيصك بالإصابة بفقر الدم خلال الحمل الأخير؟";
             this.layoutControlItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(333, 21);
@@ -2216,351 +2236,456 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // txt_59
             // 
-            this.txt_59.Location = new System.Drawing.Point(12, 287);
+            this.txt_59.Enabled = false;
+            this.txt_59.Location = new System.Drawing.Point(12, 364);
             this.txt_59.Name = "txt_59";
             this.txt_59.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_59.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_59.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_59.Size = new System.Drawing.Size(60, 20);
+            this.txt_59.Properties.Appearance.Options.UseFont = true;
+            this.txt_59.Size = new System.Drawing.Size(60, 28);
             this.txt_59.StyleController = this.layoutControl6;
-            this.txt_59.TabIndex = 36;
+            this.txt_59.TabIndex = 35;
             // 
             // txt_47
             // 
-            this.txt_47.Location = new System.Drawing.Point(422, 287);
+            this.txt_47.Enabled = false;
+            this.txt_47.Location = new System.Drawing.Point(422, 364);
             this.txt_47.Name = "txt_47";
             this.txt_47.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_47.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_47.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_47.Size = new System.Drawing.Size(136, 20);
+            this.txt_47.Properties.Appearance.Options.UseFont = true;
+            this.txt_47.Size = new System.Drawing.Size(136, 28);
             this.txt_47.StyleController = this.layoutControl6;
-            this.txt_47.TabIndex = 35;
+            this.txt_47.TabIndex = 34;
             // 
             // txt_58
             // 
-            this.txt_58.Location = new System.Drawing.Point(12, 262);
+            this.txt_58.Enabled = false;
+            this.txt_58.Location = new System.Drawing.Point(12, 332);
             this.txt_58.Name = "txt_58";
             this.txt_58.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_58.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_58.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_58.Size = new System.Drawing.Size(60, 20);
+            this.txt_58.Properties.Appearance.Options.UseFont = true;
+            this.txt_58.Size = new System.Drawing.Size(60, 28);
             this.txt_58.StyleController = this.layoutControl6;
-            this.txt_58.TabIndex = 33;
+            this.txt_58.TabIndex = 32;
             // 
             // txt_34
             // 
-            this.txt_34.Location = new System.Drawing.Point(908, 237);
+            this.txt_34.Enabled = false;
+            this.txt_34.Location = new System.Drawing.Point(908, 300);
             this.txt_34.Name = "txt_34";
             this.txt_34.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_34.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_34.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_34.Size = new System.Drawing.Size(193, 20);
+            this.txt_34.Properties.Appearance.Options.UseFont = true;
+            this.txt_34.Size = new System.Drawing.Size(193, 28);
             this.txt_34.StyleController = this.layoutControl6;
-            this.txt_34.TabIndex = 31;
+            this.txt_34.TabIndex = 28;
             // 
             // txt_46
             // 
-            this.txt_46.Location = new System.Drawing.Point(422, 262);
+            this.txt_46.Enabled = false;
+            this.txt_46.Location = new System.Drawing.Point(422, 332);
             this.txt_46.Name = "txt_46";
             this.txt_46.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_46.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_46.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_46.Size = new System.Drawing.Size(136, 20);
+            this.txt_46.Properties.Appearance.Options.UseFont = true;
+            this.txt_46.Size = new System.Drawing.Size(136, 28);
             this.txt_46.StyleController = this.layoutControl6;
-            this.txt_46.TabIndex = 32;
+            this.txt_46.TabIndex = 31;
             // 
             // txt_35
             // 
-            this.txt_35.Location = new System.Drawing.Point(908, 287);
+            this.txt_35.Enabled = false;
+            this.txt_35.Location = new System.Drawing.Point(908, 364);
             this.txt_35.Name = "txt_35";
             this.txt_35.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_35.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_35.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_35.Size = new System.Drawing.Size(193, 20);
+            this.txt_35.Properties.Appearance.Options.UseFont = true;
+            this.txt_35.Size = new System.Drawing.Size(193, 28);
             this.txt_35.StyleController = this.layoutControl6;
-            this.txt_35.TabIndex = 34;
+            this.txt_35.TabIndex = 33;
             // 
             // txt_57
             // 
-            this.txt_57.Location = new System.Drawing.Point(12, 237);
+            this.txt_57.Enabled = false;
+            this.txt_57.Location = new System.Drawing.Point(12, 300);
             this.txt_57.Name = "txt_57";
             this.txt_57.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_57.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_57.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_57.Size = new System.Drawing.Size(60, 20);
+            this.txt_57.Properties.Appearance.Options.UseFont = true;
+            this.txt_57.Size = new System.Drawing.Size(60, 28);
             this.txt_57.StyleController = this.layoutControl6;
             this.txt_57.TabIndex = 30;
             // 
             // txt_45
             // 
-            this.txt_45.Location = new System.Drawing.Point(422, 237);
+            this.txt_45.Enabled = false;
+            this.txt_45.Location = new System.Drawing.Point(422, 300);
             this.txt_45.Name = "txt_45";
             this.txt_45.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_45.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_45.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_45.Size = new System.Drawing.Size(136, 20);
+            this.txt_45.Properties.Appearance.Options.UseFont = true;
+            this.txt_45.Size = new System.Drawing.Size(136, 28);
             this.txt_45.StyleController = this.layoutControl6;
             this.txt_45.TabIndex = 29;
             // 
             // txt_56
             // 
-            this.txt_56.Location = new System.Drawing.Point(12, 212);
+            this.txt_56.Enabled = false;
+            this.txt_56.Location = new System.Drawing.Point(12, 268);
             this.txt_56.Name = "txt_56";
             this.txt_56.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_56.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_56.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_56.Size = new System.Drawing.Size(60, 20);
+            this.txt_56.Properties.Appearance.Options.UseFont = true;
+            this.txt_56.Size = new System.Drawing.Size(60, 28);
             this.txt_56.StyleController = this.layoutControl6;
             this.txt_56.TabIndex = 27;
             // 
             // txt_55
             // 
-            this.txt_55.Location = new System.Drawing.Point(12, 187);
+            this.txt_55.Enabled = false;
+            this.txt_55.Location = new System.Drawing.Point(12, 236);
             this.txt_55.Name = "txt_55";
             this.txt_55.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_55.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_55.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_55.Size = new System.Drawing.Size(60, 20);
+            this.txt_55.Properties.Appearance.Options.UseFont = true;
+            this.txt_55.Size = new System.Drawing.Size(60, 28);
             this.txt_55.StyleController = this.layoutControl6;
             this.txt_55.TabIndex = 24;
             // 
             // txt_54
             // 
-            this.txt_54.Location = new System.Drawing.Point(12, 162);
+            this.txt_54.Enabled = false;
+            this.txt_54.Location = new System.Drawing.Point(12, 204);
             this.txt_54.Name = "txt_54";
             this.txt_54.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_54.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_54.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_54.Size = new System.Drawing.Size(60, 20);
+            this.txt_54.Properties.Appearance.Options.UseFont = true;
+            this.txt_54.Size = new System.Drawing.Size(60, 28);
             this.txt_54.StyleController = this.layoutControl6;
             this.txt_54.TabIndex = 21;
             // 
             // txt_53
             // 
-            this.txt_53.Location = new System.Drawing.Point(12, 137);
+            this.txt_53.Enabled = false;
+            this.txt_53.Location = new System.Drawing.Point(12, 172);
             this.txt_53.Name = "txt_53";
             this.txt_53.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_53.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_53.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_53.Size = new System.Drawing.Size(60, 20);
+            this.txt_53.Properties.Appearance.Options.UseFont = true;
+            this.txt_53.Size = new System.Drawing.Size(60, 28);
             this.txt_53.StyleController = this.layoutControl6;
             this.txt_53.TabIndex = 18;
             // 
             // txt_52
             // 
-            this.txt_52.Location = new System.Drawing.Point(12, 112);
+            this.txt_52.Enabled = false;
+            this.txt_52.Location = new System.Drawing.Point(12, 140);
             this.txt_52.Name = "txt_52";
             this.txt_52.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_52.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_52.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_52.Size = new System.Drawing.Size(60, 20);
+            this.txt_52.Properties.Appearance.Options.UseFont = true;
+            this.txt_52.Size = new System.Drawing.Size(60, 28);
             this.txt_52.StyleController = this.layoutControl6;
             this.txt_52.TabIndex = 15;
             // 
             // txt_51
             // 
-            this.txt_51.Location = new System.Drawing.Point(12, 87);
+            this.txt_51.Enabled = false;
+            this.txt_51.Location = new System.Drawing.Point(12, 108);
             this.txt_51.Name = "txt_51";
             this.txt_51.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_51.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_51.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_51.Size = new System.Drawing.Size(60, 20);
+            this.txt_51.Properties.Appearance.Options.UseFont = true;
+            this.txt_51.Size = new System.Drawing.Size(60, 28);
             this.txt_51.StyleController = this.layoutControl6;
             this.txt_51.TabIndex = 12;
             // 
             // txt_50
             // 
-            this.txt_50.Location = new System.Drawing.Point(12, 62);
+            this.txt_50.Enabled = false;
+            this.txt_50.Location = new System.Drawing.Point(12, 76);
             this.txt_50.Name = "txt_50";
             this.txt_50.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_50.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_50.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_50.Size = new System.Drawing.Size(60, 20);
+            this.txt_50.Properties.Appearance.Options.UseFont = true;
+            this.txt_50.Size = new System.Drawing.Size(60, 28);
             this.txt_50.StyleController = this.layoutControl6;
             this.txt_50.TabIndex = 9;
             // 
             // txt_49
             // 
-            this.txt_49.Location = new System.Drawing.Point(12, 37);
+            this.txt_49.Enabled = false;
+            this.txt_49.Location = new System.Drawing.Point(12, 44);
             this.txt_49.Name = "txt_49";
             this.txt_49.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_49.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_49.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_49.Size = new System.Drawing.Size(60, 20);
+            this.txt_49.Properties.Appearance.Options.UseFont = true;
+            this.txt_49.Size = new System.Drawing.Size(60, 28);
             this.txt_49.StyleController = this.layoutControl6;
             this.txt_49.TabIndex = 6;
             // 
             // txt_44
             // 
-            this.txt_44.Location = new System.Drawing.Point(422, 212);
+            this.txt_44.Enabled = false;
+            this.txt_44.Location = new System.Drawing.Point(422, 268);
             this.txt_44.Name = "txt_44";
             this.txt_44.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_44.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_44.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_44.Size = new System.Drawing.Size(136, 20);
+            this.txt_44.Properties.Appearance.Options.UseFont = true;
+            this.txt_44.Size = new System.Drawing.Size(136, 28);
             this.txt_44.StyleController = this.layoutControl6;
             this.txt_44.TabIndex = 26;
             // 
             // txt_43
             // 
-            this.txt_43.Location = new System.Drawing.Point(422, 187);
+            this.txt_43.Enabled = false;
+            this.txt_43.Location = new System.Drawing.Point(422, 236);
             this.txt_43.Name = "txt_43";
             this.txt_43.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_43.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_43.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_43.Size = new System.Drawing.Size(136, 20);
+            this.txt_43.Properties.Appearance.Options.UseFont = true;
+            this.txt_43.Size = new System.Drawing.Size(136, 28);
             this.txt_43.StyleController = this.layoutControl6;
             this.txt_43.TabIndex = 23;
             // 
             // txt_42
             // 
-            this.txt_42.Location = new System.Drawing.Point(422, 162);
+            this.txt_42.Enabled = false;
+            this.txt_42.Location = new System.Drawing.Point(422, 204);
             this.txt_42.Name = "txt_42";
             this.txt_42.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_42.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_42.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_42.Size = new System.Drawing.Size(136, 20);
+            this.txt_42.Properties.Appearance.Options.UseFont = true;
+            this.txt_42.Size = new System.Drawing.Size(136, 28);
             this.txt_42.StyleController = this.layoutControl6;
             this.txt_42.TabIndex = 20;
             // 
             // txt_41
             // 
-            this.txt_41.Location = new System.Drawing.Point(422, 137);
+            this.txt_41.Enabled = false;
+            this.txt_41.Location = new System.Drawing.Point(422, 172);
             this.txt_41.Name = "txt_41";
             this.txt_41.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_41.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_41.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_41.Size = new System.Drawing.Size(136, 20);
+            this.txt_41.Properties.Appearance.Options.UseFont = true;
+            this.txt_41.Size = new System.Drawing.Size(136, 28);
             this.txt_41.StyleController = this.layoutControl6;
             this.txt_41.TabIndex = 17;
             // 
             // txt_40
             // 
-            this.txt_40.Location = new System.Drawing.Point(422, 112);
+            this.txt_40.Enabled = false;
+            this.txt_40.Location = new System.Drawing.Point(422, 140);
             this.txt_40.Name = "txt_40";
             this.txt_40.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_40.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_40.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_40.Size = new System.Drawing.Size(136, 20);
+            this.txt_40.Properties.Appearance.Options.UseFont = true;
+            this.txt_40.Size = new System.Drawing.Size(136, 28);
             this.txt_40.StyleController = this.layoutControl6;
             this.txt_40.TabIndex = 14;
             // 
             // txt_39
             // 
-            this.txt_39.Location = new System.Drawing.Point(422, 87);
+            this.txt_39.Enabled = false;
+            this.txt_39.Location = new System.Drawing.Point(422, 108);
             this.txt_39.Name = "txt_39";
             this.txt_39.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_39.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_39.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_39.Size = new System.Drawing.Size(136, 20);
+            this.txt_39.Properties.Appearance.Options.UseFont = true;
+            this.txt_39.Size = new System.Drawing.Size(136, 28);
             this.txt_39.StyleController = this.layoutControl6;
             this.txt_39.TabIndex = 11;
             // 
             // txt_38
             // 
-            this.txt_38.Location = new System.Drawing.Point(422, 62);
+            this.txt_38.Enabled = false;
+            this.txt_38.Location = new System.Drawing.Point(422, 76);
             this.txt_38.Name = "txt_38";
             this.txt_38.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_38.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_38.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_38.Size = new System.Drawing.Size(136, 20);
+            this.txt_38.Properties.Appearance.Options.UseFont = true;
+            this.txt_38.Size = new System.Drawing.Size(136, 28);
             this.txt_38.StyleController = this.layoutControl6;
             this.txt_38.TabIndex = 8;
             // 
             // txt_26
             // 
-            this.txt_26.Location = new System.Drawing.Point(908, 37);
+            this.txt_26.Enabled = false;
+            this.txt_26.Location = new System.Drawing.Point(908, 44);
             this.txt_26.Name = "txt_26";
             this.txt_26.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_26.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_26.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_26.Size = new System.Drawing.Size(193, 20);
+            this.txt_26.Properties.Appearance.Options.UseFont = true;
+            this.txt_26.Size = new System.Drawing.Size(193, 28);
             this.txt_26.StyleController = this.layoutControl6;
             this.txt_26.TabIndex = 4;
             // 
             // txt_33
             // 
-            this.txt_33.Location = new System.Drawing.Point(908, 212);
+            this.txt_33.Enabled = false;
+            this.txt_33.Location = new System.Drawing.Point(908, 268);
             this.txt_33.Name = "txt_33";
             this.txt_33.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_33.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_33.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_33.Size = new System.Drawing.Size(193, 20);
+            this.txt_33.Properties.Appearance.Options.UseFont = true;
+            this.txt_33.Size = new System.Drawing.Size(193, 28);
             this.txt_33.StyleController = this.layoutControl6;
             this.txt_33.TabIndex = 25;
             // 
             // txt_32
             // 
-            this.txt_32.Location = new System.Drawing.Point(908, 187);
+            this.txt_32.Enabled = false;
+            this.txt_32.Location = new System.Drawing.Point(908, 236);
             this.txt_32.Name = "txt_32";
             this.txt_32.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_32.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_32.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_32.Size = new System.Drawing.Size(193, 20);
+            this.txt_32.Properties.Appearance.Options.UseFont = true;
+            this.txt_32.Size = new System.Drawing.Size(193, 28);
             this.txt_32.StyleController = this.layoutControl6;
             this.txt_32.TabIndex = 22;
             // 
             // txt_31
             // 
-            this.txt_31.Location = new System.Drawing.Point(908, 162);
+            this.txt_31.Enabled = false;
+            this.txt_31.Location = new System.Drawing.Point(908, 204);
             this.txt_31.Name = "txt_31";
             this.txt_31.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_31.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_31.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_31.Size = new System.Drawing.Size(193, 20);
+            this.txt_31.Properties.Appearance.Options.UseFont = true;
+            this.txt_31.Size = new System.Drawing.Size(193, 28);
             this.txt_31.StyleController = this.layoutControl6;
             this.txt_31.TabIndex = 19;
             // 
             // txt_30
             // 
-            this.txt_30.Location = new System.Drawing.Point(908, 137);
+            this.txt_30.Enabled = false;
+            this.txt_30.Location = new System.Drawing.Point(908, 172);
             this.txt_30.Name = "txt_30";
             this.txt_30.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_30.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_30.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_30.Size = new System.Drawing.Size(193, 20);
+            this.txt_30.Properties.Appearance.Options.UseFont = true;
+            this.txt_30.Size = new System.Drawing.Size(193, 28);
             this.txt_30.StyleController = this.layoutControl6;
             this.txt_30.TabIndex = 16;
             // 
             // txt_29
             // 
-            this.txt_29.Location = new System.Drawing.Point(908, 112);
+            this.txt_29.Enabled = false;
+            this.txt_29.Location = new System.Drawing.Point(908, 140);
             this.txt_29.Name = "txt_29";
             this.txt_29.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_29.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_29.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_29.Size = new System.Drawing.Size(193, 20);
+            this.txt_29.Properties.Appearance.Options.UseFont = true;
+            this.txt_29.Size = new System.Drawing.Size(193, 28);
             this.txt_29.StyleController = this.layoutControl6;
             this.txt_29.TabIndex = 13;
             // 
             // txt_28
             // 
-            this.txt_28.Location = new System.Drawing.Point(908, 87);
+            this.txt_28.Enabled = false;
+            this.txt_28.Location = new System.Drawing.Point(908, 108);
             this.txt_28.Name = "txt_28";
             this.txt_28.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_28.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_28.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_28.Size = new System.Drawing.Size(193, 20);
+            this.txt_28.Properties.Appearance.Options.UseFont = true;
+            this.txt_28.Size = new System.Drawing.Size(193, 28);
             this.txt_28.StyleController = this.layoutControl6;
             this.txt_28.TabIndex = 10;
             // 
             // txt_27
             // 
-            this.txt_27.Location = new System.Drawing.Point(908, 62);
+            this.txt_27.Enabled = false;
+            this.txt_27.Location = new System.Drawing.Point(908, 76);
             this.txt_27.Name = "txt_27";
             this.txt_27.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_27.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_27.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_27.Size = new System.Drawing.Size(193, 20);
+            this.txt_27.Properties.Appearance.Options.UseFont = true;
+            this.txt_27.Size = new System.Drawing.Size(193, 28);
             this.txt_27.StyleController = this.layoutControl6;
             this.txt_27.TabIndex = 7;
             // 
             // txt_37
             // 
-            this.txt_37.Location = new System.Drawing.Point(422, 37);
+            this.txt_37.Enabled = false;
+            this.txt_37.Location = new System.Drawing.Point(422, 44);
             this.txt_37.Name = "txt_37";
             this.txt_37.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_37.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_37.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_37.Size = new System.Drawing.Size(136, 20);
+            this.txt_37.Properties.Appearance.Options.UseFont = true;
+            this.txt_37.Size = new System.Drawing.Size(136, 28);
             this.txt_37.StyleController = this.layoutControl6;
             this.txt_37.TabIndex = 5;
             // 
             // txt_48
             // 
+            this.txt_48.Enabled = false;
             this.txt_48.Location = new System.Drawing.Point(12, 12);
             this.txt_48.Name = "txt_48";
             this.txt_48.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_48.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_48.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_48.Size = new System.Drawing.Size(60, 20);
+            this.txt_48.Properties.Appearance.Options.UseFont = true;
+            this.txt_48.Size = new System.Drawing.Size(60, 28);
             this.txt_48.StyleController = this.layoutControl6;
             this.txt_48.TabIndex = 3;
             // 
             // txt_36
             // 
+            this.txt_36.Enabled = false;
             this.txt_36.Location = new System.Drawing.Point(422, 12);
             this.txt_36.Name = "txt_36";
             this.txt_36.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_36.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_36.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_36.Size = new System.Drawing.Size(136, 20);
+            this.txt_36.Properties.Appearance.Options.UseFont = true;
+            this.txt_36.Size = new System.Drawing.Size(136, 28);
             this.txt_36.StyleController = this.layoutControl6;
             this.txt_36.TabIndex = 2;
             // 
             // txt_25
             // 
+            this.txt_25.Enabled = false;
             this.txt_25.Location = new System.Drawing.Point(908, 12);
             this.txt_25.Name = "txt_25";
             this.txt_25.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_25.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_25.Properties.Appearance.Options.UseBackColor = true;
-            this.txt_25.Size = new System.Drawing.Size(193, 20);
+            this.txt_25.Properties.Appearance.Options.UseFont = true;
+            this.txt_25.Size = new System.Drawing.Size(193, 28);
             this.txt_25.StyleController = this.layoutControl6;
             this.txt_25.TabIndex = 0;
             // 
@@ -2616,16 +2741,16 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem38.Control = this.txt_25;
             this.layoutControlItem38.Location = new System.Drawing.Point(896, 0);
             this.layoutControlItem38.Name = "layoutControlItem38";
-            this.layoutControlItem38.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem38.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem38.Text = "صفة حيازة المنزل";
             this.layoutControlItem38.TextSize = new System.Drawing.Size(343, 21);
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 300);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 384);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(1439, 412);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(1439, 328);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem39
@@ -2635,7 +2760,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem39.Control = this.txt_36;
             this.layoutControlItem39.Location = new System.Drawing.Point(410, 0);
             this.layoutControlItem39.Name = "layoutControlItem39";
-            this.layoutControlItem39.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem39.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem39.Text = "هل تهتم الأسرة بزراعة محيط المنزل";
             this.layoutControlItem39.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2646,7 +2771,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem40.Control = this.txt_48;
             this.layoutControlItem40.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem40.Name = "layoutControlItem40";
-            this.layoutControlItem40.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem40.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem40.Text = "المنتوجات مخصصة";
             this.layoutControlItem40.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2655,9 +2780,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem41.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem41.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem41.Control = this.txt_37;
-            this.layoutControlItem41.Location = new System.Drawing.Point(410, 25);
+            this.layoutControlItem41.Location = new System.Drawing.Point(410, 32);
             this.layoutControlItem41.Name = "layoutControlItem41";
-            this.layoutControlItem41.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem41.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem41.Text = "أهم المزروعات في محيط المنزل";
             this.layoutControlItem41.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2666,9 +2791,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem42.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem42.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem42.Control = this.txt_27;
-            this.layoutControlItem42.Location = new System.Drawing.Point(896, 50);
+            this.layoutControlItem42.Location = new System.Drawing.Point(896, 64);
             this.layoutControlItem42.Name = "layoutControlItem42";
-            this.layoutControlItem42.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem42.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem42.Text = "عدد الغرف المخصصة للنوم";
             this.layoutControlItem42.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2677,9 +2802,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem43.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem43.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem43.Control = this.txt_28;
-            this.layoutControlItem43.Location = new System.Drawing.Point(896, 75);
+            this.layoutControlItem43.Location = new System.Drawing.Point(896, 96);
             this.layoutControlItem43.Name = "layoutControlItem43";
-            this.layoutControlItem43.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem43.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem43.Text = "يوجد مطبخ منفصل";
             this.layoutControlItem43.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2688,9 +2813,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem44.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem44.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem44.Control = this.txt_29;
-            this.layoutControlItem44.Location = new System.Drawing.Point(896, 100);
+            this.layoutControlItem44.Location = new System.Drawing.Point(896, 128);
             this.layoutControlItem44.Name = "layoutControlItem44";
-            this.layoutControlItem44.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem44.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem44.Text = "مصدر مياه الشرب الرئيسي";
             this.layoutControlItem44.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2699,9 +2824,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem45.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem45.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem45.Control = this.txt_30;
-            this.layoutControlItem45.Location = new System.Drawing.Point(896, 125);
+            this.layoutControlItem45.Location = new System.Drawing.Point(896, 160);
             this.layoutControlItem45.Name = "layoutControlItem45";
-            this.layoutControlItem45.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem45.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem45.Text = " نوع خزان المياه";
             this.layoutControlItem45.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2710,9 +2835,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem46.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem46.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem46.Control = this.txt_31;
-            this.layoutControlItem46.Location = new System.Drawing.Point(896, 150);
+            this.layoutControlItem46.Location = new System.Drawing.Point(896, 192);
             this.layoutControlItem46.Name = "layoutControlItem46";
-            this.layoutControlItem46.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem46.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem46.Text = "هل يوجد وعاء لحفظ القمامة";
             this.layoutControlItem46.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2721,9 +2846,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem47.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem47.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem47.Control = this.txt_32;
-            this.layoutControlItem47.Location = new System.Drawing.Point(896, 175);
+            this.layoutControlItem47.Location = new System.Drawing.Point(896, 224);
             this.layoutControlItem47.Name = "layoutControlItem47";
-            this.layoutControlItem47.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem47.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem47.Text = " التخلص من القمامة";
             this.layoutControlItem47.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2732,9 +2857,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem48.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem48.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem48.Control = this.txt_33;
-            this.layoutControlItem48.Location = new System.Drawing.Point(896, 200);
+            this.layoutControlItem48.Location = new System.Drawing.Point(896, 256);
             this.layoutControlItem48.Name = "layoutControlItem48";
-            this.layoutControlItem48.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem48.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem48.Text = "عدد دورات مياه";
             this.layoutControlItem48.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2743,9 +2868,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem50.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem50.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem50.Control = this.txt_26;
-            this.layoutControlItem50.Location = new System.Drawing.Point(896, 25);
+            this.layoutControlItem50.Location = new System.Drawing.Point(896, 32);
             this.layoutControlItem50.Name = "layoutControlItem50";
-            this.layoutControlItem50.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem50.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem50.Text = "مادة بناء المسكن";
             this.layoutControlItem50.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2754,9 +2879,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem51.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem51.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem51.Control = this.txt_38;
-            this.layoutControlItem51.Location = new System.Drawing.Point(410, 50);
+            this.layoutControlItem51.Location = new System.Drawing.Point(410, 64);
             this.layoutControlItem51.Name = "layoutControlItem51";
-            this.layoutControlItem51.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem51.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem51.Text = "هل يوجد مستنقع أو مجرى ماء بالقرب من السكن ";
             this.layoutControlItem51.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2765,9 +2890,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem52.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem52.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem52.Control = this.txt_39;
-            this.layoutControlItem52.Location = new System.Drawing.Point(410, 75);
+            this.layoutControlItem52.Location = new System.Drawing.Point(410, 96);
             this.layoutControlItem52.Name = "layoutControlItem52";
-            this.layoutControlItem52.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem52.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem52.Text = "الأجهزة الكهربائية التي تستخدمها الأسرة";
             this.layoutControlItem52.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2776,9 +2901,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem53.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem53.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem53.Control = this.txt_40;
-            this.layoutControlItem53.Location = new System.Drawing.Point(410, 100);
+            this.layoutControlItem53.Location = new System.Drawing.Point(410, 128);
             this.layoutControlItem53.Name = "layoutControlItem53";
-            this.layoutControlItem53.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem53.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem53.Text = "هل تعاني الأسرة من الحشرات أو القوارض";
             this.layoutControlItem53.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2787,9 +2912,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem54.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem54.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem54.Control = this.txt_41;
-            this.layoutControlItem54.Location = new System.Drawing.Point(410, 125);
+            this.layoutControlItem54.Location = new System.Drawing.Point(410, 160);
             this.layoutControlItem54.Name = "layoutControlItem54";
-            this.layoutControlItem54.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem54.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem54.Text = "طريقة المكافحة";
             this.layoutControlItem54.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2798,9 +2923,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem55.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem55.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem55.Control = this.txt_42;
-            this.layoutControlItem55.Location = new System.Drawing.Point(410, 150);
+            this.layoutControlItem55.Location = new System.Drawing.Point(410, 192);
             this.layoutControlItem55.Name = "layoutControlItem55";
-            this.layoutControlItem55.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem55.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem55.Text = "مصادر دخل الأسرة";
             this.layoutControlItem55.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2809,9 +2934,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem56.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem56.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem56.Control = this.txt_43;
-            this.layoutControlItem56.Location = new System.Drawing.Point(410, 175);
+            this.layoutControlItem56.Location = new System.Drawing.Point(410, 224);
             this.layoutControlItem56.Name = "layoutControlItem56";
-            this.layoutControlItem56.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem56.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem56.Text = "متوسط إجمالي دخل الأسرة في الشهر";
             this.layoutControlItem56.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2820,9 +2945,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem57.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem57.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem57.Control = this.txt_44;
-            this.layoutControlItem57.Location = new System.Drawing.Point(410, 200);
+            this.layoutControlItem57.Location = new System.Drawing.Point(410, 256);
             this.layoutControlItem57.Name = "layoutControlItem57";
-            this.layoutControlItem57.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem57.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem57.Text = "هل يوجد بالأسرة عامل حرفي";
             this.layoutControlItem57.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2831,9 +2956,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem59.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem59.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem59.Control = this.txt_49;
-            this.layoutControlItem59.Location = new System.Drawing.Point(0, 25);
+            this.layoutControlItem59.Location = new System.Drawing.Point(0, 32);
             this.layoutControlItem59.Name = "layoutControlItem59";
-            this.layoutControlItem59.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem59.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem59.Text = "صعوبة في استغلال الأرض الزراعية";
             this.layoutControlItem59.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2842,9 +2967,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem60.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem60.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem60.Control = this.txt_50;
-            this.layoutControlItem60.Location = new System.Drawing.Point(0, 50);
+            this.layoutControlItem60.Location = new System.Drawing.Point(0, 64);
             this.layoutControlItem60.Name = "layoutControlItem60";
-            this.layoutControlItem60.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem60.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem60.Text = "هل تستعمل الأسرة أي نوع من محسنات الإنتاج الزراعي ";
             this.layoutControlItem60.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2853,9 +2978,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem61.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem61.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem61.Control = this.txt_51;
-            this.layoutControlItem61.Location = new System.Drawing.Point(0, 75);
+            this.layoutControlItem61.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem61.Name = "layoutControlItem61";
-            this.layoutControlItem61.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem61.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem61.Text = "هل تملك الأسرة أي نوع من المواشي أو الحيوانات الداجنة";
             this.layoutControlItem61.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2864,9 +2989,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem62.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem62.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem62.Control = this.txt_52;
-            this.layoutControlItem62.Location = new System.Drawing.Point(0, 100);
+            this.layoutControlItem62.Location = new System.Drawing.Point(0, 128);
             this.layoutControlItem62.Name = "layoutControlItem62";
-            this.layoutControlItem62.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem62.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem62.Text = "الحيوانات ومنتجاتها مخصصة";
             this.layoutControlItem62.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2875,9 +3000,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem63.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem63.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem63.Control = this.txt_53;
-            this.layoutControlItem63.Location = new System.Drawing.Point(0, 125);
+            this.layoutControlItem63.Location = new System.Drawing.Point(0, 160);
             this.layoutControlItem63.Name = "layoutControlItem63";
-            this.layoutControlItem63.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem63.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem63.Text = "هل تعمل الأسرة في صيد الأسماك؟";
             this.layoutControlItem63.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2886,9 +3011,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem64.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem64.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem64.Control = this.txt_54;
-            this.layoutControlItem64.Location = new System.Drawing.Point(0, 150);
+            this.layoutControlItem64.Location = new System.Drawing.Point(0, 192);
             this.layoutControlItem64.Name = "layoutControlItem64";
-            this.layoutControlItem64.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem64.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem64.Text = "صفة حيازة قارب الصيد";
             this.layoutControlItem64.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2897,9 +3022,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem65.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem65.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem65.Control = this.txt_55;
-            this.layoutControlItem65.Location = new System.Drawing.Point(0, 175);
+            this.layoutControlItem65.Location = new System.Drawing.Point(0, 224);
             this.layoutControlItem65.Name = "layoutControlItem65";
-            this.layoutControlItem65.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem65.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem65.Text = "هل تجد صعوبة في ممارسة الصيد أو الاستفادة منه ";
             this.layoutControlItem65.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2908,9 +3033,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem66.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem66.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem66.Control = this.txt_56;
-            this.layoutControlItem66.Location = new System.Drawing.Point(0, 200);
+            this.layoutControlItem66.Location = new System.Drawing.Point(0, 256);
             this.layoutControlItem66.Name = "layoutControlItem66";
-            this.layoutControlItem66.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem66.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem66.Text = "هل تقوم الأسرة بأي نشاط ذو طابع اقتصادي لم يذكر";
             this.layoutControlItem66.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2919,9 +3044,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem67.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem67.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem67.Control = this.txt_45;
-            this.layoutControlItem67.Location = new System.Drawing.Point(410, 225);
+            this.layoutControlItem67.Location = new System.Drawing.Point(410, 288);
             this.layoutControlItem67.Name = "layoutControlItem67";
-            this.layoutControlItem67.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem67.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem67.Text = "هل تملك الأسرة أراضي زراعية";
             this.layoutControlItem67.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2930,9 +3055,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem58.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem58.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem58.Control = this.txt_57;
-            this.layoutControlItem58.Location = new System.Drawing.Point(0, 225);
+            this.layoutControlItem58.Location = new System.Drawing.Point(0, 288);
             this.layoutControlItem58.Name = "layoutControlItem58";
-            this.layoutControlItem58.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem58.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem58.Text = "هل لدى الأسرة استعداد للمشاركة في تنمية القرية؟  ";
             this.layoutControlItem58.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2941,9 +3066,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem69.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem69.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem69.Control = this.txt_35;
-            this.layoutControlItem69.Location = new System.Drawing.Point(896, 275);
+            this.layoutControlItem69.Location = new System.Drawing.Point(896, 352);
             this.layoutControlItem69.Name = "layoutControlItem69";
-            this.layoutControlItem69.Size = new System.Drawing.Size(543, 25);
+            this.layoutControlItem69.Size = new System.Drawing.Size(543, 32);
             this.layoutControlItem69.Text = "تربية الحيوانات أو الطيور داخل المنزل";
             this.layoutControlItem69.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2952,9 +3077,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem70.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem70.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem70.Control = this.txt_46;
-            this.layoutControlItem70.Location = new System.Drawing.Point(410, 250);
+            this.layoutControlItem70.Location = new System.Drawing.Point(410, 320);
             this.layoutControlItem70.Name = "layoutControlItem70";
-            this.layoutControlItem70.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem70.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem70.Text = "ما نوع وسيلة الري الأساسية المستخدمة";
             this.layoutControlItem70.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2963,9 +3088,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem68.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem68.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem68.Control = this.txt_34;
-            this.layoutControlItem68.Location = new System.Drawing.Point(896, 225);
+            this.layoutControlItem68.Location = new System.Drawing.Point(896, 288);
             this.layoutControlItem68.Name = "layoutControlItem68";
-            this.layoutControlItem68.Size = new System.Drawing.Size(543, 50);
+            this.layoutControlItem68.Size = new System.Drawing.Size(543, 64);
             this.layoutControlItem68.Text = " نظام الصرف الصحي ";
             this.layoutControlItem68.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2974,9 +3099,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem71.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem71.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem71.Control = this.txt_58;
-            this.layoutControlItem71.Location = new System.Drawing.Point(0, 250);
+            this.layoutControlItem71.Location = new System.Drawing.Point(0, 320);
             this.layoutControlItem71.Name = "layoutControlItem71";
-            this.layoutControlItem71.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem71.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem71.Text = "ما وجه المشاركة";
             this.layoutControlItem71.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2985,9 +3110,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem72.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem72.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem72.Control = this.txt_47;
-            this.layoutControlItem72.Location = new System.Drawing.Point(410, 275);
+            this.layoutControlItem72.Location = new System.Drawing.Point(410, 352);
             this.layoutControlItem72.Name = "layoutControlItem72";
-            this.layoutControlItem72.Size = new System.Drawing.Size(486, 25);
+            this.layoutControlItem72.Size = new System.Drawing.Size(486, 32);
             this.layoutControlItem72.Text = "ما هو نوع المحاصيل الزراعية الأساسية؟ ";
             this.layoutControlItem72.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -2996,9 +3121,9 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem73.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem73.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem73.Control = this.txt_59;
-            this.layoutControlItem73.Location = new System.Drawing.Point(0, 275);
+            this.layoutControlItem73.Location = new System.Drawing.Point(0, 352);
             this.layoutControlItem73.Name = "layoutControlItem73";
-            this.layoutControlItem73.Size = new System.Drawing.Size(410, 25);
+            this.layoutControlItem73.Size = new System.Drawing.Size(410, 32);
             this.layoutControlItem73.Text = "الإحتياجات التنموية";
             this.layoutControlItem73.TextSize = new System.Drawing.Size(343, 21);
             // 
@@ -3034,7 +3159,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // txt_74
             // 
-            this.txt_74.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_74.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_74.Location = new System.Drawing.Point(697, 72);
             this.txt_74.Margin = new System.Windows.Forms.Padding(2);
             this.txt_74.Name = "txt_74";
@@ -3046,7 +3171,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // txt_68
             // 
-            this.txt_68.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_68.Location = new System.Drawing.Point(697, 43);
             this.txt_68.Margin = new System.Windows.Forms.Padding(2);
             this.txt_68.Name = "txt_68";
@@ -3058,7 +3183,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // txt_73
             // 
-            this.txt_73.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_73.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_73.Location = new System.Drawing.Point(14, 43);
             this.txt_73.Margin = new System.Windows.Forms.Padding(2);
             this.txt_73.Name = "txt_73";
@@ -3070,7 +3195,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // txt_60
             // 
-            this.txt_60.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_60.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_60.Location = new System.Drawing.Point(697, 14);
             this.txt_60.Margin = new System.Windows.Forms.Padding(2);
             this.txt_60.Name = "txt_60";
@@ -3082,7 +3207,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // textBox8
             // 
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(14, 14);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
@@ -3177,6 +3302,14 @@ namespace ApprovedMedicalSurvey.UI
     "؟";
             this.layoutControlItem78.TextSize = new System.Drawing.Size(529, 21);
             // 
+            // emptySpaceItem7
+            // 
+            this.emptySpaceItem7.AllowHotTrack = false;
+            this.emptySpaceItem7.Location = new System.Drawing.Point(0, 58);
+            this.emptySpaceItem7.Name = "emptySpaceItem7";
+            this.emptySpaceItem7.Size = new System.Drawing.Size(683, 29);
+            this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // tabPage11
             // 
             this.tabPage11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3269,14 +3402,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1467, 56);
             this.panel1.TabIndex = 12;
-            // 
-            // emptySpaceItem7
-            // 
-            this.emptySpaceItem7.AllowHotTrack = false;
-            this.emptySpaceItem7.Location = new System.Drawing.Point(0, 58);
-            this.emptySpaceItem7.Name = "emptySpaceItem7";
-            this.emptySpaceItem7.Size = new System.Drawing.Size(683, 29);
-            this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Surveys
             // 
@@ -3483,8 +3608,8 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem76)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
