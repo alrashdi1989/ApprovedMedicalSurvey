@@ -19,10 +19,14 @@ namespace ApprovedMedicalSurvey.UI
 {
     public partial class Scans : Form
     {
+
         public Scans()
         {
             InitializeComponent();
         }
+       
+        private FlatLightTheme mainForm = null;
+
 
         private void Scans_Load(object sender, EventArgs e)
         {
@@ -113,6 +117,7 @@ namespace ApprovedMedicalSurvey.UI
                     f.MdiParent = this.ParentForm;
                     f.Show();
                     f.Dock = DockStyle.Fill;
+                   
                 }
             }
         }

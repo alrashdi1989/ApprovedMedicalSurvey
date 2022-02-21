@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApprovedMedicalSurvey.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,9 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+
+            GlobalVariables.FormName = f.Text;
+            labelControl1.Text = GlobalVariables.FormName;
         }
 
      
@@ -65,6 +69,9 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+            GlobalVariables.FormName = f.Text;
+            labelControl1.Text = GlobalVariables.FormName;
+
             DisposeAllButThis(f);
         }
 
@@ -74,6 +81,9 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+            GlobalVariables.FormName = f.Text;
+            labelControl1.Text = GlobalVariables.FormName;
+
             DisposeAllButThis(f);
         }
 
@@ -83,6 +93,10 @@ namespace ApprovedMedicalSurvey.UI
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
+            GlobalVariables.FormName = f.Text;
+            labelControl1.Text = GlobalVariables.FormName;
+
+
             DisposeAllButThis(f);
         }
 
