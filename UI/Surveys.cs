@@ -44,7 +44,6 @@ namespace ApprovedMedicalSurvey.UI
           
             foreach (var ques in orders.operation_orders[0].response)
             {
-                //ques_count += 1;
                 ans_val = "";
                 quest_id = ques.question.id;
                 question = ques.question.name;
