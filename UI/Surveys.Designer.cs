@@ -39,12 +39,12 @@ namespace ApprovedMedicalSurvey.UI
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_14 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_147 = new System.Windows.Forms.TextBox();
+            this.txt_4 = new System.Windows.Forms.TextBox();
+            this.txt_7 = new System.Windows.Forms.TextBox();
+            this.txt_1 = new System.Windows.Forms.TextBox();
+            this.txt_200 = new System.Windows.Forms.TextBox();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -56,19 +56,19 @@ namespace ApprovedMedicalSurvey.UI
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txt_97 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_96 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_95 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_92 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_94 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_93 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_91 = new System.Windows.Forms.TextBox();
+            this.txt_90 = new System.Windows.Forms.TextBox();
+            this.txt_89 = new System.Windows.Forms.TextBox();
+            this.txt_88 = new System.Windows.Forms.TextBox();
+            this.txt_133 = new System.Windows.Forms.TextBox();
+            this.txt_87 = new System.Windows.Forms.TextBox();
+            this.txt_86 = new System.Windows.Forms.TextBox();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -86,10 +86,10 @@ namespace ApprovedMedicalSurvey.UI
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txt_115 = new System.Windows.Forms.TextBox();
+            this.txt_112 = new System.Windows.Forms.TextBox();
+            this.txt_114 = new System.Windows.Forms.TextBox();
+            this.txt_113 = new System.Windows.Forms.TextBox();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -120,10 +120,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem33 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.layoutControl5 = new DevExpress.XtraLayout.LayoutControl();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_143 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_109 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_110 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_123 = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem34 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
@@ -244,12 +244,42 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.layoutConverter1 = new DevExpress.XtraLayout.Converter.LayoutConverter(this.components);
+            this.txt_8 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem80 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_9 = new System.Windows.Forms.TextBox();
+            this.layoutControlItem79 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.txt_134 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem81 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_99 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem82 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_100 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem83 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_101 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem84 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_102 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem85 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_103 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem86 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_104 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem87 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_105 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem88 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_106 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem89 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_107 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem90 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.txt_124 = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txt_122 = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             this.layoutControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_14.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
@@ -262,12 +292,12 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_97.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_96.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_95.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_92.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_94.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_93.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -308,16 +338,18 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).BeginInit();
             this.layoutControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_143.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_109.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_110.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_123.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem37)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl6)).BeginInit();
@@ -407,6 +439,31 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem80)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_134.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_99.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_100.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_101.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_102.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem85)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_103.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem86)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_104.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem87)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_105.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem88)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_106.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem89)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_107.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -495,12 +552,14 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControl2
             // 
-            this.layoutControl2.Controls.Add(this.textEdit7);
-            this.layoutControl2.Controls.Add(this.textBox6);
-            this.layoutControl2.Controls.Add(this.textBox4);
-            this.layoutControl2.Controls.Add(this.textBox3);
-            this.layoutControl2.Controls.Add(this.textBox1);
-            this.layoutControl2.Controls.Add(this.textBox2);
+            this.layoutControl2.Controls.Add(this.txt_9);
+            this.layoutControl2.Controls.Add(this.txt_8);
+            this.layoutControl2.Controls.Add(this.txt_14);
+            this.layoutControl2.Controls.Add(this.txt_147);
+            this.layoutControl2.Controls.Add(this.txt_4);
+            this.layoutControl2.Controls.Add(this.txt_7);
+            this.layoutControl2.Controls.Add(this.txt_1);
+            this.layoutControl2.Controls.Add(this.txt_200);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl2.Location = new System.Drawing.Point(2, 2);
             this.layoutControl2.Name = "layoutControl2";
@@ -510,81 +569,76 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControl2.TabIndex = 4;
             this.layoutControl2.Text = "layoutControl2";
             // 
-            // textEdit7
+            // txt_14
             // 
-            this.textEdit7.EditValue = "سامح محمد";
-            this.textEdit7.Location = new System.Drawing.Point(12, 87);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit7.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit7.Size = new System.Drawing.Size(1330, 20);
-            this.textEdit7.StyleController = this.layoutControl2;
-            this.textEdit7.TabIndex = 4;
+            this.txt_14.EditValue = "";
+            this.txt_14.Location = new System.Drawing.Point(833, 87);
+            this.txt_14.Name = "txt_14";
+            this.txt_14.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_14.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_14.Size = new System.Drawing.Size(469, 20);
+            this.txt_14.StyleController = this.layoutControl2;
+            this.txt_14.TabIndex = 4;
             // 
-            // textBox6
+            // txt_147
             // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(12, 137);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox6.Size = new System.Drawing.Size(1330, 21);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.Text = "5";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_147.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_147.Location = new System.Drawing.Point(833, 187);
+            this.txt_147.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_147.Name = "txt_147";
+            this.txt_147.ReadOnly = true;
+            this.txt_147.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_147.Size = new System.Drawing.Size(469, 21);
+            this.txt_147.TabIndex = 8;
+            this.txt_147.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // txt_4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(12, 112);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox4.Size = new System.Drawing.Size(1330, 21);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "بلاد الشهوم";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_4.Location = new System.Drawing.Point(833, 112);
+            this.txt_4.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_4.Name = "txt_4";
+            this.txt_4.ReadOnly = true;
+            this.txt_4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_4.Size = new System.Drawing.Size(469, 21);
+            this.txt_4.TabIndex = 5;
+            this.txt_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txt_7
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 62);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox3.Size = new System.Drawing.Size(1330, 21);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "15254";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_7.Location = new System.Drawing.Point(833, 62);
+            this.txt_7.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_7.Name = "txt_7";
+            this.txt_7.ReadOnly = true;
+            this.txt_7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_7.Size = new System.Drawing.Size(469, 21);
+            this.txt_7.TabIndex = 3;
+            this.txt_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox1
+            // txt_1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(1330, 21);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "15/02/2022";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_1.Location = new System.Drawing.Point(833, 12);
+            this.txt_1.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_1.Name = "txt_1";
+            this.txt_1.ReadOnly = true;
+            this.txt_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_1.Size = new System.Drawing.Size(469, 21);
+            this.txt_1.TabIndex = 0;
+            this.txt_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox2
+            // txt_200
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 37);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(1330, 21);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "15254";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_200.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_200.Location = new System.Drawing.Point(833, 37);
+            this.txt_200.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_200.Name = "txt_200";
+            this.txt_200.ReadOnly = true;
+            this.txt_200.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_200.Size = new System.Drawing.Size(469, 21);
+            this.txt_200.TabIndex = 2;
+            this.txt_200.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // layoutControlGroup1
             // 
@@ -596,7 +650,10 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem10,
             this.layoutControlItem11,
             this.layoutControlItem12,
-            this.layoutControlItem13});
+            this.layoutControlItem13,
+            this.layoutControlItem80,
+            this.layoutControlItem79,
+            this.emptySpaceItem5});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1455, 728);
             this.layoutControlGroup1.TextVisible = false;
@@ -605,69 +662,69 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem8.Control = this.textBox1;
+            this.layoutControlItem8.Control = this.txt_1;
             this.layoutControlItem8.CustomizationFormText = "تاريخ المسح";
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Location = new System.Drawing.Point(821, 0);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(1435, 25);
+            this.layoutControlItem8.Size = new System.Drawing.Size(614, 25);
             this.layoutControlItem8.Text = "تاريخ المسح";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(138, 21);
             // 
             // layoutControlItem9
             // 
             this.layoutControlItem9.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem9.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem9.Control = this.textBox2;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 25);
+            this.layoutControlItem9.Control = this.txt_200;
+            this.layoutControlItem9.Location = new System.Drawing.Point(821, 25);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(1435, 25);
+            this.layoutControlItem9.Size = new System.Drawing.Size(614, 25);
             this.layoutControlItem9.Text = "رقم المسح";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(138, 21);
             // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem10.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem10.Control = this.textBox3;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 50);
+            this.layoutControlItem10.Control = this.txt_7;
+            this.layoutControlItem10.Location = new System.Drawing.Point(821, 50);
             this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(1435, 25);
+            this.layoutControlItem10.Size = new System.Drawing.Size(614, 25);
             this.layoutControlItem10.Text = "رقم المبنى";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(138, 21);
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem11.Control = this.textBox4;
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 100);
+            this.layoutControlItem11.Control = this.txt_4;
+            this.layoutControlItem11.Location = new System.Drawing.Point(821, 100);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(1435, 25);
+            this.layoutControlItem11.Size = new System.Drawing.Size(614, 25);
             this.layoutControlItem11.Text = "القرية";
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(138, 21);
             // 
             // layoutControlItem12
             // 
             this.layoutControlItem12.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem12.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem12.Control = this.textBox6;
+            this.layoutControlItem12.Control = this.txt_147;
             this.layoutControlItem12.CustomizationFormText = "عدد أفراد الأسرة";
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 125);
+            this.layoutControlItem12.Location = new System.Drawing.Point(821, 175);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(1435, 583);
+            this.layoutControlItem12.Size = new System.Drawing.Size(614, 533);
             this.layoutControlItem12.Text = "عدد أفراد الأسرة";
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(138, 21);
             // 
             // layoutControlItem13
             // 
             this.layoutControlItem13.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem13.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem13.Control = this.textEdit7;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 75);
+            this.layoutControlItem13.Control = this.txt_14;
+            this.layoutControlItem13.Location = new System.Drawing.Point(821, 75);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(1435, 25);
+            this.layoutControlItem13.Size = new System.Drawing.Size(614, 25);
             this.layoutControlItem13.Text = "جامع البيان";
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(98, 21);
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(138, 21);
             // 
             // tabPage2
             // 
@@ -721,19 +778,19 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.textEdit6);
-            this.layoutControl1.Controls.Add(this.textEdit5);
-            this.layoutControl1.Controls.Add(this.textEdit4);
-            this.layoutControl1.Controls.Add(this.textEdit3);
-            this.layoutControl1.Controls.Add(this.textEdit2);
-            this.layoutControl1.Controls.Add(this.textEdit1);
-            this.layoutControl1.Controls.Add(this.textBox18);
-            this.layoutControl1.Controls.Add(this.textBox17);
-            this.layoutControl1.Controls.Add(this.textBox16);
-            this.layoutControl1.Controls.Add(this.textBox7);
-            this.layoutControl1.Controls.Add(this.textBox14);
-            this.layoutControl1.Controls.Add(this.textBox15);
-            this.layoutControl1.Controls.Add(this.textBox13);
+            this.layoutControl1.Controls.Add(this.txt_97);
+            this.layoutControl1.Controls.Add(this.txt_96);
+            this.layoutControl1.Controls.Add(this.txt_95);
+            this.layoutControl1.Controls.Add(this.txt_92);
+            this.layoutControl1.Controls.Add(this.txt_94);
+            this.layoutControl1.Controls.Add(this.txt_93);
+            this.layoutControl1.Controls.Add(this.txt_91);
+            this.layoutControl1.Controls.Add(this.txt_90);
+            this.layoutControl1.Controls.Add(this.txt_89);
+            this.layoutControl1.Controls.Add(this.txt_88);
+            this.layoutControl1.Controls.Add(this.txt_133);
+            this.layoutControl1.Controls.Add(this.txt_87);
+            this.layoutControl1.Controls.Add(this.txt_86);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(2, 2);
             this.layoutControl1.Name = "layoutControl1";
@@ -743,148 +800,162 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControl1.TabIndex = 2;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // textEdit6
+            // txt_97
             // 
-            this.textEdit6.Location = new System.Drawing.Point(803, 159);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit6.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit6.Size = new System.Drawing.Size(370, 20);
-            this.textEdit6.StyleController = this.layoutControl1;
-            this.textEdit6.TabIndex = 11;
+            this.txt_97.Enabled = false;
+            this.txt_97.Location = new System.Drawing.Point(923, 188);
+            this.txt_97.Name = "txt_97";
+            this.txt_97.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_97.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_97.Size = new System.Drawing.Size(250, 20);
+            this.txt_97.StyleController = this.layoutControl1;
+            this.txt_97.TabIndex = 11;
             // 
-            // textEdit5
+            // txt_96
             // 
-            this.textEdit5.Location = new System.Drawing.Point(803, 130);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit5.Size = new System.Drawing.Size(451, 20);
-            this.textEdit5.StyleController = this.layoutControl1;
-            this.textEdit5.TabIndex = 9;
+            this.txt_96.Enabled = false;
+            this.txt_96.Location = new System.Drawing.Point(14, 159);
+            this.txt_96.Name = "txt_96";
+            this.txt_96.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_96.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_96.Size = new System.Drawing.Size(726, 20);
+            this.txt_96.StyleController = this.layoutControl1;
+            this.txt_96.TabIndex = 9;
             // 
-            // textEdit4
+            // txt_95
             // 
-            this.textEdit4.Location = new System.Drawing.Point(14, 130);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Size = new System.Drawing.Size(443, 20);
-            this.textEdit4.StyleController = this.layoutControl1;
-            this.textEdit4.TabIndex = 10;
+            this.txt_95.Enabled = false;
+            this.txt_95.Location = new System.Drawing.Point(14, 130);
+            this.txt_95.Name = "txt_95";
+            this.txt_95.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_95.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_95.Size = new System.Drawing.Size(563, 20);
+            this.txt_95.StyleController = this.layoutControl1;
+            this.txt_95.TabIndex = 10;
             // 
-            // textEdit3
+            // txt_92
             // 
-            this.textEdit3.Location = new System.Drawing.Point(14, 101);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(439, 20);
-            this.textEdit3.StyleController = this.layoutControl1;
-            this.textEdit3.TabIndex = 8;
+            this.txt_92.Enabled = false;
+            this.txt_92.Location = new System.Drawing.Point(14, 43);
+            this.txt_92.Name = "txt_92";
+            this.txt_92.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_92.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_92.Size = new System.Drawing.Size(559, 20);
+            this.txt_92.StyleController = this.layoutControl1;
+            this.txt_92.TabIndex = 8;
             // 
-            // textEdit2
+            // txt_94
             // 
-            this.textEdit2.Location = new System.Drawing.Point(801, 186);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(279, 20);
-            this.textEdit2.StyleController = this.layoutControl1;
-            this.textEdit2.TabIndex = 13;
+            this.txt_94.Enabled = false;
+            this.txt_94.Location = new System.Drawing.Point(12, 99);
+            this.txt_94.Name = "txt_94";
+            this.txt_94.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_94.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_94.Size = new System.Drawing.Size(554, 20);
+            this.txt_94.StyleController = this.layoutControl1;
+            this.txt_94.TabIndex = 13;
             // 
-            // textEdit1
+            // txt_93
             // 
-            this.textEdit1.Location = new System.Drawing.Point(14, 159);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(537, 20);
-            this.textEdit1.StyleController = this.layoutControl1;
-            this.textEdit1.TabIndex = 12;
+            this.txt_93.Enabled = false;
+            this.txt_93.Location = new System.Drawing.Point(14, 72);
+            this.txt_93.Name = "txt_93";
+            this.txt_93.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_93.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_93.Size = new System.Drawing.Size(657, 20);
+            this.txt_93.StyleController = this.layoutControl1;
+            this.txt_93.TabIndex = 12;
             // 
-            // textBox18
+            // txt_91
             // 
-            this.textBox18.Location = new System.Drawing.Point(14, 72);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(405, 21);
-            this.textBox18.TabIndex = 6;
+            this.txt_91.Enabled = false;
+            this.txt_91.Location = new System.Drawing.Point(14, 14);
+            this.txt_91.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_91.Name = "txt_91";
+            this.txt_91.ReadOnly = true;
+            this.txt_91.Size = new System.Drawing.Size(525, 21);
+            this.txt_91.TabIndex = 6;
             // 
-            // textBox17
+            // txt_90
             // 
-            this.textBox17.Location = new System.Drawing.Point(803, 14);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(193, 21);
-            this.textBox17.TabIndex = 0;
+            this.txt_90.Enabled = false;
+            this.txt_90.Location = new System.Drawing.Point(923, 159);
+            this.txt_90.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_90.Name = "txt_90";
+            this.txt_90.ReadOnly = true;
+            this.txt_90.Size = new System.Drawing.Size(73, 21);
+            this.txt_90.TabIndex = 0;
             // 
-            // textBox16
+            // txt_89
             // 
-            this.textBox16.Location = new System.Drawing.Point(803, 101);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(237, 21);
-            this.textBox16.TabIndex = 7;
+            this.txt_89.Enabled = false;
+            this.txt_89.Location = new System.Drawing.Point(923, 130);
+            this.txt_89.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_89.Name = "txt_89";
+            this.txt_89.ReadOnly = true;
+            this.txt_89.Size = new System.Drawing.Size(117, 21);
+            this.txt_89.TabIndex = 7;
             // 
-            // textBox7
+            // txt_88
             // 
-            this.textBox7.Location = new System.Drawing.Point(14, 43);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(470, 21);
-            this.textBox7.TabIndex = 4;
+            this.txt_88.Enabled = false;
+            this.txt_88.Location = new System.Drawing.Point(923, 101);
+            this.txt_88.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_88.Name = "txt_88";
+            this.txt_88.ReadOnly = true;
+            this.txt_88.Size = new System.Drawing.Size(195, 21);
+            this.txt_88.TabIndex = 4;
             // 
-            // textBox14
+            // txt_133
             // 
-            this.textBox14.Location = new System.Drawing.Point(14, 14);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(631, 21);
-            this.textBox14.TabIndex = 2;
+            this.txt_133.Enabled = false;
+            this.txt_133.Location = new System.Drawing.Point(923, 14);
+            this.txt_133.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_133.Name = "txt_133";
+            this.txt_133.ReadOnly = true;
+            this.txt_133.Size = new System.Drawing.Size(356, 21);
+            this.txt_133.TabIndex = 2;
             // 
-            // textBox15
+            // txt_87
             // 
-            this.textBox15.Location = new System.Drawing.Point(803, 72);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(538, 21);
-            this.textBox15.TabIndex = 5;
+            this.txt_87.Enabled = false;
+            this.txt_87.Location = new System.Drawing.Point(923, 72);
+            this.txt_87.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_87.Name = "txt_87";
+            this.txt_87.ReadOnly = true;
+            this.txt_87.Size = new System.Drawing.Size(418, 21);
+            this.txt_87.TabIndex = 5;
             // 
-            // textBox13
+            // txt_86
             // 
-            this.textBox13.Location = new System.Drawing.Point(803, 43);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(525, 21);
-            this.textBox13.TabIndex = 3;
+            this.txt_86.Enabled = false;
+            this.txt_86.Location = new System.Drawing.Point(923, 43);
+            this.txt_86.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_86.Name = "txt_86";
+            this.txt_86.ReadOnly = true;
+            this.txt_86.Size = new System.Drawing.Size(405, 21);
+            this.txt_86.TabIndex = 3;
             // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.Root.GroupBordersVisible = false;
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem17,
-            this.layoutControlItem2,
-            this.layoutControlItem6,
             this.layoutControlItem14,
             this.layoutControlItem15,
-            this.layoutControlItem18,
+            this.emptySpaceItem1,
+            this.layoutControlItem2,
             this.layoutControlItem16,
+            this.layoutControlItem17,
+            this.layoutControlItem18,
             this.layoutControlItem19,
             this.layoutControlItem4,
-            this.layoutControlItem3,
-            this.layoutControlItem5,
             this.layoutControlItem1,
+            this.layoutControlItem3,
+            this.layoutControlItem6,
             this.layoutControlItem7,
-            this.emptySpaceItem1});
+            this.emptySpaceItem6,
+            this.layoutControlItem5});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(1443, 501);
             this.Root.TextVisible = false;
@@ -893,11 +964,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem17.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem17.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem17.Control = this.textBox16;
-            this.layoutControlItem17.Location = new System.Drawing.Point(789, 87);
+            this.layoutControlItem17.Control = this.txt_89;
+            this.layoutControlItem17.Location = new System.Drawing.Point(909, 116);
             this.layoutControlItem17.Name = "layoutControlItem17";
             this.layoutControlItem17.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem17.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem17.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem17.Text = "هل سبق أن استخدمت أي وسيلة من وسائل المباعدة بين الولادات";
             this.layoutControlItem17.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem17.TextLocation = DevExpress.Utils.Locations.Right;
@@ -908,11 +979,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem2.Control = this.textBox14;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Control = this.txt_133;
+            this.layoutControlItem2.Location = new System.Drawing.Point(909, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem2.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem2.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem2.Text = "كم سنة مر على زواجك؟";
             this.layoutControlItem2.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem2.TextSize = new System.Drawing.Size(145, 21);
@@ -922,11 +993,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem6.Control = this.textEdit5;
-            this.layoutControlItem6.Location = new System.Drawing.Point(789, 116);
+            this.layoutControlItem6.Control = this.txt_96;
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 145);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem6.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem6.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem6.Text = "أين تمت ولادة آخر طفل لك؟";
             this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem6.TextSize = new System.Drawing.Size(170, 21);
@@ -936,11 +1007,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem14.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem14.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem14.Control = this.textBox13;
-            this.layoutControlItem14.Location = new System.Drawing.Point(789, 29);
+            this.layoutControlItem14.Control = this.txt_86;
+            this.layoutControlItem14.Location = new System.Drawing.Point(909, 29);
             this.layoutControlItem14.Name = "layoutControlItem14";
             this.layoutControlItem14.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem14.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem14.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem14.Text = "هل لديك أطفال؟";
             this.layoutControlItem14.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem14.TextLocation = DevExpress.Utils.Locations.Right;
@@ -951,11 +1022,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem15.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem15.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem15.Control = this.textBox15;
-            this.layoutControlItem15.Location = new System.Drawing.Point(789, 58);
+            this.layoutControlItem15.Control = this.txt_87;
+            this.layoutControlItem15.Location = new System.Drawing.Point(909, 58);
             this.layoutControlItem15.Name = "layoutControlItem15";
             this.layoutControlItem15.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem15.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem15.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem15.Text = "هل انت حامل";
             this.layoutControlItem15.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem15.TextLocation = DevExpress.Utils.Locations.Right;
@@ -966,11 +1037,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem18.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem18.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem18.Control = this.textBox17;
-            this.layoutControlItem18.Location = new System.Drawing.Point(789, 0);
+            this.layoutControlItem18.Control = this.txt_90;
+            this.layoutControlItem18.Location = new System.Drawing.Point(909, 145);
             this.layoutControlItem18.Name = "layoutControlItem18";
             this.layoutControlItem18.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem18.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem18.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem18.Text = "إذا لم تستعملي أي وسيلة من وسائل المباعدة بين الولادات، ما هو السبب؟";
             this.layoutControlItem18.TextLocation = DevExpress.Utils.Locations.Right;
             this.layoutControlItem18.TextSize = new System.Drawing.Size(430, 21);
@@ -979,11 +1050,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem16.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem16.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem16.Control = this.textBox7;
-            this.layoutControlItem16.Location = new System.Drawing.Point(0, 29);
+            this.layoutControlItem16.Control = this.txt_88;
+            this.layoutControlItem16.Location = new System.Drawing.Point(909, 87);
             this.layoutControlItem16.Name = "layoutControlItem16";
             this.layoutControlItem16.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem16.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem16.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem16.Text = "ما هو الفاصل الزمني بين هذا الحمل والحمل السابق";
             this.layoutControlItem16.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem16.TextLocation = DevExpress.Utils.Locations.Right;
@@ -994,11 +1065,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem19.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem19.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem19.Control = this.textBox18;
-            this.layoutControlItem19.Location = new System.Drawing.Point(0, 58);
+            this.layoutControlItem19.Control = this.txt_91;
+            this.layoutControlItem19.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem19.Name = "layoutControlItem19";
             this.layoutControlItem19.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem19.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem19.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem19.Text = "هل تستخدمي حاليا أي وسيلة من وسائل المباعدة بين الولادات؟";
             this.layoutControlItem19.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem19.TextLocation = DevExpress.Utils.Locations.Right;
@@ -1009,11 +1080,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem4.Control = this.textEdit3;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 87);
+            this.layoutControlItem4.Control = this.txt_92;
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 29);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem4.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem4.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem4.Text = "كم مرة تمت مراجعة عيادة الحوامل خلال الحمل الأخير؟ ";
             this.layoutControlItem4.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem4.TextSize = new System.Drawing.Size(337, 21);
@@ -1023,10 +1094,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem3.Control = this.textEdit2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(789, 174);
+            this.layoutControlItem3.Control = this.txt_94;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 87);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(634, 307);
+            this.layoutControlItem3.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem3.Text = "هل تم تطعيمك ضد الكزاز (التيتانوس) بجرعتين أو أكثر؟ ";
             this.layoutControlItem3.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem3.TextSize = new System.Drawing.Size(346, 21);
@@ -1036,11 +1107,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem5.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem5.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem5.Control = this.textEdit4;
+            this.layoutControlItem5.Control = this.txt_95;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 116);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem5.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem5.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem5.Text = "هل تم تشخيصك بالإصابة بفقر الدم خلال الحمل الأخير؟";
             this.layoutControlItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(333, 21);
@@ -1050,11 +1121,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.Control = this.textEdit1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 145);
+            this.layoutControlItem1.Control = this.txt_93;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 58);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem1.Size = new System.Drawing.Size(789, 29);
+            this.layoutControlItem1.Size = new System.Drawing.Size(909, 29);
             this.layoutControlItem1.Text = "إذا لم تتم متابعتك ما هو السبب الرئيسي؟";
             this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem1.TextSize = new System.Drawing.Size(239, 21);
@@ -1064,11 +1135,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem7.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem7.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem7.Control = this.textEdit6;
-            this.layoutControlItem7.Location = new System.Drawing.Point(789, 145);
+            this.layoutControlItem7.Control = this.txt_97;
+            this.layoutControlItem7.Location = new System.Drawing.Point(909, 174);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Padding = new DevExpress.XtraLayout.Utils.Padding(4, 4, 4, 4);
-            this.layoutControlItem7.Size = new System.Drawing.Size(634, 29);
+            this.layoutControlItem7.Size = new System.Drawing.Size(514, 29);
             this.layoutControlItem7.Text = "هل راجعت المؤسسة الصحية بعد الولادة؟ ";
             this.layoutControlItem7.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(251, 21);
@@ -1077,9 +1148,9 @@ namespace ApprovedMedicalSurvey.UI
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 174);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 203);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(789, 307);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1423, 278);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // tabPage5
@@ -1098,10 +1169,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControl3
             // 
-            this.layoutControl3.Controls.Add(this.textBox21);
-            this.layoutControl3.Controls.Add(this.textBox22);
-            this.layoutControl3.Controls.Add(this.textBox20);
-            this.layoutControl3.Controls.Add(this.textBox19);
+            this.layoutControl3.Controls.Add(this.txt_115);
+            this.layoutControl3.Controls.Add(this.txt_112);
+            this.layoutControl3.Controls.Add(this.txt_114);
+            this.layoutControl3.Controls.Add(this.txt_113);
             this.layoutControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl3.Location = new System.Drawing.Point(2, 2);
             this.layoutControl3.Name = "layoutControl3";
@@ -1111,53 +1182,57 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControl3.TabIndex = 5;
             this.layoutControl3.Text = "layoutControl3";
             // 
-            // textBox21
+            // txt_115
             // 
-            this.textBox21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(12, 37);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox21.Size = new System.Drawing.Size(430, 21);
-            this.textBox21.TabIndex = 4;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_115.Enabled = false;
+            this.txt_115.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_115.Location = new System.Drawing.Point(12, 37);
+            this.txt_115.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_115.Name = "txt_115";
+            this.txt_115.ReadOnly = true;
+            this.txt_115.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_115.Size = new System.Drawing.Size(430, 21);
+            this.txt_115.TabIndex = 4;
+            this.txt_115.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox22
+            // txt_112
             // 
-            this.textBox22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(723, 12);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox22.Size = new System.Drawing.Size(431, 21);
-            this.textBox22.TabIndex = 0;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_112.Enabled = false;
+            this.txt_112.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_112.Location = new System.Drawing.Point(723, 12);
+            this.txt_112.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_112.Name = "txt_112";
+            this.txt_112.ReadOnly = true;
+            this.txt_112.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_112.Size = new System.Drawing.Size(431, 21);
+            this.txt_112.TabIndex = 0;
+            this.txt_112.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox20
+            // txt_114
             // 
-            this.textBox20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(723, 37);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox20.Size = new System.Drawing.Size(431, 21);
-            this.textBox20.TabIndex = 3;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_114.Enabled = false;
+            this.txt_114.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_114.Location = new System.Drawing.Point(723, 37);
+            this.txt_114.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_114.Name = "txt_114";
+            this.txt_114.ReadOnly = true;
+            this.txt_114.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_114.Size = new System.Drawing.Size(431, 21);
+            this.txt_114.TabIndex = 3;
+            this.txt_114.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox19
+            // txt_113
             // 
-            this.textBox19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(12, 12);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox19.Size = new System.Drawing.Size(430, 21);
-            this.textBox19.TabIndex = 2;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_113.Enabled = false;
+            this.txt_113.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_113.Location = new System.Drawing.Point(12, 12);
+            this.txt_113.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_113.Name = "txt_113";
+            this.txt_113.ReadOnly = true;
+            this.txt_113.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_113.Size = new System.Drawing.Size(430, 21);
+            this.txt_113.TabIndex = 2;
+            this.txt_113.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // layoutControlGroup2
             // 
@@ -1176,7 +1251,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem26.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem26.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem26.Control = this.textBox22;
+            this.layoutControlItem26.Control = this.txt_112;
             this.layoutControlItem26.Location = new System.Drawing.Point(711, 0);
             this.layoutControlItem26.Name = "layoutControlItem26";
             this.layoutControlItem26.Size = new System.Drawing.Size(712, 25);
@@ -1187,7 +1262,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem21.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem21.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem21.Control = this.textBox19;
+            this.layoutControlItem21.Control = this.txt_113;
             this.layoutControlItem21.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem21.Name = "layoutControlItem21";
             this.layoutControlItem21.Size = new System.Drawing.Size(711, 25);
@@ -1198,7 +1273,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem22.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem22.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem22.Control = this.textBox20;
+            this.layoutControlItem22.Control = this.txt_114;
             this.layoutControlItem22.Location = new System.Drawing.Point(711, 25);
             this.layoutControlItem22.Name = "layoutControlItem22";
             this.layoutControlItem22.Size = new System.Drawing.Size(712, 456);
@@ -1209,7 +1284,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem27.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem27.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem27.Control = this.textBox21;
+            this.layoutControlItem27.Control = this.txt_115;
             this.layoutControlItem27.Location = new System.Drawing.Point(0, 25);
             this.layoutControlItem27.Name = "layoutControlItem27";
             this.layoutControlItem27.Size = new System.Drawing.Size(711, 456);
@@ -1231,6 +1306,16 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControl4
             // 
+            this.layoutControl4.Controls.Add(this.txt_107);
+            this.layoutControl4.Controls.Add(this.txt_106);
+            this.layoutControl4.Controls.Add(this.txt_105);
+            this.layoutControl4.Controls.Add(this.txt_104);
+            this.layoutControl4.Controls.Add(this.txt_103);
+            this.layoutControl4.Controls.Add(this.txt_102);
+            this.layoutControl4.Controls.Add(this.txt_101);
+            this.layoutControl4.Controls.Add(this.txt_100);
+            this.layoutControl4.Controls.Add(this.txt_99);
+            this.layoutControl4.Controls.Add(this.txt_134);
             this.layoutControl4.Controls.Add(this.label71);
             this.layoutControl4.Controls.Add(this.label70);
             this.layoutControl4.Controls.Add(this.label69);
@@ -1253,100 +1338,100 @@ namespace ApprovedMedicalSurvey.UI
             // label71
             // 
             this.label71.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(12, 389);
+            this.label71.Location = new System.Drawing.Point(417, 108);
             this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(709, 104);
+            this.label71.Size = new System.Drawing.Size(304, 385);
             this.label71.TabIndex = 0;
             this.label71.Text = "هل يعاني الطفل من نقص في النمو";
             // 
             // label70
             // 
             this.label70.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(12, 281);
+            this.label70.Location = new System.Drawing.Point(417, 84);
             this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(709, 104);
+            this.label70.Size = new System.Drawing.Size(304, 20);
             this.label70.TabIndex = 0;
             this.label70.Text = "هل تم تشخيص الإصابة بسوء التغذية (نقص الوزن) للطفل؟";
             // 
             // label69
             // 
             this.label69.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(12, 201);
+            this.label69.Location = new System.Drawing.Point(417, 60);
             this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(709, 76);
+            this.label69.Size = new System.Drawing.Size(304, 20);
             this.label69.TabIndex = 0;
             this.label69.Text = "هل تم تشخيص فقر الدم(أنيميا) للطفل؟";
             // 
             // label66
             // 
             this.label66.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(725, 389);
+            this.label66.Location = new System.Drawing.Point(1082, 108);
             this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(710, 104);
+            this.label66.Size = new System.Drawing.Size(353, 385);
             this.label66.TabIndex = 0;
             this.label66.Text = "هل تتم مراجعة المركز الصحي لمعرفة معدل نمو الطفل؟";
             // 
             // label68
             // 
             this.label68.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(12, 111);
+            this.label68.Location = new System.Drawing.Point(417, 36);
             this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(709, 86);
+            this.label68.Size = new System.Drawing.Size(304, 20);
             this.label68.TabIndex = 0;
             this.label68.Text = "هل أصيب طفلك بالتهاب الجهاز التنفسي خلال الأسبوعين الماضيين؟";
             // 
             // label67
             // 
             this.label67.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(12, 12);
+            this.label67.Location = new System.Drawing.Point(417, 12);
             this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(709, 95);
+            this.label67.Size = new System.Drawing.Size(304, 20);
             this.label67.TabIndex = 0;
             this.label67.Text = "هل أصيب طفلك بالإسهال خلال الأسبوعين الماضيين؟";
             // 
             // label62
             // 
             this.label62.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(725, 12);
+            this.label62.Location = new System.Drawing.Point(1082, 12);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(710, 95);
+            this.label62.Size = new System.Drawing.Size(353, 20);
             this.label62.TabIndex = 0;
             this.label62.Text = "ما هو نوع الإرضاع خلال الشهور الستة الأولى؟";
             // 
             // label65
             // 
             this.label65.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(725, 281);
+            this.label65.Location = new System.Drawing.Point(1082, 84);
             this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(710, 104);
+            this.label65.Size = new System.Drawing.Size(353, 20);
             this.label65.TabIndex = 0;
             this.label65.Text = "هل كان طفلك ناقص الوزن (اقل من 2.5كج) عند الولادة؟";
             // 
             // label63
             // 
             this.label63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(725, 111);
+            this.label63.Location = new System.Drawing.Point(1082, 36);
             this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(710, 86);
+            this.label63.Size = new System.Drawing.Size(353, 20);
             this.label63.TabIndex = 0;
             this.label63.Text = "ما عمر الطفل عندما بدأ تناوله الأطعمة المكملة؟";
             // 
             // label64
             // 
             this.label64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(725, 201);
+            this.label64.Location = new System.Drawing.Point(1082, 60);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(710, 76);
+            this.label64.Size = new System.Drawing.Size(353, 20);
             this.label64.TabIndex = 0;
             this.label64.Text = "هل تم تطعيمه ضد الأمراض المستهدفة بصفة منتظمة ";
             // 
@@ -1364,7 +1449,17 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem30,
             this.layoutControlItem31,
             this.layoutControlItem32,
-            this.layoutControlItem33});
+            this.layoutControlItem33,
+            this.layoutControlItem81,
+            this.layoutControlItem82,
+            this.layoutControlItem83,
+            this.layoutControlItem84,
+            this.layoutControlItem85,
+            this.layoutControlItem86,
+            this.layoutControlItem87,
+            this.layoutControlItem88,
+            this.layoutControlItem89,
+            this.layoutControlItem90});
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(1447, 505);
             this.layoutControlGroup3.TextVisible = false;
@@ -1372,90 +1467,90 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem20
             // 
             this.layoutControlItem20.Control = this.label62;
-            this.layoutControlItem20.Location = new System.Drawing.Point(713, 0);
+            this.layoutControlItem20.Location = new System.Drawing.Point(1070, 0);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(714, 99);
+            this.layoutControlItem20.Size = new System.Drawing.Size(357, 24);
             this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem20.TextVisible = false;
             // 
             // layoutControlItem23
             // 
             this.layoutControlItem23.Control = this.label63;
-            this.layoutControlItem23.Location = new System.Drawing.Point(713, 99);
+            this.layoutControlItem23.Location = new System.Drawing.Point(1070, 24);
             this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(714, 90);
+            this.layoutControlItem23.Size = new System.Drawing.Size(357, 24);
             this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem23.TextVisible = false;
             // 
             // layoutControlItem24
             // 
             this.layoutControlItem24.Control = this.label64;
-            this.layoutControlItem24.Location = new System.Drawing.Point(713, 189);
+            this.layoutControlItem24.Location = new System.Drawing.Point(1070, 48);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(714, 80);
+            this.layoutControlItem24.Size = new System.Drawing.Size(357, 24);
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem24.TextVisible = false;
             // 
             // layoutControlItem25
             // 
             this.layoutControlItem25.Control = this.label65;
-            this.layoutControlItem25.Location = new System.Drawing.Point(713, 269);
+            this.layoutControlItem25.Location = new System.Drawing.Point(1070, 72);
             this.layoutControlItem25.Name = "layoutControlItem25";
-            this.layoutControlItem25.Size = new System.Drawing.Size(714, 108);
+            this.layoutControlItem25.Size = new System.Drawing.Size(357, 24);
             this.layoutControlItem25.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem25.TextVisible = false;
             // 
             // layoutControlItem28
             // 
             this.layoutControlItem28.Control = this.label66;
-            this.layoutControlItem28.Location = new System.Drawing.Point(713, 377);
+            this.layoutControlItem28.Location = new System.Drawing.Point(1070, 96);
             this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(714, 108);
+            this.layoutControlItem28.Size = new System.Drawing.Size(357, 389);
             this.layoutControlItem28.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem28.TextVisible = false;
             // 
             // layoutControlItem29
             // 
             this.layoutControlItem29.Control = this.label67;
-            this.layoutControlItem29.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem29.Location = new System.Drawing.Point(405, 0);
             this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(713, 99);
+            this.layoutControlItem29.Size = new System.Drawing.Size(308, 24);
             this.layoutControlItem29.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem29.TextVisible = false;
             // 
             // layoutControlItem30
             // 
             this.layoutControlItem30.Control = this.label68;
-            this.layoutControlItem30.Location = new System.Drawing.Point(0, 99);
+            this.layoutControlItem30.Location = new System.Drawing.Point(405, 24);
             this.layoutControlItem30.Name = "layoutControlItem30";
-            this.layoutControlItem30.Size = new System.Drawing.Size(713, 90);
+            this.layoutControlItem30.Size = new System.Drawing.Size(308, 24);
             this.layoutControlItem30.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem30.TextVisible = false;
             // 
             // layoutControlItem31
             // 
             this.layoutControlItem31.Control = this.label69;
-            this.layoutControlItem31.Location = new System.Drawing.Point(0, 189);
+            this.layoutControlItem31.Location = new System.Drawing.Point(405, 48);
             this.layoutControlItem31.Name = "layoutControlItem31";
-            this.layoutControlItem31.Size = new System.Drawing.Size(713, 80);
+            this.layoutControlItem31.Size = new System.Drawing.Size(308, 24);
             this.layoutControlItem31.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem31.TextVisible = false;
             // 
             // layoutControlItem32
             // 
             this.layoutControlItem32.Control = this.label70;
-            this.layoutControlItem32.Location = new System.Drawing.Point(0, 269);
+            this.layoutControlItem32.Location = new System.Drawing.Point(405, 72);
             this.layoutControlItem32.Name = "layoutControlItem32";
-            this.layoutControlItem32.Size = new System.Drawing.Size(713, 108);
+            this.layoutControlItem32.Size = new System.Drawing.Size(308, 24);
             this.layoutControlItem32.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem32.TextVisible = false;
             // 
             // layoutControlItem33
             // 
             this.layoutControlItem33.Control = this.label71;
-            this.layoutControlItem33.Location = new System.Drawing.Point(0, 377);
+            this.layoutControlItem33.Location = new System.Drawing.Point(405, 96);
             this.layoutControlItem33.Name = "layoutControlItem33";
-            this.layoutControlItem33.Size = new System.Drawing.Size(713, 108);
+            this.layoutControlItem33.Size = new System.Drawing.Size(308, 389);
             this.layoutControlItem33.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem33.TextVisible = false;
             // 
@@ -1474,10 +1569,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControl5
             // 
-            this.layoutControl5.Controls.Add(this.textEdit11);
-            this.layoutControl5.Controls.Add(this.textEdit10);
-            this.layoutControl5.Controls.Add(this.textEdit9);
-            this.layoutControl5.Controls.Add(this.textEdit8);
+            this.layoutControl5.Controls.Add(this.txt_143);
+            this.layoutControl5.Controls.Add(this.txt_109);
+            this.layoutControl5.Controls.Add(this.txt_110);
+            this.layoutControl5.Controls.Add(this.txt_123);
             this.layoutControl5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl5.Location = new System.Drawing.Point(0, 0);
             this.layoutControl5.Name = "layoutControl5";
@@ -1487,45 +1582,49 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControl5.TabIndex = 1;
             this.layoutControl5.Text = "layoutControl5";
             // 
-            // textEdit11
+            // txt_143
             // 
-            this.textEdit11.Location = new System.Drawing.Point(16, 49);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit11.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit11.Size = new System.Drawing.Size(382, 20);
-            this.textEdit11.StyleController = this.layoutControl5;
-            this.textEdit11.TabIndex = 4;
+            this.txt_143.Enabled = false;
+            this.txt_143.Location = new System.Drawing.Point(16, 49);
+            this.txt_143.Name = "txt_143";
+            this.txt_143.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_143.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_143.Size = new System.Drawing.Size(382, 20);
+            this.txt_143.StyleController = this.layoutControl5;
+            this.txt_143.TabIndex = 4;
             // 
-            // textEdit10
+            // txt_109
             // 
-            this.textEdit10.Location = new System.Drawing.Point(729, 49);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit10.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit10.Size = new System.Drawing.Size(383, 20);
-            this.textEdit10.StyleController = this.layoutControl5;
-            this.textEdit10.TabIndex = 3;
+            this.txt_109.Enabled = false;
+            this.txt_109.Location = new System.Drawing.Point(729, 49);
+            this.txt_109.Name = "txt_109";
+            this.txt_109.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_109.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_109.Size = new System.Drawing.Size(383, 20);
+            this.txt_109.StyleController = this.layoutControl5;
+            this.txt_109.TabIndex = 3;
             // 
-            // textEdit9
+            // txt_110
             // 
-            this.textEdit9.Location = new System.Drawing.Point(16, 16);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit9.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit9.Size = new System.Drawing.Size(382, 20);
-            this.textEdit9.StyleController = this.layoutControl5;
-            this.textEdit9.TabIndex = 2;
+            this.txt_110.Enabled = false;
+            this.txt_110.Location = new System.Drawing.Point(16, 16);
+            this.txt_110.Name = "txt_110";
+            this.txt_110.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_110.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_110.Size = new System.Drawing.Size(382, 20);
+            this.txt_110.StyleController = this.layoutControl5;
+            this.txt_110.TabIndex = 2;
             // 
-            // textEdit8
+            // txt_123
             // 
-            this.textEdit8.Location = new System.Drawing.Point(729, 16);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.textEdit8.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit8.Size = new System.Drawing.Size(383, 20);
-            this.textEdit8.StyleController = this.layoutControl5;
-            this.textEdit8.TabIndex = 0;
+            this.txt_123.Enabled = false;
+            this.txt_123.Location = new System.Drawing.Point(729, 16);
+            this.txt_123.Name = "txt_123";
+            this.txt_123.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_123.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_123.Size = new System.Drawing.Size(383, 20);
+            this.txt_123.StyleController = this.layoutControl5;
+            this.txt_123.TabIndex = 0;
             // 
             // layoutControlGroup4
             // 
@@ -1545,7 +1644,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem34.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem34.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem34.Control = this.textEdit8;
+            this.layoutControlItem34.Control = this.txt_123;
             this.layoutControlItem34.Location = new System.Drawing.Point(713, 0);
             this.layoutControlItem34.Name = "layoutControlItem34";
             this.layoutControlItem34.Size = new System.Drawing.Size(714, 33);
@@ -1565,7 +1664,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem36.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem36.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem36.Control = this.textEdit10;
+            this.layoutControlItem36.Control = this.txt_109;
             this.layoutControlItem36.Location = new System.Drawing.Point(713, 33);
             this.layoutControlItem36.Name = "layoutControlItem36";
             this.layoutControlItem36.Size = new System.Drawing.Size(714, 33);
@@ -1577,7 +1676,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem35.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem35.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem35.Control = this.textEdit9;
+            this.layoutControlItem35.Control = this.txt_110;
             this.layoutControlItem35.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem35.Name = "layoutControlItem35";
             this.layoutControlItem35.Size = new System.Drawing.Size(713, 33);
@@ -1589,7 +1688,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.layoutControlItem37.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem37.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem37.Control = this.textEdit11;
+            this.layoutControlItem37.Control = this.txt_143;
             this.layoutControlItem37.Location = new System.Drawing.Point(0, 33);
             this.layoutControlItem37.Name = "layoutControlItem37";
             this.layoutControlItem37.Size = new System.Drawing.Size(713, 33);
@@ -1599,6 +1698,8 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.txt_124);
+            this.tabPage8.Controls.Add(this.label80);
             this.tabPage8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage8.ImageKey = "heart-problem.png";
             this.tabPage8.Location = new System.Drawing.Point(4, 37);
@@ -1611,6 +1712,8 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.label29);
+            this.tabPage9.Controls.Add(this.txt_122);
             this.tabPage9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage9.ImageKey = "smoking.png";
             this.tabPage9.Location = new System.Drawing.Point(4, 37);
@@ -2882,6 +2985,303 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Size = new System.Drawing.Size(1467, 56);
             this.panel1.TabIndex = 12;
             // 
+            // txt_8
+            // 
+            this.txt_8.Enabled = false;
+            this.txt_8.Location = new System.Drawing.Point(833, 137);
+            this.txt_8.Name = "txt_8";
+            this.txt_8.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_8.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_8.Size = new System.Drawing.Size(469, 20);
+            this.txt_8.StyleController = this.layoutControl2;
+            this.txt_8.TabIndex = 6;
+            // 
+            // layoutControlItem80
+            // 
+            this.layoutControlItem80.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem80.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem80.Control = this.txt_8;
+            this.layoutControlItem80.Location = new System.Drawing.Point(821, 125);
+            this.layoutControlItem80.Name = "layoutControlItem80";
+            this.layoutControlItem80.Size = new System.Drawing.Size(614, 25);
+            this.layoutControlItem80.Text = "اسم رب الأسرة";
+            this.layoutControlItem80.TextSize = new System.Drawing.Size(138, 21);
+            // 
+            // txt_9
+            // 
+            this.txt_9.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_9.Location = new System.Drawing.Point(833, 162);
+            this.txt_9.Name = "txt_9";
+            this.txt_9.Size = new System.Drawing.Size(469, 21);
+            this.txt_9.TabIndex = 7;
+            // 
+            // layoutControlItem79
+            // 
+            this.layoutControlItem79.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem79.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem79.Control = this.txt_9;
+            this.layoutControlItem79.Location = new System.Drawing.Point(821, 150);
+            this.layoutControlItem79.Name = "layoutControlItem79";
+            this.layoutControlItem79.Size = new System.Drawing.Size(614, 25);
+            this.layoutControlItem79.Text = "الشخص الذي تم مقابلته";
+            this.layoutControlItem79.TextSize = new System.Drawing.Size(138, 21);
+            // 
+            // emptySpaceItem5
+            // 
+            this.emptySpaceItem5.AllowHotTrack = false;
+            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 0);
+            this.emptySpaceItem5.Name = "emptySpaceItem5";
+            this.emptySpaceItem5.Size = new System.Drawing.Size(821, 708);
+            this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem6
+            // 
+            this.emptySpaceItem6.AllowHotTrack = false;
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 174);
+            this.emptySpaceItem6.Name = "emptySpaceItem6";
+            this.emptySpaceItem6.Size = new System.Drawing.Size(909, 29);
+            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // txt_134
+            // 
+            this.txt_134.Enabled = false;
+            this.txt_134.Location = new System.Drawing.Point(725, 12);
+            this.txt_134.Name = "txt_134";
+            this.txt_134.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_134.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_134.Size = new System.Drawing.Size(353, 20);
+            this.txt_134.StyleController = this.layoutControl4;
+            this.txt_134.TabIndex = 4;
+            // 
+            // layoutControlItem81
+            // 
+            this.layoutControlItem81.Control = this.txt_134;
+            this.layoutControlItem81.Location = new System.Drawing.Point(713, 0);
+            this.layoutControlItem81.Name = "layoutControlItem81";
+            this.layoutControlItem81.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem81.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem81.TextVisible = false;
+            // 
+            // txt_99
+            // 
+            this.txt_99.Enabled = false;
+            this.txt_99.Location = new System.Drawing.Point(725, 36);
+            this.txt_99.Name = "txt_99";
+            this.txt_99.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_99.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_99.Size = new System.Drawing.Size(353, 20);
+            this.txt_99.StyleController = this.layoutControl4;
+            this.txt_99.TabIndex = 5;
+            // 
+            // layoutControlItem82
+            // 
+            this.layoutControlItem82.Control = this.txt_99;
+            this.layoutControlItem82.Location = new System.Drawing.Point(713, 24);
+            this.layoutControlItem82.Name = "layoutControlItem82";
+            this.layoutControlItem82.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem82.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem82.TextVisible = false;
+            // 
+            // txt_100
+            // 
+            this.txt_100.Enabled = false;
+            this.txt_100.Location = new System.Drawing.Point(725, 60);
+            this.txt_100.Name = "txt_100";
+            this.txt_100.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_100.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_100.Size = new System.Drawing.Size(353, 20);
+            this.txt_100.StyleController = this.layoutControl4;
+            this.txt_100.TabIndex = 6;
+            // 
+            // layoutControlItem83
+            // 
+            this.layoutControlItem83.Control = this.txt_100;
+            this.layoutControlItem83.Location = new System.Drawing.Point(713, 48);
+            this.layoutControlItem83.Name = "layoutControlItem83";
+            this.layoutControlItem83.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem83.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem83.TextVisible = false;
+            // 
+            // txt_101
+            // 
+            this.txt_101.Enabled = false;
+            this.txt_101.Location = new System.Drawing.Point(725, 84);
+            this.txt_101.Name = "txt_101";
+            this.txt_101.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_101.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_101.Size = new System.Drawing.Size(353, 20);
+            this.txt_101.StyleController = this.layoutControl4;
+            this.txt_101.TabIndex = 7;
+            // 
+            // layoutControlItem84
+            // 
+            this.layoutControlItem84.Control = this.txt_101;
+            this.layoutControlItem84.Location = new System.Drawing.Point(713, 72);
+            this.layoutControlItem84.Name = "layoutControlItem84";
+            this.layoutControlItem84.Size = new System.Drawing.Size(357, 24);
+            this.layoutControlItem84.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem84.TextVisible = false;
+            // 
+            // txt_102
+            // 
+            this.txt_102.Enabled = false;
+            this.txt_102.Location = new System.Drawing.Point(725, 108);
+            this.txt_102.Name = "txt_102";
+            this.txt_102.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_102.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_102.Size = new System.Drawing.Size(353, 20);
+            this.txt_102.StyleController = this.layoutControl4;
+            this.txt_102.TabIndex = 8;
+            // 
+            // layoutControlItem85
+            // 
+            this.layoutControlItem85.Control = this.txt_102;
+            this.layoutControlItem85.Location = new System.Drawing.Point(713, 96);
+            this.layoutControlItem85.Name = "layoutControlItem85";
+            this.layoutControlItem85.Size = new System.Drawing.Size(357, 389);
+            this.layoutControlItem85.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem85.TextVisible = false;
+            // 
+            // txt_103
+            // 
+            this.txt_103.Enabled = false;
+            this.txt_103.Location = new System.Drawing.Point(12, 12);
+            this.txt_103.Name = "txt_103";
+            this.txt_103.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_103.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_103.Size = new System.Drawing.Size(401, 20);
+            this.txt_103.StyleController = this.layoutControl4;
+            this.txt_103.TabIndex = 9;
+            // 
+            // layoutControlItem86
+            // 
+            this.layoutControlItem86.Control = this.txt_103;
+            this.layoutControlItem86.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem86.Name = "layoutControlItem86";
+            this.layoutControlItem86.Size = new System.Drawing.Size(405, 24);
+            this.layoutControlItem86.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem86.TextVisible = false;
+            // 
+            // txt_104
+            // 
+            this.txt_104.Enabled = false;
+            this.txt_104.Location = new System.Drawing.Point(12, 36);
+            this.txt_104.Name = "txt_104";
+            this.txt_104.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_104.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_104.Size = new System.Drawing.Size(401, 20);
+            this.txt_104.StyleController = this.layoutControl4;
+            this.txt_104.TabIndex = 10;
+            // 
+            // layoutControlItem87
+            // 
+            this.layoutControlItem87.Control = this.txt_104;
+            this.layoutControlItem87.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem87.Name = "layoutControlItem87";
+            this.layoutControlItem87.Size = new System.Drawing.Size(405, 24);
+            this.layoutControlItem87.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem87.TextVisible = false;
+            // 
+            // txt_105
+            // 
+            this.txt_105.Enabled = false;
+            this.txt_105.Location = new System.Drawing.Point(12, 60);
+            this.txt_105.Name = "txt_105";
+            this.txt_105.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_105.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_105.Size = new System.Drawing.Size(401, 20);
+            this.txt_105.StyleController = this.layoutControl4;
+            this.txt_105.TabIndex = 11;
+            // 
+            // layoutControlItem88
+            // 
+            this.layoutControlItem88.Control = this.txt_105;
+            this.layoutControlItem88.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem88.Name = "layoutControlItem88";
+            this.layoutControlItem88.Size = new System.Drawing.Size(405, 24);
+            this.layoutControlItem88.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem88.TextVisible = false;
+            // 
+            // txt_106
+            // 
+            this.txt_106.Enabled = false;
+            this.txt_106.Location = new System.Drawing.Point(12, 84);
+            this.txt_106.Name = "txt_106";
+            this.txt_106.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_106.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_106.Size = new System.Drawing.Size(401, 20);
+            this.txt_106.StyleController = this.layoutControl4;
+            this.txt_106.TabIndex = 12;
+            // 
+            // layoutControlItem89
+            // 
+            this.layoutControlItem89.Control = this.txt_106;
+            this.layoutControlItem89.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem89.Name = "layoutControlItem89";
+            this.layoutControlItem89.Size = new System.Drawing.Size(405, 24);
+            this.layoutControlItem89.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem89.TextVisible = false;
+            // 
+            // txt_107
+            // 
+            this.txt_107.Enabled = false;
+            this.txt_107.Location = new System.Drawing.Point(12, 108);
+            this.txt_107.Name = "txt_107";
+            this.txt_107.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_107.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_107.Size = new System.Drawing.Size(401, 20);
+            this.txt_107.StyleController = this.layoutControl4;
+            this.txt_107.TabIndex = 13;
+            // 
+            // layoutControlItem90
+            // 
+            this.layoutControlItem90.Control = this.txt_107;
+            this.layoutControlItem90.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem90.Name = "layoutControlItem90";
+            this.layoutControlItem90.Size = new System.Drawing.Size(405, 389);
+            this.layoutControlItem90.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem90.TextVisible = false;
+            // 
+            // txt_124
+            // 
+            this.txt_124.Location = new System.Drawing.Point(750, 28);
+            this.txt_124.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_124.Name = "txt_124";
+            this.txt_124.ReadOnly = true;
+            this.txt_124.Size = new System.Drawing.Size(498, 23);
+            this.txt_124.TabIndex = 3;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(1261, 32);
+            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(157, 19);
+            this.label80.TabIndex = 2;
+            this.label80.Text = "الأمراض المزمنة غير المعدية";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(1351, 35);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(72, 19);
+            this.label29.TabIndex = 3;
+            this.label29.Text = "التدخين والتغ";
+            // 
+            // txt_122
+            // 
+            this.txt_122.Location = new System.Drawing.Point(1021, 31);
+            this.txt_122.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_122.Name = "txt_122";
+            this.txt_122.ReadOnly = true;
+            this.txt_122.Size = new System.Drawing.Size(315, 23);
+            this.txt_122.TabIndex = 2;
+            // 
             // Surveys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -2903,7 +3303,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
             this.layoutControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_14.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
@@ -2916,12 +3316,12 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_97.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_96.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_95.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_92.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_94.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_93.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -2962,16 +3362,20 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl5)).EndInit();
             this.layoutControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_143.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_109.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_110.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_123.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem37)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl6)).EndInit();
@@ -3061,6 +3465,31 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem77)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem78)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem80)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem79)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_134.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_99.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_100.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_101.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_102.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem85)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_103.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem86)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_104.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem87)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_105.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem88)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_106.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem89)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_107.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3079,28 +3508,28 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_147;
+        private System.Windows.Forms.TextBox txt_4;
+        private System.Windows.Forms.TextBox txt_7;
+        private System.Windows.Forms.TextBox txt_200;
+        private System.Windows.Forms.TextBox txt_1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox13;
+        private DevExpress.XtraEditors.TextEdit txt_97;
+        private DevExpress.XtraEditors.TextEdit txt_96;
+        private DevExpress.XtraEditors.TextEdit txt_95;
+        private DevExpress.XtraEditors.TextEdit txt_92;
+        private DevExpress.XtraEditors.TextEdit txt_94;
+        private DevExpress.XtraEditors.TextEdit txt_93;
+        private System.Windows.Forms.TextBox txt_91;
+        private System.Windows.Forms.TextBox txt_90;
+        private System.Windows.Forms.TextBox txt_89;
+        private System.Windows.Forms.TextBox txt_88;
+        private System.Windows.Forms.TextBox txt_133;
+        private System.Windows.Forms.TextBox txt_87;
+        private System.Windows.Forms.TextBox txt_86;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
@@ -3117,10 +3546,10 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txt_112;
+        private System.Windows.Forms.TextBox txt_115;
+        private System.Windows.Forms.TextBox txt_114;
+        private System.Windows.Forms.TextBox txt_113;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label70;
@@ -3159,7 +3588,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
         private DevExpress.XtraLayout.LayoutControl layoutControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit txt_14;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
@@ -3188,10 +3617,10 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraLayout.LayoutControl layoutControl5;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
         private DevExpress.XtraLayout.Converter.LayoutConverter layoutConverter1;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit txt_143;
+        private DevExpress.XtraEditors.TextEdit txt_109;
+        private DevExpress.XtraEditors.TextEdit txt_110;
+        private DevExpress.XtraEditors.TextEdit txt_123;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem34;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem36;
@@ -3280,5 +3709,35 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem76;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem77;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem78;
+        private System.Windows.Forms.TextBox txt_9;
+        private DevExpress.XtraEditors.TextEdit txt_8;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem80;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem79;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraEditors.TextEdit txt_107;
+        private DevExpress.XtraEditors.TextEdit txt_106;
+        private DevExpress.XtraEditors.TextEdit txt_105;
+        private DevExpress.XtraEditors.TextEdit txt_104;
+        private DevExpress.XtraEditors.TextEdit txt_103;
+        private DevExpress.XtraEditors.TextEdit txt_102;
+        private DevExpress.XtraEditors.TextEdit txt_101;
+        private DevExpress.XtraEditors.TextEdit txt_100;
+        private DevExpress.XtraEditors.TextEdit txt_99;
+        private DevExpress.XtraEditors.TextEdit txt_134;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem81;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem82;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem83;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem84;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem85;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem86;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem87;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem88;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem89;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem90;
+        private System.Windows.Forms.TextBox txt_124;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txt_122;
     }
 }

@@ -126,44 +126,6 @@
   <metadata name="villageBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>908, 17</value>
   </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Column7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        iQAAC4kBN8nLrQAAAkNJREFUWEfF1kuoTVEcx/ErrxTJxCNvKREJA0oYkWSuJEmKJCmhDGSACZEBSTFC
-        MTMij4HkMRAhr0JCyjMijwz4flf+dQZ7n3P2Putev/rU/a+z9v/se/Y666yuNjIK63EGT/ALf/ADD3EK
-        azAMWTMOx+CbtesQhqPjbEBj48vYhHnwxnyTCViALbiKmPsdq1A7RxHNzmIW2slcXEJcuxeVcxzRYK0D
-        NeInEj32OdBuNiIuXOJAB1mO6OXfLTMaccFqBzJkK6LnEAeaxWftxAupypdbsK/rqjQjEXc61oGMmYHo
-        PdiBosSiuZKq/LkP+5c+2nNwwrpU5c922P9kqgryGk6Ynar8WQz7301VQXxRuZ9/ZDrs/z5VBYkbcDF2
-        R6bA/p9TVZBvcMLkVOXPHNj/eaoKcgdOWJqq/FkJ+19MVUHix+dAqvLnBOy/K1UFiVX6MVV50wdxgJnp
-        QFk+wEl1fwHLsgP29STVNB4gnOgxa6ADGTIC9tQiB1rlNpx8M1Wd5xHsdz5VbWQofiIu6o06GYQbsM91
-        B6rE49dvePFjzEeVuKBfwesr/feNmYqniCansRCu6KL0h3tInCnkJ/Dy39/X0AuV0g8HEQ31Cf5yHoZn
-        vSPwAPMVjfP2wLgI4zXXVa1H6va8H/GLWeYZdsMje2Mm4Quc4+moL2rHjWQFtmEnNmMZpqFZJsJPz5tw
-        2/eR9XjGIza7exiAHs8YvIU38QC5NrxK8czxBt6EX/OWx/XuiN+OWNTvHPgfcddlr+l68RfVCriHWOt/
-        qAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="surveysBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
