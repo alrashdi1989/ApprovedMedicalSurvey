@@ -88,7 +88,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 DataRow dr;
 
-                foreach (var ques in orders.operation_orders.Where(c=> c.village_name_ar == lookUpEdit3.Text))
+                foreach (var ques in orders.operation_orders.Where(c=> c.village_name_ar == lookUpEdit3.Text && c.status=="completed"))
                 {
                     dr = dt_survey.NewRow();
                     dr["Surveyuuid"] = ques.uuid;
@@ -212,9 +212,13 @@ namespace ApprovedMedicalSurvey.UI
             {
                 if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
                 {
-                    
+                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
+                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                    string cellValue = Convert.ToString(selectedRow.Cells["Surveyuuid"].Value);
+
                     Surveys f = new Surveys();
                     f.MdiParent = this.ParentForm;
+                    f.Tag = cellValue;
                     f.Show();
                     f.Dock = DockStyle.Fill;
 
@@ -224,20 +228,6 @@ namespace ApprovedMedicalSurvey.UI
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.Focused)
-            {
-
-                if (dataGridView1.SelectedCells.Count > 0)
-                {
-                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
-                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
-                    string cellValue = Convert.ToString(selectedRow.Cells["Surveyuuid"].Value);
-
-                    Surveys t1 = new Surveys();
-                    t1.Tag = cellValue;
-                    t1.Show();
-                }
-            }
 
         }
     }

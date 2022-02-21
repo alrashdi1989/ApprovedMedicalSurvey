@@ -1,4 +1,5 @@
 ﻿using ApprovedMedicalSurvey.Models;
+using DevExpress.XtraEditors;
 using Nancy.Json;
 using System;
 using System.Collections.Generic;
@@ -138,12 +139,17 @@ namespace ApprovedMedicalSurvey.UI
                 ques_count += 1;
                 string name = control_name;
                 TextBox tbx = this.Controls.Find(name, true).FirstOrDefault() as TextBox;
-
-                if (tbx != null)
+                TextEdit txt = this.Controls.Find(name, true).FirstOrDefault() as TextEdit;
+                if (tbx != null )
                 {
                     tbx.Text = val;
+                   
                 }
-
+                if (txt != null)
+                {
+                    txt.Text = val;
+                } 
+                
 
 
             }
