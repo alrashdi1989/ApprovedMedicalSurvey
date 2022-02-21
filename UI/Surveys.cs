@@ -33,18 +33,15 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Surveys_Load(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.WaitCursor;
-            string postData = this.Tag.ToString();//"4107da6b-0f19-4ac9-8cd2-455c6ec175b3";
-            //string postData = "";
-            //string URL = "https://gql.formon.io/api/rest/surveys/";
+            Cursor = Cursors.WaitCursor;
+            string postData = Tag.ToString();
+            
             string URL = "https://gql.formon.io/api/rest/surevy/" + postData;
             var data = webPostMethod(postData, URL);
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
-            //Operation_Orders orders = new Operation_Orders();
             var orders = serializer.Deserialize<Rootobject>(data);
-            //int count = orders.operation_orders[0]
-            //int count = orders.operation_orders[0].response.Count();
+          
             foreach (var ques in orders.operation_orders[0].response)
             {
                 //ques_count += 1;
@@ -58,9 +55,7 @@ namespace ApprovedMedicalSurvey.UI
                 }
                 if (ans_val.Length > 0)
                 {
-                    //ans_val.Remove(ans_val.Length - 1, 1);
-                    //int last_index = ans_val.LastIndexOf(',');
-                    //ans_val.Substring(0, ans_val.Length - 1);
+                    
                     findControlName("txt_" + quest_id, ans_val.Substring(0, ans_val.Length - 2));
 
                 }

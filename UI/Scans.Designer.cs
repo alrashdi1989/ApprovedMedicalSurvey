@@ -271,6 +271,7 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.Size = new System.Drawing.Size(1802, 720);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // lblsurveycount
             // 
@@ -281,9 +282,8 @@ namespace ApprovedMedicalSurvey.UI
             this.lblsurveycount.Appearance.Options.UseForeColor = true;
             this.lblsurveycount.Location = new System.Drawing.Point(876, 84);
             this.lblsurveycount.Name = "lblsurveycount";
-            this.lblsurveycount.Size = new System.Drawing.Size(100, 21);
+            this.lblsurveycount.Size = new System.Drawing.Size(0, 21);
             this.lblsurveycount.TabIndex = 5;
-            this.lblsurveycount.Text = "labelControl1";
             // 
             // villageBindingSource
             // 

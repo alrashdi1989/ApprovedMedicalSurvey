@@ -221,5 +221,24 @@ namespace ApprovedMedicalSurvey.UI
                 }
             }
         }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.Focused)
+            {
+
+                if (dataGridView1.SelectedCells.Count > 0)
+                {
+                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
+                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                    string cellValue = Convert.ToString(selectedRow.Cells["Surveyuuid"].Value);
+
+                    Surveys t1 = new Surveys();
+                    t1.Tag = cellValue;
+                    t1.Show();
+                }
+            }
+
+        }
     }
 }
