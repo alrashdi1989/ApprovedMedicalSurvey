@@ -172,12 +172,20 @@ namespace ApprovedMedicalSurvey.UI
 
             string URL = "https://gql.formon.io/api/rest/survey/status/" + getData;
             var data = webGetMethod(URL);
+            MessageBox.Show("تم قبول الاستبيان");
+            this.Close();
 
         }
 
         private void label29_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            RejectionNote f = new RejectionNote();
+            f.Show();
         }
     }
 }
