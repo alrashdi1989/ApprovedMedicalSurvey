@@ -29,6 +29,11 @@ namespace ApprovedMedicalSurvey.UI
             userPrivilegesBindingSource.DataSource = UserServices.GetUserPrivliges();
             userStatusBindingSource.DataSource = UserServices.GetUserStatuses();
 
+        }
+
+        private void lookUpEdit2_EditValueChanged(object sender, EventArgs e)
+        {
+            usersBindingSource.DataSource = UserServices.GetAllUserswithoutProvlage("users", lookUpEdit2.EditValue.ToString());
 
         }
     }

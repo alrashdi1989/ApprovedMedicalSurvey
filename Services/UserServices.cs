@@ -39,6 +39,28 @@ namespace ApprovedMedicalSurvey.Services
 
         }
 
+        public static List<Users> GetAllUserswithoutProvlage(string basurl,string privliges)
+        {
+
+            var client = new HttpClient();
+            client.BaseAddress = new Uri(GlobalVariables.BaseUrl + basurl);
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            var response = client.GetAsync(client.BaseAddress).Result;
+            List<Models.Users> res = new List<Users>();
+            if (response.IsSuccessStatusCode)
+            {
+                var data = response.Content.ReadAsStringAsync().Result;
+                Roots result = JsonConvert.DeserializeObject<Roots>(data.ToString());
+
+                res = result.Users.Where(c => c.role == privliges.ToLower()).ToList();
+
+            }
+            return res;
+
+        }
+
 
         public static List<UserStatus> GetUserStatuses() {
 
