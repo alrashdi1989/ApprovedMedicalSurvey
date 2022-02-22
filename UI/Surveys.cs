@@ -168,13 +168,16 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string postData = this.Tag+"/"+"accepted";
-            string URL = "https://gql.formon.io/api/rest/survey/status/";
+            string getData = this.Tag.ToString() + "/accepted";
 
-            var data = webPostMethod(postData, URL);
+            string URL = "https://gql.formon.io/api/rest/survey/status/" + getData;
+            var data = webGetMethod(URL);
 
-            JavaScriptSerializer serializer = new JavaScriptSerializer();
-            var updateresponse = serializer.Deserialize<Models.Surveys>(data);
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

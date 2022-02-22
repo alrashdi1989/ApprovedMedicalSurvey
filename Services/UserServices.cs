@@ -38,7 +38,36 @@ namespace ApprovedMedicalSurvey.Services
             return res;
 
         }
-     
+
+
+        public static List<UserStatus> GetUserStatuses() {
+
+            List<UserStatus> userStatuses = new List<UserStatus>() {
+            new UserStatus {StatusArabic="نشط",StatusEnglish="Active"},
+            new UserStatus {StatusArabic="غير نشط",StatusEnglish="Inactive"}
+            };
+
+            return userStatuses;
+        }
+
+        public static List<UserPrivileges> GetUserPrivliges()
+        {
+
+            List<UserPrivileges> userPrivileges = new List<UserPrivileges>() {
+            new UserPrivileges {UserPrivilegesArabic="جامع بيان /  متطوع",UserPrivilegesEnglish="Volunteer"},
+            new UserPrivileges {UserPrivilegesArabic="مستوى المحافظة",UserPrivilegesEnglish="Government Level"},
+             new UserPrivileges {UserPrivilegesArabic="مستوى الولاية",UserPrivilegesEnglish="Central Level"}
+            };
+
+            return userPrivileges;
+
+
+
+
+
+
+        }
+
 
     }
 }
