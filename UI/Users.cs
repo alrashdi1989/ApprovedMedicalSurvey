@@ -41,5 +41,10 @@ namespace ApprovedMedicalSurvey.UI
             AddUser f = new AddUser();
             f.Show();
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

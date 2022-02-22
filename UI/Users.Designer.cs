@@ -32,6 +32,7 @@ namespace ApprovedMedicalSurvey.UI
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -41,11 +42,32 @@ namespace ApprovedMedicalSurvey.UI
             this.colusername = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coluuid = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colemail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnNewUser = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
+            this.layoutControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,23 +75,34 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.gridControl1);
-            this.panel1.Location = new System.Drawing.Point(12, 156);
+            this.panel1.Controls.Add(this.layoutControl2);
+            this.panel1.Location = new System.Drawing.Point(1, 158);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 378);
+            this.panel1.Size = new System.Drawing.Size(883, 388);
             this.panel1.TabIndex = 0;
+            // 
+            // layoutControl2
+            // 
+            this.layoutControl2.Controls.Add(this.gridControl1);
+            this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.Root = this.layoutControlGroup1;
+            this.layoutControl2.Size = new System.Drawing.Size(883, 388);
+            this.layoutControl2.TabIndex = 2;
+            this.layoutControl2.Text = "layoutControl2";
             // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.usersBindingSource;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(12, 12);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(860, 378);
+            this.gridControl1.Size = new System.Drawing.Size(859, 364);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // usersBindingSource
             // 
@@ -160,16 +193,35 @@ namespace ApprovedMedicalSurvey.UI
             this.colemail.Visible = true;
             this.colemail.VisibleIndex = 3;
             // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem2});
+            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(883, 388);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.gridControl1;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(863, 368);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
             // btnNewUser
             // 
             this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewUser.FlatAppearance.BorderSize = 0;
             this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnNewUser.ForeColor = System.Drawing.Color.White;
+            this.btnNewUser.ForeColor = System.Drawing.Color.Black;
             this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
             this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewUser.Location = new System.Drawing.Point(666, 12);
+            this.btnNewUser.Location = new System.Drawing.Point(642, 28);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(217, 54);
             this.btnNewUser.TabIndex = 1;
@@ -178,23 +230,114 @@ namespace ApprovedMedicalSurvey.UI
             this.btnNewUser.UseVisualStyleBackColor = true;
             this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Controls.Add(this.layoutControl1);
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(365, 126);
+            this.panel2.TabIndex = 2;
+            // 
+            // layoutControl1
+            // 
+            this.layoutControl1.Controls.Add(this.toggleSwitch1);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(365, 126);
+            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.Text = "layoutControl1";
+            // 
+            // toggleSwitch1
+            // 
+            this.toggleSwitch1.Location = new System.Drawing.Point(12, 12);
+            this.toggleSwitch1.Name = "toggleSwitch1";
+            this.toggleSwitch1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toggleSwitch1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.toggleSwitch1.Properties.Appearance.Options.UseFont = true;
+            this.toggleSwitch1.Properties.Appearance.Options.UseForeColor = true;
+            this.toggleSwitch1.Properties.OffText = "غير فعال";
+            this.toggleSwitch1.Properties.OnText = "فعال";
+            this.toggleSwitch1.Size = new System.Drawing.Size(220, 32);
+            this.toggleSwitch1.StyleController = this.layoutControl1;
+            this.toggleSwitch1.TabIndex = 4;
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.emptySpaceItem1});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(365, 126);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Black;
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem1.Control = this.toggleSwitch1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(345, 36);
+            this.layoutControlItem1.Text = "تغيير حالة المستخدم";
+            this.layoutControlItem1.TextLocation = DevExpress.Utils.Locations.Right;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(118, 21);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 36);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(345, 70);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.btnNewUser);
+            this.panel3.Location = new System.Drawing.Point(1, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(883, 151);
+            this.panel3.TabIndex = 3;
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(884, 546);
-            this.Controls.Add(this.btnNewUser);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Users";
             this.Text = "شاشة المستخدمين";
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
+            this.layoutControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,5 +355,15 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraGrid.Columns.GridColumn colusername;
         private DevExpress.XtraGrid.Columns.GridColumn coluuid;
         private DevExpress.XtraGrid.Columns.GridColumn colemail;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraEditors.ToggleSwitch toggleSwitch1;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraLayout.LayoutControl layoutControl2;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
     }
 }
