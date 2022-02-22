@@ -53,12 +53,13 @@ namespace ApprovedMedicalSurvey.UI
             this.btnRejected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRejected.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRejected.ForeColor = System.Drawing.Color.White;
-            this.btnRejected.Location = new System.Drawing.Point(151, 176);
+            this.btnRejected.Location = new System.Drawing.Point(156, 184);
             this.btnRejected.Name = "btnRejected";
-            this.btnRejected.Size = new System.Drawing.Size(125, 51);
+            this.btnRejected.Size = new System.Drawing.Size(107, 43);
             this.btnRejected.TabIndex = 1;
             this.btnRejected.Text = "رفض";
             this.btnRejected.UseVisualStyleBackColor = false;
+            this.btnRejected.Click += new System.EventHandler(this.btnRejected_Click);
             // 
             // RejectionNote
             // 

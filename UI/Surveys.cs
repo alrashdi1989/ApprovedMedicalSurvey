@@ -1,4 +1,5 @@
 ﻿using ApprovedMedicalSurvey.Models;
+using ApprovedMedicalSurvey.Shared;
 using DevExpress.XtraEditors;
 using Nancy.Json;
 using System;
@@ -36,7 +37,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             Cursor = Cursors.WaitCursor;
             string postData = Tag.ToString();
-            
+
             string URL = "https://gql.formon.io/api/rest/surevy/" + postData;
             var data = webPostMethod(postData, URL);
 
@@ -184,6 +185,8 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button5_Click(object sender, EventArgs e)
         {
+            GlobalVariables.SurveyID = this.Tag.ToString();
+
             RejectionNote f = new RejectionNote();
             f.Show();
         }

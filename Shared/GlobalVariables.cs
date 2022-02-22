@@ -10,5 +10,6 @@ namespace ApprovedMedicalSurvey.Shared
     {
         public static string BaseUrl { get; set; } = "https://gql.formon.io/api/rest/";
         public static  string FormName { get; set; }
+        public static string SurveyID { get; set; }
     }
 }
