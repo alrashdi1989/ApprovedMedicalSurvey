@@ -35,31 +35,30 @@ namespace ApprovedMedicalSurvey.UI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lookUpEdit4 = new DevExpress.XtraEditors.LookUpEdit();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPrivilegesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userStatusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userStatusBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPrivilegesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -109,19 +108,6 @@ namespace ApprovedMedicalSurvey.UI
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = "..كلمة المرور";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBox2.ForeColor = System.Drawing.Color.Black;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(191, 110);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox2.Size = new System.Drawing.Size(312, 32);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "نقطة التواصل...";
             // 
             // panel1
             // 
@@ -214,6 +200,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Size = new System.Drawing.Size(312, 28);
             this.lookUpEdit1.TabIndex = 10;
             // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
+            // 
             // lookUpEdit2
             // 
             this.lookUpEdit2.Location = new System.Drawing.Point(12, 241);
@@ -243,6 +233,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.TabIndex = 11;
             this.lookUpEdit2.EditValueChanged += new System.EventHandler(this.lookUpEdit2_EditValueChanged);
             // 
+            // userPrivilegesBindingSource
+            // 
+            this.userPrivilegesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserPrivileges);
+            // 
             // lookUpEdit3
             // 
             this.lookUpEdit3.Location = new System.Drawing.Point(12, 345);
@@ -270,6 +264,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lookUpEdit3.Size = new System.Drawing.Size(312, 28);
             this.lookUpEdit3.TabIndex = 12;
+            // 
+            // userStatusBindingSource
+            // 
+            this.userStatusBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserStatus);
             // 
             // lookUpEdit4
             // 
@@ -307,18 +305,6 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
-            // userStatusBindingSource
-            // 
-            this.userStatusBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserStatus);
-            // 
-            // userPrivilegesBindingSource
-            // 
-            this.userPrivilegesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserPrivileges);
-            // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
-            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -331,7 +317,6 @@ namespace ApprovedMedicalSurvey.UI
             this.Controls.Add(this.lookUpEdit1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -348,13 +333,13 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPrivilegesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userStatusBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userStatusBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPrivilegesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,7 +351,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCancel;
