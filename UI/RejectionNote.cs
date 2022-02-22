@@ -23,27 +23,14 @@ namespace ApprovedMedicalSurvey.UI
         private void btnRejected_Click(object sender, EventArgs e)
         {
             string getData = GlobalVariables.SurveyID + "/rejected";
-
-            string URL = "https://gql.formon.io/api/rest/survey/status/" + getData;
-            var data = webGetMethod(URL);
+            string URL = GlobalVariables.BaseUrl+"survey/status/" + getData;
+           WebRequsets  webRequests = new WebRequsets ();
+            var data = webRequests.webGetMethod(URL);
             MessageBox.Show("تم رفض  الاستبيان");
             this.Close();
         }
 
-        public string webGetMethod(string URL)
-        {
-            string jsonString = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
-            request.Method = "GET";
-
-            WebResponse response = request.GetResponse();
-            StreamReader sr = new StreamReader(response.GetResponseStream());
-            jsonString = sr.ReadToEnd();
-            sr.Close();
-            return jsonString;
-
-
-        }
+       
 
     }
 }

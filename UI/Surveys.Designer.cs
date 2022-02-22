@@ -749,7 +749,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_97.Size = new System.Drawing.Size(191, 21);
             this.txt_97.StyleController = this.layoutControl1;
             this.txt_97.TabIndex = 26;
-            this.txt_97.Text = "labelControl2";
+            this.txt_97.Text = "--";
             // 
             // txt_90
             // 
@@ -762,7 +762,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_90.Size = new System.Drawing.Size(191, 21);
             this.txt_90.StyleController = this.layoutControl1;
             this.txt_90.TabIndex = 25;
-            this.txt_90.Text = "labelControl3";
+            this.txt_90.Text = "--";
             // 
             // txt_96
             // 
@@ -775,7 +775,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_96.Size = new System.Drawing.Size(358, 21);
             this.txt_96.StyleController = this.layoutControl1;
             this.txt_96.TabIndex = 24;
-            this.txt_96.Text = "labelControl2";
+            this.txt_96.Text = "--";
             // 
             // txt_89
             // 
@@ -788,7 +788,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_89.Size = new System.Drawing.Size(191, 21);
             this.txt_89.StyleController = this.layoutControl1;
             this.txt_89.TabIndex = 23;
-            this.txt_89.Text = "labelControl3";
+            this.txt_89.Text = "--";
             // 
             // txt_95
             // 
@@ -801,7 +801,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_95.Size = new System.Drawing.Size(358, 21);
             this.txt_95.StyleController = this.layoutControl1;
             this.txt_95.TabIndex = 22;
-            this.txt_95.Text = "labelControl2";
+            this.txt_95.Text = "--";
             // 
             // txt_94
             // 
@@ -814,7 +814,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_94.Size = new System.Drawing.Size(358, 21);
             this.txt_94.StyleController = this.layoutControl1;
             this.txt_94.TabIndex = 21;
-            this.txt_94.Text = "labelControl3";
+            this.txt_94.Text = "--";
             // 
             // txt_88
             // 
@@ -827,7 +827,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_88.Size = new System.Drawing.Size(191, 21);
             this.txt_88.StyleController = this.layoutControl1;
             this.txt_88.TabIndex = 20;
-            this.txt_88.Text = "labelControl2";
+            this.txt_88.Text = "--";
             // 
             // txt_93
             // 
@@ -840,7 +840,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_93.Size = new System.Drawing.Size(358, 21);
             this.txt_93.StyleController = this.layoutControl1;
             this.txt_93.TabIndex = 19;
-            this.txt_93.Text = "labelControl3";
+            this.txt_93.Text = "--";
             // 
             // txt_87
             // 
@@ -853,7 +853,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_87.Size = new System.Drawing.Size(191, 21);
             this.txt_87.StyleController = this.layoutControl1;
             this.txt_87.TabIndex = 18;
-            this.txt_87.Text = "labelControl2";
+            this.txt_87.Text = "--";
             // 
             // txt_92
             // 
@@ -866,7 +866,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_92.Size = new System.Drawing.Size(358, 21);
             this.txt_92.StyleController = this.layoutControl1;
             this.txt_92.TabIndex = 17;
-            this.txt_92.Text = "labelControl3";
+            this.txt_92.Text = "--";
             // 
             // txt_86
             // 
@@ -879,7 +879,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_86.Size = new System.Drawing.Size(191, 21);
             this.txt_86.StyleController = this.layoutControl1;
             this.txt_86.TabIndex = 16;
-            this.txt_86.Text = "labelControl2";
+            this.txt_86.Text = "--";
             // 
             // txt_91
             // 
@@ -892,7 +892,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_91.Size = new System.Drawing.Size(358, 21);
             this.txt_91.StyleController = this.layoutControl1;
             this.txt_91.TabIndex = 15;
-            this.txt_91.Text = "labelControl3";
+            this.txt_91.Text = "--";
             // 
             // txt_133
             // 
@@ -905,7 +905,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_133.Size = new System.Drawing.Size(191, 21);
             this.txt_133.StyleController = this.layoutControl1;
             this.txt_133.TabIndex = 14;
-            this.txt_133.Text = "labelControl2";
+            this.txt_133.Text = "--";
             // 
             // Root
             // 

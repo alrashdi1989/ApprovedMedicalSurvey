@@ -155,6 +155,7 @@
     <Compile Include="Services\VillageServices.cs" />
     <Compile Include="Services\WillayatServices.cs" />
     <Compile Include="Shared\GlobalVariables.cs" />
+    <Compile Include="Shared\WebRequsets.cs" />
     <Compile Include="UI\ActivateForm.cs">
       <SubType>Form</SubType>
     </Compile>

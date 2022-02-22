@@ -167,20 +167,6 @@ namespace ApprovedMedicalSurvey.UI
             return responseFromServer;
 
         }
-        public string webGetMethod(string URL)
-        {
-            string jsonString = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
-            request.Method = "GET";
-
-            WebResponse response = request.GetResponse();
-            StreamReader sr = new StreamReader(response.GetResponseStream());
-            jsonString = sr.ReadToEnd();
-            sr.Close();
-            return jsonString;
-
-
-        }
         private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
         {
             States();

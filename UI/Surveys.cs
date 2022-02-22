@@ -38,8 +38,9 @@ namespace ApprovedMedicalSurvey.UI
             Cursor = Cursors.WaitCursor;
             string postData = Tag.ToString();
 
-            string URL = "https://gql.formon.io/api/rest/surevy/" + postData;
-            var data = webPostMethod(postData, URL);
+            string URL = GlobalVariables.BaseUrl+"surevy/" + postData;
+            WebRequsets webRequsets = new WebRequsets();
+            var data = webRequsets.webPostMethod(postData, URL);
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             var orders = serializer.Deserialize<Rootobject>(data);
@@ -67,16 +68,6 @@ namespace ApprovedMedicalSurvey.UI
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Scans f = new Scans();
@@ -84,54 +75,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
         }
-        public string webPostMethod(string postData, string URL)
-        {
-            string responseFromServer = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
-            request.Method = "POST";
-            request.Credentials = CredentialCache.DefaultCredentials;
-            request.Accept = "/";
-            request.UseDefaultCredentials = true;
-            request.Proxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
-            byte[] byteArray = Encoding.UTF8.GetBytes(postData);
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.ContentLength = byteArray.Length;
-            Stream dataStream = request.GetRequestStream();
-            dataStream.Write(byteArray, 0, byteArray.Length);
-            dataStream.Close();
-            try
-            {
-                WebResponse response = request.GetResponse();
-                dataStream = response.GetResponseStream();
-                StreamReader reader = new StreamReader(dataStream);
-                responseFromServer = reader.ReadToEnd();
-                reader.Close();
-                dataStream.Close();
-                response.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
 
-            return responseFromServer;
-
-        }
-
-        public string webGetMethod(string URL)
-        {
-            string jsonString = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
-            request.Method = "GET";
-
-            WebResponse response = request.GetResponse();
-            StreamReader sr = new StreamReader(response.GetResponseStream());
-            jsonString = sr.ReadToEnd();
-            sr.Close();
-            return jsonString;
-
-
-        }
         private void findControlName(string control_name, string val)
         {
             try
@@ -171,8 +115,9 @@ namespace ApprovedMedicalSurvey.UI
         {
             string getData = this.Tag.ToString() + "/accepted";
 
-            string URL = "https://gql.formon.io/api/rest/survey/status/" + getData;
-            var data = webGetMethod(URL);
+            string URL = GlobalVariables.BaseUrl+"survey/status/" + getData;
+            WebRequsets webRequsets = new WebRequsets();
+            var data = webRequsets.webGetMethod(URL);
             MessageBox.Show("تم قبول الاستبيان");
             this.Close();
 
