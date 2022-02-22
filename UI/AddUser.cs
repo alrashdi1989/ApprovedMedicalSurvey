@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApprovedMedicalSurvey.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,15 @@ namespace ApprovedMedicalSurvey.UI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AddUser_Load(object sender, EventArgs e)
+        {
+            villageBindingSource.DataSource = VillageServices.GetAllVIllages("villages");
+            userPrivilegesBindingSource.DataSource = UserServices.GetUserPrivliges();
+            userStatusBindingSource.DataSource = UserServices.GetUserStatuses();
+
+
         }
     }
 }

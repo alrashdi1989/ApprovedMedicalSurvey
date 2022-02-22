@@ -100,7 +100,7 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.DataSource = dt_survey;
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[1].HeaderText = "رقم المسح";
-                dataGridView1.Columns[2].HeaderText = "رقم ألمبنى";
+                dataGridView1.Columns[2].HeaderText = "رقم المبنى";
                 dataGridView1.Columns[3].HeaderText = "حالة المسح";
                 dataGridView1.Columns[4].HeaderText = "جامع البيان";
                 dataGridView1.Columns[5].HeaderText = "القرية";

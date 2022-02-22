@@ -259,7 +259,9 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Governorate.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Surveys.datasource" />
+    <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.UserPrivileges.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Users.datasource" />
+    <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.UserStatus.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Village.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Willayat.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Shared.Govenance.datasource" />
