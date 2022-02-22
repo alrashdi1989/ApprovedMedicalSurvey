@@ -35,5 +35,11 @@ namespace ApprovedMedicalSurvey.UI
         {
           usersBindingSource.DataSource=  UserServices.GetAllUsers("users");
         }
+
+        private void btnNewUser_Click(object sender, EventArgs e)
+        {
+            AddUser f = new AddUser();
+            f.Show();
+        }
     }
 }

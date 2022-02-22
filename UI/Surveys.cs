@@ -110,7 +110,7 @@ namespace ApprovedMedicalSurvey.UI
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
 
             return responseFromServer;
@@ -138,7 +138,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 ques_count += 1;
                 string name = control_name;
-                TextBox tbx = this.Controls.Find(name, true).FirstOrDefault() as TextBox;
+                LabelControl tbx = this.Controls.Find(name, true).FirstOrDefault() as LabelControl;
                 TextEdit txt = this.Controls.Find(name, true).FirstOrDefault() as TextEdit;
                 if (tbx != null )
                 {
@@ -158,9 +158,23 @@ namespace ApprovedMedicalSurvey.UI
 
             }
 
-            //MessageBox.Show("counter of questions = " + ques_count);
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string postData = this.Tag+"/"+"accepted";
+            string URL = "https://gql.formon.io/api/rest/survey/status/";
+
+            var data = webPostMethod(postData, URL);
+
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            var updateresponse = serializer.Deserialize<Models.Surveys>(data);
+        }
     }
 }

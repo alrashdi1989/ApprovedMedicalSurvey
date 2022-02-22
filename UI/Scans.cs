@@ -1,19 +1,12 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
-using ApprovedMedicalSurvey.Shared;
-using DevExpress.Utils.Extensions;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
-using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
@@ -33,6 +26,7 @@ namespace ApprovedMedicalSurvey.UI
         private void Scans_Load(object sender, EventArgs e)
         {
             Governance();
+            lookUpEdit1.Text = "اختر المحافظة....";
         }
 
         private void Governance()
@@ -230,6 +224,16 @@ namespace ApprovedMedicalSurvey.UI
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lookUpEdit1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -176,6 +176,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnNewUser.Text = "اضافة مستخدم جديد";
             this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
             // Users
             // 

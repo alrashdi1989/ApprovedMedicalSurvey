@@ -43,6 +43,8 @@ namespace ApprovedMedicalSurvey.UI
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblsurveycount = new DevExpress.XtraEditors.LabelControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.willayatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.governorateBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -55,6 +57,8 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).BeginInit();
@@ -105,8 +109,9 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Properties.ValueMember = "rncode";
             this.lookUpEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lookUpEdit1.Size = new System.Drawing.Size(341, 30);
-            this.lookUpEdit1.TabIndex = 0;
+            this.lookUpEdit1.TabIndex = 1000000;
             this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
+            this.lookUpEdit1.Click += new System.EventHandler(this.lookUpEdit1_Click);
             // 
             // panel2
             // 
@@ -211,7 +216,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnShowResults.FlatAppearance.BorderSize = 0;
             this.btnShowResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowResults.Location = new System.Drawing.Point(867, 44);
+            this.btnShowResults.Location = new System.Drawing.Point(8, 11);
             this.btnShowResults.Margin = new System.Windows.Forms.Padding(6);
             this.btnShowResults.Name = "btnShowResults";
             this.btnShowResults.Size = new System.Drawing.Size(109, 31);
@@ -275,15 +280,34 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // lblsurveycount
             // 
-            this.lblsurveycount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblsurveycount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblsurveycount.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsurveycount.Appearance.ForeColor = System.Drawing.Color.Black;
             this.lblsurveycount.Appearance.Options.UseFont = true;
             this.lblsurveycount.Appearance.Options.UseForeColor = true;
-            this.lblsurveycount.Location = new System.Drawing.Point(876, 84);
+            this.lblsurveycount.Location = new System.Drawing.Point(49, 40);
             this.lblsurveycount.Name = "lblsurveycount";
             this.lblsurveycount.Size = new System.Drawing.Size(0, 21);
             this.lblsurveycount.TabIndex = 5;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Controls.Add(this.lblsurveycount);
+            this.panel5.Location = new System.Drawing.Point(641, 22);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 100);
+            this.panel5.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Controls.Add(this.btnShowResults);
+            this.panel6.Location = new System.Drawing.Point(847, 41);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(123, 55);
+            this.panel6.TabIndex = 7;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // villageBindingSource
             // 
@@ -307,12 +331,12 @@ namespace ApprovedMedicalSurvey.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1846, 875);
-            this.Controls.Add(this.lblsurveycount);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.btnShowResults);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -328,12 +352,14 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surveysBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -353,5 +379,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.BindingSource surveysBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.LabelControl lblsurveycount;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
