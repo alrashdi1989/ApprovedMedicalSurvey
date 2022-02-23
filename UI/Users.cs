@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
+using DevExpress.XtraGrid.Columns;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +35,7 @@ namespace ApprovedMedicalSurvey.UI
         private void FillingTheGridWithData()
         {
           usersBindingSource.DataSource=  UserServices.GetAllUsers("users");
+           villageBindingSource.DataSource = VillageServices.GetAllVIllages("villages");
         }
 
         private void btnNewUser_Click(object sender, EventArgs e)
@@ -42,9 +44,20 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
         }
 
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
+      
 
+        private void textEdit1_TextChanged(object sender, EventArgs e)
+        {
+            //string filterValue = textEdit1.Text;
+            //string filterString = "[village] like %" + filterValue+"%";
+            //gridView1.Columns["village"].FilterInfo = new ColumnFilterInfo(filterString);
+        }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
+            string username = gridView1.GetFocusedRowCellDisplayText(colusername);
+            layoutControlItem1.Text = username + "  تغيير حالة المستخدم"  ;
         }
     }
 }
