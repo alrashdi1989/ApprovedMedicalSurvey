@@ -57,7 +57,19 @@ namespace ApprovedMedicalSurvey.UI
         {
             layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             string username = gridView1.GetFocusedRowCellDisplayText(colusername);
-            layoutControlItem1.Text = username + "  تغيير حالة المستخدم"  ;
+            string status = gridView1.GetFocusedRowCellDisplayText(colstatus);
+            layoutControlItem1.Text = username + "  تغيير حالة المستخدم";
+            if (status == "active")
+            {
+                toggleSwitch1.IsOn = true;
+
+            }
+
+            else
+            {
+                toggleSwitch1.IsOn = false;
+            }
+           
         }
     }
 }

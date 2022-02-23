@@ -65,8 +65,8 @@ namespace ApprovedMedicalSurvey.Services
         public static List<UserStatus> GetUserStatuses() {
 
             List<UserStatus> userStatuses = new List<UserStatus>() {
-            new UserStatus {StatusArabic="نشط",StatusEnglish="Active"},
-            new UserStatus {StatusArabic="غير نشط",StatusEnglish="Inactive"}
+            new UserStatus {StatusArabic="نشط",StatusEnglish="active"},
+            new UserStatus {StatusArabic="غير نشط",StatusEnglish="inactive"}
             };
 
             return userStatuses;
