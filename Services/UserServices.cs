@@ -20,12 +20,8 @@ namespace ApprovedMedicalSurvey.Services
     {
         public static List<Users> GetAllUsers(string basurl) {
 
-            var client = new HttpClient();
-            client.BaseAddress = new Uri(GlobalVariables.BaseUrl+basurl);
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.GetAsync(client.BaseAddress).Result;
+            var response = Shared.HttpResponse.responseMessage(baseurl);
+
             List<Models.Users> res = new List<Users>();
             if (response.IsSuccessStatusCode)
             {
@@ -39,15 +35,11 @@ namespace ApprovedMedicalSurvey.Services
 
         }
 
-        public static List<Users> GetAllUserswithoutProvlage(string basurl,string privliges)
+        public static List<Users> GetAllUserswithoutProvlage(string baseurl,string privliges)
         {
 
-            var client = new HttpClient();
-            client.BaseAddress = new Uri(GlobalVariables.BaseUrl + basurl);
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.GetAsync(client.BaseAddress).Result;
+            var response = Shared.HttpResponse.responseMessage(baseurl);
+
             List<Models.Users> res = new List<Users>();
             if (response.IsSuccessStatusCode)
             {

@@ -17,12 +17,7 @@ namespace ApprovedMedicalSurvey.Services
         public static List<Village> GetAllVIllagesbyStateID(string baseurl,string wiuid)
         {
 
-            var client = new HttpClient();
-            client.BaseAddress = new Uri(GlobalVariables.BaseUrl + baseurl);
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.GetAsync(client.BaseAddress).Result;
+            var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Village> res = new List<Village>();
             if (response.IsSuccessStatusCode)
             {
@@ -42,12 +37,7 @@ namespace ApprovedMedicalSurvey.Services
         public static List<Village> GetAllVIllages(string baseurl)
         {
 
-            var client = new HttpClient();
-            client.BaseAddress = new Uri(GlobalVariables.BaseUrl + baseurl);
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.GetAsync(client.BaseAddress).Result;
+            var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Village> res = new List<Village>();
             if (response.IsSuccessStatusCode)
             {

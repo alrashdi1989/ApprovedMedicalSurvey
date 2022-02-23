@@ -17,12 +17,7 @@ namespace ApprovedMedicalSurvey.Services
         public static List<Willayat> GetAllWillayatbyId(string baseurl, string rncode)
         {
 
-            var client = new HttpClient();
-            client.BaseAddress = new Uri(GlobalVariables.BaseUrl + baseurl);
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.GetAsync(client.BaseAddress).Result;
+            var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Willayat> res = new List<Willayat>();
             if (response.IsSuccessStatusCode)
             {
