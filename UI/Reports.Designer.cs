@@ -92,7 +92,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,14 +122,16 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.Properties.AppearanceDropDown.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit2.Properties.NullText = "";
+            this.lookUpEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit2.Size = new System.Drawing.Size(187, 28);
+            this.lookUpEdit2.Size = new System.Drawing.Size(262, 28);
             this.lookUpEdit2.StyleController = this.dataLayoutControl1;
             this.lookUpEdit2.TabIndex = 5;
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(445, 12);
+            this.lookUpEdit1.Location = new System.Drawing.Point(520, 12);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
             this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,8 +147,10 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Properties.AppearanceDropDown.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "";
+            this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit1.Size = new System.Drawing.Size(343, 28);
+            this.lookUpEdit1.Size = new System.Drawing.Size(268, 28);
             this.lookUpEdit1.StyleController = this.dataLayoutControl1;
             this.lookUpEdit1.TabIndex = 4;
             // 
@@ -213,9 +217,9 @@ namespace ApprovedMedicalSurvey.UI
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.lookUpEdit1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(433, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(508, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(347, 32);
+            this.layoutControlItem2.Size = new System.Drawing.Size(272, 32);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -224,7 +228,7 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem3.Control = this.lookUpEdit2;
             this.layoutControlItem3.Location = new System.Drawing.Point(242, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(191, 32);
+            this.layoutControlItem3.Size = new System.Drawing.Size(266, 32);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
