@@ -22,7 +22,7 @@ namespace ApprovedMedicalSurvey.UI
             InitializeComponent();
         }
         Boolean flag;
-
+        private FlatLightTheme mainForm = null;
 
         private void Scans_Load(object sender, EventArgs e)
         {
@@ -125,9 +125,9 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.ClearSelection();
 
                 surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
-                textEdit1.Visible = true;
+                textBox1.Visible = true;
                 dateEdit1.Visible = true;
-                textEdit2.Visible = true;
+                textBox2.Visible = true;
             }
             catch (Exception ex)
             {
@@ -206,8 +206,9 @@ namespace ApprovedMedicalSurvey.UI
                     f.Tag = cellValue;
                     f.Show();
                     f.Dock = DockStyle.Fill;
+                    
 
-                }
+    }
             }
         }
 
@@ -228,7 +229,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textEdit1.Text);
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textBox1.Text);
 
         }
 
@@ -240,9 +241,24 @@ namespace ApprovedMedicalSurvey.UI
 
         private void textEdit2_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textEdit2.Text);
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textBox2.Text);
 
         }
 
+     
+
+       
+
+
+        private void textBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            textBox1.Text = string.Empty;
+
+        }
+
+        private void textBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            textBox2.Text = string.Empty;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ApprovedMedicalSurvey.Shared;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +16,13 @@ namespace ApprovedMedicalSurvey.UI
 {
     public partial class FlatLightTheme : Form
     {
+        public static FlatLightTheme flatLightTheme;
+        public LabelControl lbl;
         public FlatLightTheme()
         {
             InitializeComponent();
+            flatLightTheme = this;
+            lbl = labelControl1;
         }
 
         private void FlatDarkTheme_Load(object sender, EventArgs e)

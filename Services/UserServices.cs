@@ -18,7 +18,7 @@ namespace ApprovedMedicalSurvey.Services
 {
     public static   class UserServices
     {
-        public static List<Users> GetAllUsers(string basurl) {
+        public static List<Users> GetAllUsers(string baseurl) {
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
 

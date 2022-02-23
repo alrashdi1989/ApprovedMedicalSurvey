@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -49,11 +49,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>EEEBE733F6E9DA7B02559DA9980C5A8E3D36853E</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>CF24272681E211DF41E7E3AD85A6A26D7D01060C</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>ApprovedMedicalSurvey_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -267,6 +266,7 @@
     <EmbeddedResource Include="UI\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ApprovedMedicalSurvey_1_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Governorate.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Surveys.datasource" />

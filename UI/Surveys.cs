@@ -65,6 +65,7 @@ namespace ApprovedMedicalSurvey.UI
             }
             this.Cursor = Cursors.Default;
             tabControl1.Visible = true;
+            FlatLightTheme.flatLightTheme.lbl.Text = this.Text;
 
         }
 

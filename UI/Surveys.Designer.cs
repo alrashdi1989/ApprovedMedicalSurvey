@@ -521,6 +521,8 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl2.Location = new System.Drawing.Point(2, 2);
             this.layoutControl2.Name = "layoutControl2";
+            this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(683, 491, 650, 400);
+            this.layoutControl2.OptionsView.DrawItemBorders = true;
             this.layoutControl2.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl2.Root = this.layoutControlGroup1;
             this.layoutControl2.Size = new System.Drawing.Size(1455, 728);
@@ -581,6 +583,8 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControlGroup1
             // 
+            this.layoutControlGroup1.AppearanceItemCaption.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.layoutControlGroup1.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -590,18 +594,22 @@ namespace ApprovedMedicalSurvey.UI
             this.layoutControlItem8,
             this.emptySpaceItem5,
             this.emptySpaceItem9});
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1455, 728);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem74
             // 
+            this.layoutControlItem74.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
             this.layoutControlItem74.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem74.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem74.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem74.Control = this.txt_14;
             this.layoutControlItem74.Location = new System.Drawing.Point(979, 0);
             this.layoutControlItem74.MinSize = new System.Drawing.Size(254, 25);
             this.layoutControlItem74.Name = "layoutControlItem74";
+            this.layoutControlItem74.OptionsPrint.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
+            this.layoutControlItem74.OptionsPrint.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem74.Size = new System.Drawing.Size(456, 25);
             this.layoutControlItem74.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem74.Text = "جامع البيان:";
@@ -609,12 +617,16 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControlItem91
             // 
+            this.layoutControlItem91.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
             this.layoutControlItem91.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem91.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem91.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem91.Control = this.txt_8;
             this.layoutControlItem91.Location = new System.Drawing.Point(979, 25);
             this.layoutControlItem91.MinSize = new System.Drawing.Size(254, 25);
             this.layoutControlItem91.Name = "layoutControlItem91";
+            this.layoutControlItem91.OptionsPrint.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
+            this.layoutControlItem91.OptionsPrint.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem91.Size = new System.Drawing.Size(456, 25);
             this.layoutControlItem91.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem91.Text = "اسم رب الأسرة:";
@@ -622,13 +634,17 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControlItem93
             // 
+            this.layoutControlItem93.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
             this.layoutControlItem93.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem93.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem93.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem93.Control = this.txt_9;
             this.layoutControlItem93.CustomizationFormText = "الشخص الذي تم مقابلته: ";
             this.layoutControlItem93.Location = new System.Drawing.Point(979, 50);
             this.layoutControlItem93.MinSize = new System.Drawing.Size(254, 25);
             this.layoutControlItem93.Name = "layoutControlItem93";
+            this.layoutControlItem93.OptionsPrint.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
+            this.layoutControlItem93.OptionsPrint.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem93.Size = new System.Drawing.Size(456, 25);
             this.layoutControlItem93.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem93.Text = "الشخص الذي تم مقابلته: ";
@@ -636,12 +652,16 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // layoutControlItem8
             // 
+            this.layoutControlItem8.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
             this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem8.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem8.Control = this.txt_147;
             this.layoutControlItem8.Location = new System.Drawing.Point(979, 75);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(254, 25);
             this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.OptionsPrint.AppearanceItemCaption.BorderColor = System.Drawing.Color.Black;
+            this.layoutControlItem8.OptionsPrint.AppearanceItemCaption.Options.UseBorderColor = true;
             this.layoutControlItem8.Size = new System.Drawing.Size(456, 25);
             this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem8.Text = "عدد أفراد الأسرة:";
