@@ -45,10 +45,13 @@ namespace ApprovedMedicalSurvey.UI
             this.lblsurveycount = new DevExpress.XtraEditors.LabelControl();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.willayatBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.governorateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.surveysBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             this.panel2.SuspendLayout();
@@ -59,15 +62,20 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surveysBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.textEdit1);
             this.panel1.Controls.Add(this.lookUpEdit1);
             this.panel1.Location = new System.Drawing.Point(1484, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
@@ -116,6 +124,7 @@ namespace ApprovedMedicalSurvey.UI
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.dateEdit1);
             this.panel2.Controls.Add(this.lookUpEdit2);
             this.panel2.Location = new System.Drawing.Point(1222, 41);
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
@@ -164,6 +173,7 @@ namespace ApprovedMedicalSurvey.UI
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.textEdit2);
             this.panel3.Controls.Add(this.lookUpEdit3);
             this.panel3.Location = new System.Drawing.Point(988, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(6);
@@ -309,6 +319,41 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6.TabIndex = 7;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
+            // textEdit1
+            // 
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textEdit1.EditValue = "المعني بالمسح...";
+            this.textEdit1.Location = new System.Drawing.Point(0, 53);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textEdit1.Size = new System.Drawing.Size(341, 28);
+            this.textEdit1.TabIndex = 1000001;
+            this.textEdit1.Visible = false;
+            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            // 
+            // dateEdit1
+            // 
+            this.dateEdit1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dateEdit1.EditValue = null;
+            this.dateEdit1.Location = new System.Drawing.Point(0, 53);
+            this.dateEdit1.Name = "dateEdit1";
+            this.dateEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.dateEdit1.Properties.Appearance.Options.UseFont = true;
+            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit1.Size = new System.Drawing.Size(250, 28);
+            this.dateEdit1.TabIndex = 1;
+            this.dateEdit1.Visible = false;
+            this.dateEdit1.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
+            // 
             // villageBindingSource
             // 
             this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
@@ -324,6 +369,22 @@ namespace ApprovedMedicalSurvey.UI
             // surveysBindingSource
             // 
             this.surveysBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.OperationOrder);
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textEdit2.EditValue = "رقم المسح...";
+            this.textEdit2.Location = new System.Drawing.Point(0, 53);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textEdit2.Size = new System.Drawing.Size(222, 28);
+            this.textEdit2.TabIndex = 1000002;
+            this.textEdit2.Visible = false;
+            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
             // Scans
             // 
@@ -355,10 +416,14 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willayatBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.governorateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surveysBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -381,5 +446,8 @@ namespace ApprovedMedicalSurvey.UI
         private DevExpress.XtraEditors.LabelControl lblsurveycount;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
     }
 }

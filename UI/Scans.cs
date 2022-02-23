@@ -123,7 +123,9 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.ClearSelection();
 
                  surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
-
+                textEdit1.Visible = true;
+                dateEdit1.Visible = true;
+                textEdit2.Visible = true;
             }
             catch (Exception ex)
             {
@@ -220,6 +222,24 @@ namespace ApprovedMedicalSurvey.UI
         private void lookUpEdit1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void textEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textEdit1.Text);
+
+        }
+
+        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateEdit1.Text);
+
+        }
+
+        private void textEdit2_EditValueChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textEdit2.Text);
+
         }
     }
 }
