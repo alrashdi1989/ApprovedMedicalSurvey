@@ -44,9 +44,8 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btncard_Click(object sender, EventArgs e)
         {
-            // Check OTP code
-            // load Main Form
-            //MessageBox.Show("مستخدم صحسيحّ");
+            FlatLightTheme mainform = new FlatLightTheme();
+            mainform.Show();
 
         }
 

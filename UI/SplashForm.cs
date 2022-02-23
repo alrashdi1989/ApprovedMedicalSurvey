@@ -35,7 +35,7 @@ namespace ApprovedMedicalSurvey.UI
             if (prgbarloading.Value == 100)
             {
                 tmrloading.Enabled = false;
-                frmLogin form = new frmLogin();
+                OTPForm form = new OTPForm();
                 form.Show();
                 this.Hide();
             }
