@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Data;
 using System.Drawing;
@@ -55,7 +56,8 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnShowResults_Click(object sender, EventArgs e)
         {
-          
+
+
             try
             {
                 this.Cursor = Cursors.WaitCursor;
@@ -70,7 +72,7 @@ namespace ApprovedMedicalSurvey.UI
 
 
 
-                DataTable dt_survey = new DataTable();
+                System.Data.DataTable dt_survey = new System.Data.DataTable();
                 dt_survey.Columns.Add("Surveyuuid", typeof(string));
                 dt_survey.Columns.Add("Surveyid", typeof(string));
                 dt_survey.Columns.Add("bncode", typeof(string));
@@ -82,7 +84,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 DataRow dr;
 
-                foreach (var ques in orders.operation_orders.Where(c=> c.village_name_ar == lookUpEdit3.Text && c.status=="completed"))
+                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == lookUpEdit3.Text && c.status == "completed"))
                 {
                     dr = dt_survey.NewRow();
                     dr["Surveyuuid"] = ques.uuid;
@@ -107,7 +109,7 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.Columns[6].HeaderText = "تاريخ المسح";
                 DataGridViewImageColumn img = new DataGridViewImageColumn();
                 Image image = Properties.Resources.search;
-                
+
                 img.Image = image;
                 dataGridView1.Columns.Add(img);
                 img.HeaderText = "التفاصيل";
@@ -122,7 +124,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 dataGridView1.ClearSelection();
 
-                 surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
+                surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
                 textEdit1.Visible = true;
                 dateEdit1.Visible = true;
                 textEdit2.Visible = true;
@@ -226,20 +228,21 @@ namespace ApprovedMedicalSurvey.UI
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textEdit1.Text);
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textEdit1.Text);
 
         }
 
         private void dateEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateEdit1.Text);
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateEdit1.Text);
 
         }
 
         private void textEdit2_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textEdit2.Text);
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textEdit2.Text);
 
         }
+
     }
 }
