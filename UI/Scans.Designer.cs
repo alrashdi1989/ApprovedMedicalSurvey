@@ -86,7 +86,7 @@ namespace ApprovedMedicalSurvey.UI
             // textEdit1
             // 
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textEdit1.EditValue = "المعني بالمسح...";
+            this.textEdit1.EditValue = "جامع البيانات....";
             this.textEdit1.Location = new System.Drawing.Point(0, 53);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
@@ -105,13 +105,13 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.lookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
             this.lookUpEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.lookUpEdit1.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit1.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit1.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit1.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseBackColor = true;
             this.lookUpEdit1.Properties.AppearanceDropDown.Options.UseFont = true;
@@ -132,7 +132,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit1.Properties.ValueMember = "rncode";
             this.lookUpEdit1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit1.Size = new System.Drawing.Size(341, 30);
+            this.lookUpEdit1.Size = new System.Drawing.Size(341, 28);
             this.lookUpEdit1.TabIndex = 1000000;
             this.lookUpEdit1.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
             this.lookUpEdit1.Click += new System.EventHandler(this.lookUpEdit1_Click);
@@ -173,13 +173,13 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit2.Name = "lookUpEdit2";
             this.lookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.lookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit2.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.lookUpEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.lookUpEdit2.Properties.Appearance.Options.UseFont = true;
             this.lookUpEdit2.Properties.Appearance.Options.UseForeColor = true;
             this.lookUpEdit2.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit2.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit2.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit2.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit2.Properties.AppearanceDropDown.Options.UseBackColor = true;
             this.lookUpEdit2.Properties.AppearanceDropDown.Options.UseFont = true;
@@ -201,7 +201,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit2.Properties.ValueMember = "wncode";
             this.lookUpEdit2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit2.Size = new System.Drawing.Size(250, 30);
+            this.lookUpEdit2.Size = new System.Drawing.Size(250, 28);
             this.lookUpEdit2.TabIndex = 0;
             this.lookUpEdit2.EditValueChanged += new System.EventHandler(this.lookUpEdit2_EditValueChanged);
             // 
@@ -238,13 +238,13 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit3.Location = new System.Drawing.Point(0, 0);
             this.lookUpEdit3.Name = "lookUpEdit3";
             this.lookUpEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.lookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit3.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.lookUpEdit3.Properties.Appearance.Options.UseBackColor = true;
             this.lookUpEdit3.Properties.Appearance.Options.UseFont = true;
             this.lookUpEdit3.Properties.Appearance.Options.UseForeColor = true;
             this.lookUpEdit3.Properties.AppearanceDropDown.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lookUpEdit3.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.lookUpEdit3.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lookUpEdit3.Properties.AppearanceDropDown.ForeColor = System.Drawing.Color.White;
             this.lookUpEdit3.Properties.AppearanceDropDown.Options.UseBackColor = true;
             this.lookUpEdit3.Properties.AppearanceDropDown.Options.UseFont = true;
@@ -266,7 +266,7 @@ namespace ApprovedMedicalSurvey.UI
             this.lookUpEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.lookUpEdit3.Properties.ValueMember = "tncode";
             this.lookUpEdit3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lookUpEdit3.Size = new System.Drawing.Size(222, 30);
+            this.lookUpEdit3.Size = new System.Drawing.Size(222, 28);
             this.lookUpEdit3.TabIndex = 0;
             this.lookUpEdit3.EditValueChanged += new System.EventHandler(this.lookUpEdit3_EditValueChanged);
             // 
