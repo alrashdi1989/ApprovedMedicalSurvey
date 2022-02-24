@@ -49,12 +49,12 @@ namespace ApprovedMedicalSurvey.UI
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -196,9 +196,8 @@ namespace ApprovedMedicalSurvey.UI
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(136, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 21);
+            this.label2.Size = new System.Drawing.Size(0, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
             // 
             // label8
             // 
@@ -295,6 +294,37 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.Size = new System.Drawing.Size(267, 37);
             this.panel5.TabIndex = 11;
             // 
+            // button6
+            // 
+            this.button6.ImageList = this.imageList1;
+            this.button6.Location = new System.Drawing.Point(221, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(43, 33);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(172, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(43, 33);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.simpleButton5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(123, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(43, 33);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.simpleButton6_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Firebrick;
@@ -327,37 +357,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1249, 2);
             this.panel4.TabIndex = 7;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(123, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(43, 33);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.simpleButton6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(172, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(43, 33);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.simpleButton5_Click);
-            // 
-            // button6
-            // 
-            this.button6.ImageList = this.imageList1;
-            this.button6.Location = new System.Drawing.Point(221, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(43, 33);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // FlatLightTheme
             // 
