@@ -84,19 +84,13 @@ namespace ApprovedMedicalSurvey.UI
 
                 ques_count += 1;
                 string name = control_name;
-                LabelControl tbx = this.Controls.Find(name, true).FirstOrDefault() as LabelControl;
-                TextEdit txt = this.Controls.Find(name, true).FirstOrDefault() as TextEdit;
+                Label tbx = this.Controls.Find(name, true).FirstOrDefault() as Label;
                 if (tbx != null )
                 {
                     tbx.Text = val;
                    
                 }
-                if (txt != null)
-                {
-                    txt.Text = val;
-                } 
-                
-
+              
 
             }
             catch (System.Exception ex)
@@ -135,6 +129,11 @@ namespace ApprovedMedicalSurvey.UI
 
             RejectionNote f = new RejectionNote();
             f.Show();
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
