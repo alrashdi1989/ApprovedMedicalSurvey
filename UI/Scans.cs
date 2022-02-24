@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
+using ApprovedMedicalSurvey.Shared;
 using Microsoft.Office.Interop.Excel;
 using System;
 using System.Data;
@@ -27,24 +28,51 @@ namespace ApprovedMedicalSurvey.UI
         private void Scans_Load(object sender, EventArgs e)
         {
             Governance();
-            lookUpEdit1.Text = "اختر المحافظة....";
         }
 
         private void Governance()
         {
-            governorateBindingSource.DataSource = GovernantesServices.GetAllGovernorate("governorates");
+            var dt = GovernantesServices.GetAllGovernorate("governorates");
+            dt.Insert(0, new Governorate {
+            name_ar="اختر المحافظة..."});
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "name_ar";
+            comboBox1.ValueMember = "rncode";
+           
+
         }
         private void States()
         {
-            willayatBindingSource.DataSource = WillayatServices.GetAllWillayatbyId("willayat", lookUpEdit1.EditValue.ToString());
 
-
+            var dt = WillayatServices.GetAllWillayatbyId("willayat", comboBox1.SelectedValue.ToString());
+            dt.Insert(0, new Willayat
+            {
+                name_ar = "اختر الولاية..."
+            });
+            comboBox2.DataSource = dt;
+            comboBox2.DisplayMember = "name_ar";
+            comboBox2.ValueMember = "wncode";
         }
 
         private void Villages()
         {
+            if (comboBox2.Text != "اختر الولاية...")
 
-            villageBindingSource.DataSource = VillageServices.GetAllVIllagesbyStateID("villages", lookUpEdit2.EditValue.ToString());
+              
+            {
+
+                var dt = VillageServices.GetAllVIllagesbyStateID("villages", comboBox2.SelectedValue.ToString());
+                dt.Insert(0, new Village
+                {
+                    name_ar = "اختر القرية..."
+                });
+                comboBox3.DataSource = dt;
+                comboBox3.DisplayMember = "name_ar";
+                comboBox3.ValueMember = "tncode";
+
+            }
+
+
 
 
         }
@@ -63,7 +91,8 @@ namespace ApprovedMedicalSurvey.UI
                 this.Cursor = Cursors.WaitCursor;
                 string postData = "";
                 string URL = "https://gql.formon.io/api/rest/surveys/";
-                var data = webPostMethod(postData, URL);
+                WebRequsets webRequests = new WebRequsets();
+                var data = webRequests.webPostMethod(postData, URL);
 
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
                 var orders = serializer.Deserialize<Models.Surveys>(data);
@@ -84,7 +113,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 DataRow dr;
 
-                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == lookUpEdit3.Text && c.status == "completed"))
+                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == comboBox3.Text && c.status == "completed"))
                 {
                     dr = dt_survey.NewRow();
                     dr["Surveyuuid"] = ques.uuid;
@@ -116,7 +145,7 @@ namespace ApprovedMedicalSurvey.UI
                 img.Name = "img";
                 img.Width = 60;
                 this.Cursor = Cursors.Default;
-                lblsurveycount.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
+                label1.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
 
                 flag = false;
 
@@ -124,7 +153,6 @@ namespace ApprovedMedicalSurvey.UI
 
                 dataGridView1.ClearSelection();
 
-                surveysBindingSource.DataSource = SurveyServices.GetAllSurveys("surveys");
                 textBox1.Visible = true;
                 dateEdit1.Visible = true;
                 textBox2.Visible = true;
@@ -138,59 +166,11 @@ namespace ApprovedMedicalSurvey.UI
 
         }
 
-        public string webPostMethod(string postData, string URL)
-        {
-            string responseFromServer = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
-            request.Method = "POST";
-            request.Credentials = CredentialCache.DefaultCredentials;
-            request.Accept = "/";
-            request.UseDefaultCredentials = true;
-            request.Proxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
-            byte[] byteArray = Encoding.UTF8.GetBytes(postData);
-            request.ContentType = "application/x-www-form-urlencoded";
-            request.ContentLength = byteArray.Length;
-            Stream dataStream = request.GetRequestStream();
-            dataStream.Write(byteArray, 0, byteArray.Length);
-            dataStream.Close();
-            try
-            {
-                WebResponse response = request.GetResponse();
-                dataStream = response.GetResponseStream();
-                StreamReader reader = new StreamReader(dataStream);
-                responseFromServer = reader.ReadToEnd();
-                reader.Close();
-                dataStream.Close();
-                response.Close();
-            }
-            catch (Exception ex)
-            {
+     
 
-            }
+       
 
-            return responseFromServer;
-
-        }
-        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-            States();
-        }
-
-        private void lookUpEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lookUpEdit2_EditValueChanged(object sender, EventArgs e)
-        {
-            Villages();
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView1.CurrentCell.ColumnIndex.Equals(7) && e.RowIndex != -1)
@@ -212,20 +192,6 @@ namespace ApprovedMedicalSurvey.UI
             }
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lookUpEdit1_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
@@ -259,6 +225,16 @@ namespace ApprovedMedicalSurvey.UI
         private void textBox2_MouseDown(object sender, MouseEventArgs e)
         {
             textBox2.Text = string.Empty;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            States();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Villages();
         }
     }
 }

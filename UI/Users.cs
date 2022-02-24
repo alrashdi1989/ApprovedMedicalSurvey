@@ -53,23 +53,5 @@ namespace ApprovedMedicalSurvey.UI
             //gridView1.Columns["village"].FilterInfo = new ColumnFilterInfo(filterString);
         }
 
-        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
-        {
-            layoutControlItem1.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-            string username = gridView1.GetFocusedRowCellDisplayText(colusername);
-            string status = gridView1.GetFocusedRowCellDisplayText(colstatus);
-            layoutControlItem1.Text = username + "  تغيير حالة المستخدم";
-            if (status == "active")
-            {
-                toggleSwitch1.IsOn = true;
-
-            }
-
-            else
-            {
-                toggleSwitch1.IsOn = false;
-            }
-           
-        }
     }
 }

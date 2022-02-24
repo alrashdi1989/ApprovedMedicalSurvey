@@ -17,12 +17,12 @@ namespace ApprovedMedicalSurvey.UI
     public partial class FlatLightTheme : Form
     {
         public static FlatLightTheme flatLightTheme;
-        public LabelControl lbl;
+        public Label lbl;
         public FlatLightTheme()
         {
             InitializeComponent();
             flatLightTheme = this;
-            lbl = labelControl1;
+            lbl = label2;
         }
 
         private void FlatDarkTheme_Load(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Dock = DockStyle.Fill;
 
             GlobalVariables.FormName = f.Text;
-            labelControl1.Text = GlobalVariables.FormName;
+            label2.Text = GlobalVariables.FormName;
         }
 
      
@@ -75,7 +75,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            labelControl1.Text = GlobalVariables.FormName;
+            label2.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
         }
@@ -87,7 +87,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            labelControl1.Text = GlobalVariables.FormName;
+            label2.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
         }
@@ -99,7 +99,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            labelControl1.Text = GlobalVariables.FormName;
+            label2.Text = GlobalVariables.FormName;
 
 
             DisposeAllButThis(f);

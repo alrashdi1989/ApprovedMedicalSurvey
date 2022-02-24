@@ -2649,11 +2649,11 @@ namespace ApprovedMedicalSurvey.UI
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1306, 0);
+            this.label19.Location = new System.Drawing.Point(1346, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(62, 21);
+            this.label19.Size = new System.Drawing.Size(22, 21);
             this.label19.TabIndex = 1;
-            this.label19.Text = "label19";
+            this.label19.Text = "--";
             // 
             // label55
             // 
