@@ -1,4 +1,5 @@
 ﻿using ApprovedMedicalSurvey.Models;
+using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using DevExpress.XtraEditors;
 using Nancy.Json;
@@ -44,7 +45,7 @@ namespace ApprovedMedicalSurvey.UI
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             var orders = serializer.Deserialize<Rootobject>(data);
-          
+
             foreach (var ques in orders.operation_orders[0].response)
             {
                 ans_val = "";
@@ -62,10 +63,13 @@ namespace ApprovedMedicalSurvey.UI
 
                 }
 
+
             }
             this.Cursor = Cursors.Default;
             tabControl1.Visible = true;
             FlatLightTheme.flatLightTheme.lbl.Text = this.Text;
+            familyMemberBindingSource.DataSource = FamilyMemberServices.GetAllFamiyMembersBySurveyID( "family/members/"+ GlobalVariables.SurveyID);
+
 
         }
 
@@ -132,6 +136,11 @@ namespace ApprovedMedicalSurvey.UI
         }
 
         private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -58,5 +58,13 @@ namespace ApprovedMedicalSurvey.UI
                 lblvalidate.Visible = true;
             }
         }
+
+        private void txtmobile_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ( e.KeyCode==Keys.Enter )
+            {
+                btncard.PerformClick();
+            }
+        }
     }
 }

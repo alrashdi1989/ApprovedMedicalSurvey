@@ -35,23 +35,23 @@ namespace ApprovedMedicalSurvey.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createdatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,10 +64,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(883, 388);
             this.panel1.TabIndex = 0;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
             // btnNewUser
             // 
@@ -95,10 +91,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(625, 126);
             this.panel2.TabIndex = 2;
-            // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
             // 
             // panel3
             // 
@@ -133,10 +125,10 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.usernameDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn,
             this.createdatDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
-            this.usernameDataGridViewTextBoxColumn,
             this.uuidDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource;
@@ -157,6 +149,20 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.Size = new System.Drawing.Size(883, 388);
             this.dataGridView1.TabIndex = 1;
             // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
+            // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "اسم المستخدم";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
             // roleDataGridViewTextBoxColumn
             // 
             this.roleDataGridViewTextBoxColumn.DataPropertyName = "role";
@@ -174,12 +180,6 @@ namespace ApprovedMedicalSurvey.UI
             this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
             this.statusDataGridViewTextBoxColumn.HeaderText = "الحاله";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "اسم المستخدم";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             // 
             // uuidDataGridViewTextBoxColumn
             // 
@@ -209,10 +209,10 @@ namespace ApprovedMedicalSurvey.UI
             this.Text = "شاشة المستخدمين";
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -226,10 +226,10 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.BindingSource villageBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn createdatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }

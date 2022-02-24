@@ -16,5 +16,7 @@ namespace ApprovedMedicalSurvey.Models
         public  List<Willayat> willayat { get; set; }
 
         public List<OperationOrder> operationOrders { get; set; }
+        public List<FamilyMember> family_members { get; set; }
+
     }
 }

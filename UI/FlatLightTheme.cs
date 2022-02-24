@@ -60,7 +60,11 @@ namespace ApprovedMedicalSurvey.UI
 
             if (dr == DialogResult.Yes)
             {
+                DisposeAllButThis(this);
                 this.Close();
+                OTPForm frm = new OTPForm();
+                frm.Show();
+               
             }
         }
         

@@ -31,6 +31,8 @@ namespace ApprovedMedicalSurvey.UI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Surveys));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -38,65 +40,35 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_147 = new System.Windows.Forms.Label();
+            this.txt_9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_14 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.surveyuuid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familymember = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maretialstatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.educationlevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.work = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wieght = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.period = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.details = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label79 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.layoutConverter1 = new DevExpress.XtraLayout.Converter.LayoutConverter(this.components);
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_14 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_9 = new System.Windows.Forms.Label();
-            this.txt_147 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_97 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_90 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_89 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_88 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_87 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_86 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_133 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_86 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_87 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt_88 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txt_89 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_90 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_97 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -104,31 +76,33 @@ namespace ApprovedMedicalSurvey.UI
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_91 = new System.Windows.Forms.Label();
-            this.txt_92 = new System.Windows.Forms.Label();
             this.txt_93 = new System.Windows.Forms.Label();
             this.txt_94 = new System.Windows.Forms.Label();
             this.txt_95 = new System.Windows.Forms.Label();
             this.txt_96 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
+            this.txt_92 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
             this.txt_112 = new System.Windows.Forms.Label();
             this.txt_113 = new System.Windows.Forms.Label();
             this.txt_114 = new System.Windows.Forms.Label();
             this.txt_115 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
             this.txt_134 = new System.Windows.Forms.Label();
             this.txt_99 = new System.Windows.Forms.Label();
             this.txt_100 = new System.Windows.Forms.Label();
@@ -139,55 +113,38 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_105 = new System.Windows.Forms.Label();
             this.txt_106 = new System.Windows.Forms.Label();
             this.txt_107 = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
             this.txt_123 = new System.Windows.Forms.Label();
             this.txt_109 = new System.Windows.Forms.Label();
             this.txt_110 = new System.Windows.Forms.Label();
             this.txt_143 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label80 = new System.Windows.Forms.Label();
             this.txt_124 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label29 = new System.Windows.Forms.Label();
             this.txt_122 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.txt_25 = new System.Windows.Forms.Label();
             this.txt_26 = new System.Windows.Forms.Label();
             this.txt_27 = new System.Windows.Forms.Label();
@@ -199,7 +156,19 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_33 = new System.Windows.Forms.Label();
             this.txt_34 = new System.Windows.Forms.Label();
             this.txt_35 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.txt_36 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.txt_37 = new System.Windows.Forms.Label();
             this.txt_38 = new System.Windows.Forms.Label();
             this.txt_39 = new System.Windows.Forms.Label();
@@ -211,56 +180,96 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_45 = new System.Windows.Forms.Label();
             this.txt_46 = new System.Windows.Forms.Label();
             this.txt_47 = new System.Windows.Forms.Label();
-            this.txt_48 = new System.Windows.Forms.Label();
-            this.txt_49 = new System.Windows.Forms.Label();
-            this.txt_50 = new System.Windows.Forms.Label();
-            this.txt_51 = new System.Windows.Forms.Label();
-            this.txt_52 = new System.Windows.Forms.Label();
-            this.txt_53 = new System.Windows.Forms.Label();
-            this.txt_54 = new System.Windows.Forms.Label();
-            this.txt_55 = new System.Windows.Forms.Label();
-            this.txt_56 = new System.Windows.Forms.Label();
-            this.txt_57 = new System.Windows.Forms.Label();
-            this.txt_58 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.txt_48 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.txt_49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.txt_50 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.txt_51 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.txt_52 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.txt_53 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txt_54 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.txt_55 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.txt_56 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.txt_57 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.txt_58 = new System.Windows.Forms.Label();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label61 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.txt_60 = new System.Windows.Forms.Label();
             this.txt_68 = new System.Windows.Forms.Label();
             this.txt_73 = new System.Windows.Forms.Label();
             this.txt_74 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.layoutConverter1 = new DevExpress.XtraLayout.Converter.LayoutConverter(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.familyMemberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isoverweightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicalactivityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicalactivityperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.smokingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.educationlevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chronicdiseasesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hasdisabilitiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formkeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.tabPage13.SuspendLayout();
-            this.tabPage10.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
+            this.tabPage13.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -353,6 +362,139 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage1.Text = "معلومات أساسية";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txt_147, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txt_9, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txt_8, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txt_14, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(952, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(499, 119);
+            this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(378, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 41);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "عدد أفراد الأسرة:";
+            // 
+            // txt_147
+            // 
+            this.txt_147.AutoSize = true;
+            this.txt_147.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txt_147.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_147.Location = new System.Drawing.Point(304, 72);
+            this.txt_147.Name = "txt_147";
+            this.txt_147.Size = new System.Drawing.Size(22, 41);
+            this.txt_147.TabIndex = 6;
+            this.txt_147.Text = "--";
+            // 
+            // txt_9
+            // 
+            this.txt_9.AutoSize = true;
+            this.txt_9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txt_9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_9.Location = new System.Drawing.Point(304, 50);
+            this.txt_9.Name = "txt_9";
+            this.txt_9.Size = new System.Drawing.Size(22, 21);
+            this.txt_9.TabIndex = 5;
+            this.txt_9.Text = "--";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(333, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(157, 21);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "الشخص الذي تم مقابلته: ";
+            // 
+            // txt_8
+            // 
+            this.txt_8.AutoSize = true;
+            this.txt_8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txt_8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_8.Location = new System.Drawing.Point(304, 28);
+            this.txt_8.Name = "txt_8";
+            this.txt_8.Size = new System.Drawing.Size(22, 21);
+            this.txt_8.TabIndex = 3;
+            this.txt_8.Text = "--";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(385, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "اسم رب الأسرة:";
+            // 
+            // txt_14
+            // 
+            this.txt_14.AutoSize = true;
+            this.txt_14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txt_14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_14.Location = new System.Drawing.Point(304, 6);
+            this.txt_14.Name = "txt_14";
+            this.txt_14.Size = new System.Drawing.Size(22, 21);
+            this.txt_14.TabIndex = 1;
+            this.txt_14.Text = "--";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(409, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "جامع البيان:";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Location = new System.Drawing.Point(22, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1434, 125);
+            this.panel3.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Location = new System.Drawing.Point(22, 136);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1429, 591);
+            this.panel2.TabIndex = 6;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.LightGray;
@@ -404,454 +546,6 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage4.Text = "نساء متزوجات في سن الانجاب";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.tableLayoutPanel3);
-            this.tabPage5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage5.ImageKey = "walker.png";
-            this.tabPage5.Location = new System.Drawing.Point(4, 37);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(1447, 353);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "كبار السن";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.tableLayoutPanel4);
-            this.tabPage6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage6.ImageKey = "sister-and-brother.png";
-            this.tabPage6.Location = new System.Drawing.Point(4, 37);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1447, 353);
-            this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "أطفال دون 5 سنوات";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.tableLayoutPanel5);
-            this.tabPage7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage7.ImageIndex = 3;
-            this.tabPage7.Location = new System.Drawing.Point(4, 37);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1447, 353);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "الإعاقة";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.tableLayoutPanel6);
-            this.tabPage8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage8.ImageKey = "heart-problem.png";
-            this.tabPage8.Location = new System.Drawing.Point(4, 37);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1447, 353);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "الأمراض المزمنة غير المعديه";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.tableLayoutPanel7);
-            this.tabPage9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage9.ImageKey = "smoking.png";
-            this.tabPage9.Location = new System.Drawing.Point(4, 37);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1447, 353);
-            this.tabPage9.TabIndex = 5;
-            this.tabPage9.Text = "التدخين و التبغ";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.surveyuuid,
-            this.personname,
-            this.gender,
-            this.age,
-            this.familymember,
-            this.maretialstatus,
-            this.educationlevel,
-            this.work,
-            this.wieght,
-            this.activity,
-            this.period,
-            this.details});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1455, 334);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // surveyuuid
-            // 
-            this.surveyuuid.HeaderText = "surveyuuid";
-            this.surveyuuid.MinimumWidth = 6;
-            this.surveyuuid.Name = "surveyuuid";
-            this.surveyuuid.Visible = false;
-            // 
-            // personname
-            // 
-            this.personname.HeaderText = "الإسم";
-            this.personname.MinimumWidth = 6;
-            this.personname.Name = "personname";
-            // 
-            // gender
-            // 
-            this.gender.HeaderText = "الجنس";
-            this.gender.MinimumWidth = 6;
-            this.gender.Name = "gender";
-            // 
-            // age
-            // 
-            this.age.HeaderText = "العمر";
-            this.age.MinimumWidth = 6;
-            this.age.Name = "age";
-            // 
-            // familymember
-            // 
-            this.familymember.HeaderText = "موقعه بالأسرة";
-            this.familymember.MinimumWidth = 6;
-            this.familymember.Name = "familymember";
-            // 
-            // maretialstatus
-            // 
-            this.maretialstatus.HeaderText = "الحالة الإجتماعية";
-            this.maretialstatus.MinimumWidth = 6;
-            this.maretialstatus.Name = "maretialstatus";
-            // 
-            // educationlevel
-            // 
-            this.educationlevel.HeaderText = "المستوى التعليمي";
-            this.educationlevel.MinimumWidth = 6;
-            this.educationlevel.Name = "educationlevel";
-            // 
-            // work
-            // 
-            this.work.HeaderText = "العمل";
-            this.work.MinimumWidth = 6;
-            this.work.Name = "work";
-            // 
-            // wieght
-            // 
-            this.wieght.HeaderText = "الوزن الزائد";
-            this.wieght.MinimumWidth = 6;
-            this.wieght.Name = "wieght";
-            // 
-            // activity
-            // 
-            this.activity.HeaderText = "ممارسة النشاط البدني";
-            this.activity.MinimumWidth = 6;
-            this.activity.Name = "activity";
-            // 
-            // period
-            // 
-            this.period.HeaderText = " المدة الزمنية";
-            this.period.MinimumWidth = 6;
-            this.period.Name = "period";
-            // 
-            // details
-            // 
-            this.details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.details.HeaderText = "تفاصيل";
-            this.details.MinimumWidth = 6;
-            this.details.Name = "details";
-            this.details.Text = "عرض";
-            // 
-            // label79
-            // 
-            this.label79.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(-586, 50);
-            this.label79.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(1423, 373);
-            this.label79.TabIndex = 0;
-            this.label79.Text = "ما هي الجهة التى تقدم الرعاية الصحية";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tableLayoutPanel8);
-            this.tabPage3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.ForeColor = System.Drawing.Color.Black;
-            this.tabPage3.ImageKey = "home.png";
-            this.tabPage3.Location = new System.Drawing.Point(4, 37);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1459, 732);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "المسكن وبيئته";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.Controls.Add(this.tableLayoutPanel10);
-            this.tabPage13.ImageIndex = 6;
-            this.tabPage13.Location = new System.Drawing.Point(4, 37);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1459, 732);
-            this.tabPage13.TabIndex = 6;
-            this.tabPage13.Text = "الاحتياجات";
-            this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.tableLayoutPanel9);
-            this.tabPage10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage10.ForeColor = System.Drawing.Color.Black;
-            this.tabPage10.ImageKey = "healthy.png";
-            this.tabPage10.Location = new System.Drawing.Point(4, 37);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1459, 732);
-            this.tabPage10.TabIndex = 3;
-            this.tabPage10.Text = "صحة الأسرة";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage11.ImageIndex = 4;
-            this.tabPage11.Location = new System.Drawing.Point(4, 37);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1459, 732);
-            this.tabPage11.TabIndex = 4;
-            this.tabPage11.Text = "الولادات";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage12.ImageKey = "tomb.png";
-            this.tabPage12.Location = new System.Drawing.Point(4, 37);
-            this.tabPage12.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Size = new System.Drawing.Size(1459, 732);
-            this.tabPage12.TabIndex = 5;
-            this.tabPage12.Text = "الوفيات";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(611, 2);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 32);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "رجوع";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button5.BackColor = System.Drawing.Color.Red;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(728, 2);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 32);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "رفض";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button6.BackColor = System.Drawing.Color.LimeGreen;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(848, 2);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(109, 32);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "قبول";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Firebrick;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1467, 2);
-            this.panel6.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 775);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1467, 56);
-            this.panel1.TabIndex = 12;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txt_147, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txt_9, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txt_8, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txt_14, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(952, 5);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(499, 119);
-            this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(409, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "جامع البيان:";
-            // 
-            // txt_14
-            // 
-            this.txt_14.AutoSize = true;
-            this.txt_14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txt_14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_14.Location = new System.Drawing.Point(304, 6);
-            this.txt_14.Name = "txt_14";
-            this.txt_14.Size = new System.Drawing.Size(22, 21);
-            this.txt_14.TabIndex = 1;
-            this.txt_14.Text = "--";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(385, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "اسم رب الأسرة:";
-            // 
-            // txt_8
-            // 
-            this.txt_8.AutoSize = true;
-            this.txt_8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txt_8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_8.Location = new System.Drawing.Point(304, 28);
-            this.txt_8.Name = "txt_8";
-            this.txt_8.Size = new System.Drawing.Size(22, 21);
-            this.txt_8.TabIndex = 3;
-            this.txt_8.Text = "--";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(333, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "الشخص الذي تم مقابلته: ";
-            // 
-            // txt_9
-            // 
-            this.txt_9.AutoSize = true;
-            this.txt_9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txt_9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_9.Location = new System.Drawing.Point(304, 50);
-            this.txt_9.Name = "txt_9";
-            this.txt_9.Size = new System.Drawing.Size(22, 21);
-            this.txt_9.TabIndex = 5;
-            this.txt_9.Text = "--";
-            // 
-            // txt_147
-            // 
-            this.txt_147.AutoSize = true;
-            this.txt_147.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txt_147.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_147.Location = new System.Drawing.Point(304, 72);
-            this.txt_147.Name = "txt_147";
-            this.txt_147.Size = new System.Drawing.Size(22, 41);
-            this.txt_147.TabIndex = 6;
-            this.txt_147.Text = "--";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(378, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 41);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "عدد أفراد الأسرة:";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Location = new System.Drawing.Point(22, 136);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1429, 591);
-            this.panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Location = new System.Drawing.Point(22, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1434, 125);
-            this.panel3.TabIndex = 7;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 4;
@@ -899,6 +593,126 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1443, 349);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
+            // txt_97
+            // 
+            this.txt_97.AutoSize = true;
+            this.txt_97.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_97.Location = new System.Drawing.Point(972, 126);
+            this.txt_97.Name = "txt_97";
+            this.txt_97.Size = new System.Drawing.Size(22, 21);
+            this.txt_97.TabIndex = 13;
+            this.txt_97.Text = "--";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1179, 126);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(261, 21);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "هل راجعت المؤسسة الصحية بعد الولادة؟ ";
+            // 
+            // txt_90
+            // 
+            this.txt_90.AutoSize = true;
+            this.txt_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_90.Location = new System.Drawing.Point(972, 105);
+            this.txt_90.Name = "txt_90";
+            this.txt_90.Size = new System.Drawing.Size(22, 21);
+            this.txt_90.TabIndex = 11;
+            this.txt_90.Text = "--";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1000, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(440, 21);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "إذا لم تستعملي أي وسيلة من وسائل المباعدة بين الولادات، ما هو السبب؟";
+            // 
+            // txt_89
+            // 
+            this.txt_89.AutoSize = true;
+            this.txt_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_89.Location = new System.Drawing.Point(972, 84);
+            this.txt_89.Name = "txt_89";
+            this.txt_89.Size = new System.Drawing.Size(22, 21);
+            this.txt_89.TabIndex = 9;
+            this.txt_89.Text = "--";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1046, 84);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(394, 21);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "هل سبق أن استخدمت أي وسيلة من وسائل المباعدة بين الولادات";
+            // 
+            // txt_88
+            // 
+            this.txt_88.AutoSize = true;
+            this.txt_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_88.Location = new System.Drawing.Point(972, 63);
+            this.txt_88.Name = "txt_88";
+            this.txt_88.Size = new System.Drawing.Size(22, 21);
+            this.txt_88.TabIndex = 7;
+            this.txt_88.Text = "--";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1124, 63);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(316, 21);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "ما هو الفاصل الزمني بين هذا الحمل والحمل السابق";
+            // 
+            // txt_87
+            // 
+            this.txt_87.AutoSize = true;
+            this.txt_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_87.Location = new System.Drawing.Point(972, 42);
+            this.txt_87.Name = "txt_87";
+            this.txt_87.Size = new System.Drawing.Size(22, 21);
+            this.txt_87.TabIndex = 5;
+            this.txt_87.Text = "--";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(1347, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 21);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "هل انت حامل";
+            // 
+            // txt_86
+            // 
+            this.txt_86.AutoSize = true;
+            this.txt_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_86.Location = new System.Drawing.Point(972, 21);
+            this.txt_86.Name = "txt_86";
+            this.txt_86.Size = new System.Drawing.Size(22, 21);
+            this.txt_86.TabIndex = 3;
+            this.txt_86.Text = "--";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1334, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 21);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "هل لديك أطفال؟";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -918,126 +732,6 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_133.Size = new System.Drawing.Size(22, 21);
             this.txt_133.TabIndex = 1;
             this.txt_133.Text = "--";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1334, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 21);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "هل لديك أطفال؟";
-            // 
-            // txt_86
-            // 
-            this.txt_86.AutoSize = true;
-            this.txt_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_86.Location = new System.Drawing.Point(972, 21);
-            this.txt_86.Name = "txt_86";
-            this.txt_86.Size = new System.Drawing.Size(22, 21);
-            this.txt_86.TabIndex = 3;
-            this.txt_86.Text = "--";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1347, 42);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 21);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "هل انت حامل";
-            // 
-            // txt_87
-            // 
-            this.txt_87.AutoSize = true;
-            this.txt_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_87.Location = new System.Drawing.Point(972, 42);
-            this.txt_87.Name = "txt_87";
-            this.txt_87.Size = new System.Drawing.Size(22, 21);
-            this.txt_87.TabIndex = 5;
-            this.txt_87.Text = "--";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1124, 63);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(316, 21);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "ما هو الفاصل الزمني بين هذا الحمل والحمل السابق";
-            // 
-            // txt_88
-            // 
-            this.txt_88.AutoSize = true;
-            this.txt_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_88.Location = new System.Drawing.Point(972, 63);
-            this.txt_88.Name = "txt_88";
-            this.txt_88.Size = new System.Drawing.Size(22, 21);
-            this.txt_88.TabIndex = 7;
-            this.txt_88.Text = "--";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1046, 84);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(394, 21);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "هل سبق أن استخدمت أي وسيلة من وسائل المباعدة بين الولادات";
-            // 
-            // txt_89
-            // 
-            this.txt_89.AutoSize = true;
-            this.txt_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_89.Location = new System.Drawing.Point(972, 84);
-            this.txt_89.Name = "txt_89";
-            this.txt_89.Size = new System.Drawing.Size(22, 21);
-            this.txt_89.TabIndex = 9;
-            this.txt_89.Text = "--";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1000, 105);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(440, 21);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "إذا لم تستعملي أي وسيلة من وسائل المباعدة بين الولادات، ما هو السبب؟";
-            // 
-            // txt_90
-            // 
-            this.txt_90.AutoSize = true;
-            this.txt_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_90.Location = new System.Drawing.Point(972, 105);
-            this.txt_90.Name = "txt_90";
-            this.txt_90.Size = new System.Drawing.Size(22, 21);
-            this.txt_90.TabIndex = 11;
-            this.txt_90.Text = "--";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1179, 126);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(261, 21);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "هل راجعت المؤسسة الصحية بعد الولادة؟ ";
-            // 
-            // txt_97
-            // 
-            this.txt_97.AutoSize = true;
-            this.txt_97.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_97.Location = new System.Drawing.Point(972, 126);
-            this.txt_97.Name = "txt_97";
-            this.txt_97.Size = new System.Drawing.Size(22, 21);
-            this.txt_97.TabIndex = 13;
-            this.txt_97.Text = "--";
             // 
             // label6
             // 
@@ -1109,16 +803,6 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_91.TabIndex = 21;
             this.txt_91.Text = "--";
             // 
-            // txt_92
-            // 
-            this.txt_92.AutoSize = true;
-            this.txt_92.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_92.Location = new System.Drawing.Point(557, 21);
-            this.txt_92.Name = "txt_92";
-            this.txt_92.Size = new System.Drawing.Size(22, 21);
-            this.txt_92.TabIndex = 22;
-            this.txt_92.Text = "--";
-            // 
             // txt_93
             // 
             this.txt_93.AutoSize = true;
@@ -1159,49 +843,30 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_96.TabIndex = 26;
             this.txt_96.Text = "--";
             // 
-            // label75
+            // txt_92
             // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(1319, 63);
-            this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(122, 21);
-            this.label75.TabIndex = 1;
-            this.label75.Text = "من يقوم بمساعدته؟";
+            this.txt_92.AutoSize = true;
+            this.txt_92.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_92.Location = new System.Drawing.Point(557, 21);
+            this.txt_92.Name = "txt_92";
+            this.txt_92.Size = new System.Drawing.Size(22, 21);
+            this.txt_92.TabIndex = 22;
+            this.txt_92.Text = "--";
             // 
-            // label74
+            // tabPage5
             // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(1238, 42);
-            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(203, 21);
-            this.label74.TabIndex = 2;
-            this.label74.Text = "هل يمارس المسن أي نشاط بدني";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(1157, 21);
-            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(284, 21);
-            this.label73.TabIndex = 3;
-            this.label73.Text = "هل يحتاج إلى مساعدة للقيام بالنشاطات اليومية";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(1290, 0);
-            this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(151, 21);
-            this.label72.TabIndex = 4;
-            this.label72.Text = "هل يمارس عملاً منتجاً؟";
+            this.tabPage5.Controls.Add(this.tableLayoutPanel3);
+            this.tabPage5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage5.ImageKey = "walker.png";
+            this.tabPage5.Location = new System.Drawing.Point(4, 37);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(1447, 353);
+            this.tabPage5.TabIndex = 1;
+            this.tabPage5.Text = "كبار السن";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -1226,6 +891,50 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1443, 349);
             this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(1290, 0);
+            this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(151, 21);
+            this.label72.TabIndex = 4;
+            this.label72.Text = "هل يمارس عملاً منتجاً؟";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(1319, 63);
+            this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(122, 21);
+            this.label75.TabIndex = 1;
+            this.label75.Text = "من يقوم بمساعدته؟";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(1157, 21);
+            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(284, 21);
+            this.label73.TabIndex = 3;
+            this.label73.Text = "هل يحتاج إلى مساعدة للقيام بالنشاطات اليومية";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(1238, 42);
+            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(203, 21);
+            this.label74.TabIndex = 2;
+            this.label74.Text = "هل يمارس المسن أي نشاط بدني";
             // 
             // txt_112
             // 
@@ -1267,115 +976,18 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_115.TabIndex = 8;
             this.txt_115.Text = "--";
             // 
-            // label71
+            // tabPage6
             // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(844, 84);
-            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(217, 21);
-            this.label71.TabIndex = 1;
-            this.label71.Text = "هل يعاني الطفل من نقص في النمو";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(696, 63);
-            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(365, 21);
-            this.label70.TabIndex = 2;
-            this.label70.Text = "هل تم تشخيص الإصابة بسوء التغذية (نقص الوزن) للطفل؟";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(1101, 84);
-            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(344, 21);
-            this.label66.TabIndex = 3;
-            this.label66.Text = "هل تتم مراجعة المركز الصحي لمعرفة معدل نمو الطفل؟";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(823, 42);
-            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(238, 21);
-            this.label69.TabIndex = 4;
-            this.label69.Text = "هل تم تشخيص فقر الدم(أنيميا) للطفل؟";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(1093, 63);
-            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(352, 21);
-            this.label65.TabIndex = 5;
-            this.label65.Text = "هل كان طفلك ناقص الوزن (اقل من 2.5كج) عند الولادة؟";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(642, 21);
-            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(419, 21);
-            this.label68.TabIndex = 6;
-            this.label68.Text = "هل أصيب طفلك بالتهاب الجهاز التنفسي خلال الأسبوعين الماضيين؟";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(1116, 42);
-            this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(329, 21);
-            this.label64.TabIndex = 7;
-            this.label64.Text = "هل تم تطعيمه ضد الأمراض المستهدفة بصفة منتظمة ";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(727, 0);
-            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(334, 21);
-            this.label67.TabIndex = 8;
-            this.label67.Text = "هل أصيب طفلك بالإسهال خلال الأسبوعين الماضيين؟";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(1156, 21);
-            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(289, 21);
-            this.label63.TabIndex = 9;
-            this.label63.Text = "ما عمر الطفل عندما بدأ تناوله الأطعمة المكملة؟";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(1149, 0);
-            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(296, 21);
-            this.label62.TabIndex = 10;
-            this.label62.Text = "ما هو نوع الإرضاع خلال الشهور الستة الأولى؟";
+            this.tabPage6.Controls.Add(this.tableLayoutPanel4);
+            this.tabPage6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage6.ImageKey = "sister-and-brother.png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 37);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(1447, 353);
+            this.tabPage6.TabIndex = 2;
+            this.tabPage6.Text = "أطفال دون 5 سنوات";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
@@ -1420,6 +1032,116 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1447, 353);
             this.tableLayoutPanel4.TabIndex = 11;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(1149, 0);
+            this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(296, 21);
+            this.label62.TabIndex = 10;
+            this.label62.Text = "ما هو نوع الإرضاع خلال الشهور الستة الأولى؟";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(844, 84);
+            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(217, 21);
+            this.label71.TabIndex = 1;
+            this.label71.Text = "هل يعاني الطفل من نقص في النمو";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(1156, 21);
+            this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(289, 21);
+            this.label63.TabIndex = 9;
+            this.label63.Text = "ما عمر الطفل عندما بدأ تناوله الأطعمة المكملة؟";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(696, 63);
+            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(365, 21);
+            this.label70.TabIndex = 2;
+            this.label70.Text = "هل تم تشخيص الإصابة بسوء التغذية (نقص الوزن) للطفل؟";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(1116, 42);
+            this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(329, 21);
+            this.label64.TabIndex = 7;
+            this.label64.Text = "هل تم تطعيمه ضد الأمراض المستهدفة بصفة منتظمة ";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(823, 42);
+            this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(238, 21);
+            this.label69.TabIndex = 4;
+            this.label69.Text = "هل تم تشخيص فقر الدم(أنيميا) للطفل؟";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(1101, 84);
+            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(344, 21);
+            this.label66.TabIndex = 3;
+            this.label66.Text = "هل تتم مراجعة المركز الصحي لمعرفة معدل نمو الطفل؟";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(642, 21);
+            this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(419, 21);
+            this.label68.TabIndex = 6;
+            this.label68.Text = "هل أصيب طفلك بالتهاب الجهاز التنفسي خلال الأسبوعين الماضيين؟";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(1093, 63);
+            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(352, 21);
+            this.label65.TabIndex = 5;
+            this.label65.Text = "هل كان طفلك ناقص الوزن (اقل من 2.5كج) عند الولادة؟";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(727, 0);
+            this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(334, 21);
+            this.label67.TabIndex = 8;
+            this.label67.Text = "هل أصيب طفلك بالإسهال خلال الأسبوعين الماضيين؟";
             // 
             // txt_134
             // 
@@ -1521,6 +1243,19 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_107.TabIndex = 20;
             this.txt_107.Text = "--";
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.tableLayoutPanel5);
+            this.tabPage7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage7.ImageIndex = 3;
+            this.tabPage7.Location = new System.Drawing.Point(4, 37);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(1447, 353);
+            this.tabPage7.TabIndex = 3;
+            this.tabPage7.Text = "الإعاقة";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -1556,6 +1291,17 @@ namespace ApprovedMedicalSurvey.UI
             this.label18.TabIndex = 1;
             this.label18.Text = "ما هي الجهة التى تقدم الرعاية الصحية";
             // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(1367, 0);
+            this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(78, 21);
+            this.label76.TabIndex = 4;
+            this.label76.Text = "نوع الإعاقة";
+            // 
             // label78
             // 
             this.label78.AutoSize = true;
@@ -1577,17 +1323,6 @@ namespace ApprovedMedicalSurvey.UI
             this.label77.Size = new System.Drawing.Size(326, 21);
             this.label77.TabIndex = 3;
             this.label77.Text = "هل يحتاج المعاق إلى مساعدة للقيام بالنشاطات اليومية";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(1367, 0);
-            this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(78, 21);
-            this.label76.TabIndex = 4;
-            this.label76.Text = "نوع الإعاقة";
             // 
             // txt_123
             // 
@@ -1629,16 +1364,18 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_143.TabIndex = 8;
             this.txt_143.Text = "--";
             // 
-            // label80
+            // tabPage8
             // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(1258, 0);
-            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(187, 21);
-            this.label80.TabIndex = 1;
-            this.label80.Text = "الأمراض المزمنة غير المعدية";
+            this.tabPage8.Controls.Add(this.tableLayoutPanel6);
+            this.tabPage8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage8.ImageKey = "heart-problem.png";
+            this.tabPage8.Location = new System.Drawing.Point(4, 37);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(1447, 353);
+            this.tabPage8.TabIndex = 4;
+            this.tabPage8.Text = "الأمراض المزمنة غير المعديه";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
             // 
@@ -1655,6 +1392,17 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel6.Size = new System.Drawing.Size(1447, 353);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(1258, 0);
+            this.label80.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(187, 21);
+            this.label80.TabIndex = 1;
+            this.label80.Text = "الأمراض المزمنة غير المعدية";
+            // 
             // txt_124
             // 
             this.txt_124.AutoSize = true;
@@ -1665,17 +1413,18 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_124.TabIndex = 2;
             this.txt_124.Text = "--";
             // 
-            // label29
+            // tabPage9
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(1341, 0);
-            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label29.Name = "label29";
-            this.label29.Padding = new System.Windows.Forms.Padding(5);
-            this.label29.Size = new System.Drawing.Size(104, 31);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "التدخين والتبغ";
+            this.tabPage9.Controls.Add(this.tableLayoutPanel7);
+            this.tabPage9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage9.ImageKey = "smoking.png";
+            this.tabPage9.Location = new System.Drawing.Point(4, 37);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(1447, 353);
+            this.tabPage9.TabIndex = 5;
+            this.tabPage9.Text = "التدخين و التبغ";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
             // 
@@ -1692,6 +1441,18 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1447, 353);
             this.tableLayoutPanel7.TabIndex = 3;
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(1341, 0);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Name = "label29";
+            this.label29.Padding = new System.Windows.Forms.Padding(5);
+            this.label29.Size = new System.Drawing.Size(104, 31);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "التدخين والتبغ";
+            // 
             // txt_122
             // 
             this.txt_122.AutoSize = true;
@@ -1703,368 +1464,29 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_122.TabIndex = 3;
             this.txt_122.Text = "--";
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(793, 253);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(260, 21);
-            this.label43.TabIndex = 20;
-            this.label43.Text = "ما هو نوع المحاصيل الزراعية الأساسية؟ ";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(1198, 253);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(246, 21);
-            this.label31.TabIndex = 21;
-            this.label31.Text = "تربية الحيوانات أو الطيور داخل المنزل";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(1130, 397);
-            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(314, 21);
-            this.label54.TabIndex = 22;
-            this.label54.Text = "هل لدى الأسرة استعداد للمشاركة في تنمية القرية؟  ";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(851, 205);
-            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(202, 21);
-            this.label42.TabIndex = 23;
-            this.label42.Text = "هل تملك الأسرة أراضي زراعية";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(864, 325);
-            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(189, 21);
-            this.label53.TabIndex = 24;
-            this.label53.Text = "الحيوانات ومنتجاتها مخصصة";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(785, 85);
-            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(268, 21);
-            this.label41.TabIndex = 25;
-            this.label41.Text = "هل تعاني الأسرة من الحشرات أو القوارض";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(1271, 109);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(173, 21);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "مصدر مياه الشرب الرئيسي";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(945, 397);
-            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(108, 21);
-            this.label52.TabIndex = 34;
-            this.label52.Text = "ما وجه المشاركة";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(811, 229);
-            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(242, 21);
-            this.label40.TabIndex = 28;
-            this.label40.Text = "ما نوع وسيلة الري الأساسية المستخدمة";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(1295, 229);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(149, 21);
-            this.label30.TabIndex = 29;
-            this.label30.Text = " نظام الصرف الصحي ";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(734, 373);
-            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(319, 21);
-            this.label51.TabIndex = 30;
-            this.label51.Text = "هل تقوم الأسرة بأي نشاط ذو طابع اقتصادي لم يذكر";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(866, 181);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(187, 21);
-            this.label39.TabIndex = 31;
-            this.label39.Text = "هل يوجد بالأسرة عامل حرفي";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1340, 205);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(104, 21);
-            this.label28.TabIndex = 32;
-            this.label28.Text = "عدد دورات مياه";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(1091, 325);
-            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(353, 21);
-            this.label50.TabIndex = 33;
-            this.label50.Text = "هل تملك الأسرة أي نوع من المواشي أو الحيوانات الداجنة";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(805, 61);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(248, 21);
-            this.label38.TabIndex = 19;
-            this.label38.Text = "الأجهزة الكهربائية التي تستخدمها الأسرة";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1319, 85);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(125, 21);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "يوجد مطبخ منفصل";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(1131, 373);
-            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(313, 21);
-            this.label49.TabIndex = 18;
-            this.label49.Text = "هل تجد صعوبة في ممارسة الصيد أو الاستفادة منه ";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(823, 157);
-            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(230, 21);
-            this.label37.TabIndex = 8;
-            this.label37.Text = "متوسط إجمالي دخل الأسرة في الشهر";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(1316, 181);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(128, 21);
-            this.label27.TabIndex = 2;
-            this.label27.Text = " التخلص من القمامة";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(701, 301);
-            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(352, 21);
-            this.label48.TabIndex = 3;
-            this.label48.Text = "هل تستعمل الأسرة أي نوع من محسنات الإنتاج الزراعي ";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(747, 37);
-            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(306, 21);
-            this.label36.TabIndex = 4;
-            this.label36.Text = "هل يوجد مستنقع أو مجرى ماء بالقرب من السكن ";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1267, 61);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(177, 21);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "عدد الغرف المخصصة للنوم";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(900, 349);
-            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(153, 21);
-            this.label47.TabIndex = 6;
-            this.label47.Text = "صفة حيازة قارب الصيد";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(927, 133);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(126, 21);
-            this.label35.TabIndex = 7;
-            this.label35.Text = "مصادر دخل الأسرة";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1268, 157);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(176, 21);
-            this.label26.TabIndex = 9;
-            this.label26.Text = "هل يوجد وعاء لحفظ القمامة";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(1212, 301);
-            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(232, 21);
-            this.label46.TabIndex = 16;
-            this.label46.Text = "صعوبة في استغلال الأرض الزراعية";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(842, 13);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(211, 21);
-            this.label34.TabIndex = 10;
-            this.label34.Text = " أهم المزروعات في محيط المنزل";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1338, 37);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 21);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "مادة بناء المسكن";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(1227, 349);
-            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(217, 21);
-            this.label45.TabIndex = 12;
-            this.label45.Text = "هل تعمل الأسرة في صيد الأسماك؟";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(953, 109);
-            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(100, 21);
-            this.label33.TabIndex = 13;
-            this.label33.Text = "طريقة المكافحة";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1334, 133);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(110, 21);
-            this.label25.TabIndex = 14;
-            this.label25.Text = " نوع خزان المياه";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(1213, 277);
-            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(231, 21);
-            this.label32.TabIndex = 17;
-            this.label32.Text = "هل تهتم الأسرة بزراعة محيط المنزل";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1324, 13);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 21);
-            this.label20.TabIndex = 35;
-            this.label20.Text = "صفة حيازة المنزل";
+            // label79
+            // 
+            this.label79.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(-586, 50);
+            this.label79.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(1423, 373);
+            this.label79.TabIndex = 0;
+            this.label79.Text = "ما هي الجهة التى تقدم الرعاية الصحية";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tableLayoutPanel8);
+            this.tabPage3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.ForeColor = System.Drawing.Color.Black;
+            this.tabPage3.ImageKey = "home.png";
+            this.tabPage3.Location = new System.Drawing.Point(4, 37);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1459, 732);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "المسكن وبيئته";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel8
             // 
@@ -2169,6 +1591,127 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1459, 732);
             this.tableLayoutPanel8.TabIndex = 36;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(1324, 13);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(120, 21);
+            this.label20.TabIndex = 35;
+            this.label20.Text = "صفة حيازة المنزل";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(1338, 37);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(106, 21);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "مادة بناء المسكن";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(1267, 61);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(177, 21);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "عدد الغرف المخصصة للنوم";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(1198, 253);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(246, 21);
+            this.label31.TabIndex = 21;
+            this.label31.Text = "تربية الحيوانات أو الطيور داخل المنزل";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(1319, 85);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 21);
+            this.label23.TabIndex = 26;
+            this.label23.Text = "يوجد مطبخ منفصل";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(1271, 109);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(173, 21);
+            this.label24.TabIndex = 27;
+            this.label24.Text = "مصدر مياه الشرب الرئيسي";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(1334, 133);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(110, 21);
+            this.label25.TabIndex = 14;
+            this.label25.Text = " نوع خزان المياه";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(1268, 157);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(176, 21);
+            this.label26.TabIndex = 9;
+            this.label26.Text = "هل يوجد وعاء لحفظ القمامة";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(1316, 181);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(128, 21);
+            this.label27.TabIndex = 2;
+            this.label27.Text = " التخلص من القمامة";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(1340, 205);
+            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(104, 21);
+            this.label28.TabIndex = 32;
+            this.label28.Text = "عدد دورات مياه";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(1295, 229);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(149, 21);
+            this.label30.TabIndex = 29;
+            this.label30.Text = " نظام الصرف الصحي ";
             // 
             // txt_25
             // 
@@ -2280,6 +1823,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_35.TabIndex = 46;
             this.txt_35.Text = "--";
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(1213, 277);
+            this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(231, 21);
+            this.label32.TabIndex = 17;
+            this.label32.Text = "هل تهتم الأسرة بزراعة محيط المنزل";
+            // 
             // txt_36
             // 
             this.txt_36.AutoSize = true;
@@ -2289,6 +1843,127 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_36.Size = new System.Drawing.Size(22, 21);
             this.txt_36.TabIndex = 47;
             this.txt_36.Text = "--";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(842, 13);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(211, 21);
+            this.label34.TabIndex = 10;
+            this.label34.Text = " أهم المزروعات في محيط المنزل";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(747, 37);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(306, 21);
+            this.label36.TabIndex = 4;
+            this.label36.Text = "هل يوجد مستنقع أو مجرى ماء بالقرب من السكن ";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(805, 61);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(248, 21);
+            this.label38.TabIndex = 19;
+            this.label38.Text = "الأجهزة الكهربائية التي تستخدمها الأسرة";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(785, 85);
+            this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(268, 21);
+            this.label41.TabIndex = 25;
+            this.label41.Text = "هل تعاني الأسرة من الحشرات أو القوارض";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(953, 109);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(100, 21);
+            this.label33.TabIndex = 13;
+            this.label33.Text = "طريقة المكافحة";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(927, 133);
+            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(126, 21);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "مصادر دخل الأسرة";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(823, 157);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(230, 21);
+            this.label37.TabIndex = 8;
+            this.label37.Text = "متوسط إجمالي دخل الأسرة في الشهر";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(866, 181);
+            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(187, 21);
+            this.label39.TabIndex = 31;
+            this.label39.Text = "هل يوجد بالأسرة عامل حرفي";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(851, 205);
+            this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(202, 21);
+            this.label42.TabIndex = 23;
+            this.label42.Text = "هل تملك الأسرة أراضي زراعية";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(811, 229);
+            this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(242, 21);
+            this.label40.TabIndex = 28;
+            this.label40.Text = "ما نوع وسيلة الري الأساسية المستخدمة";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(793, 253);
+            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(260, 21);
+            this.label43.TabIndex = 20;
+            this.label43.Text = "ما هو نوع المحاصيل الزراعية الأساسية؟ ";
             // 
             // txt_37
             // 
@@ -2400,6 +2075,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_47.TabIndex = 58;
             this.txt_47.Text = "--";
             // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(921, 277);
+            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(132, 21);
+            this.label44.TabIndex = 15;
+            this.label44.Text = "المنتوجات مخصصة";
+            // 
             // txt_48
             // 
             this.txt_48.AutoSize = true;
@@ -2409,6 +2095,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_48.Size = new System.Drawing.Size(22, 21);
             this.txt_48.TabIndex = 59;
             this.txt_48.Text = "--";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(1212, 301);
+            this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(232, 21);
+            this.label46.TabIndex = 16;
+            this.label46.Text = "صعوبة في استغلال الأرض الزراعية";
             // 
             // txt_49
             // 
@@ -2420,6 +2117,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_49.TabIndex = 60;
             this.txt_49.Text = "--";
             // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(701, 301);
+            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(352, 21);
+            this.label48.TabIndex = 3;
+            this.label48.Text = "هل تستعمل الأسرة أي نوع من محسنات الإنتاج الزراعي ";
+            // 
             // txt_50
             // 
             this.txt_50.AutoSize = true;
@@ -2429,6 +2137,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_50.Size = new System.Drawing.Size(22, 21);
             this.txt_50.TabIndex = 61;
             this.txt_50.Text = "--";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(1091, 325);
+            this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(353, 21);
+            this.label50.TabIndex = 33;
+            this.label50.Text = "هل تملك الأسرة أي نوع من المواشي أو الحيوانات الداجنة";
             // 
             // txt_51
             // 
@@ -2440,6 +2159,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_51.TabIndex = 62;
             this.txt_51.Text = "--";
             // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(864, 325);
+            this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(189, 21);
+            this.label53.TabIndex = 24;
+            this.label53.Text = "الحيوانات ومنتجاتها مخصصة";
+            // 
             // txt_52
             // 
             this.txt_52.AutoSize = true;
@@ -2449,6 +2179,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_52.Size = new System.Drawing.Size(22, 21);
             this.txt_52.TabIndex = 63;
             this.txt_52.Text = "--";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(1227, 349);
+            this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(217, 21);
+            this.label45.TabIndex = 12;
+            this.label45.Text = "هل تعمل الأسرة في صيد الأسماك؟";
             // 
             // txt_53
             // 
@@ -2460,6 +2201,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_53.TabIndex = 64;
             this.txt_53.Text = "--";
             // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(900, 349);
+            this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(153, 21);
+            this.label47.TabIndex = 6;
+            this.label47.Text = "صفة حيازة قارب الصيد";
+            // 
             // txt_54
             // 
             this.txt_54.AutoSize = true;
@@ -2469,6 +2221,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_54.Size = new System.Drawing.Size(22, 21);
             this.txt_54.TabIndex = 65;
             this.txt_54.Text = "--";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(1131, 373);
+            this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(313, 21);
+            this.label49.TabIndex = 18;
+            this.label49.Text = "هل تجد صعوبة في ممارسة الصيد أو الاستفادة منه ";
             // 
             // txt_55
             // 
@@ -2480,6 +2243,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_55.TabIndex = 66;
             this.txt_55.Text = "--";
             // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(734, 373);
+            this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(319, 21);
+            this.label51.TabIndex = 30;
+            this.label51.Text = "هل تقوم الأسرة بأي نشاط ذو طابع اقتصادي لم يذكر";
+            // 
             // txt_56
             // 
             this.txt_56.AutoSize = true;
@@ -2489,6 +2263,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_56.Size = new System.Drawing.Size(22, 21);
             this.txt_56.TabIndex = 67;
             this.txt_56.Text = "--";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(1130, 397);
+            this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(314, 21);
+            this.label54.TabIndex = 22;
+            this.label54.Text = "هل لدى الأسرة استعداد للمشاركة في تنمية القرية؟  ";
             // 
             // txt_57
             // 
@@ -2500,6 +2285,17 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_57.TabIndex = 68;
             this.txt_57.Text = "--";
             // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(945, 397);
+            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(108, 21);
+            this.label52.TabIndex = 34;
+            this.label52.Text = "ما وجه المشاركة";
+            // 
             // txt_58
             // 
             this.txt_58.AutoSize = true;
@@ -2510,16 +2306,64 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_58.TabIndex = 69;
             this.txt_58.Text = "--";
             // 
-            // label44
+            // tabPage13
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(921, 277);
-            this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(132, 21);
-            this.label44.TabIndex = 15;
-            this.label44.Text = "المنتوجات مخصصة";
+            this.tabPage13.Controls.Add(this.tableLayoutPanel10);
+            this.tabPage13.ImageIndex = 6;
+            this.tabPage13.Location = new System.Drawing.Point(4, 37);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1459, 732);
+            this.tabPage13.TabIndex = 6;
+            this.tabPage13.Text = "الاحتياجات";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel10.Controls.Add(this.label19, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.label55, 0, 0);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 1;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1453, 726);
+            this.tableLayoutPanel10.TabIndex = 2;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1346, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(22, 21);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "--";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(1374, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(76, 21);
+            this.label55.TabIndex = 2;
+            this.label55.Text = "الاحتياجات";
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.tableLayoutPanel9);
+            this.tabPage10.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage10.ForeColor = System.Drawing.Color.Black;
+            this.tabPage10.ImageKey = "healthy.png";
+            this.tabPage10.Location = new System.Drawing.Point(4, 37);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(1459, 732);
+            this.tabPage10.TabIndex = 3;
+            this.tabPage10.Text = "صحة الأسرة";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel9
             // 
@@ -2558,6 +2402,17 @@ namespace ApprovedMedicalSurvey.UI
             this.label61.Text = "خلال الأسبوع العادي كم يوما في الأســبوع تتناول الأسرة الخضروات والفواكه الطازجـة" +
     "؟";
             // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(1225, 10);
+            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(222, 21);
+            this.label56.TabIndex = 4;
+            this.label56.Text = "في حال المرض غالباً تراجع الأسرة";
+            // 
             // label59
             // 
             this.label59.AutoSize = true;
@@ -2579,17 +2434,6 @@ namespace ApprovedMedicalSurvey.UI
             this.label58.Size = new System.Drawing.Size(463, 21);
             this.label58.TabIndex = 3;
             this.label58.Text = "هل توفيت إحدى النساء أثناء الحمل أو الوضع والنفاس خلال السنة الماضية؟";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(1225, 10);
-            this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(222, 21);
-            this.label56.TabIndex = 4;
-            this.label56.Text = "في حال المرض غالباً تراجع الأسرة";
             // 
             // txt_60
             // 
@@ -2631,38 +2475,277 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_74.TabIndex = 8;
             this.txt_74.Text = "--";
             // 
-            // tableLayoutPanel10
+            // tabPage11
             // 
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel10.Controls.Add(this.label19, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.label55, 0, 0);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1453, 726);
-            this.tableLayoutPanel10.TabIndex = 2;
+            this.tabPage11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage11.ImageIndex = 4;
+            this.tabPage11.Location = new System.Drawing.Point(4, 37);
+            this.tabPage11.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(1459, 732);
+            this.tabPage11.TabIndex = 4;
+            this.tabPage11.Text = "الولادات";
+            this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // tabPage12
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(1346, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(22, 21);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "--";
+            this.tabPage12.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage12.ImageKey = "tomb.png";
+            this.tabPage12.Location = new System.Drawing.Point(4, 37);
+            this.tabPage12.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(1459, 732);
+            this.tabPage12.TabIndex = 5;
+            this.tabPage12.Text = "الوفيات";
+            this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // label55
+            // button4
             // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(1374, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(76, 21);
-            this.label55.TabIndex = 2;
-            this.label55.Text = "الاحتياجات";
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(611, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 32);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "رجوع";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button5.BackColor = System.Drawing.Color.Red;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(728, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 32);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "رفض";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button6.BackColor = System.Drawing.Color.LimeGreen;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(848, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(109, 32);
+            this.button6.TabIndex = 9;
+            this.button6.Text = "قبول";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Firebrick;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1467, 2);
+            this.panel6.TabIndex = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 775);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1467, 56);
+            this.panel1.TabIndex = 12;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.ageDataGridViewTextBoxColumn,
+            this.genderDataGridViewTextBoxColumn,
+            this.isoverweightDataGridViewTextBoxColumn,
+            this.physicalactivityDataGridViewTextBoxColumn,
+            this.physicalactivityperiodDataGridViewTextBoxColumn,
+            this.positionDataGridViewTextBoxColumn,
+            this.smokingDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.workDataGridViewTextBoxColumn,
+            this.educationlevelDataGridViewTextBoxColumn,
+            this.chronicdiseasesDataGridViewTextBoxColumn,
+            this.hasdisabilitiesDataGridViewTextBoxColumn,
+            this.formkeyDataGridViewTextBoxColumn,
+            this.formuuidDataGridViewTextBoxColumn,
+            this.orderuuidDataGridViewTextBoxColumn,
+            this.questionuuidDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.familyMemberBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1455, 334);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // familyMemberBindingSource
+            // 
+            this.familyMemberBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.FamilyMember);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "العمر ";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "الجنس";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            this.genderDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isoverweightDataGridViewTextBoxColumn
+            // 
+            this.isoverweightDataGridViewTextBoxColumn.DataPropertyName = "is_overweight";
+            this.isoverweightDataGridViewTextBoxColumn.HeaderText = "يعاني من السنة";
+            this.isoverweightDataGridViewTextBoxColumn.Name = "isoverweightDataGridViewTextBoxColumn";
+            this.isoverweightDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityDataGridViewTextBoxColumn.DataPropertyName = "physical_activity";
+            this.physicalactivityDataGridViewTextBoxColumn.HeaderText = "النشاط البدني";
+            this.physicalactivityDataGridViewTextBoxColumn.Name = "physicalactivityDataGridViewTextBoxColumn";
+            this.physicalactivityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityperiodDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityperiodDataGridViewTextBoxColumn.DataPropertyName = "physical_activity_period";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.HeaderText = "مدة النشاط البدني";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.Name = "physicalactivityperiodDataGridViewTextBoxColumn";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "ترتيبك في العائلة ";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // smokingDataGridViewTextBoxColumn
+            // 
+            this.smokingDataGridViewTextBoxColumn.DataPropertyName = "smoking";
+            this.smokingDataGridViewTextBoxColumn.HeaderText = "مدخن/غير مدخن";
+            this.smokingDataGridViewTextBoxColumn.Name = "smokingDataGridViewTextBoxColumn";
+            this.smokingDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "الحالة الاجتماعية";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // workDataGridViewTextBoxColumn
+            // 
+            this.workDataGridViewTextBoxColumn.DataPropertyName = "work";
+            this.workDataGridViewTextBoxColumn.HeaderText = "يعمل/لايعمل";
+            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
+            this.workDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // educationlevelDataGridViewTextBoxColumn
+            // 
+            this.educationlevelDataGridViewTextBoxColumn.DataPropertyName = "education_level";
+            this.educationlevelDataGridViewTextBoxColumn.HeaderText = "المستوى التعليمي";
+            this.educationlevelDataGridViewTextBoxColumn.Name = "educationlevelDataGridViewTextBoxColumn";
+            this.educationlevelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // chronicdiseasesDataGridViewTextBoxColumn
+            // 
+            this.chronicdiseasesDataGridViewTextBoxColumn.DataPropertyName = "chronic_diseases";
+            this.chronicdiseasesDataGridViewTextBoxColumn.HeaderText = "الامراض المزمنة";
+            this.chronicdiseasesDataGridViewTextBoxColumn.Name = "chronicdiseasesDataGridViewTextBoxColumn";
+            this.chronicdiseasesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hasdisabilitiesDataGridViewTextBoxColumn
+            // 
+            this.hasdisabilitiesDataGridViewTextBoxColumn.DataPropertyName = "has_disabilities";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.HeaderText = "إعاقة";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // formkeyDataGridViewTextBoxColumn
+            // 
+            this.formkeyDataGridViewTextBoxColumn.DataPropertyName = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.HeaderText = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.Name = "formkeyDataGridViewTextBoxColumn";
+            this.formkeyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formkeyDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // formuuidDataGridViewTextBoxColumn
+            // 
+            this.formuuidDataGridViewTextBoxColumn.DataPropertyName = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.HeaderText = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.Name = "formuuidDataGridViewTextBoxColumn";
+            this.formuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // orderuuidDataGridViewTextBoxColumn
+            // 
+            this.orderuuidDataGridViewTextBoxColumn.DataPropertyName = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.HeaderText = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.Name = "orderuuidDataGridViewTextBoxColumn";
+            this.orderuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionuuidDataGridViewTextBoxColumn
+            // 
+            this.questionuuidDataGridViewTextBoxColumn.DataPropertyName = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.HeaderText = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.Name = "questionuuidDataGridViewTextBoxColumn";
+            this.questionuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionuuidDataGridViewTextBoxColumn.Visible = false;
             // 
             // Surveys
             // 
@@ -2683,39 +2766,40 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage13.ResumeLayout(false);
-            this.tabPage10.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
+            this.tabPage13.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
+            this.tabPage10.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2743,19 +2827,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surveyuuid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn personname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn familymember;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maretialstatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn educationlevel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn work;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wieght;
-        private System.Windows.Forms.DataGridViewTextBoxColumn activity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn period;
-        private System.Windows.Forms.DataGridViewButtonColumn details;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
@@ -2926,5 +2997,24 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn isoverweightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn physicalactivityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn physicalactivityperiodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn smokingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn educationlevelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chronicdiseasesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hasdisabilitiesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn formkeyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn formuuidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderuuidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionuuidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource familyMemberBindingSource;
     }
 }

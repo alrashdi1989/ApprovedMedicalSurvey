@@ -65,5 +65,13 @@ namespace ApprovedMedicalSurvey.UI
             textBox4.Text = "";
 
         }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btncard.PerformClick();
+            }
+        }
     }
 }

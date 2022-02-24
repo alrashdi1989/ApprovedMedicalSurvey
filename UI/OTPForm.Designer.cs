@@ -51,16 +51,18 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 56);
+            this.panel1.Size = new System.Drawing.Size(435, 46);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ApprovedMedicalSurvey.Properties.Resources.cross2;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -70,9 +72,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(179, 343);
+            this.label1.Location = new System.Drawing.Point(134, 279);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 26);
+            this.label1.Size = new System.Drawing.Size(153, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "الرجاء إدخل رقم الهاتف";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -82,9 +85,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(202, 289);
+            this.label2.Location = new System.Drawing.Point(152, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 33);
+            this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "تسجيل الدخول";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -94,19 +98,22 @@
             this.txtmobile.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtmobile.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmobile.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmobile.Location = new System.Drawing.Point(201, 395);
+            this.txtmobile.Location = new System.Drawing.Point(151, 321);
+            this.txtmobile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtmobile.Name = "txtmobile";
-            this.txtmobile.Size = new System.Drawing.Size(207, 27);
+            this.txtmobile.Size = new System.Drawing.Size(155, 22);
             this.txtmobile.TabIndex = 3;
+            this.txtmobile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmobile_KeyDown);
             this.txtmobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmobile_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(137, 396);
+            this.label3.Location = new System.Drawing.Point(103, 322);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 26);
+            this.label3.Size = new System.Drawing.Size(48, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "+968";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,9 +125,10 @@
             this.btncard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncard.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncard.ForeColor = System.Drawing.Color.White;
-            this.btncard.Location = new System.Drawing.Point(147, 462);
+            this.btncard.Location = new System.Drawing.Point(110, 375);
+            this.btncard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btncard.Name = "btncard";
-            this.btncard.Size = new System.Drawing.Size(261, 45);
+            this.btncard.Size = new System.Drawing.Size(196, 37);
             this.btncard.TabIndex = 4;
             this.btncard.Text = "طلب رمز التحقق";
             this.btncard.UseVisualStyleBackColor = false;
@@ -130,9 +138,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(218, 602);
+            this.label4.Location = new System.Drawing.Point(164, 489);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 26);
+            this.label4.Size = new System.Drawing.Size(91, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "وزارة الصحة";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -141,9 +150,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 639);
+            this.label5.Location = new System.Drawing.Point(95, 519);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(294, 26);
+            this.label5.Size = new System.Drawing.Size(237, 21);
             this.label5.TabIndex = 2;
             this.label5.Text = "المديرية العامة للرعاية الصحية الأولية";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -153,9 +163,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(142, 681);
+            this.label6.Location = new System.Drawing.Point(106, 553);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(262, 26);
+            this.label6.Size = new System.Drawing.Size(213, 21);
             this.label6.TabIndex = 2;
             this.label6.Text = "دائرة المبادارت المجتمعية الصحية";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -163,9 +174,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ApprovedMedicalSurvey.Properties.Resources.CBI_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(198, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(148, 72);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(124, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -175,9 +187,10 @@
             this.lblvalidate.AutoSize = true;
             this.lblvalidate.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvalidate.ForeColor = System.Drawing.Color.Red;
-            this.lblvalidate.Location = new System.Drawing.Point(212, 430);
+            this.lblvalidate.Location = new System.Drawing.Point(159, 349);
+            this.lblvalidate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblvalidate.Name = "lblvalidate";
-            this.lblvalidate.Size = new System.Drawing.Size(181, 20);
+            this.lblvalidate.Size = new System.Drawing.Size(152, 17);
             this.lblvalidate.TabIndex = 2;
             this.lblvalidate.Text = "يجب إدخال رقم اهاتف صحيح";
             this.lblvalidate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -185,10 +198,10 @@
             // 
             // OTPForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(580, 745);
+            this.ClientSize = new System.Drawing.Size(435, 605);
             this.Controls.Add(this.btncard);
             this.Controls.Add(this.txtmobile);
             this.Controls.Add(this.lblvalidate);
@@ -201,6 +214,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "OTPForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OTPForm";

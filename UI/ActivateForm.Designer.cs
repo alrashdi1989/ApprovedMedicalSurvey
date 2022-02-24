@@ -52,16 +52,18 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 56);
+            this.panel1.Size = new System.Drawing.Size(422, 46);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ApprovedMedicalSurvey.Properties.Resources.cross2;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(2, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -70,9 +72,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ApprovedMedicalSurvey.Properties.Resources.CBI_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(183, 115);
+            this.pictureBox1.Location = new System.Drawing.Point(137, 93);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(124, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -82,9 +85,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(193, 304);
+            this.label2.Location = new System.Drawing.Point(145, 247);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 33);
+            this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "تفعيل الحساب";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -93,9 +97,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 358);
+            this.label1.Location = new System.Drawing.Point(128, 291);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 26);
+            this.label1.Size = new System.Drawing.Size(159, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "الرجاء إدخل رمز التفعيل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -107,30 +112,34 @@
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(139, 412);
+            this.panel2.Location = new System.Drawing.Point(104, 335);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 70);
+            this.panel2.Size = new System.Drawing.Size(181, 57);
             this.panel2.TabIndex = 5;
             // 
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(187, 22);
+            this.textBox4.Location = new System.Drawing.Point(140, 18);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.MaxLength = 1;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(38, 27);
+            this.textBox4.Size = new System.Drawing.Size(28, 22);
             this.textBox4.TabIndex = 3;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox4_KeyDown);
             // 
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(129, 22);
+            this.textBox3.Location = new System.Drawing.Point(97, 18);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.MaxLength = 1;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(38, 27);
+            this.textBox3.Size = new System.Drawing.Size(28, 22);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
@@ -139,10 +148,11 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(73, 22);
+            this.textBox2.Location = new System.Drawing.Point(55, 18);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.MaxLength = 1;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(38, 27);
+            this.textBox2.Size = new System.Drawing.Size(28, 22);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
@@ -151,10 +161,11 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(17, 22);
+            this.textBox1.Location = new System.Drawing.Point(13, 18);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.MaxLength = 1;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(38, 27);
+            this.textBox1.Size = new System.Drawing.Size(28, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -166,9 +177,10 @@
             this.btncard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncard.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncard.ForeColor = System.Drawing.Color.White;
-            this.btncard.Location = new System.Drawing.Point(139, 504);
+            this.btncard.Location = new System.Drawing.Point(104, 410);
+            this.btncard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btncard.Name = "btncard";
-            this.btncard.Size = new System.Drawing.Size(241, 45);
+            this.btncard.Size = new System.Drawing.Size(181, 37);
             this.btncard.TabIndex = 6;
             this.btncard.Text = "تحقق";
             this.btncard.UseVisualStyleBackColor = false;
@@ -181,9 +193,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(139, 564);
+            this.button1.Location = new System.Drawing.Point(104, 458);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 45);
+            this.button1.Size = new System.Drawing.Size(181, 37);
             this.button1.TabIndex = 6;
             this.button1.Text = "عودة";
             this.button1.UseVisualStyleBackColor = false;
@@ -191,10 +204,10 @@
             // 
             // ActivateForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(562, 698);
+            this.ClientSize = new System.Drawing.Size(422, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btncard);
             this.Controls.Add(this.panel2);
@@ -203,6 +216,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ActivateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActivateForm";
