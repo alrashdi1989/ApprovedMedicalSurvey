@@ -26,6 +26,23 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
+        }
+        private void copyAlltoClipboard()
+        {
+            dataGridView1.SelectAll();
+            DataObject dataObj = dataGridView1.GetClipboardContent();
+            if (dataObj != null)
+                Clipboard.SetDataObject(dataObj);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
             excel.Visible = true;
             object Missing = Type.Missing;
@@ -50,13 +67,5 @@ namespace ApprovedMedicalSurvey.UI
                 }
             }
         }
-        private void copyAlltoClipboard()
-        {
-            dataGridView1.SelectAll();
-            DataObject dataObj = dataGridView1.GetClipboardContent();
-            if (dataObj != null)
-                Clipboard.SetDataObject(dataObj);
-        }
-
     }
 }

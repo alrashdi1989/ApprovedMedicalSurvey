@@ -154,7 +154,7 @@ namespace ApprovedMedicalSurvey.UI
                 dataGridView1.ClearSelection();
 
                 textBox1.Visible = true;
-                dateEdit1.Visible = true;
+                dateTimePicker1.Visible = true;
                 textBox2.Visible = true;
             }
             catch (Exception ex)
@@ -199,23 +199,13 @@ namespace ApprovedMedicalSurvey.UI
 
         }
 
-        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateEdit1.Text);
-
-        }
-
         private void textEdit2_EditValueChanged(object sender, EventArgs e)
         {
             (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textBox2.Text);
 
         }
 
-     
-
-       
-
-
+        
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
         {
             textBox1.Text = string.Empty;
@@ -235,6 +225,12 @@ namespace ApprovedMedicalSurvey.UI
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             Villages();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateTimePicker1.Text);
+
         }
     }
 }

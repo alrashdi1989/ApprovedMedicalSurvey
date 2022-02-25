@@ -457,7 +457,6 @@ namespace ApprovedMedicalSurvey.UI
             // txt_14
             // 
             this.txt_14.AutoSize = true;
-            this.txt_14.Dock = System.Windows.Forms.DockStyle.Left;
             this.txt_14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_14.Location = new System.Drawing.Point(304, 6);
             this.txt_14.Name = "txt_14";
@@ -1048,7 +1047,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(844, 84);
+            this.label71.Location = new System.Drawing.Point(847, 84);
             this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(217, 21);
@@ -1070,7 +1069,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(696, 63);
+            this.label70.Location = new System.Drawing.Point(699, 63);
             this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(365, 21);
@@ -1092,7 +1091,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(823, 42);
+            this.label69.Location = new System.Drawing.Point(826, 42);
             this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(238, 21);
@@ -1114,7 +1113,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(642, 21);
+            this.label68.Location = new System.Drawing.Point(645, 21);
             this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(419, 21);
@@ -1125,10 +1124,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(1093, 63);
+            this.label65.Location = new System.Drawing.Point(1096, 63);
             this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(352, 21);
+            this.label65.Size = new System.Drawing.Size(349, 21);
             this.label65.TabIndex = 5;
             this.label65.Text = "هل كان طفلك ناقص الوزن (اقل من 2.5كج) عند الولادة؟";
             // 
@@ -1136,7 +1135,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(727, 0);
+            this.label67.Location = new System.Drawing.Point(730, 0);
             this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(334, 21);
@@ -1147,7 +1146,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_134.AutoSize = true;
             this.txt_134.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_134.Location = new System.Drawing.Point(1066, 0);
+            this.txt_134.Location = new System.Drawing.Point(1069, 0);
             this.txt_134.Name = "txt_134";
             this.txt_134.Size = new System.Drawing.Size(22, 21);
             this.txt_134.TabIndex = 11;
@@ -1157,7 +1156,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_99.AutoSize = true;
             this.txt_99.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_99.Location = new System.Drawing.Point(1066, 21);
+            this.txt_99.Location = new System.Drawing.Point(1069, 21);
             this.txt_99.Name = "txt_99";
             this.txt_99.Size = new System.Drawing.Size(22, 21);
             this.txt_99.TabIndex = 12;
@@ -1167,7 +1166,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_100.AutoSize = true;
             this.txt_100.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_100.Location = new System.Drawing.Point(1066, 42);
+            this.txt_100.Location = new System.Drawing.Point(1069, 42);
             this.txt_100.Name = "txt_100";
             this.txt_100.Size = new System.Drawing.Size(22, 21);
             this.txt_100.TabIndex = 13;
@@ -1177,7 +1176,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_101.AutoSize = true;
             this.txt_101.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_101.Location = new System.Drawing.Point(1066, 63);
+            this.txt_101.Location = new System.Drawing.Point(1069, 63);
             this.txt_101.Name = "txt_101";
             this.txt_101.Size = new System.Drawing.Size(22, 21);
             this.txt_101.TabIndex = 14;
@@ -1187,7 +1186,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_102.AutoSize = true;
             this.txt_102.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_102.Location = new System.Drawing.Point(1066, 84);
+            this.txt_102.Location = new System.Drawing.Point(1069, 84);
             this.txt_102.Name = "txt_102";
             this.txt_102.Size = new System.Drawing.Size(22, 21);
             this.txt_102.TabIndex = 15;
@@ -1197,7 +1196,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_103.AutoSize = true;
             this.txt_103.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_103.Location = new System.Drawing.Point(615, 0);
+            this.txt_103.Location = new System.Drawing.Point(618, 0);
             this.txt_103.Name = "txt_103";
             this.txt_103.Size = new System.Drawing.Size(22, 21);
             this.txt_103.TabIndex = 16;
@@ -1207,7 +1206,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_104.AutoSize = true;
             this.txt_104.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_104.Location = new System.Drawing.Point(615, 21);
+            this.txt_104.Location = new System.Drawing.Point(618, 21);
             this.txt_104.Name = "txt_104";
             this.txt_104.Size = new System.Drawing.Size(22, 21);
             this.txt_104.TabIndex = 17;
@@ -1217,7 +1216,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_105.AutoSize = true;
             this.txt_105.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_105.Location = new System.Drawing.Point(615, 42);
+            this.txt_105.Location = new System.Drawing.Point(618, 42);
             this.txt_105.Name = "txt_105";
             this.txt_105.Size = new System.Drawing.Size(22, 21);
             this.txt_105.TabIndex = 18;
@@ -1227,7 +1226,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_106.AutoSize = true;
             this.txt_106.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_106.Location = new System.Drawing.Point(615, 63);
+            this.txt_106.Location = new System.Drawing.Point(618, 63);
             this.txt_106.Name = "txt_106";
             this.txt_106.Size = new System.Drawing.Size(22, 21);
             this.txt_106.TabIndex = 19;
@@ -1237,7 +1236,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_107.AutoSize = true;
             this.txt_107.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_107.Location = new System.Drawing.Point(615, 84);
+            this.txt_107.Location = new System.Drawing.Point(618, 84);
             this.txt_107.Name = "txt_107";
             this.txt_107.Size = new System.Drawing.Size(22, 21);
             this.txt_107.TabIndex = 20;
