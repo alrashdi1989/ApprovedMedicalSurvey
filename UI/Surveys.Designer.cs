@@ -33,6 +33,7 @@ namespace ApprovedMedicalSurvey.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Surveys));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -55,42 +56,42 @@ namespace ApprovedMedicalSurvey.UI
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txt_97 = new System.Windows.Forms.Label();
+            this.lbl_97 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.txt_90 = new System.Windows.Forms.Label();
+            this.lbl_90 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_89 = new System.Windows.Forms.Label();
+            this.lbl_89 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txt_88 = new System.Windows.Forms.Label();
+            this.lbl_88 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txt_87 = new System.Windows.Forms.Label();
+            this.lbl_87 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_86 = new System.Windows.Forms.Label();
+            this.lbl_86 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_133 = new System.Windows.Forms.Label();
+            this.lbl_133 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txt_91 = new System.Windows.Forms.Label();
-            this.txt_93 = new System.Windows.Forms.Label();
-            this.txt_94 = new System.Windows.Forms.Label();
-            this.txt_95 = new System.Windows.Forms.Label();
-            this.txt_96 = new System.Windows.Forms.Label();
-            this.txt_92 = new System.Windows.Forms.Label();
+            this.lbl_91 = new System.Windows.Forms.Label();
+            this.lbl_93 = new System.Windows.Forms.Label();
+            this.lbl_94 = new System.Windows.Forms.Label();
+            this.lbl_95 = new System.Windows.Forms.Label();
+            this.lbl_96 = new System.Windows.Forms.Label();
+            this.lbl_92 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label72 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.txt_112 = new System.Windows.Forms.Label();
-            this.txt_113 = new System.Windows.Forms.Label();
-            this.txt_114 = new System.Windows.Forms.Label();
-            this.txt_115 = new System.Windows.Forms.Label();
+            this.lbl_112 = new System.Windows.Forms.Label();
+            this.lbl_113 = new System.Windows.Forms.Label();
+            this.lbl_114 = new System.Windows.Forms.Label();
+            this.lbl_115 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label62 = new System.Windows.Forms.Label();
@@ -103,34 +104,34 @@ namespace ApprovedMedicalSurvey.UI
             this.label68 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.txt_134 = new System.Windows.Forms.Label();
-            this.txt_99 = new System.Windows.Forms.Label();
-            this.txt_100 = new System.Windows.Forms.Label();
-            this.txt_101 = new System.Windows.Forms.Label();
-            this.txt_102 = new System.Windows.Forms.Label();
-            this.txt_103 = new System.Windows.Forms.Label();
-            this.txt_104 = new System.Windows.Forms.Label();
-            this.txt_105 = new System.Windows.Forms.Label();
-            this.txt_106 = new System.Windows.Forms.Label();
-            this.txt_107 = new System.Windows.Forms.Label();
+            this.lbl_134 = new System.Windows.Forms.Label();
+            this.lbl_99 = new System.Windows.Forms.Label();
+            this.lbl_100 = new System.Windows.Forms.Label();
+            this.lbl_101 = new System.Windows.Forms.Label();
+            this.lbl_102 = new System.Windows.Forms.Label();
+            this.lbl_103 = new System.Windows.Forms.Label();
+            this.lbl_104 = new System.Windows.Forms.Label();
+            this.lbl_105 = new System.Windows.Forms.Label();
+            this.lbl_106 = new System.Windows.Forms.Label();
+            this.lbl_107 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.txt_123 = new System.Windows.Forms.Label();
-            this.txt_109 = new System.Windows.Forms.Label();
-            this.txt_110 = new System.Windows.Forms.Label();
-            this.txt_143 = new System.Windows.Forms.Label();
+            this.lbl_123 = new System.Windows.Forms.Label();
+            this.lbl_109 = new System.Windows.Forms.Label();
+            this.lbl_110 = new System.Windows.Forms.Label();
+            this.lbl_143 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label80 = new System.Windows.Forms.Label();
-            this.txt_124 = new System.Windows.Forms.Label();
+            this.lbl_124 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label29 = new System.Windows.Forms.Label();
-            this.txt_122 = new System.Windows.Forms.Label();
+            this.lbl_122 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -145,6 +146,7 @@ namespace ApprovedMedicalSurvey.UI
             this.educationlevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chronicdiseasesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hasdisabilitiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.formkeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.formuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -242,7 +244,6 @@ namespace ApprovedMedicalSurvey.UI
             this.button6 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.layoutConverter1 = new DevExpress.XtraLayout.Converter.LayoutConverter(this.components);
             this.panel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -552,32 +553,32 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.txt_97, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_97, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.label17, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.txt_90, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_90, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txt_89, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_89, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.label13, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txt_88, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_88, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txt_87, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_87, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txt_86, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_86, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txt_133, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_133, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label6, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label8, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.label10, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.label12, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label14, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.label16, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txt_91, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txt_93, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txt_94, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txt_95, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txt_96, 3, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txt_92, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_91, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_93, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_94, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_95, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_96, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.lbl_92, 3, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -592,15 +593,15 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1443, 349);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // txt_97
+            // lbl_97
             // 
-            this.txt_97.AutoSize = true;
-            this.txt_97.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_97.Location = new System.Drawing.Point(972, 126);
-            this.txt_97.Name = "txt_97";
-            this.txt_97.Size = new System.Drawing.Size(22, 21);
-            this.txt_97.TabIndex = 13;
-            this.txt_97.Text = "--";
+            this.lbl_97.AutoSize = true;
+            this.lbl_97.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_97.Location = new System.Drawing.Point(972, 126);
+            this.lbl_97.Name = "lbl_97";
+            this.lbl_97.Size = new System.Drawing.Size(22, 21);
+            this.lbl_97.TabIndex = 13;
+            this.lbl_97.Text = "--";
             // 
             // label17
             // 
@@ -612,15 +613,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label17.TabIndex = 12;
             this.label17.Text = "هل راجعت المؤسسة الصحية بعد الولادة؟ ";
             // 
-            // txt_90
+            // lbl_90
             // 
-            this.txt_90.AutoSize = true;
-            this.txt_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_90.Location = new System.Drawing.Point(972, 105);
-            this.txt_90.Name = "txt_90";
-            this.txt_90.Size = new System.Drawing.Size(22, 21);
-            this.txt_90.TabIndex = 11;
-            this.txt_90.Text = "--";
+            this.lbl_90.AutoSize = true;
+            this.lbl_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_90.Location = new System.Drawing.Point(972, 105);
+            this.lbl_90.Name = "lbl_90";
+            this.lbl_90.Size = new System.Drawing.Size(22, 21);
+            this.lbl_90.TabIndex = 11;
+            this.lbl_90.Text = "--";
             // 
             // label15
             // 
@@ -632,15 +633,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label15.TabIndex = 10;
             this.label15.Text = "إذا لم تستعملي أي وسيلة من وسائل المباعدة بين الولادات، ما هو السبب؟";
             // 
-            // txt_89
+            // lbl_89
             // 
-            this.txt_89.AutoSize = true;
-            this.txt_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_89.Location = new System.Drawing.Point(972, 84);
-            this.txt_89.Name = "txt_89";
-            this.txt_89.Size = new System.Drawing.Size(22, 21);
-            this.txt_89.TabIndex = 9;
-            this.txt_89.Text = "--";
+            this.lbl_89.AutoSize = true;
+            this.lbl_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_89.Location = new System.Drawing.Point(972, 84);
+            this.lbl_89.Name = "lbl_89";
+            this.lbl_89.Size = new System.Drawing.Size(22, 21);
+            this.lbl_89.TabIndex = 9;
+            this.lbl_89.Text = "--";
             // 
             // label13
             // 
@@ -652,15 +653,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label13.TabIndex = 8;
             this.label13.Text = "هل سبق أن استخدمت أي وسيلة من وسائل المباعدة بين الولادات";
             // 
-            // txt_88
+            // lbl_88
             // 
-            this.txt_88.AutoSize = true;
-            this.txt_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_88.Location = new System.Drawing.Point(972, 63);
-            this.txt_88.Name = "txt_88";
-            this.txt_88.Size = new System.Drawing.Size(22, 21);
-            this.txt_88.TabIndex = 7;
-            this.txt_88.Text = "--";
+            this.lbl_88.AutoSize = true;
+            this.lbl_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_88.Location = new System.Drawing.Point(972, 63);
+            this.lbl_88.Name = "lbl_88";
+            this.lbl_88.Size = new System.Drawing.Size(22, 21);
+            this.lbl_88.TabIndex = 7;
+            this.lbl_88.Text = "--";
             // 
             // label11
             // 
@@ -672,15 +673,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label11.TabIndex = 6;
             this.label11.Text = "ما هو الفاصل الزمني بين هذا الحمل والحمل السابق";
             // 
-            // txt_87
+            // lbl_87
             // 
-            this.txt_87.AutoSize = true;
-            this.txt_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_87.Location = new System.Drawing.Point(972, 42);
-            this.txt_87.Name = "txt_87";
-            this.txt_87.Size = new System.Drawing.Size(22, 21);
-            this.txt_87.TabIndex = 5;
-            this.txt_87.Text = "--";
+            this.lbl_87.AutoSize = true;
+            this.lbl_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_87.Location = new System.Drawing.Point(972, 42);
+            this.lbl_87.Name = "lbl_87";
+            this.lbl_87.Size = new System.Drawing.Size(22, 21);
+            this.lbl_87.TabIndex = 5;
+            this.lbl_87.Text = "--";
             // 
             // label9
             // 
@@ -692,15 +693,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label9.TabIndex = 4;
             this.label9.Text = "هل انت حامل";
             // 
-            // txt_86
+            // lbl_86
             // 
-            this.txt_86.AutoSize = true;
-            this.txt_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_86.Location = new System.Drawing.Point(972, 21);
-            this.txt_86.Name = "txt_86";
-            this.txt_86.Size = new System.Drawing.Size(22, 21);
-            this.txt_86.TabIndex = 3;
-            this.txt_86.Text = "--";
+            this.lbl_86.AutoSize = true;
+            this.lbl_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_86.Location = new System.Drawing.Point(972, 21);
+            this.lbl_86.Name = "lbl_86";
+            this.lbl_86.Size = new System.Drawing.Size(22, 21);
+            this.lbl_86.TabIndex = 3;
+            this.lbl_86.Text = "--";
             // 
             // label7
             // 
@@ -722,15 +723,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label2.TabIndex = 0;
             this.label2.Text = "كم سنة مر على زواجك؟";
             // 
-            // txt_133
+            // lbl_133
             // 
-            this.txt_133.AutoSize = true;
-            this.txt_133.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_133.Location = new System.Drawing.Point(972, 0);
-            this.txt_133.Name = "txt_133";
-            this.txt_133.Size = new System.Drawing.Size(22, 21);
-            this.txt_133.TabIndex = 1;
-            this.txt_133.Text = "--";
+            this.lbl_133.AutoSize = true;
+            this.lbl_133.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_133.Location = new System.Drawing.Point(972, 0);
+            this.lbl_133.Name = "lbl_133";
+            this.lbl_133.Size = new System.Drawing.Size(22, 21);
+            this.lbl_133.TabIndex = 1;
+            this.lbl_133.Text = "--";
             // 
             // label6
             // 
@@ -792,65 +793,65 @@ namespace ApprovedMedicalSurvey.UI
             this.label16.TabIndex = 19;
             this.label16.Text = "أين تمت ولادة آخر طفل لك؟";
             // 
-            // txt_91
+            // lbl_91
             // 
-            this.txt_91.AutoSize = true;
-            this.txt_91.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_91.Location = new System.Drawing.Point(557, 0);
-            this.txt_91.Name = "txt_91";
-            this.txt_91.Size = new System.Drawing.Size(22, 21);
-            this.txt_91.TabIndex = 21;
-            this.txt_91.Text = "--";
+            this.lbl_91.AutoSize = true;
+            this.lbl_91.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_91.Location = new System.Drawing.Point(557, 0);
+            this.lbl_91.Name = "lbl_91";
+            this.lbl_91.Size = new System.Drawing.Size(22, 21);
+            this.lbl_91.TabIndex = 21;
+            this.lbl_91.Text = "--";
             // 
-            // txt_93
+            // lbl_93
             // 
-            this.txt_93.AutoSize = true;
-            this.txt_93.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_93.Location = new System.Drawing.Point(557, 42);
-            this.txt_93.Name = "txt_93";
-            this.txt_93.Size = new System.Drawing.Size(22, 21);
-            this.txt_93.TabIndex = 23;
-            this.txt_93.Text = "--";
+            this.lbl_93.AutoSize = true;
+            this.lbl_93.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_93.Location = new System.Drawing.Point(557, 42);
+            this.lbl_93.Name = "lbl_93";
+            this.lbl_93.Size = new System.Drawing.Size(22, 21);
+            this.lbl_93.TabIndex = 23;
+            this.lbl_93.Text = "--";
             // 
-            // txt_94
+            // lbl_94
             // 
-            this.txt_94.AutoSize = true;
-            this.txt_94.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_94.Location = new System.Drawing.Point(557, 63);
-            this.txt_94.Name = "txt_94";
-            this.txt_94.Size = new System.Drawing.Size(22, 21);
-            this.txt_94.TabIndex = 24;
-            this.txt_94.Text = "--";
+            this.lbl_94.AutoSize = true;
+            this.lbl_94.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_94.Location = new System.Drawing.Point(557, 63);
+            this.lbl_94.Name = "lbl_94";
+            this.lbl_94.Size = new System.Drawing.Size(22, 21);
+            this.lbl_94.TabIndex = 24;
+            this.lbl_94.Text = "--";
             // 
-            // txt_95
+            // lbl_95
             // 
-            this.txt_95.AutoSize = true;
-            this.txt_95.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_95.Location = new System.Drawing.Point(557, 84);
-            this.txt_95.Name = "txt_95";
-            this.txt_95.Size = new System.Drawing.Size(22, 21);
-            this.txt_95.TabIndex = 25;
-            this.txt_95.Text = "--";
+            this.lbl_95.AutoSize = true;
+            this.lbl_95.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_95.Location = new System.Drawing.Point(557, 84);
+            this.lbl_95.Name = "lbl_95";
+            this.lbl_95.Size = new System.Drawing.Size(22, 21);
+            this.lbl_95.TabIndex = 25;
+            this.lbl_95.Text = "--";
             // 
-            // txt_96
+            // lbl_96
             // 
-            this.txt_96.AutoSize = true;
-            this.txt_96.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_96.Location = new System.Drawing.Point(557, 105);
-            this.txt_96.Name = "txt_96";
-            this.txt_96.Size = new System.Drawing.Size(22, 21);
-            this.txt_96.TabIndex = 26;
-            this.txt_96.Text = "--";
+            this.lbl_96.AutoSize = true;
+            this.lbl_96.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_96.Location = new System.Drawing.Point(557, 105);
+            this.lbl_96.Name = "lbl_96";
+            this.lbl_96.Size = new System.Drawing.Size(22, 21);
+            this.lbl_96.TabIndex = 26;
+            this.lbl_96.Text = "--";
             // 
-            // txt_92
+            // lbl_92
             // 
-            this.txt_92.AutoSize = true;
-            this.txt_92.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_92.Location = new System.Drawing.Point(557, 21);
-            this.txt_92.Name = "txt_92";
-            this.txt_92.Size = new System.Drawing.Size(22, 21);
-            this.txt_92.TabIndex = 22;
-            this.txt_92.Text = "--";
+            this.lbl_92.AutoSize = true;
+            this.lbl_92.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_92.Location = new System.Drawing.Point(557, 21);
+            this.lbl_92.Name = "lbl_92";
+            this.lbl_92.Size = new System.Drawing.Size(22, 21);
+            this.lbl_92.TabIndex = 22;
+            this.lbl_92.Text = "--";
             // 
             // tabPage5
             // 
@@ -876,10 +877,10 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel3.Controls.Add(this.label75, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label73, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label74, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.txt_112, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txt_113, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txt_114, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.txt_115, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_112, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_113, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_114, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_115, 1, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -935,45 +936,45 @@ namespace ApprovedMedicalSurvey.UI
             this.label74.TabIndex = 2;
             this.label74.Text = "هل يمارس المسن أي نشاط بدني";
             // 
-            // txt_112
+            // lbl_112
             // 
-            this.txt_112.AutoSize = true;
-            this.txt_112.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_112.Location = new System.Drawing.Point(1130, 0);
-            this.txt_112.Name = "txt_112";
-            this.txt_112.Size = new System.Drawing.Size(22, 21);
-            this.txt_112.TabIndex = 5;
-            this.txt_112.Text = "--";
+            this.lbl_112.AutoSize = true;
+            this.lbl_112.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_112.Location = new System.Drawing.Point(1130, 0);
+            this.lbl_112.Name = "lbl_112";
+            this.lbl_112.Size = new System.Drawing.Size(22, 21);
+            this.lbl_112.TabIndex = 5;
+            this.lbl_112.Text = "--";
             // 
-            // txt_113
+            // lbl_113
             // 
-            this.txt_113.AutoSize = true;
-            this.txt_113.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_113.Location = new System.Drawing.Point(1130, 21);
-            this.txt_113.Name = "txt_113";
-            this.txt_113.Size = new System.Drawing.Size(22, 21);
-            this.txt_113.TabIndex = 6;
-            this.txt_113.Text = "--";
+            this.lbl_113.AutoSize = true;
+            this.lbl_113.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_113.Location = new System.Drawing.Point(1130, 21);
+            this.lbl_113.Name = "lbl_113";
+            this.lbl_113.Size = new System.Drawing.Size(22, 21);
+            this.lbl_113.TabIndex = 6;
+            this.lbl_113.Text = "--";
             // 
-            // txt_114
+            // lbl_114
             // 
-            this.txt_114.AutoSize = true;
-            this.txt_114.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_114.Location = new System.Drawing.Point(1130, 42);
-            this.txt_114.Name = "txt_114";
-            this.txt_114.Size = new System.Drawing.Size(22, 21);
-            this.txt_114.TabIndex = 7;
-            this.txt_114.Text = "--";
+            this.lbl_114.AutoSize = true;
+            this.lbl_114.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_114.Location = new System.Drawing.Point(1130, 42);
+            this.lbl_114.Name = "lbl_114";
+            this.lbl_114.Size = new System.Drawing.Size(22, 21);
+            this.lbl_114.TabIndex = 7;
+            this.lbl_114.Text = "--";
             // 
-            // txt_115
+            // lbl_115
             // 
-            this.txt_115.AutoSize = true;
-            this.txt_115.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_115.Location = new System.Drawing.Point(1130, 63);
-            this.txt_115.Name = "txt_115";
-            this.txt_115.Size = new System.Drawing.Size(22, 21);
-            this.txt_115.TabIndex = 8;
-            this.txt_115.Text = "--";
+            this.lbl_115.AutoSize = true;
+            this.lbl_115.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_115.Location = new System.Drawing.Point(1130, 63);
+            this.lbl_115.Name = "lbl_115";
+            this.lbl_115.Size = new System.Drawing.Size(22, 21);
+            this.lbl_115.TabIndex = 8;
+            this.lbl_115.Text = "--";
             // 
             // tabPage6
             // 
@@ -1005,16 +1006,16 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel4.Controls.Add(this.label68, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.label65, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label67, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txt_134, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txt_99, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.txt_100, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.txt_101, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.txt_102, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.txt_103, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txt_104, 3, 1);
-            this.tableLayoutPanel4.Controls.Add(this.txt_105, 3, 2);
-            this.tableLayoutPanel4.Controls.Add(this.txt_106, 3, 3);
-            this.tableLayoutPanel4.Controls.Add(this.txt_107, 3, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_134, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_99, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_100, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_101, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_102, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_103, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_104, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_105, 3, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_106, 3, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_107, 3, 4);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -1142,105 +1143,105 @@ namespace ApprovedMedicalSurvey.UI
             this.label67.TabIndex = 8;
             this.label67.Text = "هل أصيب طفلك بالإسهال خلال الأسبوعين الماضيين؟";
             // 
-            // txt_134
+            // lbl_134
             // 
-            this.txt_134.AutoSize = true;
-            this.txt_134.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_134.Location = new System.Drawing.Point(1069, 0);
-            this.txt_134.Name = "txt_134";
-            this.txt_134.Size = new System.Drawing.Size(22, 21);
-            this.txt_134.TabIndex = 11;
-            this.txt_134.Text = "--";
+            this.lbl_134.AutoSize = true;
+            this.lbl_134.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_134.Location = new System.Drawing.Point(1069, 0);
+            this.lbl_134.Name = "lbl_134";
+            this.lbl_134.Size = new System.Drawing.Size(22, 21);
+            this.lbl_134.TabIndex = 11;
+            this.lbl_134.Text = "--";
             // 
-            // txt_99
+            // lbl_99
             // 
-            this.txt_99.AutoSize = true;
-            this.txt_99.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_99.Location = new System.Drawing.Point(1069, 21);
-            this.txt_99.Name = "txt_99";
-            this.txt_99.Size = new System.Drawing.Size(22, 21);
-            this.txt_99.TabIndex = 12;
-            this.txt_99.Text = "--";
+            this.lbl_99.AutoSize = true;
+            this.lbl_99.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_99.Location = new System.Drawing.Point(1069, 21);
+            this.lbl_99.Name = "lbl_99";
+            this.lbl_99.Size = new System.Drawing.Size(22, 21);
+            this.lbl_99.TabIndex = 12;
+            this.lbl_99.Text = "--";
             // 
-            // txt_100
+            // lbl_100
             // 
-            this.txt_100.AutoSize = true;
-            this.txt_100.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_100.Location = new System.Drawing.Point(1069, 42);
-            this.txt_100.Name = "txt_100";
-            this.txt_100.Size = new System.Drawing.Size(22, 21);
-            this.txt_100.TabIndex = 13;
-            this.txt_100.Text = "--";
+            this.lbl_100.AutoSize = true;
+            this.lbl_100.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_100.Location = new System.Drawing.Point(1069, 42);
+            this.lbl_100.Name = "lbl_100";
+            this.lbl_100.Size = new System.Drawing.Size(22, 21);
+            this.lbl_100.TabIndex = 13;
+            this.lbl_100.Text = "--";
             // 
-            // txt_101
+            // lbl_101
             // 
-            this.txt_101.AutoSize = true;
-            this.txt_101.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_101.Location = new System.Drawing.Point(1069, 63);
-            this.txt_101.Name = "txt_101";
-            this.txt_101.Size = new System.Drawing.Size(22, 21);
-            this.txt_101.TabIndex = 14;
-            this.txt_101.Text = "--";
+            this.lbl_101.AutoSize = true;
+            this.lbl_101.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_101.Location = new System.Drawing.Point(1069, 63);
+            this.lbl_101.Name = "lbl_101";
+            this.lbl_101.Size = new System.Drawing.Size(22, 21);
+            this.lbl_101.TabIndex = 14;
+            this.lbl_101.Text = "--";
             // 
-            // txt_102
+            // lbl_102
             // 
-            this.txt_102.AutoSize = true;
-            this.txt_102.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_102.Location = new System.Drawing.Point(1069, 84);
-            this.txt_102.Name = "txt_102";
-            this.txt_102.Size = new System.Drawing.Size(22, 21);
-            this.txt_102.TabIndex = 15;
-            this.txt_102.Text = "--";
+            this.lbl_102.AutoSize = true;
+            this.lbl_102.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_102.Location = new System.Drawing.Point(1069, 84);
+            this.lbl_102.Name = "lbl_102";
+            this.lbl_102.Size = new System.Drawing.Size(22, 21);
+            this.lbl_102.TabIndex = 15;
+            this.lbl_102.Text = "--";
             // 
-            // txt_103
+            // lbl_103
             // 
-            this.txt_103.AutoSize = true;
-            this.txt_103.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_103.Location = new System.Drawing.Point(618, 0);
-            this.txt_103.Name = "txt_103";
-            this.txt_103.Size = new System.Drawing.Size(22, 21);
-            this.txt_103.TabIndex = 16;
-            this.txt_103.Text = "--";
+            this.lbl_103.AutoSize = true;
+            this.lbl_103.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_103.Location = new System.Drawing.Point(618, 0);
+            this.lbl_103.Name = "lbl_103";
+            this.lbl_103.Size = new System.Drawing.Size(22, 21);
+            this.lbl_103.TabIndex = 16;
+            this.lbl_103.Text = "--";
             // 
-            // txt_104
+            // lbl_104
             // 
-            this.txt_104.AutoSize = true;
-            this.txt_104.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_104.Location = new System.Drawing.Point(618, 21);
-            this.txt_104.Name = "txt_104";
-            this.txt_104.Size = new System.Drawing.Size(22, 21);
-            this.txt_104.TabIndex = 17;
-            this.txt_104.Text = "--";
+            this.lbl_104.AutoSize = true;
+            this.lbl_104.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_104.Location = new System.Drawing.Point(618, 21);
+            this.lbl_104.Name = "lbl_104";
+            this.lbl_104.Size = new System.Drawing.Size(22, 21);
+            this.lbl_104.TabIndex = 17;
+            this.lbl_104.Text = "--";
             // 
-            // txt_105
+            // lbl_105
             // 
-            this.txt_105.AutoSize = true;
-            this.txt_105.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_105.Location = new System.Drawing.Point(618, 42);
-            this.txt_105.Name = "txt_105";
-            this.txt_105.Size = new System.Drawing.Size(22, 21);
-            this.txt_105.TabIndex = 18;
-            this.txt_105.Text = "--";
+            this.lbl_105.AutoSize = true;
+            this.lbl_105.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_105.Location = new System.Drawing.Point(618, 42);
+            this.lbl_105.Name = "lbl_105";
+            this.lbl_105.Size = new System.Drawing.Size(22, 21);
+            this.lbl_105.TabIndex = 18;
+            this.lbl_105.Text = "--";
             // 
-            // txt_106
+            // lbl_106
             // 
-            this.txt_106.AutoSize = true;
-            this.txt_106.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_106.Location = new System.Drawing.Point(618, 63);
-            this.txt_106.Name = "txt_106";
-            this.txt_106.Size = new System.Drawing.Size(22, 21);
-            this.txt_106.TabIndex = 19;
-            this.txt_106.Text = "--";
+            this.lbl_106.AutoSize = true;
+            this.lbl_106.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_106.Location = new System.Drawing.Point(618, 63);
+            this.lbl_106.Name = "lbl_106";
+            this.lbl_106.Size = new System.Drawing.Size(22, 21);
+            this.lbl_106.TabIndex = 19;
+            this.lbl_106.Text = "--";
             // 
-            // txt_107
+            // lbl_107
             // 
-            this.txt_107.AutoSize = true;
-            this.txt_107.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_107.Location = new System.Drawing.Point(618, 84);
-            this.txt_107.Name = "txt_107";
-            this.txt_107.Size = new System.Drawing.Size(22, 21);
-            this.txt_107.TabIndex = 20;
-            this.txt_107.Text = "--";
+            this.lbl_107.AutoSize = true;
+            this.lbl_107.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_107.Location = new System.Drawing.Point(618, 84);
+            this.lbl_107.Name = "lbl_107";
+            this.lbl_107.Size = new System.Drawing.Size(22, 21);
+            this.lbl_107.TabIndex = 20;
+            this.lbl_107.Text = "--";
             // 
             // tabPage7
             // 
@@ -1264,10 +1265,10 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel5.Controls.Add(this.label76, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label78, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label77, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.txt_123, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.txt_109, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.txt_110, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.txt_143, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_123, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_109, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_110, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_143, 1, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -1323,45 +1324,45 @@ namespace ApprovedMedicalSurvey.UI
             this.label77.TabIndex = 3;
             this.label77.Text = "هل يحتاج المعاق إلى مساعدة للقيام بالنشاطات اليومية";
             // 
-            // txt_123
+            // lbl_123
             // 
-            this.txt_123.AutoSize = true;
-            this.txt_123.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_123.Location = new System.Drawing.Point(1092, 0);
-            this.txt_123.Name = "txt_123";
-            this.txt_123.Size = new System.Drawing.Size(22, 21);
-            this.txt_123.TabIndex = 5;
-            this.txt_123.Text = "--";
+            this.lbl_123.AutoSize = true;
+            this.lbl_123.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_123.Location = new System.Drawing.Point(1092, 0);
+            this.lbl_123.Name = "lbl_123";
+            this.lbl_123.Size = new System.Drawing.Size(22, 21);
+            this.lbl_123.TabIndex = 5;
+            this.lbl_123.Text = "--";
             // 
-            // txt_109
+            // lbl_109
             // 
-            this.txt_109.AutoSize = true;
-            this.txt_109.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_109.Location = new System.Drawing.Point(1092, 21);
-            this.txt_109.Name = "txt_109";
-            this.txt_109.Size = new System.Drawing.Size(22, 21);
-            this.txt_109.TabIndex = 6;
-            this.txt_109.Text = "--";
+            this.lbl_109.AutoSize = true;
+            this.lbl_109.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_109.Location = new System.Drawing.Point(1092, 21);
+            this.lbl_109.Name = "lbl_109";
+            this.lbl_109.Size = new System.Drawing.Size(22, 21);
+            this.lbl_109.TabIndex = 6;
+            this.lbl_109.Text = "--";
             // 
-            // txt_110
+            // lbl_110
             // 
-            this.txt_110.AutoSize = true;
-            this.txt_110.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_110.Location = new System.Drawing.Point(1092, 42);
-            this.txt_110.Name = "txt_110";
-            this.txt_110.Size = new System.Drawing.Size(22, 21);
-            this.txt_110.TabIndex = 7;
-            this.txt_110.Text = "--";
+            this.lbl_110.AutoSize = true;
+            this.lbl_110.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_110.Location = new System.Drawing.Point(1092, 42);
+            this.lbl_110.Name = "lbl_110";
+            this.lbl_110.Size = new System.Drawing.Size(22, 21);
+            this.lbl_110.TabIndex = 7;
+            this.lbl_110.Text = "--";
             // 
-            // txt_143
+            // lbl_143
             // 
-            this.txt_143.AutoSize = true;
-            this.txt_143.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_143.Location = new System.Drawing.Point(1092, 63);
-            this.txt_143.Name = "txt_143";
-            this.txt_143.Size = new System.Drawing.Size(22, 21);
-            this.txt_143.TabIndex = 8;
-            this.txt_143.Text = "--";
+            this.lbl_143.AutoSize = true;
+            this.lbl_143.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_143.Location = new System.Drawing.Point(1092, 63);
+            this.lbl_143.Name = "lbl_143";
+            this.lbl_143.Size = new System.Drawing.Size(22, 21);
+            this.lbl_143.TabIndex = 8;
+            this.lbl_143.Text = "--";
             // 
             // tabPage8
             // 
@@ -1382,7 +1383,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel6.Controls.Add(this.label80, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.txt_124, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lbl_124, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -1402,15 +1403,15 @@ namespace ApprovedMedicalSurvey.UI
             this.label80.TabIndex = 1;
             this.label80.Text = "الأمراض المزمنة غير المعدية";
             // 
-            // txt_124
+            // lbl_124
             // 
-            this.txt_124.AutoSize = true;
-            this.txt_124.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_124.Location = new System.Drawing.Point(1231, 0);
-            this.txt_124.Name = "txt_124";
-            this.txt_124.Size = new System.Drawing.Size(22, 21);
-            this.txt_124.TabIndex = 2;
-            this.txt_124.Text = "--";
+            this.lbl_124.AutoSize = true;
+            this.lbl_124.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_124.Location = new System.Drawing.Point(1231, 0);
+            this.lbl_124.Name = "lbl_124";
+            this.lbl_124.Size = new System.Drawing.Size(22, 21);
+            this.lbl_124.TabIndex = 2;
+            this.lbl_124.Text = "--";
             // 
             // tabPage9
             // 
@@ -1431,7 +1432,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel7.Controls.Add(this.label29, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.txt_122, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.lbl_122, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -1452,31 +1453,39 @@ namespace ApprovedMedicalSurvey.UI
             this.label29.TabIndex = 2;
             this.label29.Text = "التدخين والتبغ";
             // 
-            // txt_122
+            // lbl_122
             // 
-            this.txt_122.AutoSize = true;
-            this.txt_122.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_122.Location = new System.Drawing.Point(1304, 0);
-            this.txt_122.Name = "txt_122";
-            this.txt_122.Padding = new System.Windows.Forms.Padding(5);
-            this.txt_122.Size = new System.Drawing.Size(32, 31);
-            this.txt_122.TabIndex = 3;
-            this.txt_122.Text = "--";
+            this.lbl_122.AutoSize = true;
+            this.lbl_122.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_122.Location = new System.Drawing.Point(1304, 0);
+            this.lbl_122.Name = "lbl_122";
+            this.lbl_122.Padding = new System.Windows.Forms.Padding(5);
+            this.lbl_122.Size = new System.Drawing.Size(32, 31);
+            this.lbl_122.TabIndex = 3;
+            this.lbl_122.Text = "--";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
@@ -1492,6 +1501,7 @@ namespace ApprovedMedicalSurvey.UI
             this.educationlevelDataGridViewTextBoxColumn,
             this.chronicdiseasesDataGridViewTextBoxColumn,
             this.hasdisabilitiesDataGridViewTextBoxColumn,
+            this.Column1,
             this.formkeyDataGridViewTextBoxColumn,
             this.formuuidDataGridViewTextBoxColumn,
             this.orderuuidDataGridViewTextBoxColumn,
@@ -1504,12 +1514,14 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.RowTemplate.Height = 24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowTemplate.Height = 45;
             this.dataGridView1.Size = new System.Drawing.Size(1455, 334);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // nameDataGridViewTextBoxColumn
@@ -1602,6 +1614,15 @@ namespace ApprovedMedicalSurvey.UI
             this.hasdisabilitiesDataGridViewTextBoxColumn.HeaderText = "إعاقة";
             this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
             this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column1.HeaderText = "التفاصيل";
+            this.Column1.Image = global::ApprovedMedicalSurvey.Properties.Resources.search;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 52;
             // 
             // formkeyDataGridViewTextBoxColumn
             // 
@@ -2845,41 +2866,41 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label txt_97;
+        private System.Windows.Forms.Label lbl_97;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label txt_90;
+        private System.Windows.Forms.Label lbl_90;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label txt_89;
+        private System.Windows.Forms.Label lbl_89;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label txt_88;
+        private System.Windows.Forms.Label lbl_88;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label txt_87;
+        private System.Windows.Forms.Label lbl_87;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label txt_86;
+        private System.Windows.Forms.Label lbl_86;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label txt_133;
+        private System.Windows.Forms.Label lbl_133;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label txt_91;
-        private System.Windows.Forms.Label txt_93;
-        private System.Windows.Forms.Label txt_94;
-        private System.Windows.Forms.Label txt_95;
-        private System.Windows.Forms.Label txt_96;
-        private System.Windows.Forms.Label txt_92;
+        private System.Windows.Forms.Label lbl_91;
+        private System.Windows.Forms.Label lbl_93;
+        private System.Windows.Forms.Label lbl_94;
+        private System.Windows.Forms.Label lbl_95;
+        private System.Windows.Forms.Label lbl_96;
+        private System.Windows.Forms.Label lbl_92;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label txt_112;
-        private System.Windows.Forms.Label txt_113;
-        private System.Windows.Forms.Label txt_114;
-        private System.Windows.Forms.Label txt_115;
+        private System.Windows.Forms.Label lbl_112;
+        private System.Windows.Forms.Label lbl_113;
+        private System.Windows.Forms.Label lbl_114;
+        private System.Windows.Forms.Label lbl_115;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label71;
@@ -2891,31 +2912,31 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label txt_134;
-        private System.Windows.Forms.Label txt_99;
-        private System.Windows.Forms.Label txt_100;
-        private System.Windows.Forms.Label txt_101;
-        private System.Windows.Forms.Label txt_102;
-        private System.Windows.Forms.Label txt_103;
-        private System.Windows.Forms.Label txt_104;
-        private System.Windows.Forms.Label txt_105;
-        private System.Windows.Forms.Label txt_106;
-        private System.Windows.Forms.Label txt_107;
+        private System.Windows.Forms.Label lbl_134;
+        private System.Windows.Forms.Label lbl_99;
+        private System.Windows.Forms.Label lbl_100;
+        private System.Windows.Forms.Label lbl_101;
+        private System.Windows.Forms.Label lbl_102;
+        private System.Windows.Forms.Label lbl_103;
+        private System.Windows.Forms.Label lbl_104;
+        private System.Windows.Forms.Label lbl_105;
+        private System.Windows.Forms.Label lbl_106;
+        private System.Windows.Forms.Label lbl_107;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label txt_123;
-        private System.Windows.Forms.Label txt_109;
-        private System.Windows.Forms.Label txt_110;
-        private System.Windows.Forms.Label txt_143;
+        private System.Windows.Forms.Label lbl_123;
+        private System.Windows.Forms.Label lbl_109;
+        private System.Windows.Forms.Label lbl_110;
+        private System.Windows.Forms.Label lbl_143;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label txt_124;
+        private System.Windows.Forms.Label lbl_124;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label txt_122;
+        private System.Windows.Forms.Label lbl_122;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
@@ -2998,6 +3019,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource familyMemberBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
@@ -3011,10 +3033,10 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn educationlevelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn chronicdiseasesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hasdisabilitiesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn formkeyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn formuuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderuuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionuuidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource familyMemberBindingSource;
     }
 }

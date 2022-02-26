@@ -180,7 +180,7 @@ namespace ApprovedMedicalSurvey.UI
                     int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
                     DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
                     string cellValue = Convert.ToString(selectedRow.Cells["Surveyuuid"].Value);
-                    GlobalVariables.SurveyID = "631b896b-2ff1-48cf-a085-990bc72863dc";
+                    GlobalVariables.SurveyID = cellValue;
                     Surveys f = new Surveys();
                     f.MdiParent = this.ParentForm;
                     f.Tag = cellValue;

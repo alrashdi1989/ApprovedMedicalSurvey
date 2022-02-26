@@ -29,6 +29,8 @@ namespace ApprovedMedicalSurvey.UI
         string question = "";
         object[] answers = new object[20];
         int ques_count = 0;
+        bool isfamilymember = false;
+        string familyMemberName;
         private void FillingTheGridWithData()
         {
            
@@ -36,41 +38,49 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Surveys_Load(object sender, EventArgs e)
         {
+            FillLabelWithData();
+
+        }
+
+        private void FillLabelWithData()
+        {
             Cursor = Cursors.WaitCursor;
             string postData = Tag.ToString();
 
-            string URL = GlobalVariables.BaseUrl+"surevy/" + postData;
+            string URL = GlobalVariables.BaseUrl + "surevy/" + GlobalVariables.SurveyID;
             WebRequsets webRequsets = new WebRequsets();
             var data = webRequsets.webPostMethod(postData, URL);
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             var orders = serializer.Deserialize<Rootobject>(data);
+          
+                foreach (var ques in orders.operation_orders[0].response)
+                {
+                    ans_val = "";
+                    quest_id = ques.question.id;
+                    question = ques.question.name;
+                    answers = ques.response;
+                    foreach (var item in answers)
+                    {
+                        ans_val += item.ToString() + " , ";
+                    }
+                    if (ans_val.Length > 0 )
+                    {
 
-            foreach (var ques in orders.operation_orders[0].response)
-            {
-                ans_val = "";
-                quest_id = ques.question.id;
-                question = ques.question.name;
-                answers = ques.response;
-                foreach (var item in answers)
-                {
-                    ans_val += item.ToString() + " , ";
-                }
-                if (ans_val.Length > 0)
-                {
+                        findControlName("txt_" + quest_id, ans_val.Substring(0, ans_val.Length - 2));
+
+                    }
+
                     
-                    findControlName("txt_" + quest_id, ans_val.Substring(0, ans_val.Length - 2));
 
                 }
 
-
-            }
+           
+           
             this.Cursor = Cursors.Default;
             tabControl1.Visible = true;
             FlatLightTheme.flatLightTheme.lbl.Text = this.Text;
-            familyMemberBindingSource.DataSource = FamilyMemberServices.GetAllFamiyMembersBySurveyID( "family/members/"+ GlobalVariables.SurveyID);
-
-
+            familyMemberBindingSource.DataSource = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -142,7 +152,33 @@ namespace ApprovedMedicalSurvey.UI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+          
+        }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.CurrentCell.ColumnIndex.Equals(13) && e.RowIndex != -1)
+            {
+                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                {
+                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
+                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                     familyMemberName = Convert.ToString(selectedRow.Cells["nameDataGridViewTextBoxColumn"].Value);
+                    var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
+                    c.name == familyMemberName);
+                    var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
+                   lbl_133.Text = womenshealth.marriage_period;
+                    lbl_86.Text = womenshealth.has_children;
+                    lbl_87.Text = womenshealth.is_pregnant_now;
+                    lbl_88.Text = womenshealth.time_interval_between_pregnancy;
+                    lbl_90.Text = womenshealth.birth_spacing_reson;
+                    lbl_97.Text = womenshealth.pregnancy_clinic_reviewed;
+                    lbl_91.Text = womenshealth.current_birth_spacing_methods;
+                    tabControl2.Visible = true;
+
+
+                }
+            }
         }
     }
 }

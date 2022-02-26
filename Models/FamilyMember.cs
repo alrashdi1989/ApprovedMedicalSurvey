@@ -51,5 +51,8 @@ namespace ApprovedMedicalSurvey.Models
         public string form_uuid { get; set; }
         public string order_uuid { get; set; }
         public string question_uuid { get; set; }
+        public List<WomenHealth> women_health { get; set; }
+        public List<ElderHealth> elder_health { get; set; }
+        public List<BabyHealth> baby_health { get; set; }
     }
 }
