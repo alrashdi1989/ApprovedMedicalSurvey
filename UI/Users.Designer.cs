@@ -39,14 +39,15 @@ namespace ApprovedMedicalSurvey.UI
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createdatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -149,13 +150,10 @@ namespace ApprovedMedicalSurvey.UI
             this.panel3.Size = new System.Drawing.Size(883, 151);
             this.panel3.TabIndex = 3;
             // 
-            // usersBindingSource
+            // timer1
             // 
-            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
-            // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // usernameDataGridViewTextBoxColumn
             // 
@@ -193,6 +191,14 @@ namespace ApprovedMedicalSurvey.UI
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
             this.emailDataGridViewTextBoxColumn.HeaderText = "البريد الالكتروني";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
+            // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
             // 
             // Users
             // 
@@ -232,5 +238,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Timer timer1;
     }
 }

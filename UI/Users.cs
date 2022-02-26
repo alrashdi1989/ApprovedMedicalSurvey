@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
+using ApprovedMedicalSurvey.Shared;
 using DevExpress.XtraGrid.Columns;
 using System;
 using System.Collections.Generic;
@@ -19,9 +20,13 @@ namespace ApprovedMedicalSurvey.UI
 {
     public partial class Users : Form
     {
+        public static Users users;
+        public DataGridView dg;
         public Users()
         {
+            users = this;
             InitializeComponent();
+            dg = dataGridView1;
         }
 
        
@@ -32,9 +37,25 @@ namespace ApprovedMedicalSurvey.UI
         }
 
       
-        private void FillingTheGridWithData()
+        public void FillingTheGridWithData()
         {
-          usersBindingSource.DataSource=  UserServices.GetAllUsers("users");
+           var user = UserServices.GetAllUsers("users");
+            if (GlobalVariables.isNewUser==true)
+            {
+                user.Add(new Models.Users
+                {
+                    username = "سامح محمد"
+    ,
+                    role = "volunteer",
+                    created_at = DateTime.Today,
+                    status = "active",
+                    uuid = "97845",
+                    email = "sameh@gmai.com"
+                });
+
+            }
+            usersBindingSource.DataSource = user;
+
            villageBindingSource.DataSource = VillageServices.GetAllVIllages("villages");
         }
 
@@ -53,5 +74,13 @@ namespace ApprovedMedicalSurvey.UI
             //gridView1.Columns["village"].FilterInfo = new ColumnFilterInfo(filterString);
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (GlobalVariables.isNewUser==true)
+            {
+                FillingTheGridWithData();
+                GlobalVariables.isNewUser = false;
+            }
+        }
     }
 }

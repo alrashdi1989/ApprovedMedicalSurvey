@@ -29,6 +29,7 @@ namespace ApprovedMedicalSurvey.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -47,6 +48,7 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -271,6 +273,10 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6.Size = new System.Drawing.Size(123, 89);
             this.panel6.TabIndex = 7;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Scans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -320,5 +326,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

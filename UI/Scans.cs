@@ -232,5 +232,10 @@ namespace ApprovedMedicalSurvey.UI
             (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateTimePicker1.Text);
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
