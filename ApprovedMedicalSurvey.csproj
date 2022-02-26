@@ -314,6 +314,7 @@
     <Content Include="Resources\User-blue.png" />
     <Content Include="Resources\who.png" />
     <Content Include="Resources\WHO_new_logo.jpg" />
+    <None Include="Resources\WHO_new_logo.png" />
     <Content Include="Resources\WHO_new_logo1.png" />
   </ItemGroup>
   <ItemGroup>

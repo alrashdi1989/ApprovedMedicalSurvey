@@ -30,15 +30,15 @@ namespace ApprovedMedicalSurvey.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,8 +48,8 @@ namespace ApprovedMedicalSurvey.UI
             this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -64,43 +64,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(883, 388);
             this.panel1.TabIndex = 0;
-            // 
-            // btnNewUser
-            // 
-            this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewUser.FlatAppearance.BorderSize = 0;
-            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnNewUser.ForeColor = System.Drawing.Color.Black;
-            this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
-            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewUser.Location = new System.Drawing.Point(642, 28);
-            this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(217, 54);
-            this.btnNewUser.TabIndex = 1;
-            this.btnNewUser.Text = "اضافة مستخدم جديد";
-            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNewUser.UseVisualStyleBackColor = true;
-            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(625, 126);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.btnNewUser);
-            this.panel3.Location = new System.Drawing.Point(1, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(883, 151);
-            this.panel3.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -148,6 +111,43 @@ namespace ApprovedMedicalSurvey.UI
             this.dataGridView1.RowTemplate.Height = 32;
             this.dataGridView1.Size = new System.Drawing.Size(883, 388);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // btnNewUser
+            // 
+            this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewUser.FlatAppearance.BorderSize = 0;
+            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnNewUser.ForeColor = System.Drawing.Color.Black;
+            this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
+            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewUser.Location = new System.Drawing.Point(642, 28);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(217, 54);
+            this.btnNewUser.TabIndex = 1;
+            this.btnNewUser.Text = "اضافة مستخدم جديد";
+            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(625, 126);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.btnNewUser);
+            this.panel3.Location = new System.Drawing.Point(1, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(883, 151);
+            this.panel3.TabIndex = 3;
             // 
             // usersBindingSource
             // 
@@ -209,8 +209,8 @@ namespace ApprovedMedicalSurvey.UI
             this.Text = "شاشة المستخدمين";
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.ResumeLayout(false);
