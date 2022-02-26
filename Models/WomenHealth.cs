@@ -15,7 +15,7 @@ namespace ApprovedMedicalSurvey.Models
         public string has_children { get; set; }
         public string marriage_period { get; set; }
         public string pregnancy_clinic_reviewed { get; set; }
-        public object pregnancy_clinic_reviewed_reson { get; set; }
+        public string pregnancy_clinic_reviewed_reson { get; set; }
         public string previous_birth_spacing_methods { get; set; }
         public string time_interval_between_pregnancy { get; set; }
         public string vaccinated_against_tetanus { get; set; }

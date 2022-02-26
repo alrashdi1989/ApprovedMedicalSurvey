@@ -40,14 +40,14 @@ namespace ApprovedMedicalSurvey.UI
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -142,6 +142,7 @@ namespace ApprovedMedicalSurvey.UI
             this.button2.TabIndex = 2;
             this.button2.Text = "اضافة";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
@@ -165,22 +166,6 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
-            // 
-            // userPrivilegesBindingSource
-            // 
-            this.userPrivilegesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserPrivileges);
-            // 
-            // userStatusBindingSource
-            // 
-            this.userStatusBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserStatus);
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
             // comboBox1
             // 
@@ -226,6 +211,22 @@ namespace ApprovedMedicalSurvey.UI
             this.comboBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox4.Size = new System.Drawing.Size(312, 29);
             this.comboBox4.TabIndex = 17;
+            // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
+            // 
+            // userPrivilegesBindingSource
+            // 
+            this.userPrivilegesBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserPrivileges);
+            // 
+            // userStatusBindingSource
+            // 
+            this.userStatusBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.UserStatus);
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
             // AddUser
             // 

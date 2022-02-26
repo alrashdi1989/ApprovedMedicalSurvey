@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
+using ApprovedMedicalSurvey.Shared;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -98,6 +99,13 @@ namespace ApprovedMedicalSurvey.UI
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string postData ="{'users' : { 'username': '88888888', 'pin': '8888', 'email': 'eight@domain.com','role': 'central_level','status': 'active' }   }";
+        WebRequsets webRequsets = new WebRequsets();
+            webRequsets.webPostMethod(postData, "https://gql.formon.io/api/rest/create/user/");
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using ApprovedMedicalSurvey.Shared;
+﻿using ApprovedMedicalSurvey.Models;
+using ApprovedMedicalSurvey.Services;
+using ApprovedMedicalSurvey.Shared;
 using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
@@ -67,5 +69,48 @@ namespace ApprovedMedicalSurvey.UI
                 }
             }
         }
+
+        private void Reports_Load(object sender, EventArgs e)
+        {
+            UserReports();
+
+            Villages();
+        }
+
+        private void UserReports()
+        {
+            var dt = ReportServices.GetReports();
+            dt.Insert(0, new Models.Reports
+            {
+                ReportName = "اختر نو التقرير..."
+            });
+            comboBox1.DataSource = dt;
+            comboBox1.DisplayMember = "ReportName";
+            comboBox1.ValueMember = "ReportName";
+        }
+
+        private void Villages()
+        {
+            if (comboBox2.Text != "اختر الولاية...")
+
+
+            {
+
+                var dt = VillageServices.GetAllVIllages("villages");
+                dt.Insert(0, new Village
+                {
+                    name_ar = "اختر القرية..."
+                });
+                comboBox2.DataSource = dt;
+                comboBox2.DisplayMember = "name_ar";
+                comboBox2.ValueMember = "tncode";
+
+            }
+
+
+
+
+        }
+
     }
 }

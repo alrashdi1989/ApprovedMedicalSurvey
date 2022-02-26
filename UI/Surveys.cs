@@ -166,14 +166,48 @@ namespace ApprovedMedicalSurvey.UI
                      familyMemberName = Convert.ToString(selectedRow.Cells["nameDataGridViewTextBoxColumn"].Value);
                     var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
                     c.name == familyMemberName);
-                    var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
-                   lbl_133.Text = womenshealth.marriage_period;
-                    lbl_86.Text = womenshealth.has_children;
-                    lbl_87.Text = womenshealth.is_pregnant_now;
-                    lbl_88.Text = womenshealth.time_interval_between_pregnancy;
-                    lbl_90.Text = womenshealth.birth_spacing_reson;
-                    lbl_97.Text = womenshealth.pregnancy_clinic_reviewed;
-                    lbl_91.Text = womenshealth.current_birth_spacing_methods;
+                    if (memberDetails.FirstOrDefault().women_health.Count!=0)
+                    {
+                        var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
+                        lbl_133.Text = womenshealth.marriage_period;
+                        lbl_86.Text = womenshealth.has_children;
+                        lbl_87.Text = womenshealth.is_pregnant_now;
+                        lbl_88.Text = womenshealth.time_interval_between_pregnancy;
+                        lbl_90.Text = womenshealth.birth_spacing_reson;
+                        lbl_97.Text = womenshealth.visited_health_institution;
+                        lbl_91.Text = womenshealth.previous_birth_spacing_methods;
+                        lbl_92.Text = womenshealth.pregnancy_clinic_reviewed;
+                        lbl_93.Text = womenshealth.pregnancy_clinic_reviewed_reson;
+                        lbl_94.Text = womenshealth.vaccinated_against_tetanus;
+                        lbl_95.Text = womenshealth.diagnosed_with_anemia;
+                        lbl_96.Text = womenshealth.last_child_born_location;
+                    }
+                   
+                    if (memberDetails.FirstOrDefault().elder_health.Count!=0)
+                    {
+                        var elderhealth = memberDetails.FirstOrDefault().elder_health.FirstOrDefault();
+                        lbl_112.Text = elderhealth.is_doing_productive_job;
+                        lbl_113.Text = elderhealth.does_need_help;
+                        lbl_114.Text = elderhealth.does_physical_activity;
+                        lbl_115.Text = elderhealth.who_is_helping_him;
+                    }
+                    if (memberDetails.FirstOrDefault().baby_health.Count!=0)
+                    {
+                        var cildresnshealth = memberDetails.FirstOrDefault().baby_health.FirstOrDefault();
+                        lbl_134.Text = cildresnshealth.six_months_kind_of_breastfeeding;
+                        lbl_99.Text = cildresnshealth.complementary_foods_child_age;
+                        lbl_100.Text = cildresnshealth.vaccinated;
+                        lbl_101.Text = cildresnshealth.is_child_underweight;
+                        lbl_102.Text = cildresnshealth.health_center_reviewed;
+                        lbl_103.Text = cildresnshealth.has_diarrhea;
+                        lbl_104.Text = cildresnshealth.hae_respiratory_infection;
+                        lbl_105.Text = cildresnshealth.anemia_diagnosed;
+                        lbl_106.Text = cildresnshealth.diagnosed_with_malnutrition;
+                        lbl_107.Text = cildresnshealth.suffer_from_stunted_growth;
+                        lbl_107.Text = memberDetails.SingleOrDefault().chronic_diseases;
+                    }
+                   
+
                     tabControl2.Visible = true;
 
 
