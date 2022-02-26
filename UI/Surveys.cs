@@ -161,12 +161,15 @@ namespace ApprovedMedicalSurvey.UI
             {
                 if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
                 {
+                    ClearingLabels();
+
                     int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
                     DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
-                     familyMemberName = Convert.ToString(selectedRow.Cells["nameDataGridViewTextBoxColumn"].Value);
+                    familyMemberName = Convert.ToString(selectedRow.Cells["nameDataGridViewTextBoxColumn"].Value);
                     var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
                     c.name == familyMemberName);
-                    if (memberDetails.FirstOrDefault().women_health.Count!=0)
+                    lbl_122.Text = memberDetails.SingleOrDefault().smoking;
+                    if (memberDetails.FirstOrDefault().women_health.Count != 0)
                     {
                         var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
                         lbl_133.Text = womenshealth.marriage_period;
@@ -182,8 +185,8 @@ namespace ApprovedMedicalSurvey.UI
                         lbl_95.Text = womenshealth.diagnosed_with_anemia;
                         lbl_96.Text = womenshealth.last_child_born_location;
                     }
-                   
-                    if (memberDetails.FirstOrDefault().elder_health.Count!=0)
+
+                    if (memberDetails.FirstOrDefault().elder_health.Count != 0)
                     {
                         var elderhealth = memberDetails.FirstOrDefault().elder_health.FirstOrDefault();
                         lbl_112.Text = elderhealth.is_doing_productive_job;
@@ -191,7 +194,7 @@ namespace ApprovedMedicalSurvey.UI
                         lbl_114.Text = elderhealth.does_physical_activity;
                         lbl_115.Text = elderhealth.who_is_helping_him;
                     }
-                    if (memberDetails.FirstOrDefault().baby_health.Count!=0)
+                    if (memberDetails.FirstOrDefault().baby_health.Count != 0)
                     {
                         var cildresnshealth = memberDetails.FirstOrDefault().baby_health.FirstOrDefault();
                         lbl_134.Text = cildresnshealth.six_months_kind_of_breastfeeding;
@@ -206,13 +209,44 @@ namespace ApprovedMedicalSurvey.UI
                         lbl_107.Text = cildresnshealth.suffer_from_stunted_growth;
                         lbl_107.Text = memberDetails.SingleOrDefault().chronic_diseases;
                     }
-                   
+
 
                     tabControl2.Visible = true;
 
 
                 }
             }
+        }
+
+        private void ClearingLabels()
+        {
+            lbl_122.Text = string.Empty;
+            lbl_133.Text = string.Empty;
+            lbl_86.Text = string.Empty;
+            lbl_87.Text = string.Empty;
+            lbl_88.Text = string.Empty;
+            lbl_90.Text = string.Empty;
+            lbl_97.Text = string.Empty;
+            lbl_91.Text = string.Empty;
+            lbl_92.Text = string.Empty;
+            lbl_93.Text = string.Empty;
+            lbl_94.Text = string.Empty;
+            lbl_95.Text = string.Empty;
+            lbl_96.Text = string.Empty;
+            lbl_112.Text = string.Empty;
+            lbl_113.Text = string.Empty;
+            lbl_114.Text = string.Empty;
+            lbl_115.Text = string.Empty;
+            lbl_134.Text = string.Empty;
+            lbl_99.Text = string.Empty;
+            lbl_100.Text = string.Empty;
+            lbl_101.Text = string.Empty;
+            lbl_102.Text = string.Empty;
+            lbl_103.Text = string.Empty;
+            lbl_104.Text = string.Empty;
+            lbl_105.Text = string.Empty;
+            lbl_106.Text = string.Empty;
+            lbl_107.Text = string.Empty;
         }
     }
 }
