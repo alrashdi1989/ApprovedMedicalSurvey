@@ -22,7 +22,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             InitializeComponent();
         }
-        Boolean flag;
+        Boolean flag ;
         private FlatLightTheme mainForm = null;
 
         private void Scans_Load(object sender, EventArgs e)

@@ -29,7 +29,6 @@ namespace ApprovedMedicalSurvey.UI
         string question = "";
         object[] answers = new object[20];
         int ques_count = 0;
-        bool isfamilymember = false;
         string familyMemberName;
         private void FillingTheGridWithData()
         {
@@ -109,7 +108,6 @@ namespace ApprovedMedicalSurvey.UI
             }
             catch (System.Exception ex)
             {
-
             }
 
 
@@ -132,10 +130,7 @@ namespace ApprovedMedicalSurvey.UI
 
         }
 
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -145,15 +140,6 @@ namespace ApprovedMedicalSurvey.UI
             f.ShowDialog();
         }
 
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-        }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
