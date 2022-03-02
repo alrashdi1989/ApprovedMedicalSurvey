@@ -155,6 +155,8 @@ namespace ApprovedMedicalSurvey.UI
                     var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
                     c.name == familyMemberName);
                     lbl_122.Text = memberDetails.SingleOrDefault().smoking;
+                    lbl_124.Text = memberDetails.SingleOrDefault().chronic_diseases;
+                    lbl_123.Text = memberDetails.SingleOrDefault().has_disabilities;
                     if (memberDetails.FirstOrDefault().women_health.Count != 0)
                     {
                         var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
