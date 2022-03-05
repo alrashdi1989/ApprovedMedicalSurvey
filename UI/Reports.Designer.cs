@@ -34,10 +34,10 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGenerateReport = new System.Windows.Forms.Button();
+            this.btnExcelDownload = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -69,8 +69,8 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnGenerateReport);
+            this.panel2.Controls.Add(this.btnExcelDownload);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,19 +80,32 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button1
+            // btnGenerateReport
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(36, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "تصدير التقرير";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnGenerateReport.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGenerateReport.FlatAppearance.BorderSize = 0;
+            this.btnGenerateReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerateReport.ForeColor = System.Drawing.Color.White;
+            this.btnGenerateReport.Location = new System.Drawing.Point(151, 49);
+            this.btnGenerateReport.Name = "btnGenerateReport";
+            this.btnGenerateReport.Size = new System.Drawing.Size(109, 31);
+            this.btnGenerateReport.TabIndex = 3;
+            this.btnGenerateReport.Text = "عرض التقرير";
+            this.btnGenerateReport.UseVisualStyleBackColor = false;
+            // 
+            // btnExcelDownload
+            // 
+            this.btnExcelDownload.BackColor = System.Drawing.Color.Green;
+            this.btnExcelDownload.FlatAppearance.BorderSize = 0;
+            this.btnExcelDownload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcelDownload.ForeColor = System.Drawing.Color.White;
+            this.btnExcelDownload.Location = new System.Drawing.Point(36, 49);
+            this.btnExcelDownload.Name = "btnExcelDownload";
+            this.btnExcelDownload.Size = new System.Drawing.Size(109, 31);
+            this.btnExcelDownload.TabIndex = 2;
+            this.btnExcelDownload.Text = "تصدير التقرير";
+            this.btnExcelDownload.UseVisualStyleBackColor = false;
+            this.btnExcelDownload.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox2
             // 
@@ -117,19 +130,6 @@ namespace ApprovedMedicalSurvey.UI
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.comboBox1.Size = new System.Drawing.Size(257, 29);
             this.comboBox1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(151, 49);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 31);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "عرض التقرير";
-            this.button2.UseVisualStyleBackColor = false;
             // 
             // Reports
             // 
@@ -156,9 +156,9 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExcelDownload;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGenerateReport;
     }
 }

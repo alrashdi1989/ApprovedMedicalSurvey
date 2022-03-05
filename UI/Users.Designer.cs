@@ -35,7 +35,7 @@ namespace ApprovedMedicalSurvey.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgUsers = new System.Windows.Forms.DataGridView();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -49,7 +49,7 @@ namespace ApprovedMedicalSurvey.UI
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
@@ -60,15 +60,15 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgUsers);
             this.panel1.Location = new System.Drawing.Point(1, 158);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(883, 388);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgUsers
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
+            this.dgUsers.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,9 +76,9 @@ namespace ApprovedMedicalSurvey.UI
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgUsers.AutoGenerateColumns = false;
+            this.dgUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -86,21 +86,21 @@ namespace ApprovedMedicalSurvey.UI
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.usernameDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn,
             this.createdatDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
             this.uuidDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usersBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.RowHeadersVisible = false;
+            this.dgUsers.DataSource = this.usersBindingSource;
+            this.dgUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgUsers.Location = new System.Drawing.Point(0, 0);
+            this.dgUsers.Name = "dgUsers";
+            this.dgUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgUsers.RowHeadersVisible = false;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,10 +108,10 @@ namespace ApprovedMedicalSurvey.UI
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowTemplate.Height = 32;
-            this.dataGridView1.Size = new System.Drawing.Size(883, 388);
-            this.dataGridView1.TabIndex = 1;
+            this.dgUsers.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgUsers.RowTemplate.Height = 32;
+            this.dgUsers.Size = new System.Drawing.Size(883, 388);
+            this.dgUsers.TabIndex = 1;
             // 
             // btnNewUser
             // 
@@ -215,7 +215,7 @@ namespace ApprovedMedicalSurvey.UI
             this.Text = "شاشة المستخدمين";
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
@@ -231,7 +231,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.BindingSource villageBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgUsers;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn createdatDataGridViewTextBoxColumn;

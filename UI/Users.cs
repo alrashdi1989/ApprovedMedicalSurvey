@@ -26,7 +26,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             users = this;
             InitializeComponent();
-            dg = dataGridView1;
+            dg = dgUsers;
         }
 
        
@@ -39,6 +39,7 @@ namespace ApprovedMedicalSurvey.UI
       
         public void FillingTheGridWithData()
         {
+            //filling data grid with all users info 
            var user = UserServices.GetAllUsers("users");
             if (GlobalVariables.isNewUser==true)
             {

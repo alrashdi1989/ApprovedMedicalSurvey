@@ -27,6 +27,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Scans_Load(object sender, EventArgs e)
         {
+            //binding data to combo boxes 
             Governance();
         }
 
@@ -35,40 +36,40 @@ namespace ApprovedMedicalSurvey.UI
             var dt = GovernantesServices.GetAllGovernorate("governorates");
             dt.Insert(0, new Governorate {
             name_ar="اختر المحافظة..."});
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "name_ar";
-            comboBox1.ValueMember = "rncode";
+            cbGovernance.DataSource = dt;
+            cbGovernance.DisplayMember = "name_ar";
+            cbGovernance.ValueMember = "rncode";
            
 
         }
         private void States()
         {
-
-            var dt = WillayatServices.GetAllWillayatbyId("willayat", comboBox1.SelectedValue.ToString());
+           //filtering states by governance 
+            var dt = WillayatServices.GetAllWillayatbyId("willayat", cbGovernance.SelectedValue.ToString());
             dt.Insert(0, new Willayat
             {
                 name_ar = "اختر الولاية..."
             });
-            comboBox2.DataSource = dt;
-            comboBox2.DisplayMember = "name_ar";
-            comboBox2.ValueMember = "wncode";
+            cbState.DataSource = dt;
+            cbState.DisplayMember = "name_ar";
+            cbState.ValueMember = "wncode";
         }
 
         private void Villages()
         {
-            if (comboBox2.Text != "اختر الولاية...")
+            if (cbState.Text != "اختر الولاية...")
 
               
             {
-
-                var dt = VillageServices.GetAllVIllagesbyStateID("villages", comboBox2.SelectedValue.ToString());
+                //filtering villiges by states 
+                var dt = VillageServices.GetAllVIllagesbyStateID("villages", cbState.SelectedValue.ToString());
                 dt.Insert(0, new Village
                 {
                     name_ar = "اختر القرية..."
                 });
-                comboBox3.DataSource = dt;
-                comboBox3.DisplayMember = "name_ar";
-                comboBox3.ValueMember = "tncode";
+                cbVillage.DataSource = dt;
+                cbVillage.DisplayMember = "name_ar";
+                cbVillage.ValueMember = "tncode";
 
             }
 
@@ -88,6 +89,7 @@ namespace ApprovedMedicalSurvey.UI
 
             try
             {
+                //filling data grid with data 
                 this.Cursor = Cursors.WaitCursor;
                 string postData = "";
                 string URL = "https://gql.formon.io/api/rest/surveys/";
@@ -113,7 +115,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 DataRow dr;
 
-                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == comboBox3.Text && c.status == "completed"))
+                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == cbVillage.Text && c.status == "completed"))
                 {
                     dr = dt_survey.NewRow();
                     dr["Surveyuuid"] = ques.uuid;
@@ -127,35 +129,35 @@ namespace ApprovedMedicalSurvey.UI
                     dt_survey.Rows.Add(dr);
                 }
 
-                dataGridView1.Columns.Clear();
-                dataGridView1.DataSource = dt_survey;
-                dataGridView1.Columns[0].Visible = false;
-                dataGridView1.Columns[1].HeaderText = "رقم المسح";
-                dataGridView1.Columns[2].HeaderText = "رقم المبنى";
-                dataGridView1.Columns[3].HeaderText = "حالة المسح";
-                dataGridView1.Columns[4].HeaderText = "جامع البيان";
-                dataGridView1.Columns[5].HeaderText = "القرية";
-                dataGridView1.Columns[6].HeaderText = "تاريخ المسح";
+                dgScans.Columns.Clear();
+                dgScans.DataSource = dt_survey;
+                dgScans.Columns[0].Visible = false;
+                dgScans.Columns[1].HeaderText = "رقم المسح";
+                dgScans.Columns[2].HeaderText = "رقم المبنى";
+                dgScans.Columns[3].HeaderText = "حالة المسح";
+                dgScans.Columns[4].HeaderText = "جامع البيان";
+                dgScans.Columns[5].HeaderText = "القرية";
+                dgScans.Columns[6].HeaderText = "تاريخ المسح";
                 DataGridViewImageColumn img = new DataGridViewImageColumn();
                 Image image = Properties.Resources.search;
 
                 img.Image = image;
-                dataGridView1.Columns.Add(img);
+                dgScans.Columns.Add(img);
                 img.HeaderText = "التفاصيل";
                 img.Name = "img";
                 img.Width = 60;
                 this.Cursor = Cursors.Default;
-                label1.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
+                lblScanNumbers.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
 
                 flag = false;
 
 
 
-                dataGridView1.ClearSelection();
+                dgScans.ClearSelection();
 
-                textBox1.Visible = true;
-                dateTimePicker1.Visible = true;
-                textBox2.Visible = true;
+                txtUser.Visible = true;
+                dtScanDate.Visible = true;
+                txtScanNumbers.Visible = true;
             }
             catch (Exception ex)
             {
@@ -172,13 +174,13 @@ namespace ApprovedMedicalSurvey.UI
 
      
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.CurrentCell.ColumnIndex.Equals(7) && e.RowIndex != -1)
+        {   //getting data from clicking on the search button in the grid 
+            if (dgScans.CurrentCell.ColumnIndex.Equals(7) && e.RowIndex != -1)
             {
-                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                if (dgScans.CurrentCell != null && dgScans.CurrentCell.Value != null)
                 {
-                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
-                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                    int selectedrowindex = dgScans.CurrentCell.RowIndex;
+                    DataGridViewRow selectedRow = dgScans.Rows[selectedrowindex];
                     string cellValue = Convert.ToString(selectedRow.Cells["Surveyuuid"].Value);
                     GlobalVariables.SurveyID = cellValue;
                     Surveys f = new Surveys();
@@ -195,26 +197,29 @@ namespace ApprovedMedicalSurvey.UI
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", textBox1.Text);
+            //filtering data after showing in the  grid by user name
+            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", txtUser.Text);
 
         }
 
         private void textEdit2_EditValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", textBox2.Text);
+            //filtering data after showing in the  grid by scan number
+
+            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", txtScanNumbers.Text);
 
         }
 
         
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            textBox1.Text = string.Empty;
+            txtUser.Text = string.Empty;
 
         }
 
         private void textBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            textBox2.Text = string.Empty;
+            txtScanNumbers.Text = string.Empty;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -229,7 +234,9 @@ namespace ApprovedMedicalSurvey.UI
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            (dataGridView1.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dateTimePicker1.Text);
+            //filtering data after showing in the  grid date
+
+            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dtScanDate.Text);
 
         }
 

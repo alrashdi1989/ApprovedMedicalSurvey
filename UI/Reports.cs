@@ -19,12 +19,9 @@ namespace ApprovedMedicalSurvey.UI
         public Reports()
         {
             InitializeComponent();
-            Governance();
         }
 
-        private void Governance()
-        {
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -45,6 +42,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //exporting data source to excel sheet 
             Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
             excel.Visible = true;
             object Missing = Type.Missing;
@@ -72,6 +70,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Reports_Load(object sender, EventArgs e)
         {
+            //binding data to combo boxes 
             UserReports();
 
             Villages();

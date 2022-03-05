@@ -27,6 +27,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void AddUser_Load(object sender, EventArgs e)
         {
+            //Binding data sourcces to Combo Boxes
             GetVillages();
             GetRoles();
             GetUserStatus();
@@ -43,9 +44,9 @@ namespace ApprovedMedicalSurvey.UI
                 
 
             });
-            comboBox4.DataSource = dt;
-            comboBox4.DisplayMember = "StatusArabic";
-            comboBox4.ValueMember = "StatusEnglish";
+            cbUserStatus.DataSource = dt;
+            cbUserStatus.DisplayMember = "StatusArabic";
+            cbUserStatus.ValueMember = "StatusEnglish";
 
             
         }
@@ -60,9 +61,9 @@ namespace ApprovedMedicalSurvey.UI
                 name_ar = "اختر القرية..."
                 
             });
-            comboBox3.DataSource = dt;
-            comboBox3.DisplayMember = "name_ar";
-            comboBox3.ValueMember = "tncode";
+            cbVillage.DataSource = dt;
+            cbVillage.DisplayMember = "name_ar";
+            cbVillage.ValueMember = "tncode";
         }
 
         private void GetRoles()
@@ -73,9 +74,9 @@ namespace ApprovedMedicalSurvey.UI
                 UserPrivilegesArabic = "الصلاحيات..."
                 
             });
-            comboBox2.DataSource = dt;
-            comboBox2.DisplayMember = "UserPrivilegesArabic";
-            comboBox2.ValueMember = "UserPrivilegesEnglish";
+            cbUserRoles.DataSource = dt;
+            cbUserRoles.DisplayMember = "UserPrivilegesArabic";
+            cbUserRoles.ValueMember = "UserPrivilegesEnglish";
 
             
         }
@@ -83,15 +84,15 @@ namespace ApprovedMedicalSurvey.UI
         private void lookUpEdit2_EditValueChanged(object sender, EventArgs e)
 
         {
-
-            var dt = UserServices.GetAllUserswithoutProvlage("users", comboBox2.SelectedValue.ToString());
+            //addig data binding to the vocal point after choosing the user role 
+            var dt = UserServices.GetAllUserswithoutProvlage("users", cbUserRoles.SelectedValue.ToString());
             dt.Insert(0, new Models.Users
             {
                 username = "نقطة التواصل..."
             });
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "username";
-            comboBox1.ValueMember = "uuid";
+            cbVocalPoint.DataSource = dt;
+            cbVocalPoint.DisplayMember = "username";
+            cbVocalPoint.ValueMember = "uuid";
            
 
         }

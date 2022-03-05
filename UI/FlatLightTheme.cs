@@ -22,7 +22,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             InitializeComponent();
             flatLightTheme = this;
-            lbl = label2;
+            lbl = lblScreenName;
         }
 
         private void FlatDarkTheme_Load(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Dock = DockStyle.Fill;
 
             GlobalVariables.FormName = f.Text;
-            label2.Text = GlobalVariables.FormName;
+            lblScreenName.Text = GlobalVariables.FormName;
         }
 
      
@@ -79,7 +79,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            label2.Text = GlobalVariables.FormName;
+            lblScreenName.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
         }
@@ -91,7 +91,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            label2.Text = GlobalVariables.FormName;
+            lblScreenName.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
         }
@@ -103,7 +103,7 @@ namespace ApprovedMedicalSurvey.UI
             f.Show();
             f.Dock = DockStyle.Fill;
             GlobalVariables.FormName = f.Text;
-            label2.Text = GlobalVariables.FormName;
+            lblScreenName.Text = GlobalVariables.FormName;
 
 
             DisposeAllButThis(f);
@@ -135,6 +135,11 @@ namespace ApprovedMedicalSurvey.UI
         private void simpleButton6_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pbLogOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

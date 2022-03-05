@@ -29,7 +29,6 @@ namespace ApprovedMedicalSurvey.UI
         string question = "";
         object[] answers = new object[20];
         int ques_count = 0;
-        bool isfamilymember = false;
         string familyMemberName;
         private void FillingTheGridWithData()
         {
@@ -122,20 +121,26 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string getData = this.Tag.ToString() + "/accepted";
+            //showing conformaation message to make the user accepet the survey 
+       DialogResult dr = MessageBox.Show("هل انت متاكد من قبول الاستبيان؟", "قبول الاستبيان", MessageBoxButtons.YesNo,
+      MessageBoxIcon.Information);
 
-            string URL = GlobalVariables.BaseUrl+"survey/status/" + getData;
-            WebRequsets webRequsets = new WebRequsets();
-            var data = webRequsets.webGetMethod(URL);
-            MessageBox.Show("تم قبول الاستبيان");
-            this.Close();
+            if (dr == DialogResult.Yes)
+            {
+                string getData = this.Tag.ToString() + "/accepted";
+
+                string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
+                WebRequsets webRequsets = new WebRequsets();
+                var data = webRequsets.webGetMethod(URL);
+                MessageBox.Show("تم قبول الاستبيان");
+                this.Close();
+
+            }
+         
 
         }
 
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -145,26 +150,21 @@ namespace ApprovedMedicalSurvey.UI
             f.ShowDialog();
         }
 
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
+      
 
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-          
-        }
+       
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.CurrentCell.ColumnIndex.Equals(13) && e.RowIndex != -1)
+            //filling the family members data after chossing one of them 
+            if (dgFamilyMemebers.CurrentCell.ColumnIndex.Equals(13) && e.RowIndex != -1)
             {
-                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                if (dgFamilyMemebers.CurrentCell != null && dgFamilyMemebers.CurrentCell.Value != null)
                 {
                     ClearingLabels();
 
-                    int selectedrowindex = dataGridView1.CurrentCell.RowIndex;
-                    DataGridViewRow selectedRow = dataGridView1.Rows[selectedrowindex];
+                    int selectedrowindex = dgFamilyMemebers.CurrentCell.RowIndex;
+                    DataGridViewRow selectedRow = dgFamilyMemebers.Rows[selectedrowindex];
                     familyMemberName = Convert.ToString(selectedRow.Cells["nameDataGridViewTextBoxColumn"].Value);
                     var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
                     c.name == familyMemberName);
