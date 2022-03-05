@@ -16,6 +16,7 @@ namespace ApprovedMedicalSurvey.Services
     {
         public static List<Village> GetAllVIllagesbyStateID(string baseurl,string wiuid)
         {
+            //gettin the Villages by state info from the api with filter using lambda 
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Village> res = new List<Village>();
@@ -36,6 +37,8 @@ namespace ApprovedMedicalSurvey.Services
 
         public static List<Village> GetAllVIllages(string baseurl)
         {
+
+            //gettin all Villages  info from the api with filter using lambda 
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Village> res = new List<Village>();

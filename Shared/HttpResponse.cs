@@ -12,7 +12,7 @@ namespace ApprovedMedicalSurvey.Shared
    public static class HttpResponse
     {
         public static HttpResponseMessage responseMessage(string basurl) {
-
+            //returing http client requset to get the dat from the apis 
 
             var client = new HttpClient();
             client.BaseAddress = new Uri(GlobalVariables.BaseUrl + basurl);

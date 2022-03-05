@@ -8,6 +8,7 @@ namespace ApprovedMedicalSurvey.Shared
 {
    public static  class GlobalVariables
     {
+        //all shared variable used on the application are declared in this class 
         public static string BaseUrl { get; set; } = "https://gql.formon.io/api/rest/";
         public static  string FormName { get; set; }
         public static string SurveyID { get; set; }

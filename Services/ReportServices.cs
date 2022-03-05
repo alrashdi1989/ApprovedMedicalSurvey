@@ -11,6 +11,7 @@ namespace ApprovedMedicalSurvey.Services
     {
         public static List<Reports> GetReports()
         {
+            //filling the reports class with data 
 
             List<Reports> reports = new List<Reports>() {
             new Reports {ReportName ="الخصائص السكانية"},

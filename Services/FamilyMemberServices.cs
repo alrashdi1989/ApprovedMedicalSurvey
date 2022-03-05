@@ -12,6 +12,7 @@ namespace ApprovedMedicalSurvey.Services
     {
         public static List<FamilyMember> GetAllFamiyMembersBySurveyID(string baseurl)
         {
+            //gettin the family members info from the api 
             var response = Shared.HttpResponse.responseMessage(baseurl);
 
             List<FamilyMember> res = new List<FamilyMember>();

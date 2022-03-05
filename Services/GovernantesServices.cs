@@ -14,6 +14,8 @@ namespace ApprovedMedicalSurvey.Services
 {
     public static class GovernantesServices
     {
+        //gettin the Governance info from the api 
+
         public static List<Governorate> GetAllGovernorate(string baseurl)
         {
             var response = Shared.HttpResponse.responseMessage(baseurl);

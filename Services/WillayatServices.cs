@@ -16,6 +16,7 @@ namespace ApprovedMedicalSurvey.Services
     {
         public static List<Willayat> GetAllWillayatbyId(string baseurl, string rncode)
         {
+            //gettin the willayt by governance  info from the api with filter using lambda 
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
             List<Willayat> res = new List<Willayat>();

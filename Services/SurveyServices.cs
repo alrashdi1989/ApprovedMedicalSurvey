@@ -14,6 +14,8 @@ namespace ApprovedMedicalSurvey.Services
 {
    public static  class SurveyServices
     {
+        //gettin the surveys info from the api 
+
         public static List<OperationOrder> GetAllSurveys(string baseurl)
         {
           var response=  Shared.HttpResponse.responseMessage(baseurl);

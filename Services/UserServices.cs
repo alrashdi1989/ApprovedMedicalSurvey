@@ -17,7 +17,8 @@ using ApprovedMedicalSurvey.Shared;
 namespace ApprovedMedicalSurvey.Services
 {
     public static   class UserServices
-    {
+    {            //gettin the users info from the api 
+
         public static List<Users> GetAllUsers(string baseurl) {
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
@@ -37,6 +38,7 @@ namespace ApprovedMedicalSurvey.Services
 
         public static List<Users> GetAllUserswithoutProvlage(string baseurl,string privliges)
         {
+            //gettin the users info from the api with filter using lambda 
 
             var response = Shared.HttpResponse.responseMessage(baseurl);
 
@@ -55,6 +57,7 @@ namespace ApprovedMedicalSurvey.Services
 
 
         public static List<UserStatus> GetUserStatuses() {
+            //filling user states calss with data 
 
             List<UserStatus> userStatuses = new List<UserStatus>() {
             new UserStatus {StatusArabic="نشط",StatusEnglish="active"},
@@ -66,6 +69,7 @@ namespace ApprovedMedicalSurvey.Services
 
         public static List<UserPrivileges> GetUserPrivliges()
         {
+            //filling UserPrivileges states calss with data 
 
             List<UserPrivileges> userPrivileges = new List<UserPrivileges>() {
             new UserPrivileges {UserPrivilegesArabic="جامع بيان /  متطوع",UserPrivilegesEnglish="Volunteer"},
