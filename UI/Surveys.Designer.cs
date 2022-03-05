@@ -1047,7 +1047,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(847, 84);
+            this.label71.Location = new System.Drawing.Point(844, 84);
             this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(217, 21);
@@ -1069,7 +1069,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(699, 63);
+            this.label70.Location = new System.Drawing.Point(696, 63);
             this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(365, 21);
@@ -1091,7 +1091,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(826, 42);
+            this.label69.Location = new System.Drawing.Point(823, 42);
             this.label69.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(238, 21);
@@ -1113,7 +1113,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(645, 21);
+            this.label68.Location = new System.Drawing.Point(642, 21);
             this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(419, 21);
@@ -1124,10 +1124,10 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(1096, 63);
+            this.label65.Location = new System.Drawing.Point(1093, 63);
             this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(349, 21);
+            this.label65.Size = new System.Drawing.Size(352, 21);
             this.label65.TabIndex = 5;
             this.label65.Text = "هل كان طفلك ناقص الوزن (اقل من 2.5كج) عند الولادة؟";
             // 
@@ -1135,7 +1135,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(730, 0);
+            this.label67.Location = new System.Drawing.Point(727, 0);
             this.label67.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(334, 21);
@@ -1146,7 +1146,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_134.AutoSize = true;
             this.lbl_134.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_134.Location = new System.Drawing.Point(1069, 0);
+            this.lbl_134.Location = new System.Drawing.Point(1066, 0);
             this.lbl_134.Name = "lbl_134";
             this.lbl_134.Size = new System.Drawing.Size(22, 21);
             this.lbl_134.TabIndex = 11;
@@ -1156,7 +1156,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_99.AutoSize = true;
             this.lbl_99.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_99.Location = new System.Drawing.Point(1069, 21);
+            this.lbl_99.Location = new System.Drawing.Point(1066, 21);
             this.lbl_99.Name = "lbl_99";
             this.lbl_99.Size = new System.Drawing.Size(22, 21);
             this.lbl_99.TabIndex = 12;
@@ -1166,7 +1166,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_100.AutoSize = true;
             this.lbl_100.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_100.Location = new System.Drawing.Point(1069, 42);
+            this.lbl_100.Location = new System.Drawing.Point(1066, 42);
             this.lbl_100.Name = "lbl_100";
             this.lbl_100.Size = new System.Drawing.Size(22, 21);
             this.lbl_100.TabIndex = 13;
@@ -1176,7 +1176,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_101.AutoSize = true;
             this.lbl_101.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_101.Location = new System.Drawing.Point(1069, 63);
+            this.lbl_101.Location = new System.Drawing.Point(1066, 63);
             this.lbl_101.Name = "lbl_101";
             this.lbl_101.Size = new System.Drawing.Size(22, 21);
             this.lbl_101.TabIndex = 14;
@@ -1186,7 +1186,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_102.AutoSize = true;
             this.lbl_102.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_102.Location = new System.Drawing.Point(1069, 84);
+            this.lbl_102.Location = new System.Drawing.Point(1066, 84);
             this.lbl_102.Name = "lbl_102";
             this.lbl_102.Size = new System.Drawing.Size(22, 21);
             this.lbl_102.TabIndex = 15;
@@ -1196,7 +1196,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_103.AutoSize = true;
             this.lbl_103.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_103.Location = new System.Drawing.Point(618, 0);
+            this.lbl_103.Location = new System.Drawing.Point(615, 0);
             this.lbl_103.Name = "lbl_103";
             this.lbl_103.Size = new System.Drawing.Size(22, 21);
             this.lbl_103.TabIndex = 16;
@@ -1206,7 +1206,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_104.AutoSize = true;
             this.lbl_104.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_104.Location = new System.Drawing.Point(618, 21);
+            this.lbl_104.Location = new System.Drawing.Point(615, 21);
             this.lbl_104.Name = "lbl_104";
             this.lbl_104.Size = new System.Drawing.Size(22, 21);
             this.lbl_104.TabIndex = 17;
@@ -1216,7 +1216,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_105.AutoSize = true;
             this.lbl_105.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_105.Location = new System.Drawing.Point(618, 42);
+            this.lbl_105.Location = new System.Drawing.Point(615, 42);
             this.lbl_105.Name = "lbl_105";
             this.lbl_105.Size = new System.Drawing.Size(22, 21);
             this.lbl_105.TabIndex = 18;
@@ -1226,7 +1226,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_106.AutoSize = true;
             this.lbl_106.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_106.Location = new System.Drawing.Point(618, 63);
+            this.lbl_106.Location = new System.Drawing.Point(615, 63);
             this.lbl_106.Name = "lbl_106";
             this.lbl_106.Size = new System.Drawing.Size(22, 21);
             this.lbl_106.TabIndex = 19;
@@ -1236,7 +1236,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_107.AutoSize = true;
             this.lbl_107.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_107.Location = new System.Drawing.Point(618, 84);
+            this.lbl_107.Location = new System.Drawing.Point(615, 84);
             this.lbl_107.Name = "lbl_107";
             this.lbl_107.Size = new System.Drawing.Size(22, 21);
             this.lbl_107.TabIndex = 20;
@@ -1613,6 +1613,97 @@ namespace ApprovedMedicalSurvey.UI
             this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
             this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "العمر ";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "الجنس";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            this.genderDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isoverweightDataGridViewTextBoxColumn
+            // 
+            this.isoverweightDataGridViewTextBoxColumn.DataPropertyName = "is_overweight";
+            this.isoverweightDataGridViewTextBoxColumn.HeaderText = "يعاني من السنة";
+            this.isoverweightDataGridViewTextBoxColumn.Name = "isoverweightDataGridViewTextBoxColumn";
+            this.isoverweightDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityDataGridViewTextBoxColumn.DataPropertyName = "physical_activity";
+            this.physicalactivityDataGridViewTextBoxColumn.HeaderText = "النشاط البدني";
+            this.physicalactivityDataGridViewTextBoxColumn.Name = "physicalactivityDataGridViewTextBoxColumn";
+            this.physicalactivityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityperiodDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityperiodDataGridViewTextBoxColumn.DataPropertyName = "physical_activity_period";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.HeaderText = "مدة النشاط البدني";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.Name = "physicalactivityperiodDataGridViewTextBoxColumn";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "ترتيبك في العائلة ";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // smokingDataGridViewTextBoxColumn
+            // 
+            this.smokingDataGridViewTextBoxColumn.DataPropertyName = "smoking";
+            this.smokingDataGridViewTextBoxColumn.HeaderText = "مدخن/غير مدخن";
+            this.smokingDataGridViewTextBoxColumn.Name = "smokingDataGridViewTextBoxColumn";
+            this.smokingDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "الحالة الاجتماعية";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // workDataGridViewTextBoxColumn
+            // 
+            this.workDataGridViewTextBoxColumn.DataPropertyName = "work";
+            this.workDataGridViewTextBoxColumn.HeaderText = "يعمل/لايعمل";
+            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
+            this.workDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // educationlevelDataGridViewTextBoxColumn
+            // 
+            this.educationlevelDataGridViewTextBoxColumn.DataPropertyName = "education_level";
+            this.educationlevelDataGridViewTextBoxColumn.HeaderText = "المستوى التعليمي";
+            this.educationlevelDataGridViewTextBoxColumn.Name = "educationlevelDataGridViewTextBoxColumn";
+            this.educationlevelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // chronicdiseasesDataGridViewTextBoxColumn
+            // 
+            this.chronicdiseasesDataGridViewTextBoxColumn.DataPropertyName = "chronic_diseases";
+            this.chronicdiseasesDataGridViewTextBoxColumn.HeaderText = "الامراض المزمنة";
+            this.chronicdiseasesDataGridViewTextBoxColumn.Name = "chronicdiseasesDataGridViewTextBoxColumn";
+            this.chronicdiseasesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hasdisabilitiesDataGridViewTextBoxColumn
+            // 
+            this.hasdisabilitiesDataGridViewTextBoxColumn.DataPropertyName = "has_disabilities";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.HeaderText = "إعاقة";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -1620,7 +1711,43 @@ namespace ApprovedMedicalSurvey.UI
             this.Column1.Image = global::ApprovedMedicalSurvey.Properties.Resources.search;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 52;
+            this.Column1.Width = 51;
+            // 
+            // formkeyDataGridViewTextBoxColumn
+            // 
+            this.formkeyDataGridViewTextBoxColumn.DataPropertyName = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.HeaderText = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.Name = "formkeyDataGridViewTextBoxColumn";
+            this.formkeyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formkeyDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // formuuidDataGridViewTextBoxColumn
+            // 
+            this.formuuidDataGridViewTextBoxColumn.DataPropertyName = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.HeaderText = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.Name = "formuuidDataGridViewTextBoxColumn";
+            this.formuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // orderuuidDataGridViewTextBoxColumn
+            // 
+            this.orderuuidDataGridViewTextBoxColumn.DataPropertyName = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.HeaderText = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.Name = "orderuuidDataGridViewTextBoxColumn";
+            this.orderuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionuuidDataGridViewTextBoxColumn
+            // 
+            this.questionuuidDataGridViewTextBoxColumn.DataPropertyName = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.HeaderText = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.Name = "questionuuidDataGridViewTextBoxColumn";
+            this.questionuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // familyMemberBindingSource
+            // 
+            this.familyMemberBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.FamilyMember);
             // 
             // formkeyDataGridViewTextBoxColumn
             // 

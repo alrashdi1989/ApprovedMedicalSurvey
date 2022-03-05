@@ -108,7 +108,6 @@ namespace ApprovedMedicalSurvey.UI
             }
             catch (System.Exception ex)
             {
-
             }
 
 
@@ -135,8 +134,10 @@ namespace ApprovedMedicalSurvey.UI
                 MessageBox.Show("تم قبول الاستبيان");
                 this.Close();
 
-            }
-         
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -150,9 +151,15 @@ namespace ApprovedMedicalSurvey.UI
             f.ShowDialog();
         }
 
-      
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
 
-       
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -169,6 +176,8 @@ namespace ApprovedMedicalSurvey.UI
                     var memberDetails = FamilyMemberServices.GetAllFamiyMembersBySurveyID("family/members/" + GlobalVariables.SurveyID).Where(c =>
                     c.name == familyMemberName);
                     lbl_122.Text = memberDetails.SingleOrDefault().smoking;
+                    lbl_124.Text = memberDetails.SingleOrDefault().chronic_diseases;
+                    lbl_123.Text = memberDetails.SingleOrDefault().has_disabilities;
                     if (memberDetails.FirstOrDefault().women_health.Count != 0)
                     {
                         var womenshealth = memberDetails.FirstOrDefault().women_health.FirstOrDefault();
