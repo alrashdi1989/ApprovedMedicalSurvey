@@ -22,12 +22,21 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnRejected_Click(object sender, EventArgs e)
         {
-            string getData = GlobalVariables.SurveyID + "/rejected";
-            string URL = GlobalVariables.BaseUrl+"survey/status/" + getData;
-           WebRequsets  webRequests = new WebRequsets ();
-            var data = webRequests.webGetMethod(URL);
-            MessageBox.Show("تم رفض  الاستبيان");
-            this.Close();
+            DialogResult dr = MessageBox.Show("هل انت متاكد من رفض الاستبيان؟", "رفض الاستبيان", MessageBoxButtons.YesNo,
+          MessageBoxIcon.Information);
+
+            if (dr == DialogResult.Yes)
+            {
+                string getData = GlobalVariables.SurveyID + "/rejected";
+                string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
+                WebRequsets webRequests = new WebRequsets();
+                var data = webRequests.webGetMethod(URL);
+                MessageBox.Show("تم رفض  الاستبيان");
+                this.Close();
+
+            }
+
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
