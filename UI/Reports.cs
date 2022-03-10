@@ -81,11 +81,11 @@ namespace ApprovedMedicalSurvey.UI
             var dt = ReportServices.GetReports();
             dt.Insert(0, new Models.Reports
             {
-                ReportName = "اختر نو التقرير..."
+                reportName = "اختر نو التقرير..."
             });
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "ReportName";
-            comboBox1.ValueMember = "ReportName";
+            comboBox1.ValueMember = "reportID";
         }
 
         private void Villages()

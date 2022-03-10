@@ -8,6 +8,7 @@ namespace ApprovedMedicalSurvey.Models
 {
    public class Reports
     {
-        public string ReportName { get; set; }
+        public string reportID { get; set; }
+        public string reportName { get; set; }
     }
 }
