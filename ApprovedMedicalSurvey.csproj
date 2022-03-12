@@ -134,6 +134,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AllReports.cs" />
     <Compile Include="Models\BabyHealth.cs" />
     <Compile Include="Models\Building.cs" />
     <Compile Include="Models\Data.cs" />
@@ -275,6 +276,8 @@
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.AllReports+Result.datasource" />
+    <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.AllReports+Sum.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.FamilyMember.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Governorate.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.Surveys.datasource" />

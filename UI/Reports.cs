@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
@@ -21,16 +22,19 @@ namespace ApprovedMedicalSurvey.UI
             InitializeComponent();
         }
 
-        
 
+        string tCode;
+        string sCode;
+        string gCode;
+        string reportCode;
         private void button2_Click(object sender, EventArgs e)
         {
            
         }
         private void copyAlltoClipboard()
         {
-            dataGridView1.SelectAll();
-            DataObject dataObj = dataGridView1.GetClipboardContent();
+            dgReports.SelectAll();
+            DataObject dataObj = dgReports.GetClipboardContent();
             if (dataObj != null)
                 Clipboard.SetDataObject(dataObj);
         }
@@ -50,19 +54,19 @@ namespace ApprovedMedicalSurvey.UI
             Worksheet sheet1 = (Worksheet)workbook.Sheets[1];
             int StartCol = 1;
             int StartRow = 1;
-            for (int j = 0; j < dataGridView1.Columns.Count; j++)
+            for (int j = 0; j < dgReports.Columns.Count; j++)
             {
                 Range myRange = (Range)sheet1.Cells[StartRow, StartCol + j];
-                myRange.Value2 = dataGridView1.Columns[j].HeaderText;
+                myRange.Value2 = dgReports.Columns[j].HeaderText;
             }
             StartRow++;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < dgReports.Rows.Count; i++)
             {
-                for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                for (int j = 0; j < dgReports.Columns.Count; j++)
                 {
 
                     Range myRange = (Range)sheet1.Cells[StartRow + i, StartCol + j];
-                    myRange.Value2 = dataGridView1[j, i].Value == null ? "" : dataGridView1[j, i].Value;
+                    myRange.Value2 = dgReports[j, i].Value == null ? "" : dgReports[j, i].Value;
                     myRange.Select();
                 }
             }
@@ -83,14 +87,14 @@ namespace ApprovedMedicalSurvey.UI
             {
                 reportName = "اختر نو التقرير..."
             });
-            comboBox1.DataSource = dt;
-            comboBox1.DisplayMember = "ReportName";
-            comboBox1.ValueMember = "reportID";
+            cmReportType.DataSource = dt;
+            cmReportType.DisplayMember = "ReportName";
+            cmReportType.ValueMember = "reportID";
         }
 
         private void Villages()
         {
-            if (comboBox2.Text != "اختر الولاية...")
+            if (cmTown.Text != "اختر الولاية...")
 
 
             {
@@ -100,9 +104,9 @@ namespace ApprovedMedicalSurvey.UI
                 {
                     name_ar = "اختر القرية..."
                 });
-                comboBox2.DataSource = dt;
-                comboBox2.DisplayMember = "name_ar";
-                comboBox2.ValueMember = "tncode";
+                cmTown.DataSource = dt;
+                cmTown.DisplayMember = "name_ar";
+                cmTown.ValueMember = "tncode";
 
             }
 
@@ -111,5 +115,30 @@ namespace ApprovedMedicalSurvey.UI
 
         }
 
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+           
+           resultBindingSource.DataSource= ReportServices.GetAllReports("report/"+tCode+"/"+sCode+"/"+gCode+"/"+reportCode+"");
+            int sum = 0;
+            for (int i = 0; i < dgReports.Rows.Count; ++i)
+            {
+                int tmp = 0;
+                int.TryParse(dgReports.Rows[i].Cells[0].Value.ToString(), out tmp);
+                sum += tmp;
+            }
+            label1.Text = "المجموع الكلي :" + sum.ToString();
+        }
+
+        private void cmTown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tCode = cmTown.SelectedValue.ToString();
+            sCode= tCode.Substring(0, 4);
+           gCode= tCode.Substring(0, 2);
+        }
+
+        private void cmReportType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            reportCode = cmReportType.SelectedValue.ToString();
+        }
     }
 }
