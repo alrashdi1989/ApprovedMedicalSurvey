@@ -85,7 +85,7 @@ namespace ApprovedMedicalSurvey.UI
             var dt = ReportServices.GetReports();
             dt.Insert(0, new Models.Reports
             {
-                reportName = "اختر نو التقرير..."
+                reportName = "اختر نوع التقرير..."
             });
             cmReportType.DataSource = dt;
             cmReportType.DisplayMember = "ReportName";
@@ -123,7 +123,7 @@ namespace ApprovedMedicalSurvey.UI
             for (int i = 0; i < dgReports.Rows.Count; ++i)
             {
                 int tmp = 0;
-                int.TryParse(dgReports.Rows[i].Cells[0].Value.ToString(), out tmp);
+                int.TryParse(dgReports.Rows[i].Cells[1].Value.ToString(), out tmp);
                 sum += tmp;
             }
             label1.Text = "المجموع الكلي :" + sum.ToString();

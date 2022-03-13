@@ -54,10 +54,14 @@ namespace ApprovedMedicalSurvey.Services
             {
                 var data = response.Content.ReadAsStringAsync().Result;
 
+                if (data != null)
+                {
+                    AllReports.Root result = JsonConvert.DeserializeObject<AllReports.Root>(data);
+                    res = result.results.ToList();
+                }
 
-                AllReports.Root result = JsonConvert.DeserializeObject<AllReports.Root>(data);
 
-                res = result.results.ToList();
+                
 
             }
             return res;

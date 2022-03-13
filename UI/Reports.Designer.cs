@@ -30,26 +30,26 @@ namespace ApprovedMedicalSurvey.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.govenanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgReports = new System.Windows.Forms.DataGridView();
+            this.resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnGenerateReport = new System.Windows.Forms.Button();
             this.btnExcelDownload = new System.Windows.Forms.Button();
             this.cmTown = new System.Windows.Forms.ComboBox();
             this.cmReportType = new System.Windows.Forms.ComboBox();
-            this.dgReports = new System.Windows.Forms.DataGridView();
-            this.resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgReports)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultBindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,6 +62,53 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 344);
             this.panel1.TabIndex = 0;
+            // 
+            // dgReports
+            // 
+            this.dgReports.AllowUserToAddRows = false;
+            this.dgReports.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgReports.AutoGenerateColumns = false;
+            this.dgReports.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgReports.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.valueDataGridViewTextBoxColumn});
+            this.dgReports.DataSource = this.resultBindingSource;
+            this.dgReports.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgReports.Location = new System.Drawing.Point(0, 0);
+            this.dgReports.Margin = new System.Windows.Forms.Padding(2);
+            this.dgReports.Name = "dgReports";
+            this.dgReports.ReadOnly = true;
+            this.dgReports.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dgReports.RowHeadersVisible = false;
+            this.dgReports.RowHeadersWidth = 51;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReports.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgReports.RowTemplate.Height = 45;
+            this.dgReports.Size = new System.Drawing.Size(796, 344);
+            this.dgReports.TabIndex = 1;
+            // 
+            // resultBindingSource
+            // 
+            this.resultBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.AllReports.Result);
             // 
             // panel2
             // 
@@ -79,6 +126,16 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Size = new System.Drawing.Size(795, 93);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(126, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "--";
             // 
             // btnGenerateReport
             // 
@@ -134,59 +191,6 @@ namespace ApprovedMedicalSurvey.UI
             this.cmReportType.TabIndex = 0;
             this.cmReportType.SelectedIndexChanged += new System.EventHandler(this.cmReportType_SelectedIndexChanged);
             // 
-            // dgReports
-            // 
-            this.dgReports.AllowUserToAddRows = false;
-            this.dgReports.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgReports.AutoGenerateColumns = false;
-            this.dgReports.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgReports.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.valueDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn});
-            this.dgReports.DataSource = this.resultBindingSource;
-            this.dgReports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgReports.Location = new System.Drawing.Point(0, 0);
-            this.dgReports.Margin = new System.Windows.Forms.Padding(2);
-            this.dgReports.Name = "dgReports";
-            this.dgReports.ReadOnly = true;
-            this.dgReports.RowHeadersVisible = false;
-            this.dgReports.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgReports.RowsDefaultCellStyle = dataGridViewCellStyle12;
-            this.dgReports.RowTemplate.Height = 45;
-            this.dgReports.Size = new System.Drawing.Size(796, 344);
-            this.dgReports.TabIndex = 1;
-            // 
-            // resultBindingSource
-            // 
-            this.resultBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.AllReports.Result);
-            // 
-            // valueDataGridViewTextBoxColumn
-            // 
-            this.valueDataGridViewTextBoxColumn.DataPropertyName = "value";
-            this.valueDataGridViewTextBoxColumn.HeaderText = "العدد";
-            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
-            this.valueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
@@ -194,15 +198,12 @@ namespace ApprovedMedicalSurvey.UI
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // label1
+            // valueDataGridViewTextBoxColumn
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(126, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "--";
+            this.valueDataGridViewTextBoxColumn.DataPropertyName = "value";
+            this.valueDataGridViewTextBoxColumn.HeaderText = "العدد";
+            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
+            this.valueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Reports
             // 
@@ -218,10 +219,10 @@ namespace ApprovedMedicalSurvey.UI
             this.Load += new System.EventHandler(this.Reports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgReports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultBindingSource)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -236,8 +237,8 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Button btnGenerateReport;
         private System.Windows.Forms.DataGridView dgReports;
         private System.Windows.Forms.BindingSource resultBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn;
     }
 }
