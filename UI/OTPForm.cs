@@ -21,7 +21,11 @@ namespace ApprovedMedicalSurvey.UI
         {
 
         }
+        string status_desc;
+        string status_code;
 
+        //Call the method once phone number is valid
+      
         private void OTPForm_Load(object sender, EventArgs e)
         {
             txtmobile.Focus();
@@ -41,22 +45,37 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btncard_Click(object sender, EventArgs e)
         {
-            if(txtmobile.Text.Length == 8)
-            {
-                //send the number to REST API getUserbyID
-                //Get Response success "uuid" 
-                //Open OTP Server Form
-                ActivateForm actfrm = new ActivateForm();
-                actfrm.Show();
-                lblvalidate.Visible = false;
-                this.Hide();
-                
+           //https://tamimahsms.com/User/bulkpush.asmx?wsdl
 
-            }
-            else
+             OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
+            OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
+            sendStatus = otpsrv.SendSMS("", "", "message", 1, "", "", "", "", "55555555");
+
+            //otpsrv.SendSMS("username", "password", "message", 1, "schedualedate","sender", "AppID", "sourceRef","MSISDN");
+
+
+            status_desc = sendStatus.StatusDesc;
+            status_code = sendStatus.StatusCode;
+            if (status_code == "00")
             {
-                lblvalidate.Visible = true;
+                if (txtmobile.Text.Length == 8)
+                {
+                    //send the number to REST API getUserbyID
+                    //Get Response success "uuid" 
+                    //Open OTP Server Form
+                    ActivateForm actfrm = new ActivateForm();
+                    actfrm.Show();
+                    lblvalidate.Visible = false;
+                    this.Hide();
+
+
+                }
+                else
+                {
+                    lblvalidate.Visible = true;
+                }
             }
+          
         }
 
         private void txtmobile_KeyDown(object sender, KeyEventArgs e)

@@ -104,6 +104,7 @@
       <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -134,6 +135,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\OTPServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Models\AllReports.cs" />
     <Compile Include="Models\BabyHealth.cs" />
     <Compile Include="Models\Building.cs" />
@@ -275,6 +281,13 @@
     <EmbeddedResource Include="UI\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Connected Services\OTPServiceRef\ApprovedMedicalSurvey.OTPServiceRef.SendSMSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\OTPServiceRef\ApprovedMedicalSurvey.OTPServiceRef.SendStatus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\OTPServiceRef\bulkpush.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.AllReports+Result.datasource" />
     <None Include="Properties\DataSources\ApprovedMedicalSurvey.Models.AllReports+Sum.datasource" />
@@ -303,6 +316,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\OTPServiceRef\configuration91.svcinfo" />
+    <None Include="Connected Services\OTPServiceRef\configuration.svcinfo" />
+    <None Include="Connected Services\OTPServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Resources\card.PNG" />
     <Content Include="Resources\card1.PNG" />
     <Content Include="Resources\CBI-logo.png" />
@@ -355,6 +374,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\OTPServiceRef\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
