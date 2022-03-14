@@ -40,14 +40,12 @@ namespace ApprovedMedicalSurvey.UI
             this.btnAddUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbVocalPoint = new System.Windows.Forms.ComboBox();
-            this.cbUserRoles = new System.Windows.Forms.ComboBox();
-            this.cbVillage = new System.Windows.Forms.ComboBox();
             this.cbUserStatus = new System.Windows.Forms.ComboBox();
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cbUserRoles = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,7 +76,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txtUserNumber.Name = "txtUserNumber";
             this.txtUserNumber.Size = new System.Drawing.Size(312, 29);
             this.txtUserNumber.TabIndex = 1;
-            this.txtUserNumber.Text = "...رقم المستخدم";
+            this.txtUserNumber.Text = ".... اسم المستخدم";
             this.txtUserNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtUserName
@@ -90,7 +88,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(312, 29);
             this.txtUserName.TabIndex = 2;
-            this.txtUserName.Text = "....اسم المستخدم";
+            this.txtUserName.Text = "...كلمة المرور";
             this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPassword
@@ -102,7 +100,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(312, 29);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "..كلمة المرور";
+            this.txtPassword.Text = "...البريد الالكتروني";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
@@ -167,46 +165,12 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // cbVocalPoint
-            // 
-            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVocalPoint.FormattingEnabled = true;
-            this.cbVocalPoint.Location = new System.Drawing.Point(494, 300);
-            this.cbVocalPoint.Name = "cbVocalPoint";
-            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
-            this.cbVocalPoint.TabIndex = 14;
-            // 
-            // cbUserRoles
-            // 
-            this.cbUserRoles.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbUserRoles.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUserRoles.FormattingEnabled = true;
-            this.cbUserRoles.Location = new System.Drawing.Point(12, 244);
-            this.cbUserRoles.Name = "cbUserRoles";
-            this.cbUserRoles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbUserRoles.Size = new System.Drawing.Size(312, 29);
-            this.cbUserRoles.TabIndex = 15;
-            this.cbUserRoles.SelectedIndexChanged += new System.EventHandler(this.lookUpEdit2_EditValueChanged);
-            // 
-            // cbVillage
-            // 
-            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVillage.FormattingEnabled = true;
-            this.cbVillage.Location = new System.Drawing.Point(12, 300);
-            this.cbVillage.Name = "cbVillage";
-            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVillage.Size = new System.Drawing.Size(312, 29);
-            this.cbVillage.TabIndex = 16;
-            // 
             // cbUserStatus
             // 
             this.cbUserStatus.BackColor = System.Drawing.Color.Gainsboro;
             this.cbUserStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUserStatus.FormattingEnabled = true;
-            this.cbUserStatus.Location = new System.Drawing.Point(12, 359);
+            this.cbUserStatus.Location = new System.Drawing.Point(12, 247);
             this.cbUserStatus.Name = "cbUserStatus";
             this.cbUserStatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbUserStatus.Size = new System.Drawing.Size(312, 29);
@@ -228,16 +192,25 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
+            // cbUserRoles
+            // 
+            this.cbUserRoles.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbUserRoles.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUserRoles.FormattingEnabled = true;
+            this.cbUserRoles.Location = new System.Drawing.Point(12, 318);
+            this.cbUserRoles.Name = "cbUserRoles";
+            this.cbUserRoles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbUserRoles.Size = new System.Drawing.Size(312, 29);
+            this.cbUserRoles.TabIndex = 19;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(818, 570);
-            this.Controls.Add(this.cbUserStatus);
-            this.Controls.Add(this.cbVillage);
             this.Controls.Add(this.cbUserRoles);
-            this.Controls.Add(this.cbVocalPoint);
+            this.Controls.Add(this.cbUserStatus);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtPassword);
@@ -279,9 +252,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.BindingSource userPrivilegesBindingSource;
         private System.Windows.Forms.BindingSource userStatusBindingSource;
         private System.Windows.Forms.BindingSource usersBindingSource;
-        private System.Windows.Forms.ComboBox cbVocalPoint;
-        private System.Windows.Forms.ComboBox cbUserRoles;
-        private System.Windows.Forms.ComboBox cbVillage;
         private System.Windows.Forms.ComboBox cbUserStatus;
+        private System.Windows.Forms.ComboBox cbUserRoles;
     }
 }

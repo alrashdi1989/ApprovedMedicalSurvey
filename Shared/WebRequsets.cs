@@ -26,13 +26,14 @@ namespace ApprovedMedicalSurvey.Shared
 
         }
 
-        public string webPostMethod(string postData, string URL)
+        public string webPostMethod(string postData, string URL)//string jwt
         {
             string responseFromServer = "";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
             request.Method = "POST";
             request.Credentials = CredentialCache.DefaultCredentials;
             request.Accept = "/";
+           // request.Headers.Add("", "");
             request.UseDefaultCredentials = true;
             request.Proxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
             byte[] byteArray = Encoding.UTF8.GetBytes(postData);

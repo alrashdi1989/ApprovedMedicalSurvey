@@ -40,16 +40,22 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cbVillage = new System.Windows.Forms.ComboBox();
+            this.cbVocalPoint = new System.Windows.Forms.ComboBox();
+            this.btnUpdateUser = new System.Windows.Forms.Button();
+            this.cbStatus = new System.Windows.Forms.CheckBox();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.checklist = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.createdatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).BeginInit();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
@@ -89,6 +95,7 @@ namespace ApprovedMedicalSurvey.UI
             this.dgUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.checklist,
             this.usernameDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn,
             this.createdatDataGridViewTextBoxColumn,
@@ -117,7 +124,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNewUser.FlatAppearance.BorderSize = 0;
-            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnNewUser.ForeColor = System.Drawing.Color.Black;
             this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
@@ -135,7 +142,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Controls.Add(this.cbStatus);
+            this.panel2.Controls.Add(this.cbVillage);
+            this.panel2.Controls.Add(this.btnUpdateUser);
+            this.panel2.Controls.Add(this.cbVocalPoint);
+            this.panel2.Location = new System.Drawing.Point(11, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(625, 126);
             this.panel2.TabIndex = 2;
@@ -144,6 +155,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.btnNewUser);
             this.panel3.Location = new System.Drawing.Point(1, 1);
             this.panel3.Name = "panel3";
@@ -155,27 +167,97 @@ namespace ApprovedMedicalSurvey.UI
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cbVillage
+            // 
+            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVillage.FormattingEnabled = true;
+            this.cbVillage.Location = new System.Drawing.Point(310, 42);
+            this.cbVillage.Name = "cbVillage";
+            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVillage.Size = new System.Drawing.Size(312, 29);
+            this.cbVillage.TabIndex = 19;
+            // 
+            // cbVocalPoint
+            // 
+            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVocalPoint.FormattingEnabled = true;
+            this.cbVocalPoint.Location = new System.Drawing.Point(310, 94);
+            this.cbVocalPoint.Name = "cbVocalPoint";
+            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
+            this.cbVocalPoint.TabIndex = 17;
+            // 
+            // btnUpdateUser
+            // 
+            this.btnUpdateUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateUser.Image")));
+            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateUser.Location = new System.Drawing.Point(3, 72);
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Size = new System.Drawing.Size(217, 54);
+            this.btnUpdateUser.TabIndex = 2;
+            this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
+            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.AutoSize = true;
+            this.cbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.ForeColor = System.Drawing.Color.Black;
+            this.cbStatus.Location = new System.Drawing.Point(3, 17);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(110, 25);
+            this.cbStatus.TabIndex = 20;
+            this.cbStatus.Text = "فعال/غيرفعال";
+            this.cbStatus.UseVisualStyleBackColor = true;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
+            // 
+            // villageBindingSource
+            // 
+            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
+            // 
+            // checklist
+            // 
+            this.checklist.FillWeight = 45.68528F;
+            this.checklist.HeaderText = "";
+            this.checklist.Name = "checklist";
+            // 
             // usernameDataGridViewTextBoxColumn
             // 
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.FillWeight = 110.8629F;
             this.usernameDataGridViewTextBoxColumn.HeaderText = "اسم المستخدم";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
             // 
             // roleDataGridViewTextBoxColumn
             // 
             this.roleDataGridViewTextBoxColumn.DataPropertyName = "role";
+            this.roleDataGridViewTextBoxColumn.FillWeight = 110.8629F;
             this.roleDataGridViewTextBoxColumn.HeaderText = "الصلاحيات";
             this.roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
             // 
             // createdatDataGridViewTextBoxColumn
             // 
             this.createdatDataGridViewTextBoxColumn.DataPropertyName = "created_at";
+            this.createdatDataGridViewTextBoxColumn.FillWeight = 110.8629F;
             this.createdatDataGridViewTextBoxColumn.HeaderText = "تارخ التسجيل";
             this.createdatDataGridViewTextBoxColumn.Name = "createdatDataGridViewTextBoxColumn";
             // 
             // statusDataGridViewTextBoxColumn
             // 
             this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.FillWeight = 110.8629F;
             this.statusDataGridViewTextBoxColumn.HeaderText = "الحاله";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
@@ -189,16 +271,9 @@ namespace ApprovedMedicalSurvey.UI
             // emailDataGridViewTextBoxColumn
             // 
             this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.FillWeight = 110.8629F;
             this.emailDataGridViewTextBoxColumn.HeaderText = "البريد الالكتروني";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
-            // 
-            // villageBindingSource
-            // 
-            this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
             // 
             // Users
             // 
@@ -207,7 +282,6 @@ namespace ApprovedMedicalSurvey.UI
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(884, 546);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -216,6 +290,8 @@ namespace ApprovedMedicalSurvey.UI
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
@@ -232,12 +308,17 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.BindingSource villageBindingSource;
         private System.Windows.Forms.DataGridView dgUsers;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox cbVillage;
+        private System.Windows.Forms.ComboBox cbVocalPoint;
+        private System.Windows.Forms.CheckBox cbStatus;
+        private System.Windows.Forms.Button btnUpdateUser;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn checklist;
         private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn createdatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -32,8 +32,12 @@ namespace ApprovedMedicalSurvey.UI
        
         private void Users_Load(object sender, EventArgs e)
         {
-            FillingTheGridWithData();
+            Cursor.Current = Cursors.WaitCursor;
 
+            GetVillages();
+            vocalpoint();
+            FillingTheGridWithData();
+            Cursor.Current = Cursors.Default;
         }
 
       
@@ -82,6 +86,50 @@ namespace ApprovedMedicalSurvey.UI
                 FillingTheGridWithData();
                 GlobalVariables.isNewUser = false;
             }
+        }
+
+        private void GetVillages()
+
+        {
+
+            var dt = VillageServices.GetAllVIllages("villages");
+            dt.Insert(0, new Models.Village
+            {
+                name_ar = "اختر القرية..."
+
+            });
+            cbVillage.DataSource = dt;
+            cbVillage.DisplayMember = "name_ar";
+            cbVillage.ValueMember = "tncode";
+        }
+         private void vocalpoint() {
+            //addig data binding to the vocal point after choosing the user role 
+            var dt = UserServices.GetAllUsers("users");
+            dt.Insert(0, new Models.Users
+            {
+                username = "نقطة التواصل..."
+            });
+            cbVocalPoint.DataSource = dt;
+            cbVocalPoint.DisplayMember = "username";
+            cbVocalPoint.ValueMember = "uuid";
+        }
+
+        private void btnUpdateUser_Click(object sender, EventArgs e)
+        {
+            string message = string.Empty;
+
+            foreach (DataGridViewRow row in dgUsers.Rows)
+            {
+
+                bool isSelected = Convert.ToBoolean(row.Cells["checklist"].Value);
+                if (isSelected)
+                {
+                    message += Environment.NewLine;
+                    message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                }
+            }
+
+            MessageBox.Show("Selected Values" + message);
         }
     }
 }

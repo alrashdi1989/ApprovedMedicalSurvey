@@ -54,6 +54,24 @@ namespace ApprovedMedicalSurvey.Services
             return res;
 
         }
+        public static List<CheckUsers.User> CheckIfUserISRegisterd(string baseurl, string phoneNumber)
+        {
+            //gettin the users info from the api with filter using lambda 
+
+            var response = Shared.HttpResponse.responseMessage(baseurl+phoneNumber);
+
+            List<CheckUsers.User> res = new List<CheckUsers.User>();
+            if (response.IsSuccessStatusCode)
+            {
+                var data = response.Content.ReadAsStringAsync().Result;
+                CheckUsers.Root result = JsonConvert.DeserializeObject<CheckUsers.Root>(data.ToString());
+
+                res = result.users;
+
+            }
+            return res;
+
+        }
 
 
         public static List<UserStatus> GetUserStatuses() {

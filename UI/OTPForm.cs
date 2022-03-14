@@ -45,18 +45,25 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btncard_Click(object sender, EventArgs e)
         {
-           //https://tamimahsms.com/User/bulkpush.asmx?wsdl
+            Cursor.Current = Cursors.WaitCursor;
 
-             OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
-            OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
-            sendStatus = otpsrv.SendSMS("", "", "message", 1, "", "", "", "", "55555555");
+            if (Services.UserServices.CheckIfUserISRegisterd("user/check/",txtmobile.Text).Count == 0)
+            {
+                MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
+                txtmobile.Text = string.Empty;
+
+                return;
+            }
+            //OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
+            //OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
+            //sendStatus = otpsrv.SendSMS("", "", "message", 1, "", "", "", "", "55555555");
 
             //otpsrv.SendSMS("username", "password", "message", 1, "schedualedate","sender", "AppID", "sourceRef","MSISDN");
 
 
-            status_desc = sendStatus.StatusDesc;
-            status_code = sendStatus.StatusCode;
-            if (status_code == "00")
+            //status_desc = sendStatus.StatusDesc;
+            //status_code = sendStatus.StatusCode;
+            if (Services.UserServices.CheckIfUserISRegisterd("user/check/", txtmobile.Text).Count > 0)/*status_code == "00"*/
             {
                 if (txtmobile.Text.Length == 8)
                 {
@@ -74,8 +81,11 @@ namespace ApprovedMedicalSurvey.UI
                 {
                     lblvalidate.Visible = true;
                 }
+
+                Cursor.Current = Cursors.Default;
+
             }
-          
+
         }
 
         private void txtmobile_KeyDown(object sender, KeyEventArgs e)

@@ -165,16 +165,19 @@ namespace ApprovedMedicalSurvey.UI
                 MessageBox.Show(ex.ToString());
             }
 
+            Cursor.Current = Cursors.Default;
 
         }
 
-     
 
-       
 
-     
+
+
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {   //getting data from clicking on the search button in the grid 
+            Cursor.Current = Cursors.WaitCursor;
+
             if (dgScans.CurrentCell.ColumnIndex.Equals(7) && e.RowIndex != -1)
             {
                 if (dgScans.CurrentCell != null && dgScans.CurrentCell.Value != null)
@@ -188,9 +191,10 @@ namespace ApprovedMedicalSurvey.UI
                     f.Tag = cellValue;
                     f.Show();
                     f.Dock = DockStyle.Fill;
-                    
 
-    }
+                    Cursor.Current = Cursors.Default;
+
+                }
             }
         }
 

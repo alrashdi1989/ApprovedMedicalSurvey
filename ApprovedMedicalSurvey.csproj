@@ -143,6 +143,7 @@
     <Compile Include="Models\AllReports.cs" />
     <Compile Include="Models\BabyHealth.cs" />
     <Compile Include="Models\Building.cs" />
+    <Compile Include="Models\CheckUsers.cs" />
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\ElderHealth.cs" />
     <Compile Include="Models\FamilyMember.cs" />

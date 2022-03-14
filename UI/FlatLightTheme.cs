@@ -27,6 +27,8 @@ namespace ApprovedMedicalSurvey.UI
 
         private void FlatDarkTheme_Load(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             Scans f = new Scans();
             f.MdiParent = this;
             f.Show();
@@ -34,6 +36,7 @@ namespace ApprovedMedicalSurvey.UI
 
             GlobalVariables.FormName = f.Text;
             lblScreenName.Text = GlobalVariables.FormName;
+            Cursor.Current = Cursors.Default;
         }
 
      
@@ -74,6 +77,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             Scans f = new Scans();
             f.MdiParent = this;
             f.Show();
@@ -82,10 +86,14 @@ namespace ApprovedMedicalSurvey.UI
             lblScreenName.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
+            Cursor.Current = Cursors.Default;
+
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             Reports f = new Reports();
             f.MdiParent = this;
             f.Show();
@@ -94,10 +102,14 @@ namespace ApprovedMedicalSurvey.UI
             lblScreenName.Text = GlobalVariables.FormName;
 
             DisposeAllButThis(f);
+            Cursor.Current = Cursors.Default;
+
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             Users f = new Users();
             f.MdiParent = this;
             f.Show();
@@ -107,6 +119,8 @@ namespace ApprovedMedicalSurvey.UI
 
 
             DisposeAllButThis(f);
+            Cursor.Current = Cursors.Default;
+
         }
 
         private void SingingOut(object sender, EventArgs e)

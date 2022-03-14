@@ -28,7 +28,6 @@ namespace ApprovedMedicalSurvey.UI
         private void AddUser_Load(object sender, EventArgs e)
         {
             //Binding data sourcces to Combo Boxes
-            GetVillages();
             GetRoles();
             GetUserStatus();
 
@@ -51,20 +50,6 @@ namespace ApprovedMedicalSurvey.UI
             
         }
 
-        private void GetVillages()
-
-        {
-
-            var dt = VillageServices.GetAllVIllages("villages");
-            dt.Insert(0, new Models.Village
-            {
-                name_ar = "اختر القرية..."
-                
-            });
-            cbVillage.DataSource = dt;
-            cbVillage.DisplayMember = "name_ar";
-            cbVillage.ValueMember = "tncode";
-        }
 
         private void GetRoles()
         {
@@ -84,15 +69,7 @@ namespace ApprovedMedicalSurvey.UI
         private void lookUpEdit2_EditValueChanged(object sender, EventArgs e)
 
         {
-            //addig data binding to the vocal point after choosing the user role 
-            var dt = UserServices.GetAllUserswithoutProvlage("users", cbUserRoles.SelectedValue.ToString());
-            dt.Insert(0, new Models.Users
-            {
-                username = "نقطة التواصل..."
-            });
-            cbVocalPoint.DataSource = dt;
-            cbVocalPoint.DisplayMember = "username";
-            cbVocalPoint.ValueMember = "uuid";
+         
            
 
         }
