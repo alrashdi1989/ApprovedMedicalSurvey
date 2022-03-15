@@ -36,15 +36,14 @@ namespace ApprovedMedicalSurvey.UI
             this.govenanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgReports = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.resultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnGenerateReport = new System.Windows.Forms.Button();
             this.btnExcelDownload = new System.Windows.Forms.Button();
             this.cmTown = new System.Windows.Forms.ComboBox();
             this.cmReportType = new System.Windows.Forms.ComboBox();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.govenanceBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgReports)).BeginInit();
@@ -106,6 +105,20 @@ namespace ApprovedMedicalSurvey.UI
             this.dgReports.Size = new System.Drawing.Size(796, 344);
             this.dgReports.TabIndex = 1;
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم ";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // valueDataGridViewTextBoxColumn
+            // 
+            this.valueDataGridViewTextBoxColumn.DataPropertyName = "value";
+            this.valueDataGridViewTextBoxColumn.HeaderText = "العدد";
+            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
+            this.valueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // resultBindingSource
             // 
             this.resultBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.AllReports.Result);
@@ -115,7 +128,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnGenerateReport);
             this.panel2.Controls.Add(this.btnExcelDownload);
             this.panel2.Controls.Add(this.cmTown);
@@ -126,16 +138,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Size = new System.Drawing.Size(795, 93);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(126, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "--";
             // 
             // btnGenerateReport
             // 
@@ -191,20 +193,6 @@ namespace ApprovedMedicalSurvey.UI
             this.cmReportType.TabIndex = 0;
             this.cmReportType.SelectedIndexChanged += new System.EventHandler(this.cmReportType_SelectedIndexChanged);
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم ";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // valueDataGridViewTextBoxColumn
-            // 
-            this.valueDataGridViewTextBoxColumn.DataPropertyName = "value";
-            this.valueDataGridViewTextBoxColumn.HeaderText = "العدد";
-            this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
-            this.valueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,7 +210,6 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.dgReports)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -237,7 +224,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Button btnGenerateReport;
         private System.Windows.Forms.DataGridView dgReports;
         private System.Windows.Forms.BindingSource resultBindingSource;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn;
     }

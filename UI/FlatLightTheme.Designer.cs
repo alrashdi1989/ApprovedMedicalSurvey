@@ -39,27 +39,24 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblScreenName = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.pbLogOut = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnScans = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -147,6 +144,18 @@ namespace ApprovedMedicalSurvey.UI
             this.label8.Text = "تسجيل خروج";
             this.label8.Click += new System.EventHandler(this.SingingOut);
             // 
+            // pbLogOut
+            // 
+            this.pbLogOut.Image = ((System.Drawing.Image)(resources.GetObject("pbLogOut.Image")));
+            this.pbLogOut.Location = new System.Drawing.Point(9, 11);
+            this.pbLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogOut.Name = "pbLogOut";
+            this.pbLogOut.Size = new System.Drawing.Size(35, 45);
+            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogOut.TabIndex = 2;
+            this.pbLogOut.TabStop = false;
+            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -162,49 +171,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(279, 825);
             this.panel1.TabIndex = 5;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Controls.Add(this.btnMaximize);
-            this.panel5.Controls.Add(this.btnMinimize);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(267, 37);
-            this.panel5.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Firebrick;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(270, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(9, 825);
-            this.panel3.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1249, 2);
-            this.panel4.TabIndex = 7;
-            // 
-            // pbLogOut
-            // 
-            this.pbLogOut.Image = ((System.Drawing.Image)(resources.GetObject("pbLogOut.Image")));
-            this.pbLogOut.Location = new System.Drawing.Point(9, 11);
-            this.pbLogOut.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogOut.Name = "pbLogOut";
-            this.pbLogOut.Size = new System.Drawing.Size(35, 45);
-            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogOut.TabIndex = 2;
-            this.pbLogOut.TabStop = false;
-            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
             // 
             // btnUsers
             // 
@@ -260,6 +226,17 @@ namespace ApprovedMedicalSurvey.UI
             this.btnScans.UseVisualStyleBackColor = true;
             this.btnScans.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.btnClose);
+            this.panel5.Controls.Add(this.btnMaximize);
+            this.panel5.Controls.Add(this.btnMinimize);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(267, 37);
+            this.panel5.TabIndex = 11;
+            // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
@@ -296,6 +273,16 @@ namespace ApprovedMedicalSurvey.UI
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Firebrick;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(270, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(9, 825);
+            this.panel3.TabIndex = 7;
+            // 
             // pbLogo
             // 
             this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -309,6 +296,16 @@ namespace ApprovedMedicalSurvey.UI
             this.pbLogo.TabIndex = 2;
             this.pbLogo.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1249, 2);
+            this.panel4.TabIndex = 7;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -318,60 +315,6 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.Appearance.Normal.BackColor = System.Drawing.Color.IndianRed;
-            this.accordionControlElement2.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.accordionControlElement2.Appearance.Normal.ForeColor = System.Drawing.Color.Maroon;
-            this.accordionControlElement2.Appearance.Normal.Options.UseBackColor = true;
-            this.accordionControlElement2.Appearance.Normal.Options.UseFont = true;
-            this.accordionControlElement2.Appearance.Normal.Options.UseForeColor = true;
-            this.accordionControlElement2.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement2.Text = "المسوحات";
-            // 
-            // accordionControlElement3
-            // 
-            this.accordionControlElement3.Appearance.Normal.BackColor = System.Drawing.Color.IndianRed;
-            this.accordionControlElement3.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.accordionControlElement3.Appearance.Normal.ForeColor = System.Drawing.Color.Maroon;
-            this.accordionControlElement3.Appearance.Normal.Options.UseBackColor = true;
-            this.accordionControlElement3.Appearance.Normal.Options.UseFont = true;
-            this.accordionControlElement3.Appearance.Normal.Options.UseForeColor = true;
-            this.accordionControlElement3.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "المسوحات";
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.Appearance.Normal.BackColor = System.Drawing.Color.IndianRed;
-            this.accordionControlElement4.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.accordionControlElement4.Appearance.Normal.ForeColor = System.Drawing.Color.Maroon;
-            this.accordionControlElement4.Appearance.Normal.Options.UseBackColor = true;
-            this.accordionControlElement4.Appearance.Normal.Options.UseFont = true;
-            this.accordionControlElement4.Appearance.Normal.Options.UseForeColor = true;
-            this.accordionControlElement4.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "المسوحات";
             // 
             // FlatLightTheme
             // 
@@ -392,9 +335,9 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

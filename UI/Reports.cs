@@ -117,16 +117,11 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
-           
-           resultBindingSource.DataSource= ReportServices.GetAllReports("report/"+tCode+"/"+sCode+"/"+gCode+"/"+reportCode+"");
-            int sum = 0;
-            for (int i = 0; i < dgReports.Rows.Count; ++i)
-            {
-                int tmp = 0;
-                int.TryParse(dgReports.Rows[i].Cells[1].Value.ToString(), out tmp);
-                sum += tmp;
-            }
-            label1.Text = "المجموع الكلي :" + sum.ToString();
+            Cursor.Current = Cursors.WaitCursor;
+
+            resultBindingSource.DataSource= ReportServices.GetAllReports("report/"+tCode+"/"+sCode+"/"+gCode+"/"+reportCode+"");
+            Cursor.Current = Cursors.Default;
+
         }
 
         private void cmTown_SelectedIndexChanged(object sender, EventArgs e)
