@@ -38,12 +38,12 @@ namespace ApprovedMedicalSurvey.UI
             this.dgUsers = new System.Windows.Forms.DataGridView();
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbStatus = new System.Windows.Forms.CheckBox();
+            this.cbVillage = new System.Windows.Forms.ComboBox();
+            this.btnUpdateUser = new System.Windows.Forms.Button();
+            this.cbVocalPoint = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cbVillage = new System.Windows.Forms.ComboBox();
-            this.cbVocalPoint = new System.Windows.Forms.ComboBox();
-            this.btnUpdateUser = new System.Windows.Forms.Button();
-            this.cbStatus = new System.Windows.Forms.CheckBox();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.checklist = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -151,6 +151,58 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Size = new System.Drawing.Size(625, 126);
             this.panel2.TabIndex = 2;
             // 
+            // cbStatus
+            // 
+            this.cbStatus.AutoSize = true;
+            this.cbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.ForeColor = System.Drawing.Color.Black;
+            this.cbStatus.Location = new System.Drawing.Point(3, 17);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(110, 25);
+            this.cbStatus.TabIndex = 20;
+            this.cbStatus.Text = "فعال/غيرفعال";
+            this.cbStatus.UseVisualStyleBackColor = true;
+            // 
+            // cbVillage
+            // 
+            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVillage.FormattingEnabled = true;
+            this.cbVillage.Location = new System.Drawing.Point(310, 42);
+            this.cbVillage.Name = "cbVillage";
+            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVillage.Size = new System.Drawing.Size(312, 29);
+            this.cbVillage.TabIndex = 19;
+            // 
+            // btnUpdateUser
+            // 
+            this.btnUpdateUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateUser.Image")));
+            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateUser.Location = new System.Drawing.Point(3, 69);
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Size = new System.Drawing.Size(217, 54);
+            this.btnUpdateUser.TabIndex = 2;
+            this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
+            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+            // 
+            // cbVocalPoint
+            // 
+            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVocalPoint.FormattingEnabled = true;
+            this.cbVocalPoint.Location = new System.Drawing.Point(310, 94);
+            this.cbVocalPoint.Name = "cbVocalPoint";
+            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
+            this.cbVocalPoint.TabIndex = 17;
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -167,58 +219,6 @@ namespace ApprovedMedicalSurvey.UI
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // cbVillage
-            // 
-            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVillage.FormattingEnabled = true;
-            this.cbVillage.Location = new System.Drawing.Point(310, 42);
-            this.cbVillage.Name = "cbVillage";
-            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVillage.Size = new System.Drawing.Size(312, 29);
-            this.cbVillage.TabIndex = 19;
-            // 
-            // cbVocalPoint
-            // 
-            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVocalPoint.FormattingEnabled = true;
-            this.cbVocalPoint.Location = new System.Drawing.Point(310, 94);
-            this.cbVocalPoint.Name = "cbVocalPoint";
-            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
-            this.cbVocalPoint.TabIndex = 17;
-            // 
-            // btnUpdateUser
-            // 
-            this.btnUpdateUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
-            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnUpdateUser.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateUser.Image")));
-            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateUser.Location = new System.Drawing.Point(3, 72);
-            this.btnUpdateUser.Name = "btnUpdateUser";
-            this.btnUpdateUser.Size = new System.Drawing.Size(217, 54);
-            this.btnUpdateUser.TabIndex = 2;
-            this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
-            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdateUser.UseVisualStyleBackColor = true;
-            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.AutoSize = true;
-            this.cbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbStatus.ForeColor = System.Drawing.Color.Black;
-            this.cbStatus.Location = new System.Drawing.Point(3, 17);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(110, 25);
-            this.cbStatus.TabIndex = 20;
-            this.cbStatus.Text = "فعال/غيرفعال";
-            this.cbStatus.UseVisualStyleBackColor = true;
-            // 
             // usersBindingSource
             // 
             this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
@@ -229,9 +229,11 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // checklist
             // 
+            this.checklist.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.checklist.FillWeight = 45.68528F;
             this.checklist.HeaderText = "";
             this.checklist.Name = "checklist";
+            this.checklist.Width = 5;
             // 
             // usernameDataGridViewTextBoxColumn
             // 
