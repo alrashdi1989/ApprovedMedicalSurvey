@@ -24,7 +24,7 @@ namespace ApprovedMedicalSurvey.UI
         }
         Boolean flag ;
         private FlatLightTheme mainForm = null;
-
+        string jwt;
         private void Scans_Load(object sender, EventArgs e)
         {
             //binding data to combo boxes 
@@ -94,7 +94,7 @@ namespace ApprovedMedicalSurvey.UI
                 string postData = "";
                 string URL = "https://gql.formon.io/api/rest/surveys/";
                 WebRequsets webRequests = new WebRequsets();
-                var data = webRequests.webPostMethod(postData, URL);
+                var data = webRequests.webPostMethod(postData, URL, jwt);
 
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
                 var orders = serializer.Deserialize<Models.Surveys>(data);

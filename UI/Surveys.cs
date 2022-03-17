@@ -30,6 +30,7 @@ namespace ApprovedMedicalSurvey.UI
         object[] answers = new object[20];
         int ques_count = 0;
         string familyMemberName;
+        string jwt;
         private void FillingTheGridWithData()
         {
 
@@ -48,7 +49,7 @@ namespace ApprovedMedicalSurvey.UI
 
             string URL = GlobalVariables.BaseUrl + "surevy/" + GlobalVariables.SurveyID;
             WebRequsets webRequsets = new WebRequsets();
-            var data = webRequsets.webPostMethod(postData, URL);
+            var data = webRequsets.webPostMethod(postData, URL, jwt);
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             var orders = serializer.Deserialize<Rootobject>(data);
