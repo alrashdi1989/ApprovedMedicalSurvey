@@ -18,7 +18,6 @@ namespace ApprovedMedicalSurvey.Services
 
        public static async  Task<string>  LogIn(string username,string password)
         {
-
             var httpClient = new HttpClient();
             var parameters = new Dictionary<string, string>();
             parameters["username"] = username;
@@ -27,8 +26,7 @@ namespace ApprovedMedicalSurvey.Services
             ,new FormUrlEncodedContent(parameters));
             var contents = await response.Content.ReadAsStringAsync();
             Models.jwt.Root result = JsonConvert.DeserializeObject<Models.jwt.Root>(contents); 
-            return result.login.jwt;
-            
+            return result.login.jwt;  
         }
 
     }
