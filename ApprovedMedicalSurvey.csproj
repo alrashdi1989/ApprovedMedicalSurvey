@@ -148,6 +148,7 @@
     <Compile Include="Models\ElderHealth.cs" />
     <Compile Include="Models\FamilyMember.cs" />
     <Compile Include="Models\Governorate.cs" />
+    <Compile Include="Models\jwt.cs" />
     <Compile Include="Models\Reports.cs" />
     <Compile Include="Models\response.cs" />
     <Compile Include="Models\Roots.cs" />

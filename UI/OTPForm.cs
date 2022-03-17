@@ -54,6 +54,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 return;
             }
+            
             //OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
             //OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
             //sendStatus = otpsrv.SendSMS("", "", "message", 1, "", "", "", "", "55555555");
@@ -70,6 +71,7 @@ namespace ApprovedMedicalSurvey.UI
                     //send the number to REST API getUserbyID
                     //Get Response success "uuid" 
                     //Open OTP Server Form
+                    Shared.GlobalVariables.UserName = txtmobile.Text;
                     ActivateForm actfrm = new ActivateForm();
                     actfrm.Show();
                     lblvalidate.Visible = false;

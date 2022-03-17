@@ -13,5 +13,7 @@ namespace ApprovedMedicalSurvey.Shared
         public static  string FormName { get; set; }
         public static string SurveyID { get; set; }
         public static bool isNewUser { get; set; } = false;
+        public static string UserName { get; set; }
+        public static string Password { get; set; }
     }
 }

@@ -44,7 +44,8 @@ namespace ApprovedMedicalSurvey.UI
 
         private async void btncard_Click(object sender, EventArgs e)
         {
-           await Services.UserLogIn.LogIn("","");
+            Shared.GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
+           await Services.UserLogIn.LogIn(Shared.GlobalVariables.UserName, Shared.GlobalVariables.Password);
             FlatLightTheme mainform = new FlatLightTheme();
             mainform.Show();
 
