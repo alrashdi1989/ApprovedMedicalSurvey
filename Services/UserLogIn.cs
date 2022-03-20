@@ -22,7 +22,7 @@ namespace ApprovedMedicalSurvey.Services
             var parameters = new Dictionary<string, string>();
             parameters["username"] = username;
             parameters["password"] = password;
-            var response = await httpClient.PostAsync("https://gql.formon.io/api/rest/login"
+            var response = await httpClient.PostAsync(Shared.GlobalVariables.BaseUrl+"login"
             ,new FormUrlEncodedContent(parameters));
             var contents = await response.Content.ReadAsStringAsync();
             Models.jwt.Root result = JsonConvert.DeserializeObject<Models.jwt.Root>(contents); 
