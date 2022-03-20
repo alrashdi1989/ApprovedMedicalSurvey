@@ -16,7 +16,7 @@ namespace ApprovedMedicalSurvey.Services
         
         
 
-       public static async  Task<string>  LogIn(string username,string password)
+       public static async  Task<string> LogIn(string username,string password)
         {
             var httpClient = new HttpClient();
             var parameters = new Dictionary<string, string>();
