@@ -117,11 +117,16 @@ namespace ApprovedMedicalSurvey.UI
         private void btnUpdateUser_Click(object sender, EventArgs e)
         {
             string message = string.Empty;
-
+          
             foreach (DataGridViewRow row in dgUsers.Rows)
             {
-
+                if (dgUsers.SelectedRows.Count == 0 )
+                {
+                    MessageBox.Show("الرجاء اختيار مستخدم اولا لتغيير صلاحياته");
+                    return;
+                }
                 bool isSelected = Convert.ToBoolean(row.Cells["checklist"].Value);
+               
                 if (isSelected)
                 {
                     message += Environment.NewLine;

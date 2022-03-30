@@ -92,7 +92,7 @@ namespace ApprovedMedicalSurvey.UI
                 //filling data grid with data 
                 this.Cursor = Cursors.WaitCursor;
                 string postData = "";
-                string URL = "https://gql.formon.io/api/rest/surveys/";
+                string URL = GlobalVariables.BaseUrl+"surveys/";
                 WebRequsets webRequests = new WebRequsets();
                 var data = webRequests.webPostMethod(postData, URL, jwt);
 

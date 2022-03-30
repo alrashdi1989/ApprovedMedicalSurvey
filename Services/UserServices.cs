@@ -92,7 +92,9 @@ namespace ApprovedMedicalSurvey.Services
             List<UserPrivileges> userPrivileges = new List<UserPrivileges>() {
             new UserPrivileges {UserPrivilegesArabic="جامع بيان /  متطوع",UserPrivilegesEnglish="Volunteer"},
             new UserPrivileges {UserPrivilegesArabic="مستوى المحافظة",UserPrivilegesEnglish="Government Level"},
-             new UserPrivileges {UserPrivilegesArabic="مستوى الولاية",UserPrivilegesEnglish="Central Level"}
+            new UserPrivileges {UserPrivilegesArabic="مستوى الولاية",UserPrivilegesEnglish="state Level"},
+            new UserPrivileges {UserPrivilegesArabic="مستوى المركزي",UserPrivilegesEnglish="Central Level"}
+
             };
 
             return userPrivileges;

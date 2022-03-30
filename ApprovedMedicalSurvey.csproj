@@ -187,6 +187,12 @@
     <Compile Include="UI\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Buildings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Buildings.Designer.cs">
+      <DependentUpon>Buildings.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FlatLightTheme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Buildings.resx">
+      <DependentUpon>Buildings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FlatLightTheme.resx">
       <DependentUpon>FlatLightTheme.cs</DependentUpon>
