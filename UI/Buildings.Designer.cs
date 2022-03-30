@@ -53,7 +53,7 @@ namespace ApprovedMedicalSurvey.UI
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Buildings";
-            this.Text = "Buildings";
+            this.Text = "توزيع المباني";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

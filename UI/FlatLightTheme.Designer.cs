@@ -39,25 +39,25 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblScreenName = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.pbLogOut = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuildings = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnScans = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -145,10 +145,22 @@ namespace ApprovedMedicalSurvey.UI
             this.label8.Text = "تسجيل خروج";
             this.label8.Click += new System.EventHandler(this.SingingOut);
             // 
+            // pbLogOut
+            // 
+            this.pbLogOut.Image = ((System.Drawing.Image)(resources.GetObject("pbLogOut.Image")));
+            this.pbLogOut.Location = new System.Drawing.Point(9, 11);
+            this.pbLogOut.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogOut.Name = "pbLogOut";
+            this.pbLogOut.Size = new System.Drawing.Size(35, 45);
+            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogOut.TabIndex = 2;
+            this.pbLogOut.TabStop = false;
+            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnBuildings);
             this.panel1.Controls.Add(this.btnUsers);
             this.panel1.Controls.Add(this.btnReports);
             this.panel1.Controls.Add(this.btnScans);
@@ -162,65 +174,23 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Size = new System.Drawing.Size(279, 825);
             this.panel1.TabIndex = 5;
             // 
-            // panel5
+            // btnBuildings
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.btnClose);
-            this.panel5.Controls.Add(this.btnMaximize);
-            this.panel5.Controls.Add(this.btnMinimize);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(267, 37);
-            this.panel5.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Firebrick;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(270, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(9, 825);
-            this.panel3.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1249, 2);
-            this.panel4.TabIndex = 7;
-            // 
-            // pbLogOut
-            // 
-            this.pbLogOut.Image = ((System.Drawing.Image)(resources.GetObject("pbLogOut.Image")));
-            this.pbLogOut.Location = new System.Drawing.Point(9, 11);
-            this.pbLogOut.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogOut.Name = "pbLogOut";
-            this.pbLogOut.Size = new System.Drawing.Size(35, 45);
-            this.pbLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLogOut.TabIndex = 2;
-            this.pbLogOut.TabStop = false;
-            this.pbLogOut.Click += new System.EventHandler(this.pbLogOut_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnBuildings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 400);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 55);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "المباني";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuildings.FlatAppearance.BorderSize = 0;
+            this.btnBuildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuildings.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuildings.Image = ((System.Drawing.Image)(resources.GetObject("btnBuildings.Image")));
+            this.btnBuildings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuildings.Location = new System.Drawing.Point(5, 400);
+            this.btnBuildings.Name = "btnBuildings";
+            this.btnBuildings.Size = new System.Drawing.Size(260, 55);
+            this.btnBuildings.TabIndex = 15;
+            this.btnBuildings.Text = "المباني";
+            this.btnBuildings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuildings.UseVisualStyleBackColor = true;
+            this.btnBuildings.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUsers
             // 
@@ -276,6 +246,17 @@ namespace ApprovedMedicalSurvey.UI
             this.btnScans.UseVisualStyleBackColor = true;
             this.btnScans.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.btnClose);
+            this.panel5.Controls.Add(this.btnMaximize);
+            this.panel5.Controls.Add(this.btnMinimize);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(267, 37);
+            this.panel5.TabIndex = 11;
+            // 
             // btnClose
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
@@ -312,6 +293,16 @@ namespace ApprovedMedicalSurvey.UI
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Firebrick;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(270, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(9, 825);
+            this.panel3.TabIndex = 7;
+            // 
             // pbLogo
             // 
             this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -324,6 +315,16 @@ namespace ApprovedMedicalSurvey.UI
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 2;
             this.pbLogo.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1249, 2);
+            this.panel4.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -354,9 +355,9 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -389,6 +390,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuildings;
     }
 }

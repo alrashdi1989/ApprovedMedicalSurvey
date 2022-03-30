@@ -117,24 +117,31 @@ namespace ApprovedMedicalSurvey.UI
         private void btnUpdateUser_Click(object sender, EventArgs e)
         {
             string message = string.Empty;
-          
+            int num = 0;
             foreach (DataGridViewRow row in dgUsers.Rows)
             {
-                if (dgUsers.SelectedRows.Count == 0 )
-                {
-                    MessageBox.Show("الرجاء اختيار مستخدم اولا لتغيير صلاحياته");
-                    return;
-                }
+
+
+
                 bool isSelected = Convert.ToBoolean(row.Cells["checklist"].Value);
                
                 if (isSelected)
                 {
+                    num = +1;
                     message += Environment.NewLine;
                     message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
                 }
             }
 
-            MessageBox.Show("Selected Values" + message);
+            if (num==0)
+            {
+                MessageBox.Show("الرجاء اختيار مستخدم اولا ");
+            }
+            else
+            {
+                MessageBox.Show("Selected Values" + message);
+
+            }
         }
     }
 }

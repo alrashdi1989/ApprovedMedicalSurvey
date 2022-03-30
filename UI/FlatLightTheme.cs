@@ -155,5 +155,21 @@ namespace ApprovedMedicalSurvey.UI
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            Buildings f = new Buildings();
+            f.MdiParent = this;
+            f.Show();
+            f.Dock = DockStyle.Fill;
+            GlobalVariables.FormName = f.Text;
+            lblScreenName.Text = GlobalVariables.FormName;
+
+
+            DisposeAllButThis(f);
+            Cursor.Current = Cursors.Default;
+        }
     }
 }
