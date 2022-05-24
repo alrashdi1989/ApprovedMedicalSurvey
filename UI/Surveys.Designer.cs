@@ -405,6 +405,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_147.AutoSize = true;
             this.txt_147.Dock = System.Windows.Forms.DockStyle.Left;
             this.txt_147.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_147.ForeColor = System.Drawing.Color.Blue;
             this.txt_147.Location = new System.Drawing.Point(304, 72);
             this.txt_147.Name = "txt_147";
             this.txt_147.Size = new System.Drawing.Size(22, 41);
@@ -416,6 +417,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_9.AutoSize = true;
             this.txt_9.Dock = System.Windows.Forms.DockStyle.Left;
             this.txt_9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_9.ForeColor = System.Drawing.Color.Blue;
             this.txt_9.Location = new System.Drawing.Point(304, 50);
             this.txt_9.Name = "txt_9";
             this.txt_9.Size = new System.Drawing.Size(22, 21);
@@ -438,6 +440,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_8.AutoSize = true;
             this.txt_8.Dock = System.Windows.Forms.DockStyle.Left;
             this.txt_8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_8.ForeColor = System.Drawing.Color.Blue;
             this.txt_8.Location = new System.Drawing.Point(304, 28);
             this.txt_8.Name = "txt_8";
             this.txt_8.Size = new System.Drawing.Size(22, 21);
@@ -459,6 +462,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_14.AutoSize = true;
             this.txt_14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_14.ForeColor = System.Drawing.Color.Blue;
             this.txt_14.Location = new System.Drawing.Point(304, 6);
             this.txt_14.Name = "txt_14";
             this.txt_14.Size = new System.Drawing.Size(22, 21);
@@ -597,6 +601,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_97.AutoSize = true;
             this.lbl_97.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_97.ForeColor = System.Drawing.Color.Blue;
             this.lbl_97.Location = new System.Drawing.Point(972, 126);
             this.lbl_97.Name = "lbl_97";
             this.lbl_97.Size = new System.Drawing.Size(22, 21);
@@ -617,6 +622,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_90.AutoSize = true;
             this.lbl_90.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_90.ForeColor = System.Drawing.Color.Blue;
             this.lbl_90.Location = new System.Drawing.Point(972, 105);
             this.lbl_90.Name = "lbl_90";
             this.lbl_90.Size = new System.Drawing.Size(22, 21);
@@ -637,6 +643,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_89.AutoSize = true;
             this.lbl_89.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_89.ForeColor = System.Drawing.Color.Blue;
             this.lbl_89.Location = new System.Drawing.Point(972, 84);
             this.lbl_89.Name = "lbl_89";
             this.lbl_89.Size = new System.Drawing.Size(22, 21);
@@ -657,6 +664,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_88.AutoSize = true;
             this.lbl_88.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_88.ForeColor = System.Drawing.Color.Blue;
             this.lbl_88.Location = new System.Drawing.Point(972, 63);
             this.lbl_88.Name = "lbl_88";
             this.lbl_88.Size = new System.Drawing.Size(22, 21);
@@ -677,6 +685,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_87.AutoSize = true;
             this.lbl_87.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_87.ForeColor = System.Drawing.Color.Blue;
             this.lbl_87.Location = new System.Drawing.Point(972, 42);
             this.lbl_87.Name = "lbl_87";
             this.lbl_87.Size = new System.Drawing.Size(22, 21);
@@ -697,6 +706,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_86.AutoSize = true;
             this.lbl_86.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_86.ForeColor = System.Drawing.Color.Blue;
             this.lbl_86.Location = new System.Drawing.Point(972, 21);
             this.lbl_86.Name = "lbl_86";
             this.lbl_86.Size = new System.Drawing.Size(22, 21);
@@ -727,6 +737,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_133.AutoSize = true;
             this.lbl_133.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_133.ForeColor = System.Drawing.Color.Blue;
             this.lbl_133.Location = new System.Drawing.Point(972, 0);
             this.lbl_133.Name = "lbl_133";
             this.lbl_133.Size = new System.Drawing.Size(22, 21);
@@ -797,6 +808,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_91.AutoSize = true;
             this.lbl_91.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_91.ForeColor = System.Drawing.Color.Blue;
             this.lbl_91.Location = new System.Drawing.Point(557, 0);
             this.lbl_91.Name = "lbl_91";
             this.lbl_91.Size = new System.Drawing.Size(22, 21);
@@ -807,6 +819,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_93.AutoSize = true;
             this.lbl_93.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_93.ForeColor = System.Drawing.Color.Blue;
             this.lbl_93.Location = new System.Drawing.Point(557, 42);
             this.lbl_93.Name = "lbl_93";
             this.lbl_93.Size = new System.Drawing.Size(22, 21);
@@ -817,6 +830,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_94.AutoSize = true;
             this.lbl_94.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_94.ForeColor = System.Drawing.Color.Blue;
             this.lbl_94.Location = new System.Drawing.Point(557, 63);
             this.lbl_94.Name = "lbl_94";
             this.lbl_94.Size = new System.Drawing.Size(22, 21);
@@ -827,6 +841,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_95.AutoSize = true;
             this.lbl_95.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_95.ForeColor = System.Drawing.Color.Blue;
             this.lbl_95.Location = new System.Drawing.Point(557, 84);
             this.lbl_95.Name = "lbl_95";
             this.lbl_95.Size = new System.Drawing.Size(22, 21);
@@ -837,6 +852,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_96.AutoSize = true;
             this.lbl_96.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_96.ForeColor = System.Drawing.Color.Blue;
             this.lbl_96.Location = new System.Drawing.Point(557, 105);
             this.lbl_96.Name = "lbl_96";
             this.lbl_96.Size = new System.Drawing.Size(22, 21);
@@ -847,6 +863,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.lbl_92.AutoSize = true;
             this.lbl_92.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_92.ForeColor = System.Drawing.Color.Blue;
             this.lbl_92.Location = new System.Drawing.Point(557, 21);
             this.lbl_92.Name = "lbl_92";
             this.lbl_92.Size = new System.Drawing.Size(22, 21);
@@ -1620,7 +1637,7 @@ namespace ApprovedMedicalSurvey.UI
             this.Column1.Image = global::ApprovedMedicalSurvey.Properties.Resources.search;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 51;
+            this.Column1.Width = 52;
             // 
             // formkeyDataGridViewTextBoxColumn
             // 
@@ -1911,6 +1928,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_25.AutoSize = true;
             this.txt_25.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_25.ForeColor = System.Drawing.Color.Blue;
             this.txt_25.Location = new System.Drawing.Point(1061, 13);
             this.txt_25.Name = "txt_25";
             this.txt_25.Size = new System.Drawing.Size(22, 21);
@@ -1921,6 +1939,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_26.AutoSize = true;
             this.txt_26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_26.ForeColor = System.Drawing.Color.Blue;
             this.txt_26.Location = new System.Drawing.Point(1061, 37);
             this.txt_26.Name = "txt_26";
             this.txt_26.Size = new System.Drawing.Size(22, 21);
@@ -1931,6 +1950,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_27.AutoSize = true;
             this.txt_27.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_27.ForeColor = System.Drawing.Color.Blue;
             this.txt_27.Location = new System.Drawing.Point(1061, 61);
             this.txt_27.Name = "txt_27";
             this.txt_27.Size = new System.Drawing.Size(22, 21);
@@ -1941,6 +1961,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_28.AutoSize = true;
             this.txt_28.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_28.ForeColor = System.Drawing.Color.Blue;
             this.txt_28.Location = new System.Drawing.Point(1061, 85);
             this.txt_28.Name = "txt_28";
             this.txt_28.Size = new System.Drawing.Size(22, 21);
@@ -1951,6 +1972,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_29.AutoSize = true;
             this.txt_29.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_29.ForeColor = System.Drawing.Color.Blue;
             this.txt_29.Location = new System.Drawing.Point(1061, 109);
             this.txt_29.Name = "txt_29";
             this.txt_29.Size = new System.Drawing.Size(22, 21);
@@ -1961,6 +1983,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_30.AutoSize = true;
             this.txt_30.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_30.ForeColor = System.Drawing.Color.Blue;
             this.txt_30.Location = new System.Drawing.Point(1061, 133);
             this.txt_30.Name = "txt_30";
             this.txt_30.Size = new System.Drawing.Size(22, 21);
@@ -1971,6 +1994,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_31.AutoSize = true;
             this.txt_31.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_31.ForeColor = System.Drawing.Color.Blue;
             this.txt_31.Location = new System.Drawing.Point(1061, 157);
             this.txt_31.Name = "txt_31";
             this.txt_31.Size = new System.Drawing.Size(22, 21);
@@ -1981,6 +2005,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_32.AutoSize = true;
             this.txt_32.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_32.ForeColor = System.Drawing.Color.Blue;
             this.txt_32.Location = new System.Drawing.Point(1061, 181);
             this.txt_32.Name = "txt_32";
             this.txt_32.Size = new System.Drawing.Size(22, 21);
@@ -1991,6 +2016,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_33.AutoSize = true;
             this.txt_33.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_33.ForeColor = System.Drawing.Color.Blue;
             this.txt_33.Location = new System.Drawing.Point(1061, 205);
             this.txt_33.Name = "txt_33";
             this.txt_33.Size = new System.Drawing.Size(22, 21);
@@ -2001,6 +2027,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_34.AutoSize = true;
             this.txt_34.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_34.ForeColor = System.Drawing.Color.Blue;
             this.txt_34.Location = new System.Drawing.Point(1061, 229);
             this.txt_34.Name = "txt_34";
             this.txt_34.Size = new System.Drawing.Size(22, 21);
@@ -2011,6 +2038,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_35.AutoSize = true;
             this.txt_35.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_35.ForeColor = System.Drawing.Color.Blue;
             this.txt_35.Location = new System.Drawing.Point(1061, 253);
             this.txt_35.Name = "txt_35";
             this.txt_35.Size = new System.Drawing.Size(22, 21);
@@ -2032,6 +2060,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_36.AutoSize = true;
             this.txt_36.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_36.ForeColor = System.Drawing.Color.Blue;
             this.txt_36.Location = new System.Drawing.Point(1061, 277);
             this.txt_36.Name = "txt_36";
             this.txt_36.Size = new System.Drawing.Size(22, 21);
@@ -2163,6 +2192,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_37.AutoSize = true;
             this.txt_37.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_37.ForeColor = System.Drawing.Color.Blue;
             this.txt_37.Location = new System.Drawing.Point(671, 13);
             this.txt_37.Name = "txt_37";
             this.txt_37.Size = new System.Drawing.Size(22, 21);
@@ -2173,6 +2203,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_38.AutoSize = true;
             this.txt_38.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_38.ForeColor = System.Drawing.Color.Blue;
             this.txt_38.Location = new System.Drawing.Point(671, 37);
             this.txt_38.Name = "txt_38";
             this.txt_38.Size = new System.Drawing.Size(22, 21);
@@ -2183,6 +2214,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_39.AutoSize = true;
             this.txt_39.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_39.ForeColor = System.Drawing.Color.Blue;
             this.txt_39.Location = new System.Drawing.Point(671, 61);
             this.txt_39.Name = "txt_39";
             this.txt_39.Size = new System.Drawing.Size(22, 21);
@@ -2193,6 +2225,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_40.AutoSize = true;
             this.txt_40.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_40.ForeColor = System.Drawing.Color.Blue;
             this.txt_40.Location = new System.Drawing.Point(671, 85);
             this.txt_40.Name = "txt_40";
             this.txt_40.Size = new System.Drawing.Size(22, 21);
@@ -2203,6 +2236,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_41.AutoSize = true;
             this.txt_41.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_41.ForeColor = System.Drawing.Color.Blue;
             this.txt_41.Location = new System.Drawing.Point(671, 109);
             this.txt_41.Name = "txt_41";
             this.txt_41.Size = new System.Drawing.Size(22, 21);
@@ -2213,6 +2247,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_42.AutoSize = true;
             this.txt_42.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_42.ForeColor = System.Drawing.Color.Blue;
             this.txt_42.Location = new System.Drawing.Point(671, 133);
             this.txt_42.Name = "txt_42";
             this.txt_42.Size = new System.Drawing.Size(22, 21);
@@ -2223,6 +2258,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_43.AutoSize = true;
             this.txt_43.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_43.ForeColor = System.Drawing.Color.Blue;
             this.txt_43.Location = new System.Drawing.Point(671, 157);
             this.txt_43.Name = "txt_43";
             this.txt_43.Size = new System.Drawing.Size(22, 21);
@@ -2233,6 +2269,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_44.AutoSize = true;
             this.txt_44.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_44.ForeColor = System.Drawing.Color.Blue;
             this.txt_44.Location = new System.Drawing.Point(671, 181);
             this.txt_44.Name = "txt_44";
             this.txt_44.Size = new System.Drawing.Size(22, 21);
@@ -2243,6 +2280,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_45.AutoSize = true;
             this.txt_45.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_45.ForeColor = System.Drawing.Color.Blue;
             this.txt_45.Location = new System.Drawing.Point(671, 205);
             this.txt_45.Name = "txt_45";
             this.txt_45.Size = new System.Drawing.Size(22, 21);
@@ -2253,6 +2291,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_46.AutoSize = true;
             this.txt_46.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_46.ForeColor = System.Drawing.Color.Blue;
             this.txt_46.Location = new System.Drawing.Point(671, 229);
             this.txt_46.Name = "txt_46";
             this.txt_46.Size = new System.Drawing.Size(22, 21);
@@ -2263,6 +2302,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_47.AutoSize = true;
             this.txt_47.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_47.ForeColor = System.Drawing.Color.Blue;
             this.txt_47.Location = new System.Drawing.Point(671, 253);
             this.txt_47.Name = "txt_47";
             this.txt_47.Size = new System.Drawing.Size(22, 21);
@@ -2284,6 +2324,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_48.AutoSize = true;
             this.txt_48.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_48.ForeColor = System.Drawing.Color.Blue;
             this.txt_48.Location = new System.Drawing.Point(671, 277);
             this.txt_48.Name = "txt_48";
             this.txt_48.Size = new System.Drawing.Size(22, 21);
@@ -2305,6 +2346,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_49.AutoSize = true;
             this.txt_49.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_49.ForeColor = System.Drawing.Color.Blue;
             this.txt_49.Location = new System.Drawing.Point(1061, 301);
             this.txt_49.Name = "txt_49";
             this.txt_49.Size = new System.Drawing.Size(22, 21);
@@ -2326,6 +2368,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_50.AutoSize = true;
             this.txt_50.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_50.ForeColor = System.Drawing.Color.Blue;
             this.txt_50.Location = new System.Drawing.Point(671, 301);
             this.txt_50.Name = "txt_50";
             this.txt_50.Size = new System.Drawing.Size(22, 21);
@@ -2347,6 +2390,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_51.AutoSize = true;
             this.txt_51.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_51.ForeColor = System.Drawing.Color.Blue;
             this.txt_51.Location = new System.Drawing.Point(1061, 325);
             this.txt_51.Name = "txt_51";
             this.txt_51.Size = new System.Drawing.Size(22, 21);
@@ -2368,6 +2412,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_52.AutoSize = true;
             this.txt_52.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_52.ForeColor = System.Drawing.Color.Blue;
             this.txt_52.Location = new System.Drawing.Point(671, 325);
             this.txt_52.Name = "txt_52";
             this.txt_52.Size = new System.Drawing.Size(22, 21);
@@ -2389,6 +2434,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_53.AutoSize = true;
             this.txt_53.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_53.ForeColor = System.Drawing.Color.Blue;
             this.txt_53.Location = new System.Drawing.Point(1061, 349);
             this.txt_53.Name = "txt_53";
             this.txt_53.Size = new System.Drawing.Size(22, 21);
@@ -2410,6 +2456,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_54.AutoSize = true;
             this.txt_54.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_54.ForeColor = System.Drawing.Color.Blue;
             this.txt_54.Location = new System.Drawing.Point(671, 349);
             this.txt_54.Name = "txt_54";
             this.txt_54.Size = new System.Drawing.Size(22, 21);
@@ -2431,6 +2478,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_55.AutoSize = true;
             this.txt_55.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_55.ForeColor = System.Drawing.Color.Blue;
             this.txt_55.Location = new System.Drawing.Point(1061, 373);
             this.txt_55.Name = "txt_55";
             this.txt_55.Size = new System.Drawing.Size(22, 21);
@@ -2452,6 +2500,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_56.AutoSize = true;
             this.txt_56.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_56.ForeColor = System.Drawing.Color.Blue;
             this.txt_56.Location = new System.Drawing.Point(671, 373);
             this.txt_56.Name = "txt_56";
             this.txt_56.Size = new System.Drawing.Size(22, 21);
@@ -2473,6 +2522,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_57.AutoSize = true;
             this.txt_57.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_57.ForeColor = System.Drawing.Color.Blue;
             this.txt_57.Location = new System.Drawing.Point(1061, 397);
             this.txt_57.Name = "txt_57";
             this.txt_57.Size = new System.Drawing.Size(22, 21);
@@ -2494,6 +2544,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_58.AutoSize = true;
             this.txt_58.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_58.ForeColor = System.Drawing.Color.Blue;
             this.txt_58.Location = new System.Drawing.Point(671, 397);
             this.txt_58.Name = "txt_58";
             this.txt_58.Size = new System.Drawing.Size(22, 21);
@@ -2530,6 +2581,7 @@ namespace ApprovedMedicalSurvey.UI
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.Blue;
             this.label19.Location = new System.Drawing.Point(1346, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(22, 21);
@@ -2635,6 +2687,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_60.AutoSize = true;
             this.txt_60.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_60.ForeColor = System.Drawing.Color.Blue;
             this.txt_60.Location = new System.Drawing.Point(875, 13);
             this.txt_60.Name = "txt_60";
             this.txt_60.Size = new System.Drawing.Size(22, 21);
@@ -2645,6 +2698,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_68.AutoSize = true;
             this.txt_68.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_68.ForeColor = System.Drawing.Color.Blue;
             this.txt_68.Location = new System.Drawing.Point(875, 37);
             this.txt_68.Name = "txt_68";
             this.txt_68.Size = new System.Drawing.Size(22, 21);
@@ -2655,6 +2709,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_73.AutoSize = true;
             this.txt_73.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_73.ForeColor = System.Drawing.Color.Blue;
             this.txt_73.Location = new System.Drawing.Point(875, 61);
             this.txt_73.Name = "txt_73";
             this.txt_73.Size = new System.Drawing.Size(22, 21);
@@ -2665,6 +2720,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.txt_74.AutoSize = true;
             this.txt_74.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_74.ForeColor = System.Drawing.Color.Blue;
             this.txt_74.Location = new System.Drawing.Point(875, 85);
             this.txt_74.Name = "txt_74";
             this.txt_74.Size = new System.Drawing.Size(22, 21);

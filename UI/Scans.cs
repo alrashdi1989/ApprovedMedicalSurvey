@@ -94,7 +94,7 @@ namespace ApprovedMedicalSurvey.UI
                 string postData = "";
                 string URL = GlobalVariables.BaseUrl+"surveys/";
                 WebRequsets webRequests = new WebRequsets();
-                var data = webRequests.webPostMethod(postData, URL, jwt);
+                var data = webRequests.webPostMethod(postData, URL);
 
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
                 var orders = serializer.Deserialize<Models.Surveys>(data);

@@ -47,13 +47,13 @@ namespace ApprovedMedicalSurvey.UI
         {
             Cursor.Current = Cursors.WaitCursor;
 
-            if (Services.UserServices.CheckIfUserISRegisterd("user/check/",txtmobile.Text).Count == 0)
-            {
-                MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
-                txtmobile.Text = string.Empty;
+            //if (Services.UserServices.CheckIfUserISRegisterd("user/check/",txtmobile.Text).Count == 0)
+            //{
+            //    MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
+            //    txtmobile.Text = string.Empty;
 
-                return;
-            }
+            //    return;
+            //}
             
             //OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
             //OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
@@ -64,8 +64,8 @@ namespace ApprovedMedicalSurvey.UI
 
             //status_desc = sendStatus.StatusDesc;
             //status_code = sendStatus.StatusCode;
-            if (Services.UserServices.CheckIfUserISRegisterd("user/check/", txtmobile.Text).Count > 0)/*status_code == "00"*/
-            {
+            //if (Services.UserServices.CheckIfUserISRegisterd("user/check/", txtmobile.Text).Count > 0)/*status_code == "00"*/
+            //{
                 if (txtmobile.Text.Length == 8)
                 {
                     //send the number to REST API getUserbyID
@@ -86,7 +86,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 Cursor.Current = Cursors.Default;
 
-            }
+            //}
 
         }
 
