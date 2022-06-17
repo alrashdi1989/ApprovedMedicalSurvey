@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApprovedMedicalSurvey.Shared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,10 +45,19 @@ namespace ApprovedMedicalSurvey.UI
 
         private async void btncard_Click(object sender, EventArgs e)
         {
-           // Shared.GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
-           //await Services.UserLogIn.LogIn(Shared.GlobalVariables.UserName, Shared.GlobalVariables.Password);
-            FlatLightTheme mainform = new FlatLightTheme();
-            mainform.Show();
+           GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
+            if (GlobalVariables.OTP.ToString() == GlobalVariables.Password)
+            {
+                await Services.UserLogIn.LogIn(Shared.GlobalVariables.UserName, Shared.GlobalVariables.Password);
+                FlatLightTheme mainform = new FlatLightTheme();
+                mainform.Show();
+            }
+
+            else
+            {
+                MessageBox.Show("الرجاء التحقق من رمز ال OTP");
+            }
+          
 
         }
 

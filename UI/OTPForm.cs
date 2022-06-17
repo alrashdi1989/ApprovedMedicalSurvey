@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ApprovedMedicalSurvey.Shared;
+using System;
+using 
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
@@ -45,27 +40,31 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btncard_Click(object sender, EventArgs e)
         {
+
             Cursor.Current = Cursors.WaitCursor;
+            if (Services.UserServices.
+                CheckIfUserISRegisterd
+                ("user/check/", txtmobile.Text)
+                .Count == 0)
+            {
+                MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
+                txtmobile.Text = string.Empty;
 
-            //if (Services.UserServices.CheckIfUserISRegisterd("user/check/",txtmobile.Text).Count == 0)
-            //{
-            //    MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
-            //    txtmobile.Text = string.Empty;
+                return;
+            }
 
-            //    return;
-            //}
-            
-            //OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
-            //OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
-            //sendStatus = otpsrv.SendSMS("", "", "message", 1, "", "", "", "", "55555555");
-
-            //otpsrv.SendSMS("username", "password", "message", 1, "schedualedate","sender", "AppID", "sourceRef","MSISDN");
-
-
-            //status_desc = sendStatus.StatusDesc;
-            //status_code = sendStatus.StatusCode;
-            //if (Services.UserServices.CheckIfUserISRegisterd("user/check/", txtmobile.Text).Count > 0)/*status_code == "00"*/
-            //{
+            OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
+            GlobalVariables.OTP = OTP.CreateOTP();
+            OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
+            sendStatus = otpsrv.SendSMS("", "", "Your OTP Is" + GlobalVariables.OTP
+                .ToString() , 1, "", "", "", "", txtmobile.Text);
+            GlobalVariables.OTP = OTP.CreateOTP();
+            status_desc = sendStatus.StatusDesc;
+            status_code = sendStatus.StatusCode;
+            if (Services.UserServices.CheckIfUserISRegisterd
+                ("user/check/", txtmobile.Text).Count >
+                0 && status_code == "00")
+            {
                 if (txtmobile.Text.Length == 8)
                 {
                     //send the number to REST API getUserbyID
@@ -86,7 +85,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 Cursor.Current = Cursors.Default;
 
-            //}
+            }
 
         }
 
