@@ -1,6 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Shared;
 using System;
-using 
+ 
 using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
@@ -56,8 +56,8 @@ namespace ApprovedMedicalSurvey.UI
             OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
             GlobalVariables.OTP = OTP.CreateOTP();
             OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
-            sendStatus = otpsrv.SendSMS("", "", "Your OTP Is" + GlobalVariables.OTP
-                .ToString() , 1, "", "", "", "", txtmobile.Text);
+            sendStatus = otpsrv.SendSMS("mohapi", "df67tyh", "Your OTP Is " + GlobalVariables.OTP
+                .ToString() , 1, "", "mubadrat", "", "", txtmobile.Text);
             GlobalVariables.OTP = OTP.CreateOTP();
             status_desc = sendStatus.StatusDesc;
             status_code = sendStatus.StatusCode;
