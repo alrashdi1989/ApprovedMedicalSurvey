@@ -52,7 +52,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 return;
             }
-            
+
 
             OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
             GlobalVariables.OTP = OTP.CreateOTP();
