@@ -16,6 +16,7 @@ namespace ApprovedMedicalSurvey.Shared
         public static bool isNewUser { get; set; } = false;
         public static string UserName { get; set; }
         public static string Password { get; set; }
+        public static string UserRole { get; set; }
         public static  int OTP { get; set; }
     }
 }

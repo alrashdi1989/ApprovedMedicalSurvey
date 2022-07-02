@@ -127,7 +127,7 @@ namespace ApprovedMedicalSurvey.UI
 
             if (dr == DialogResult.Yes)
             {
-                string getData = this.Tag.ToString() + "/accepted";
+                string getData = this.Tag.ToString() + "/Completed";
 
                 string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
                 WebRequsets webRequsets = new WebRequsets();
@@ -241,6 +241,25 @@ namespace ApprovedMedicalSurvey.UI
 
 
                 }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //showing conformaation message to make the user accepet the survey 
+            DialogResult dr = MessageBox.Show("هل انت متاكد من قبول الاستبيان؟", "قبول الاستبيان", MessageBoxButtons.YesNo,
+           MessageBoxIcon.Information);
+
+            if (dr == DialogResult.Yes)
+            {
+                string getData = this.Tag.ToString() + "/Accepted";
+
+                string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
+                WebRequsets webRequsets = new WebRequsets();
+                var data = webRequsets.webGetMethod(URL);
+                MessageBox.Show("تم قبول الاستبيان");
+                this.Close();
+
             }
         }
     } }
