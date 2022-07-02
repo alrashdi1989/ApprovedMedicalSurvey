@@ -122,7 +122,7 @@ namespace ApprovedMedicalSurvey.UI
         private void button6_Click(object sender, EventArgs e)
         {
             //showing conformaation message to make the user accepet the survey 
-            DialogResult dr = MessageBox.Show("هل انت متاكد من قبول الاستبيان؟", "قبول الاستبيان", MessageBoxButtons.YesNo,
+            DialogResult dr = MessageBox.Show("هل انت متاكد من استكمال الاستبيان؟", "استكمال الاستبيان", MessageBoxButtons.YesNo,
            MessageBoxIcon.Information);
 
             if (dr == DialogResult.Yes)
