@@ -49,11 +49,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>26CC21742C4DD72DD575120A703A327D7E6533F5</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FE634EA653469561C999AA6D78A43A386BF60E23</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>ApprovedMedicalSurvey_2_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -295,6 +294,7 @@
     <EmbeddedResource Include="UI\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ApprovedMedicalSurvey_2_TemporaryKey.pfx" />
     <None Include="Connected Services\OTPServiceRef\ApprovedMedicalSurvey.OTPServiceRef.SendSMSResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

@@ -2927,7 +2927,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
-        private DevExpress.XtraLayout.Converter.LayoutConverter layoutConverter1;
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label4;

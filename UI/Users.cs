@@ -1,7 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Models;
 using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
-using DevExpress.XtraGrid.Columns;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

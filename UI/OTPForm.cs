@@ -59,7 +59,6 @@ namespace ApprovedMedicalSurvey.UI
             OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
             sendStatus = otpsrv.SendSMS("mohapi", "df67tyh", "Your OTP Is " + GlobalVariables.OTP
                 .ToString() , 1, "", "mubadrat", "", "", txtmobile.Text);
-            GlobalVariables.OTP = OTP.CreateOTP();
             status_desc = sendStatus.StatusDesc;
             status_code = sendStatus.StatusCode;
             if (Services.UserServices.CheckIfUserISRegisterd
