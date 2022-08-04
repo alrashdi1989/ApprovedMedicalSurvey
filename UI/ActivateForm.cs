@@ -1,10 +1,14 @@
 ﻿using ApprovedMedicalSurvey.Shared;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,10 +49,19 @@ namespace ApprovedMedicalSurvey.UI
 
         private async void btncard_Click(object sender, EventArgs e)
         {
-           GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
-            if (GlobalVariables.OTP.ToString() == GlobalVariables.Password)
+            GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
+            var login =    await Services.UserLogIn.LogIn(Shared.GlobalVariables.Mobile.ToString(), Shared.GlobalVariables.Password);
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(login);
+            var tokenS = jsonToken as JwtSecurityToken;
+            string  jti = tokenS.Claims.First(claim => claim.Type == "https://hasura.io/jwt/claims").Value;
+            var data = (JObject)JsonConvert.DeserializeObject(jti);//convert to JObject
+            GlobalVariables.UserRole = data["x-hasura-default-role"].ToString();  //get the property value...
+            GlobalVariables.Uuid = data["X-Hasura-User-Uuid"].ToString();  //get the property value...
+
+            if (login != null     )
             {
-                await Services.UserLogIn.LogIn(Shared.GlobalVariables.UserName, Shared.GlobalVariables.Password);
+              
                 FlatLightTheme mainform = new FlatLightTheme();
                 mainform.Show();
             }

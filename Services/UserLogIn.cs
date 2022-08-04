@@ -25,8 +25,11 @@ namespace ApprovedMedicalSurvey.Services
             var response = await httpClient.PostAsync(Shared.GlobalVariables.BaseUrl+"login"
             ,new FormUrlEncodedContent(parameters));
             var contents = await response.Content.ReadAsStringAsync();
-            Models.jwt.Root result = JsonConvert.DeserializeObject<Models.jwt.Root>(contents); 
-            return result.login.jwt;  
+            Models.jwt.Root result = JsonConvert.DeserializeObject<Models.jwt.Root>(contents);
+             return result.login.jwt;
+
+            
+
         }
 
     }

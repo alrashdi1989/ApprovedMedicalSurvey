@@ -18,5 +18,7 @@ namespace ApprovedMedicalSurvey.Shared
         public static string Password { get; set; }
         public static string UserRole { get; set; }
         public static  int OTP { get; set; }
+        public static string Mobile  { get; set; }
+        public static string Uuid { get; set; }
     }
 }

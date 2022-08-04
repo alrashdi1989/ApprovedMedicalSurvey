@@ -103,7 +103,6 @@
             this.txtmobile.Name = "txtmobile";
             this.txtmobile.Size = new System.Drawing.Size(155, 22);
             this.txtmobile.TabIndex = 3;
-            this.txtmobile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmobile_KeyDown);
             this.txtmobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtmobile_KeyPress);
             // 
             // label3

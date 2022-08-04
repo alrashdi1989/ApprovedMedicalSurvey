@@ -40,11 +40,12 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btncard_Click(object sender, EventArgs e)
         {
+            GlobalVariables.Mobile = "968"+txtmobile.Text;
 
             Cursor.Current = Cursors.WaitCursor;
             if (Services.UserServices.
                 CheckIfUserISRegisterd
-                ("user/check/", txtmobile.Text)
+                ("user/check/", GlobalVariables.Mobile.ToString())
                 .Count == 0)
             {
                 MessageBox.Show("الرقم المطلوب غير مسجل الرجاء التسجيل اولا....");
@@ -54,19 +55,15 @@ namespace ApprovedMedicalSurvey.UI
             }
 
 
-            OTPServiceRef.BulkPushSoapClient otpsrv = new OTPServiceRef.BulkPushSoapClient();
-            GlobalVariables.OTP = OTP.CreateOTP();
-            OTPServiceRef.SendStatus sendStatus = new OTPServiceRef.SendStatus();
-            sendStatus = otpsrv.SendSMS("mohapi", "df67tyh", "Your OTP Is " + GlobalVariables.OTP
-                .ToString() , 1, "", "mubadrat", "", "", txtmobile.Text);
-            status_desc = sendStatus.StatusDesc;
-            status_code = sendStatus.StatusCode;
+
+            string URL = GlobalVariables.BaseUrl + "otp/send?mobile=" + GlobalVariables.Mobile.ToString();
+            WebRequsets webRequsets = new WebRequsets();
+            var data = webRequsets.webPostMethod("", URL);
             if (Services.UserServices.CheckIfUserISRegisterd
-                ("user/check/", txtmobile.Text).Count >
-                0 && status_code == "00")
+                ("user/check/", GlobalVariables.Mobile.ToString()).Count > 0 )
             {
                 if (txtmobile.Text.Length == 8)
-                {
+                {      
                     //send the number to REST API getUserbyID
                     //Get Response success "uuid" 
                     //Open OTP Server Form
@@ -75,16 +72,12 @@ namespace ApprovedMedicalSurvey.UI
                     actfrm.Show();
                     lblvalidate.Visible = false;
                     this.Hide();
-
-
                 }
                 else
                 {
                     lblvalidate.Visible = true;
                 }
-
                 Cursor.Current = Cursors.Default;
-
             }
 
         }
