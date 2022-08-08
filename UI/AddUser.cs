@@ -43,9 +43,9 @@ namespace ApprovedMedicalSurvey.UI
                 
 
             });
-            cbUserStatus.DataSource = dt;
-            cbUserStatus.DisplayMember = "StatusArabic";
-            cbUserStatus.ValueMember = "StatusEnglish";
+            //cbUserStatus.DataSource = dt;
+            //cbUserStatus.DisplayMember = "StatusArabic";
+            //cbUserStatus.ValueMember = "StatusEnglish";
 
             
         }
@@ -81,12 +81,13 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //    string postData ="{'users' : { 'username': '88888888', 'pin': '8888', 'email': 'eight@domain.com','role': 'central_level','status': 'active' }   }";
-            //WebRequsets webRequsets = new WebRequsets();
-            //    webRequsets.webPostMethod(postData, "https://gql.formon.io/api/rest/create/user/");
-         
-         
-            GlobalVariables.isNewUser = true;           
+            
+            WebRequsets webRequsets = new WebRequsets();
+            webRequsets.webPostMethod("", GlobalVariables.BaseUrl+ "signup?role="+ cbUserRoles.SelectedValue+ "&username=968"+txtUserNumber.Text);
+            MessageBox.Show("تم اضافة المستخدم");
+            GlobalVariables.isNewUser = true;
+            this.Close();
+
         }
     }
 }

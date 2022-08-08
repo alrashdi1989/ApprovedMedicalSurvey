@@ -33,14 +33,11 @@ namespace ApprovedMedicalSurvey.UI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
             this.label1 = new System.Windows.Forms.Label();
             this.txtUserNumber = new System.Windows.Forms.TextBox();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbUserStatus = new System.Windows.Forms.ComboBox();
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userPrivilegesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -72,46 +69,22 @@ namespace ApprovedMedicalSurvey.UI
             this.txtUserNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUserNumber.BackColor = System.Drawing.Color.Gainsboro;
             this.txtUserNumber.ForeColor = System.Drawing.Color.Black;
-            this.txtUserNumber.Location = new System.Drawing.Point(494, 179);
+            this.txtUserNumber.Location = new System.Drawing.Point(324, 134);
             this.txtUserNumber.Name = "txtUserNumber";
-            this.txtUserNumber.Size = new System.Drawing.Size(312, 29);
+            this.txtUserNumber.Size = new System.Drawing.Size(260, 29);
             this.txtUserNumber.TabIndex = 1;
-            this.txtUserNumber.Text = ".... اسم المستخدم";
+            this.txtUserNumber.Text = ".... رقم الهاتف";
             this.txtUserNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUserName.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtUserName.ForeColor = System.Drawing.Color.Black;
-            this.txtUserName.Location = new System.Drawing.Point(12, 179);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(312, 29);
-            this.txtUserName.TabIndex = 2;
-            this.txtUserName.Text = "...كلمة المرور";
-            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(494, 244);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(312, 29);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "...البريد الالكتروني";
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAddUser);
-            this.panel1.Location = new System.Drawing.Point(-5, 517);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 232);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 55);
+            this.panel1.Size = new System.Drawing.Size(639, 55);
             this.panel1.TabIndex = 7;
             // 
             // btnCancel
@@ -120,7 +93,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(196, 3);
+            this.btnCancel.Location = new System.Drawing.Point(98, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(204, 49);
             this.btnCancel.TabIndex = 3;
@@ -134,7 +107,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnAddUser.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAddUser.FlatAppearance.BorderSize = 0;
             this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Location = new System.Drawing.Point(406, 3);
+            this.btnAddUser.Location = new System.Drawing.Point(308, 3);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(204, 49);
             this.btnAddUser.TabIndex = 2;
@@ -150,7 +123,7 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(818, 55);
+            this.panel2.Size = new System.Drawing.Size(639, 55);
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -164,17 +137,6 @@ namespace ApprovedMedicalSurvey.UI
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // cbUserStatus
-            // 
-            this.cbUserStatus.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbUserStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUserStatus.FormattingEnabled = true;
-            this.cbUserStatus.Location = new System.Drawing.Point(12, 247);
-            this.cbUserStatus.Name = "cbUserStatus";
-            this.cbUserStatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbUserStatus.Size = new System.Drawing.Size(312, 29);
-            this.cbUserStatus.TabIndex = 17;
             // 
             // villageBindingSource
             // 
@@ -197,10 +159,10 @@ namespace ApprovedMedicalSurvey.UI
             this.cbUserRoles.BackColor = System.Drawing.Color.Gainsboro;
             this.cbUserRoles.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUserRoles.FormattingEnabled = true;
-            this.cbUserRoles.Location = new System.Drawing.Point(12, 318);
+            this.cbUserRoles.Location = new System.Drawing.Point(12, 134);
             this.cbUserRoles.Name = "cbUserRoles";
             this.cbUserRoles.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbUserRoles.Size = new System.Drawing.Size(312, 29);
+            this.cbUserRoles.Size = new System.Drawing.Size(286, 29);
             this.cbUserRoles.TabIndex = 19;
             // 
             // AddUser
@@ -208,13 +170,10 @@ namespace ApprovedMedicalSurvey.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(818, 570);
+            this.ClientSize = new System.Drawing.Size(639, 287);
             this.Controls.Add(this.cbUserRoles);
-            this.Controls.Add(this.cbUserStatus);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.txtUserNumber);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ForeColor = System.Drawing.Color.White;
@@ -241,8 +200,6 @@ namespace ApprovedMedicalSurvey.UI
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUserNumber;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnCancel;
@@ -252,7 +209,6 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.BindingSource userPrivilegesBindingSource;
         private System.Windows.Forms.BindingSource userStatusBindingSource;
         private System.Windows.Forms.BindingSource usersBindingSource;
-        private System.Windows.Forms.ComboBox cbUserStatus;
         private System.Windows.Forms.ComboBox cbUserRoles;
     }
 }

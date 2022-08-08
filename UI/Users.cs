@@ -32,7 +32,10 @@ namespace ApprovedMedicalSurvey.UI
         private void Users_Load(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-
+            if (GlobalVariables.UserRole=="super_admin")
+            {
+                btnNewUser.Visible = true;
+            }
             GetVillages();
             vocalpoint();
             FillingTheGridWithData();
@@ -44,21 +47,8 @@ namespace ApprovedMedicalSurvey.UI
         {
             //filling data grid with all users info 
            var user = UserServices.GetAllUsers("users");
-            if (GlobalVariables.isNewUser==true)
-            {
-                user.Add(new Models.Users
-                {
-                    username = "سامح محمد"
-    ,
-                    role = "volunteer",
-                    created_at = DateTime.Today,
-                    status = "active",
-                    uuid = "97845",
-                    email = "sameh@gmai.com"
-                });
-
-            }
-            usersBindingSource.DataSource = user;
+           
+            usersBindingSource.DataSource = user.OrderByDescending(c=>c.created_at);
 
            villageBindingSource.DataSource = VillageServices.GetAllVIllages("villages");
         }

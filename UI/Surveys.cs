@@ -38,6 +38,17 @@ namespace ApprovedMedicalSurvey.UI
         private void Surveys_Load(object sender, EventArgs e)
         {
             FillLabelWithData();
+            if (GlobalVariables.UserRole == "super_admin")
+            {
+                btnFinalApproval.Visible = true;
+            }
+            else
+            if (GlobalVariables.UserRole == "admin")
+            {
+                btnAccept.Visible = true;
+                btnReject.Visible = true;
+            }
+          
 
         }
 
