@@ -59,7 +59,7 @@ namespace ApprovedMedicalSurvey.UI
         private void SingingOut()
         {
             DialogResult dr = MessageBox.Show("هل تود تسجيل الخروج من النظام؟", "تسجيل الخروج", MessageBoxButtons.YesNo,
-      MessageBoxIcon.Information);
+            MessageBoxIcon.Information);
 
             if (dr == DialogResult.Yes)
             {
