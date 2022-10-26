@@ -1,5 +1,4 @@
 ﻿using ApprovedMedicalSurvey.Shared;
-using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

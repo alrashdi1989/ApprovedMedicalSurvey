@@ -7,7 +7,6 @@ using System.Text;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Net;
-using DevExpress.Internal.WinApi.Windows.UI.Notifications;
 using Newtonsoft.Json;
 using System.IO;
 using Newtonsoft.Json.Linq;

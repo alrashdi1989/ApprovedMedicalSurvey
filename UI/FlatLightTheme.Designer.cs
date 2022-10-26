@@ -190,6 +190,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnBuildings.Text = "المباني";
             this.btnBuildings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuildings.UseVisualStyleBackColor = true;
+            this.btnBuildings.Visible = false;
             this.btnBuildings.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUsers
@@ -370,9 +371,7 @@ namespace ApprovedMedicalSurvey.UI
       
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
+      
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;

@@ -67,7 +67,7 @@ namespace ApprovedMedicalSurvey.UI
                 {
                     name_ar = "اختر القرية..."
                 });
-                cbVillage.DataSource = dt.Where(c=>c.uuid == GlobalVariables.Uuid);
+                cbVillage.DataSource = dt;//.Where(c=>c.uuid == GlobalVariables.Uuid);
                 cbVillage.DisplayMember = "name_ar";
                 cbVillage.ValueMember = "tncode";
 
