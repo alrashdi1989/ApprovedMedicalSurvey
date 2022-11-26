@@ -133,25 +133,7 @@ namespace ApprovedMedicalSurvey.UI
             this.label29 = new System.Windows.Forms.Label();
             this.lbl_122 = new System.Windows.Forms.Label();
             this.dgFamilyMemebers = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isoverweightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.physicalactivityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.physicalactivityperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.smokingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.educationlevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chronicdiseasesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hasdisabilitiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.formkeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.formuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.familyMemberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label79 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
@@ -225,7 +207,7 @@ namespace ApprovedMedicalSurvey.UI
             this.txt_58 = new System.Windows.Forms.Label();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.txt_159 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -245,6 +227,24 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFinalApproval = new System.Windows.Forms.Button();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isoverweightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicalactivityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.physicalactivityperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.smokingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.educationlevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chronicdiseasesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hasdisabilitiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formkeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionuuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.familyMemberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel5.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -264,7 +264,6 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage9.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFamilyMemebers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tabPage13.SuspendLayout();
@@ -272,6 +271,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tabPage10.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -1540,97 +1540,6 @@ namespace ApprovedMedicalSurvey.UI
             this.dgFamilyMemebers.TabIndex = 0;
             this.dgFamilyMemebers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgFamilyMemebers_CellClick);
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "العمر ";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "الجنس";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            this.genderDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isoverweightDataGridViewTextBoxColumn
-            // 
-            this.isoverweightDataGridViewTextBoxColumn.DataPropertyName = "is_overweight";
-            this.isoverweightDataGridViewTextBoxColumn.HeaderText = "يعاني من السنة";
-            this.isoverweightDataGridViewTextBoxColumn.Name = "isoverweightDataGridViewTextBoxColumn";
-            this.isoverweightDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // physicalactivityDataGridViewTextBoxColumn
-            // 
-            this.physicalactivityDataGridViewTextBoxColumn.DataPropertyName = "physical_activity";
-            this.physicalactivityDataGridViewTextBoxColumn.HeaderText = "النشاط البدني";
-            this.physicalactivityDataGridViewTextBoxColumn.Name = "physicalactivityDataGridViewTextBoxColumn";
-            this.physicalactivityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // physicalactivityperiodDataGridViewTextBoxColumn
-            // 
-            this.physicalactivityperiodDataGridViewTextBoxColumn.DataPropertyName = "physical_activity_period";
-            this.physicalactivityperiodDataGridViewTextBoxColumn.HeaderText = "مدة النشاط البدني";
-            this.physicalactivityperiodDataGridViewTextBoxColumn.Name = "physicalactivityperiodDataGridViewTextBoxColumn";
-            this.physicalactivityperiodDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "ترتيبك في العائلة ";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            this.positionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // smokingDataGridViewTextBoxColumn
-            // 
-            this.smokingDataGridViewTextBoxColumn.DataPropertyName = "smoking";
-            this.smokingDataGridViewTextBoxColumn.HeaderText = "مدخن/غير مدخن";
-            this.smokingDataGridViewTextBoxColumn.Name = "smokingDataGridViewTextBoxColumn";
-            this.smokingDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "الحالة الاجتماعية";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // workDataGridViewTextBoxColumn
-            // 
-            this.workDataGridViewTextBoxColumn.DataPropertyName = "work";
-            this.workDataGridViewTextBoxColumn.HeaderText = "يعمل/لايعمل";
-            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
-            this.workDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // educationlevelDataGridViewTextBoxColumn
-            // 
-            this.educationlevelDataGridViewTextBoxColumn.DataPropertyName = "education_level";
-            this.educationlevelDataGridViewTextBoxColumn.HeaderText = "المستوى التعليمي";
-            this.educationlevelDataGridViewTextBoxColumn.Name = "educationlevelDataGridViewTextBoxColumn";
-            this.educationlevelDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // chronicdiseasesDataGridViewTextBoxColumn
-            // 
-            this.chronicdiseasesDataGridViewTextBoxColumn.DataPropertyName = "chronic_diseases";
-            this.chronicdiseasesDataGridViewTextBoxColumn.HeaderText = "الامراض المزمنة";
-            this.chronicdiseasesDataGridViewTextBoxColumn.Name = "chronicdiseasesDataGridViewTextBoxColumn";
-            this.chronicdiseasesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hasdisabilitiesDataGridViewTextBoxColumn
-            // 
-            this.hasdisabilitiesDataGridViewTextBoxColumn.DataPropertyName = "has_disabilities";
-            this.hasdisabilitiesDataGridViewTextBoxColumn.HeaderText = "إعاقة";
-            this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
-            this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -1639,42 +1548,6 @@ namespace ApprovedMedicalSurvey.UI
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 52;
-            // 
-            // formkeyDataGridViewTextBoxColumn
-            // 
-            this.formkeyDataGridViewTextBoxColumn.DataPropertyName = "form_key";
-            this.formkeyDataGridViewTextBoxColumn.HeaderText = "form_key";
-            this.formkeyDataGridViewTextBoxColumn.Name = "formkeyDataGridViewTextBoxColumn";
-            this.formkeyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.formkeyDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // formuuidDataGridViewTextBoxColumn
-            // 
-            this.formuuidDataGridViewTextBoxColumn.DataPropertyName = "form_uuid";
-            this.formuuidDataGridViewTextBoxColumn.HeaderText = "form_uuid";
-            this.formuuidDataGridViewTextBoxColumn.Name = "formuuidDataGridViewTextBoxColumn";
-            this.formuuidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.formuuidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // orderuuidDataGridViewTextBoxColumn
-            // 
-            this.orderuuidDataGridViewTextBoxColumn.DataPropertyName = "order_uuid";
-            this.orderuuidDataGridViewTextBoxColumn.HeaderText = "order_uuid";
-            this.orderuuidDataGridViewTextBoxColumn.Name = "orderuuidDataGridViewTextBoxColumn";
-            this.orderuuidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.orderuuidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // questionuuidDataGridViewTextBoxColumn
-            // 
-            this.questionuuidDataGridViewTextBoxColumn.DataPropertyName = "question_uuid";
-            this.questionuuidDataGridViewTextBoxColumn.HeaderText = "question_uuid";
-            this.questionuuidDataGridViewTextBoxColumn.Name = "questionuuidDataGridViewTextBoxColumn";
-            this.questionuuidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.questionuuidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // familyMemberBindingSource
-            // 
-            this.familyMemberBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.FamilyMember);
             // 
             // label79
             // 
@@ -2569,7 +2442,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel10.Controls.Add(this.label19, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.txt_159, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.label55, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
@@ -2579,15 +2452,15 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel10.Size = new System.Drawing.Size(1453, 726);
             this.tableLayoutPanel10.TabIndex = 2;
             // 
-            // label19
+            // txt_159
             // 
-            this.label19.AutoSize = true;
-            this.label19.ForeColor = System.Drawing.Color.Blue;
-            this.label19.Location = new System.Drawing.Point(1346, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(22, 21);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "--";
+            this.txt_159.AutoSize = true;
+            this.txt_159.ForeColor = System.Drawing.Color.Blue;
+            this.txt_159.Location = new System.Drawing.Point(1346, 0);
+            this.txt_159.Name = "txt_159";
+            this.txt_159.Size = new System.Drawing.Size(22, 21);
+            this.txt_159.TabIndex = 1;
+            this.txt_159.Text = "--";
             // 
             // label55
             // 
@@ -2843,7 +2716,134 @@ namespace ApprovedMedicalSurvey.UI
             this.btnFinalApproval.Text = "قبول نهائي";
             this.btnFinalApproval.UseVisualStyleBackColor = false;
             this.btnFinalApproval.Visible = false;
-            this.btnFinalApproval.Click += new System.EventHandler(this.button1_Click);
+            this.btnFinalApproval.Click += new System.EventHandler(this.btnFinalApproval_Click);
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
+            this.ageDataGridViewTextBoxColumn.HeaderText = "العمر ";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "الجنس";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            this.genderDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isoverweightDataGridViewTextBoxColumn
+            // 
+            this.isoverweightDataGridViewTextBoxColumn.DataPropertyName = "is_overweight";
+            this.isoverweightDataGridViewTextBoxColumn.HeaderText = "يعاني من السنة";
+            this.isoverweightDataGridViewTextBoxColumn.Name = "isoverweightDataGridViewTextBoxColumn";
+            this.isoverweightDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityDataGridViewTextBoxColumn.DataPropertyName = "physical_activity";
+            this.physicalactivityDataGridViewTextBoxColumn.HeaderText = "النشاط البدني";
+            this.physicalactivityDataGridViewTextBoxColumn.Name = "physicalactivityDataGridViewTextBoxColumn";
+            this.physicalactivityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // physicalactivityperiodDataGridViewTextBoxColumn
+            // 
+            this.physicalactivityperiodDataGridViewTextBoxColumn.DataPropertyName = "physical_activity_period";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.HeaderText = "مدة النشاط البدني";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.Name = "physicalactivityperiodDataGridViewTextBoxColumn";
+            this.physicalactivityperiodDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "ترتيبك في العائلة ";
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // smokingDataGridViewTextBoxColumn
+            // 
+            this.smokingDataGridViewTextBoxColumn.DataPropertyName = "smoking";
+            this.smokingDataGridViewTextBoxColumn.HeaderText = "مدخن/غير مدخن";
+            this.smokingDataGridViewTextBoxColumn.Name = "smokingDataGridViewTextBoxColumn";
+            this.smokingDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "الحالة الاجتماعية";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // workDataGridViewTextBoxColumn
+            // 
+            this.workDataGridViewTextBoxColumn.DataPropertyName = "work";
+            this.workDataGridViewTextBoxColumn.HeaderText = "يعمل/لايعمل";
+            this.workDataGridViewTextBoxColumn.Name = "workDataGridViewTextBoxColumn";
+            this.workDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // educationlevelDataGridViewTextBoxColumn
+            // 
+            this.educationlevelDataGridViewTextBoxColumn.DataPropertyName = "education_level";
+            this.educationlevelDataGridViewTextBoxColumn.HeaderText = "المستوى التعليمي";
+            this.educationlevelDataGridViewTextBoxColumn.Name = "educationlevelDataGridViewTextBoxColumn";
+            this.educationlevelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // chronicdiseasesDataGridViewTextBoxColumn
+            // 
+            this.chronicdiseasesDataGridViewTextBoxColumn.DataPropertyName = "chronic_diseases";
+            this.chronicdiseasesDataGridViewTextBoxColumn.HeaderText = "الامراض المزمنة";
+            this.chronicdiseasesDataGridViewTextBoxColumn.Name = "chronicdiseasesDataGridViewTextBoxColumn";
+            this.chronicdiseasesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hasdisabilitiesDataGridViewTextBoxColumn
+            // 
+            this.hasdisabilitiesDataGridViewTextBoxColumn.DataPropertyName = "has_disabilities";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.HeaderText = "إعاقة";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.Name = "hasdisabilitiesDataGridViewTextBoxColumn";
+            this.hasdisabilitiesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // formkeyDataGridViewTextBoxColumn
+            // 
+            this.formkeyDataGridViewTextBoxColumn.DataPropertyName = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.HeaderText = "form_key";
+            this.formkeyDataGridViewTextBoxColumn.Name = "formkeyDataGridViewTextBoxColumn";
+            this.formkeyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formkeyDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // formuuidDataGridViewTextBoxColumn
+            // 
+            this.formuuidDataGridViewTextBoxColumn.DataPropertyName = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.HeaderText = "form_uuid";
+            this.formuuidDataGridViewTextBoxColumn.Name = "formuuidDataGridViewTextBoxColumn";
+            this.formuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.formuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // orderuuidDataGridViewTextBoxColumn
+            // 
+            this.orderuuidDataGridViewTextBoxColumn.DataPropertyName = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.HeaderText = "order_uuid";
+            this.orderuuidDataGridViewTextBoxColumn.Name = "orderuuidDataGridViewTextBoxColumn";
+            this.orderuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.orderuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // questionuuidDataGridViewTextBoxColumn
+            // 
+            this.questionuuidDataGridViewTextBoxColumn.DataPropertyName = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.HeaderText = "question_uuid";
+            this.questionuuidDataGridViewTextBoxColumn.Name = "questionuuidDataGridViewTextBoxColumn";
+            this.questionuuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionuuidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // familyMemberBindingSource
+            // 
+            this.familyMemberBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.FamilyMember);
             // 
             // Surveys
             // 
@@ -2887,7 +2887,6 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFamilyMemebers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
@@ -2898,6 +2897,7 @@ namespace ApprovedMedicalSurvey.UI
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.familyMemberBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3092,7 +3092,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Label txt_73;
         private System.Windows.Forms.Label txt_74;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label txt_159;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.DataGridView dgFamilyMemebers;
         private System.Windows.Forms.BindingSource familyMemberBindingSource;

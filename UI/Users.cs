@@ -117,8 +117,11 @@ namespace ApprovedMedicalSurvey.UI
                 if (isSelected)
                 {
                     num = +1;
-                    message += Environment.NewLine;
-                    message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    //message += Environment.NewLine;
+                    //message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string URL = GlobalVariables.BaseUrl + "survey/status/" + row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString()+"/active";
+                    WebRequsets webRequsets = new WebRequsets();
+                    var data = webRequsets.webGetMethod(URL);
                 }
             }
 
@@ -126,11 +129,8 @@ namespace ApprovedMedicalSurvey.UI
             {
                 MessageBox.Show("الرجاء اختيار مستخدم اولا ");
             }
-            else
-            {
-                MessageBox.Show("Selected Values" + message);
+          
 
-            }
         }
     }
 }

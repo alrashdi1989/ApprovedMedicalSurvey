@@ -67,10 +67,18 @@ namespace ApprovedMedicalSurvey.UI
 
             foreach (var ques in orders.operation_orders[0].response)
             {
+                
+                    //MessageBox.Show(ques.question.id.ToString()+ ques.question.name);
+                
                 ans_val = "";
                 quest_id = ques.question.id;
                 question = ques.question.name;
                 answers = ques.response;
+                if (quest_id == 159 )
+                {
+                    //MessageBox.Show(answers.ToString());
+                 
+                }
                 foreach (var item in answers)
                 {
                     ans_val += item.ToString() + " , ";
@@ -82,7 +90,7 @@ namespace ApprovedMedicalSurvey.UI
 
                 }
 
-
+                //لاحتياجات 159 - الولادات 140 - الوفيات 128 
 
             }
 
@@ -138,7 +146,7 @@ namespace ApprovedMedicalSurvey.UI
 
             if (dr == DialogResult.Yes)
             {
-                string getData = this.Tag.ToString() + "/Completed";
+                string getData = this.Tag.ToString() + "/Accepted";
 
                 string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
                 WebRequsets webRequsets = new WebRequsets();
@@ -264,6 +272,25 @@ namespace ApprovedMedicalSurvey.UI
             if (dr == DialogResult.Yes)
             {
                 string getData = this.Tag.ToString() + "/Accepted";
+
+                string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
+                WebRequsets webRequsets = new WebRequsets();
+                var data = webRequsets.webGetMethod(URL);
+                MessageBox.Show("تم قبول الاستبيان");
+                this.Close();
+
+            }
+        }
+
+        private void btnFinalApproval_Click(object sender, EventArgs e)
+        {
+            //showing conformaation message to make the user accepet the survey 
+            DialogResult dr = MessageBox.Show("هل انت متاكد من قبول الاستبيان؟", "قبول الاستبيان", MessageBoxButtons.YesNo,
+           MessageBoxIcon.Information);
+
+            if (dr == DialogResult.Yes)
+            {
+                string getData = this.Tag.ToString() + "/Approved";
 
                 string URL = GlobalVariables.BaseUrl + "survey/status/" + getData;
                 WebRequsets webRequsets = new WebRequsets();
