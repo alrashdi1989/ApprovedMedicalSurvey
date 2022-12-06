@@ -190,7 +190,6 @@ namespace ApprovedMedicalSurvey.UI
             this.btnBuildings.Text = "المباني";
             this.btnBuildings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuildings.UseVisualStyleBackColor = true;
-            this.btnBuildings.Visible = false;
             this.btnBuildings.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUsers

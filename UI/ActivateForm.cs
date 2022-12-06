@@ -50,16 +50,17 @@ namespace ApprovedMedicalSurvey.UI
         private async void btncard_Click(object sender, EventArgs e)
         {
             GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
-            var login =    await Services.UserLogIn.LogIn(Shared.GlobalVariables.Mobile.ToString(), Shared.GlobalVariables.Password);
+            GlobalVariables.jwt =    await Services.UserLogIn.LogIn(Shared.GlobalVariables.Mobile.ToString(), Shared.GlobalVariables.Password);
             var handler = new JwtSecurityTokenHandler();
-            var jsonToken = handler.ReadToken(login);
+            var jsonToken = handler.ReadToken(GlobalVariables.jwt);
             var tokenS = jsonToken as JwtSecurityToken;
             string  jti = tokenS.Claims.First(claim => claim.Type == "https://hasura.io/jwt/claims").Value;
+            MessageBox.Show(GlobalVariables.jwt.ToString());
             var data = (JObject)JsonConvert.DeserializeObject(jti);//convert to JObject
             GlobalVariables.UserRole = data["x-hasura-default-role"].ToString();  //get the property value...
             GlobalVariables.Uuid = data["X-Hasura-User-Uuid"].ToString();  //get the property value...
 
-            if (login != null     )
+            if (GlobalVariables.jwt != null     )
             {
               
                 FlatLightTheme mainform = new FlatLightTheme();
