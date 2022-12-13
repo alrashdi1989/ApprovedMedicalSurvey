@@ -55,7 +55,6 @@ namespace ApprovedMedicalSurvey.UI
             var jsonToken = handler.ReadToken(GlobalVariables.jwt);
             var tokenS = jsonToken as JwtSecurityToken;
             string  jti = tokenS.Claims.First(claim => claim.Type == "https://hasura.io/jwt/claims").Value;
-            MessageBox.Show(GlobalVariables.jwt.ToString());
             var data = (JObject)JsonConvert.DeserializeObject(jti);//convert to JObject
             GlobalVariables.UserRole = data["x-hasura-default-role"].ToString();  //get the property value...
             GlobalVariables.Uuid = data["X-Hasura-User-Uuid"].ToString();  //get the property value...

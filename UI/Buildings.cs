@@ -1,5 +1,7 @@
 ﻿using ApprovedMedicalSurvey.Shared;
+using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
@@ -15,7 +17,7 @@ namespace ApprovedMedicalSurvey.UI
 
         private void button1_Click(object sender, EventArgs e)
          {
-            var url = GlobalVariables.BaseUrl+ "insert HTTP/1.2";
+            var url = GlobalVariables.BaseUrl+ "buildings/insert";
 
             var httpRequest = (HttpWebRequest)WebRequest.Create(url);
             httpRequest.Method = "POST";
@@ -28,9 +30,9 @@ namespace ApprovedMedicalSurvey.UI
         ""govcode"": ""122220"",
         ""buildingco"": ""513031"",
         ""bldtype"": ""رئيسي"",
-        ""objectid"": 382222,
-        ""ogc_fid"": 92229,
-        ""villageid"": ""100110255"",
+        ""objectid"": 382220,
+        ""ogc_fid"": 92220,
+        ""villageid"": ""100110250"",
         ""willcode"": ""1001"",
         ""wkb_geometry"": {
         ""type"": ""MultiPoint"",
@@ -78,7 +80,41 @@ namespace ApprovedMedicalSurvey.UI
 
         private void Buildings_Load(object sender, EventArgs e)
         {
-            textBox1.Text = GlobalVariables.jwt;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var csv = new List<string[]>();
+            var lines = System.IO.File.ReadAllLines(@"C:\Users\abdul\source\repos\ApprovedMedicalSurvey\bin\Building_BAAT.csv"); // csv file location
+
+            // loop through all lines and add it in list as string
+            foreach (string line in lines)
+                csv.Add(line.Split(','));
+
+            //split string to get first line, header line as JSON properties
+            var properties = lines[0].Split(',');
+
+            var listObjResult = new List<Dictionary<string, string>>();
+
+            //loop all remaining lines, except header so starting it from 1
+            // instead of 0
+            for (int i = 1; i < lines.Length; i++)
+            {
+                var objResult = new Dictionary<string, string>();
+                for (int j = 0; j < properties.Length; j++)
+                    objResult.Add(properties[j], csv[i][j]);
+
+                listObjResult.Add(objResult);
+                var json = JsonConvert.SerializeObject(listObjResult);
+                MessageBox.Show(json.ToString());
+                    
+            }
         }
     }
 }
