@@ -58,7 +58,7 @@ namespace ApprovedMedicalSurvey.UI
 
             string URL = GlobalVariables.BaseUrl + "otp/send?mobile=" + GlobalVariables.Mobile.ToString();
             WebRequsets webRequsets = new WebRequsets();
-            var data = webRequsets.webPostMethod("", URL);
+            var data = webRequsets.webPostMethod("", URL, false) ;
             if (Services.UserServices.CheckIfUserISRegisterd
                 ("user/check/", GlobalVariables.Mobile.ToString()).Count > 0 )
             {

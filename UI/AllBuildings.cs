@@ -15,10 +15,10 @@ using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.UI
 {
-    public partial class Scans : Form
+    public partial class AllBuildings : Form
     {
 
-        public Scans()
+        public AllBuildings()
         {
             InitializeComponent();
         }
@@ -94,7 +94,7 @@ namespace ApprovedMedicalSurvey.UI
                 string postData = "";
                 string URL = GlobalVariables.BaseUrl+"surveys/";
                 WebRequsets webRequests = new WebRequsets();
-                var data = webRequests.webPostMethod(postData, URL,false);
+                var data = webRequests.webPostMethod(postData, URL,true);
 
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
                 var orders = serializer.Deserialize<Models.Surveys>(data);

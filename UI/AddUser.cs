@@ -83,7 +83,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             
             WebRequsets webRequsets = new WebRequsets();
-            webRequsets.webPostMethod("", GlobalVariables.BaseUrl+ "signup?role="+ cbUserRoles.SelectedValue+ "&username=968"+txtUserNumber.Text);
+            webRequsets.webPostMethod("", GlobalVariables.BaseUrl+ "signup?role="+ cbUserRoles.SelectedValue+ "&username=968"+txtUserNumber.Text,true);
             MessageBox.Show("تم اضافة المستخدم");
             GlobalVariables.isNewUser = true;
             this.Close();
