@@ -85,87 +85,13 @@ namespace ApprovedMedicalSurvey.UI
 
         private void btnShowResults_Click(object sender, EventArgs e)
         {
+            var buildings = BuildingsServices.
+            GetAllBuildings("building",Convert.ToInt32( cbVillage.SelectedValue));
 
-
-            try
-            {
-                //filling data grid with data 
-                this.Cursor = Cursors.WaitCursor;
-                string postData = "";
-                string URL = GlobalVariables.BaseUrl+"surveys/";
-                WebRequsets webRequests = new WebRequsets();
-                var data = webRequests.webPostMethod(postData, URL,true);
-
-                JavaScriptSerializer serializer = new JavaScriptSerializer();
-                var orders = serializer.Deserialize<Models.Surveys>(data);
+            allBuildingsBindingSource.DataSource = buildings;
 
 
 
-
-
-                System.Data.DataTable dt_survey = new System.Data.DataTable();
-                dt_survey.Columns.Add("Surveyuuid", typeof(string));
-                dt_survey.Columns.Add("Surveyid", typeof(string));
-                dt_survey.Columns.Add("bncode", typeof(string));
-                dt_survey.Columns.Add("status", typeof(string));
-                dt_survey.Columns.Add("user", typeof(string));
-                dt_survey.Columns.Add("village", typeof(string));
-                dt_survey.Columns.Add("surveydate", typeof(string));
-
-
-                DataRow dr;
-
-                foreach (var ques in orders.operation_orders.Where(c => c.village_name_ar == cbVillage.Text && c.status == "completed"))
-                {
-                    dr = dt_survey.NewRow();
-                    dr["Surveyuuid"] = ques.uuid;
-                    dr["Surveyid"] = ques.bncode;
-                    dr["bncode"] = ques.bncode;
-                    dr["status"] = ques.status;
-                    dr["user"] = ques.user.username;
-                    dr["village"] = ques.village_name_ar;
-                    string survey_create_date = ques.created_at.Date.Day.ToString() + "/" + ques.created_at.Date.Month.ToString() + "/" + ques.created_at.Date.Year.ToString();
-                    dr["surveydate"] = survey_create_date;
-                    dt_survey.Rows.Add(dr);
-                }
-
-                dgScans.Columns.Clear();
-                dgScans.DataSource = dt_survey;
-                dgScans.Columns[0].Visible = false;
-                dgScans.Columns[1].HeaderText = "رقم المسح";
-                dgScans.Columns[2].HeaderText = "رقم المبنى";
-                dgScans.Columns[3].HeaderText = "حالة المسح";
-                dgScans.Columns[4].HeaderText = "جامع البيان";
-                dgScans.Columns[5].HeaderText = "القرية";
-                dgScans.Columns[6].HeaderText = "تاريخ المسح";
-                DataGridViewImageColumn img = new DataGridViewImageColumn();
-                Image image = Properties.Resources.search;
-
-                img.Image = image;
-                dgScans.Columns.Add(img);
-                img.HeaderText = "التفاصيل";
-                img.Name = "img";
-                img.Width = 60;
-                this.Cursor = Cursors.Default;
-                lblScanNumbers.Text = "عدد المسوحات = " + dt_survey.Rows.Count;
-
-                flag = false;
-
-
-
-                dgScans.ClearSelection();
-
-                txtUser.Visible = true;
-                dtScanDate.Visible = true;
-                txtScanNumbers.Visible = true;
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-
-            Cursor.Current = Cursors.Default;
 
         }
 

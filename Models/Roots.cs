@@ -14,7 +14,7 @@ namespace ApprovedMedicalSurvey.Models
         public  List<Village> villages { get; set; }
 
         public  List<Willayat> willayat { get; set; }
-
+        public List<Buildings> Buildings { get; set; }
         public List<OperationOrder> operationOrders { get; set; }
         public List<FamilyMember> family_members { get; set; }
 

@@ -7,7 +7,18 @@
         public string name_ar { get; set; }
         public Geometry geometry { get; set; }
     }
-
+    public class Buildings
+    {
+        public string uuid { get; set; }
+        public float xcoard { get; set; }
+        public float ycoard { get; set; }
+        public string govcode { get; set; }
+        public string villageid { get; set; }
+        public string willcode { get; set; }
+        public string bldtype { get; set; }
+        public string district { get; set; }
+        public string buildingco { get; set; }
+    }
     public class Geometry
     {
         public Crs crs { get; set; }

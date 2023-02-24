@@ -159,7 +159,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             Cursor.Current = Cursors.WaitCursor;
 
-            Buildings f = new Buildings();
+            AllBuildings f = new AllBuildings();
             f.MdiParent = this;
             f.Show();
             f.Dock = DockStyle.Fill;
