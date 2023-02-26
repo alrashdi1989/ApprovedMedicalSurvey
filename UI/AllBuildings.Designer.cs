@@ -30,9 +30,9 @@ namespace ApprovedMedicalSurvey.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbGovernance = new System.Windows.Forms.ComboBox();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -45,28 +45,34 @@ namespace ApprovedMedicalSurvey.UI
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgScans = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblScanNumbers = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.allBuildingsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cbUsers = new System.Windows.Forms.ComboBox();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.addBuilding = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.multiusers = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xcoardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ycoardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.govcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.villageidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.willcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bldtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.districtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buildingcoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.districtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.govcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bldtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.willcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villageidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgScans)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -218,145 +224,228 @@ namespace ApprovedMedicalSurvey.UI
             // dgScans
             // 
             this.dgScans.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgScans.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgScans.AutoGenerateColumns = false;
             this.dgScans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgScans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgScans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.multiusers,
             this.uuidDataGridViewTextBoxColumn,
             this.xcoardDataGridViewTextBoxColumn,
             this.ycoardDataGridViewTextBoxColumn,
-            this.govcodeDataGridViewTextBoxColumn,
-            this.villageidDataGridViewTextBoxColumn,
-            this.willcodeDataGridViewTextBoxColumn,
-            this.bldtypeDataGridViewTextBoxColumn,
+            this.buildingcoDataGridViewTextBoxColumn,
             this.districtDataGridViewTextBoxColumn,
-            this.buildingcoDataGridViewTextBoxColumn});
+            this.govcodeDataGridViewTextBoxColumn,
+            this.bldtypeDataGridViewTextBoxColumn,
+            this.willcodeDataGridViewTextBoxColumn,
+            this.villageidDataGridViewTextBoxColumn});
             this.dgScans.DataSource = this.allBuildingsBindingSource;
             this.dgScans.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgScans.Location = new System.Drawing.Point(0, 0);
             this.dgScans.Name = "dgScans";
+            this.dgScans.ReadOnly = true;
             this.dgScans.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgScans.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgScans.RowTemplate.Height = 32;
             this.dgScans.Size = new System.Drawing.Size(1802, 720);
             this.dgScans.TabIndex = 0;
             this.dgScans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // allBuildingsBindingSource
+            // 
+            this.allBuildingsBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Buildings);
+            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.lblScanNumbers);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.cbUsers);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(614, 24);
+            this.panel5.Location = new System.Drawing.Point(458, 24);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(365, 89);
+            this.panel5.Size = new System.Drawing.Size(521, 89);
             this.panel5.TabIndex = 6;
             // 
-            // lblScanNumbers
+            // label1
             // 
-            this.lblScanNumbers.AutoSize = true;
-            this.lblScanNumbers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScanNumbers.ForeColor = System.Drawing.Color.Black;
-            this.lblScanNumbers.Location = new System.Drawing.Point(3, 21);
-            this.lblScanNumbers.Name = "lblScanNumbers";
-            this.lblScanNumbers.Size = new System.Drawing.Size(22, 21);
-            this.lblScanNumbers.TabIndex = 8;
-            this.lblScanNumbers.Text = "--";
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(319, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 24);
+            this.label1.TabIndex = 1000006;
+            this.label1.Text = "المستخدمين";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(6, 58);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 31);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "اسناد المبنى";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cbUsers
+            // 
+            this.cbUsers.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbUsers.DataSource = this.usersBindingSource;
+            this.cbUsers.DisplayMember = "username";
+            this.cbUsers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUsers.FormattingEnabled = true;
+            this.cbUsers.Location = new System.Drawing.Point(0, 22);
+            this.cbUsers.Name = "cbUsers";
+            this.cbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbUsers.Size = new System.Drawing.Size(313, 29);
+            this.cbUsers.TabIndex = 1000005;
+            this.cbUsers.ValueMember = "uuid";
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.addBuilding);
             this.panel6.Controls.Add(this.btnShowResults);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(242, 0);
+            this.panel6.Location = new System.Drawing.Point(398, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(123, 89);
             this.panel6.TabIndex = 7;
+            // 
+            // addBuilding
+            // 
+            this.addBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addBuilding.BackColor = System.Drawing.Color.Green;
+            this.addBuilding.FlatAppearance.BorderSize = 0;
+            this.addBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBuilding.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBuilding.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addBuilding.Location = new System.Drawing.Point(6, 52);
+            this.addBuilding.Margin = new System.Windows.Forms.Padding(6);
+            this.addBuilding.Name = "addBuilding";
+            this.addBuilding.Size = new System.Drawing.Size(109, 31);
+            this.addBuilding.TabIndex = 4;
+            this.addBuilding.Text = "اضافة مبنى";
+            this.addBuilding.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addBuilding.UseVisualStyleBackColor = false;
+            this.addBuilding.Click += new System.EventHandler(this.addBuilding_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // allBuildingsBindingSource
+            // multiusers
             // 
-            this.allBuildingsBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Buildings);
+            this.multiusers.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.multiusers.HeaderText = "";
+            this.multiusers.Name = "multiusers";
+            this.multiusers.ReadOnly = true;
+            this.multiusers.Width = 5;
             // 
             // uuidDataGridViewTextBoxColumn
             // 
             this.uuidDataGridViewTextBoxColumn.DataPropertyName = "uuid";
             this.uuidDataGridViewTextBoxColumn.HeaderText = "uuid";
             this.uuidDataGridViewTextBoxColumn.Name = "uuidDataGridViewTextBoxColumn";
+            this.uuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.uuidDataGridViewTextBoxColumn.Visible = false;
             // 
             // xcoardDataGridViewTextBoxColumn
             // 
             this.xcoardDataGridViewTextBoxColumn.DataPropertyName = "xcoard";
             this.xcoardDataGridViewTextBoxColumn.HeaderText = "xcoard";
             this.xcoardDataGridViewTextBoxColumn.Name = "xcoardDataGridViewTextBoxColumn";
+            this.xcoardDataGridViewTextBoxColumn.ReadOnly = true;
+            this.xcoardDataGridViewTextBoxColumn.Visible = false;
             // 
             // ycoardDataGridViewTextBoxColumn
             // 
             this.ycoardDataGridViewTextBoxColumn.DataPropertyName = "ycoard";
             this.ycoardDataGridViewTextBoxColumn.HeaderText = "ycoard";
             this.ycoardDataGridViewTextBoxColumn.Name = "ycoardDataGridViewTextBoxColumn";
-            // 
-            // govcodeDataGridViewTextBoxColumn
-            // 
-            this.govcodeDataGridViewTextBoxColumn.DataPropertyName = "govcode";
-            this.govcodeDataGridViewTextBoxColumn.HeaderText = "govcode";
-            this.govcodeDataGridViewTextBoxColumn.Name = "govcodeDataGridViewTextBoxColumn";
-            // 
-            // villageidDataGridViewTextBoxColumn
-            // 
-            this.villageidDataGridViewTextBoxColumn.DataPropertyName = "villageid";
-            this.villageidDataGridViewTextBoxColumn.HeaderText = "villageid";
-            this.villageidDataGridViewTextBoxColumn.Name = "villageidDataGridViewTextBoxColumn";
-            // 
-            // willcodeDataGridViewTextBoxColumn
-            // 
-            this.willcodeDataGridViewTextBoxColumn.DataPropertyName = "willcode";
-            this.willcodeDataGridViewTextBoxColumn.HeaderText = "willcode";
-            this.willcodeDataGridViewTextBoxColumn.Name = "willcodeDataGridViewTextBoxColumn";
-            // 
-            // bldtypeDataGridViewTextBoxColumn
-            // 
-            this.bldtypeDataGridViewTextBoxColumn.DataPropertyName = "bldtype";
-            this.bldtypeDataGridViewTextBoxColumn.HeaderText = "bldtype";
-            this.bldtypeDataGridViewTextBoxColumn.Name = "bldtypeDataGridViewTextBoxColumn";
-            // 
-            // districtDataGridViewTextBoxColumn
-            // 
-            this.districtDataGridViewTextBoxColumn.DataPropertyName = "district";
-            this.districtDataGridViewTextBoxColumn.HeaderText = "district";
-            this.districtDataGridViewTextBoxColumn.Name = "districtDataGridViewTextBoxColumn";
+            this.ycoardDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ycoardDataGridViewTextBoxColumn.Visible = false;
             // 
             // buildingcoDataGridViewTextBoxColumn
             // 
             this.buildingcoDataGridViewTextBoxColumn.DataPropertyName = "buildingco";
-            this.buildingcoDataGridViewTextBoxColumn.HeaderText = "buildingco";
+            this.buildingcoDataGridViewTextBoxColumn.HeaderText = "رقم المبنى";
             this.buildingcoDataGridViewTextBoxColumn.Name = "buildingcoDataGridViewTextBoxColumn";
+            this.buildingcoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // districtDataGridViewTextBoxColumn
+            // 
+            this.districtDataGridViewTextBoxColumn.DataPropertyName = "district";
+            this.districtDataGridViewTextBoxColumn.HeaderText = "المحافظة";
+            this.districtDataGridViewTextBoxColumn.Name = "districtDataGridViewTextBoxColumn";
+            this.districtDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // govcodeDataGridViewTextBoxColumn
+            // 
+            this.govcodeDataGridViewTextBoxColumn.DataPropertyName = "govcode";
+            this.govcodeDataGridViewTextBoxColumn.HeaderText = "رمز المحافظة";
+            this.govcodeDataGridViewTextBoxColumn.Name = "govcodeDataGridViewTextBoxColumn";
+            this.govcodeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bldtypeDataGridViewTextBoxColumn
+            // 
+            this.bldtypeDataGridViewTextBoxColumn.DataPropertyName = "bldtype";
+            this.bldtypeDataGridViewTextBoxColumn.HeaderText = "نوع البلدة";
+            this.bldtypeDataGridViewTextBoxColumn.Name = "bldtypeDataGridViewTextBoxColumn";
+            this.bldtypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // willcodeDataGridViewTextBoxColumn
+            // 
+            this.willcodeDataGridViewTextBoxColumn.DataPropertyName = "willcode";
+            this.willcodeDataGridViewTextBoxColumn.HeaderText = "رمز الولاية";
+            this.willcodeDataGridViewTextBoxColumn.Name = "willcodeDataGridViewTextBoxColumn";
+            this.willcodeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // villageidDataGridViewTextBoxColumn
+            // 
+            this.villageidDataGridViewTextBoxColumn.DataPropertyName = "villageid";
+            this.villageidDataGridViewTextBoxColumn.HeaderText = "رمز القرية";
+            this.villageidDataGridViewTextBoxColumn.Name = "villageidDataGridViewTextBoxColumn";
+            this.villageidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AllBuildings
             // 
@@ -374,7 +463,7 @@ namespace ApprovedMedicalSurvey.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AllBuildings";
-            this.Text = "قائمة المسوحات";
+            this.Text = "اسناد المباني";
             this.Load += new System.EventHandler(this.Scans_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -383,10 +472,11 @@ namespace ApprovedMedicalSurvey.UI
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgScans)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -406,18 +496,23 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.ComboBox cbGovernance;
         private System.Windows.Forms.ComboBox cbState;
         private System.Windows.Forms.ComboBox cbVillage;
-        private System.Windows.Forms.Label lblScanNumbers;
         private System.Windows.Forms.DateTimePicker dtScanDate;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.BindingSource allBuildingsBindingSource;
+        private System.Windows.Forms.Button addBuilding;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbUsers;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn multiusers;
         private System.Windows.Forms.DataGridViewTextBoxColumn uuidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn xcoardDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ycoardDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn govcodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn villageidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn willcodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bldtypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn districtDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn buildingcoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource allBuildingsBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn districtDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn govcodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bldtypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn willcodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn villageidDataGridViewTextBoxColumn;
     }
 }

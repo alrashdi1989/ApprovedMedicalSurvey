@@ -28,6 +28,9 @@ namespace ApprovedMedicalSurvey.UI
         private void Scans_Load(object sender, EventArgs e)
         {
             //binding data to combo boxes 
+            var user = UserServices.GetAllUsers("users");
+
+            usersBindingSource.DataSource = user.OrderByDescending(c => c.created_at);
             Governance();
         }
 
@@ -173,6 +176,41 @@ namespace ApprovedMedicalSurvey.UI
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void addBuilding_Click(object sender, EventArgs e)
+        {
+            Buildings f = new Buildings();
+            f.ShowDialog();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string message = string.Empty;
+            int num = 0;
+            foreach (DataGridViewRow row in dgScans.Rows)
+            {
+
+
+
+                bool isSelected = Convert.ToBoolean(row.Cells["checklist"].Value);
+
+                if (isSelected)
+                {
+                    num = +1;
+                    //message += Environment.NewLine;
+                    //message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string URL = GlobalVariables.BaseUrl + "survey/status/" + row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString() + "/active";
+                    WebRequsets webRequsets = new WebRequsets();
+                    var data = webRequsets.webGetMethod(URL);
+                }
+            }
+
+            if (num == 0)
+            {
+                MessageBox.Show("الرجاء اختيار مستخدم اولا ");
+            }
         }
     }
 }

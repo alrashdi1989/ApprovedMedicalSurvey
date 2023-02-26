@@ -18,71 +18,7 @@ namespace ApprovedMedicalSurvey.UI
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-         {
-            var url = GlobalVariables.BaseUrl+ "buildings/insert";
-
-            var httpRequest = (HttpWebRequest)WebRequest.Create(url);
-            httpRequest.Headers.Add("Authorization", $"Bearer {GlobalVariables.jwt}");
-
-            httpRequest.Method = "POST";
-
-            httpRequest.Accept = "application/json";
-            httpRequest.ContentType = "application/json";
-
-            var data = @"{""objects"": [  {
-        ""district"": ""111111الحي الأول"",
-        ""govcode"": ""122220"",
-        ""buildingco"": ""5130371"",
-        ""bldtype"": ""رئيسي"",
-        ""objectid"": 3822525,
-        ""ogc_fid"": 92232660,
-        ""villageid"": ""10301310250"",
-        ""willcode"": ""1001"",
-        ""wkb_geometry"": {
-        ""type"": ""MultiPoint"",
-      ""crs"": {
-               ""type"": ""name"",
-            ""properties"": {
-                            ""name"": ""urn:ogc:def:crs:EPSG::4326""
-            }
-                    },
-          ""coordinates"": [
-            [
-              56.7270696756487,
-              23.2725623342119
-            ]
-          ]
-        },
-        ""xcoord"": 56.7270696756,
-        ""ycoord"": 23.2725623342
-      }
-    ]
-
-}";
-
-            using (var streamWriter = new StreamWriter(httpRequest.GetRequestStream()))
-            {
-                streamWriter.Write(data);
-            }
-
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 |
-                SecurityProtocolType.Tls11| 
-                SecurityProtocolType.Tls 
-                | SecurityProtocolType.Ssl3;
-          
-
-
-
-            var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-            {
-                 var result = streamReader.ReadToEnd();
-            }
-
-        }
-
+      
         private void Buildings_Load(object sender, EventArgs e)
         {
 
