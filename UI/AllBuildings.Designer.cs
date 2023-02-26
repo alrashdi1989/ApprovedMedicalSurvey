@@ -224,7 +224,6 @@ namespace ApprovedMedicalSurvey.UI
             // dgScans
             // 
             this.dgScans.AllowUserToAddRows = false;
-            this.dgScans.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,7 +258,6 @@ namespace ApprovedMedicalSurvey.UI
             this.dgScans.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgScans.Location = new System.Drawing.Point(0, 0);
             this.dgScans.Name = "dgScans";
-            this.dgScans.ReadOnly = true;
             this.dgScans.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgScans.RowHeadersVisible = false;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -376,9 +374,9 @@ namespace ApprovedMedicalSurvey.UI
             // multiusers
             // 
             this.multiusers.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.multiusers.DataPropertyName = "checklist";
             this.multiusers.HeaderText = "";
             this.multiusers.Name = "multiusers";
-            this.multiusers.ReadOnly = true;
             this.multiusers.Width = 5;
             // 
             // uuidDataGridViewTextBoxColumn
@@ -386,7 +384,6 @@ namespace ApprovedMedicalSurvey.UI
             this.uuidDataGridViewTextBoxColumn.DataPropertyName = "uuid";
             this.uuidDataGridViewTextBoxColumn.HeaderText = "uuid";
             this.uuidDataGridViewTextBoxColumn.Name = "uuidDataGridViewTextBoxColumn";
-            this.uuidDataGridViewTextBoxColumn.ReadOnly = true;
             this.uuidDataGridViewTextBoxColumn.Visible = false;
             // 
             // xcoardDataGridViewTextBoxColumn
@@ -394,7 +391,6 @@ namespace ApprovedMedicalSurvey.UI
             this.xcoardDataGridViewTextBoxColumn.DataPropertyName = "xcoard";
             this.xcoardDataGridViewTextBoxColumn.HeaderText = "xcoard";
             this.xcoardDataGridViewTextBoxColumn.Name = "xcoardDataGridViewTextBoxColumn";
-            this.xcoardDataGridViewTextBoxColumn.ReadOnly = true;
             this.xcoardDataGridViewTextBoxColumn.Visible = false;
             // 
             // ycoardDataGridViewTextBoxColumn
@@ -402,7 +398,6 @@ namespace ApprovedMedicalSurvey.UI
             this.ycoardDataGridViewTextBoxColumn.DataPropertyName = "ycoard";
             this.ycoardDataGridViewTextBoxColumn.HeaderText = "ycoard";
             this.ycoardDataGridViewTextBoxColumn.Name = "ycoardDataGridViewTextBoxColumn";
-            this.ycoardDataGridViewTextBoxColumn.ReadOnly = true;
             this.ycoardDataGridViewTextBoxColumn.Visible = false;
             // 
             // buildingcoDataGridViewTextBoxColumn
@@ -410,42 +405,36 @@ namespace ApprovedMedicalSurvey.UI
             this.buildingcoDataGridViewTextBoxColumn.DataPropertyName = "buildingco";
             this.buildingcoDataGridViewTextBoxColumn.HeaderText = "رقم المبنى";
             this.buildingcoDataGridViewTextBoxColumn.Name = "buildingcoDataGridViewTextBoxColumn";
-            this.buildingcoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // districtDataGridViewTextBoxColumn
             // 
             this.districtDataGridViewTextBoxColumn.DataPropertyName = "district";
             this.districtDataGridViewTextBoxColumn.HeaderText = "المنطقة";
             this.districtDataGridViewTextBoxColumn.Name = "districtDataGridViewTextBoxColumn";
-            this.districtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // govcodeDataGridViewTextBoxColumn
             // 
             this.govcodeDataGridViewTextBoxColumn.DataPropertyName = "govcode";
             this.govcodeDataGridViewTextBoxColumn.HeaderText = "رمز المحافظة";
             this.govcodeDataGridViewTextBoxColumn.Name = "govcodeDataGridViewTextBoxColumn";
-            this.govcodeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bldtypeDataGridViewTextBoxColumn
             // 
             this.bldtypeDataGridViewTextBoxColumn.DataPropertyName = "bldtype";
             this.bldtypeDataGridViewTextBoxColumn.HeaderText = "نوع البلدة";
             this.bldtypeDataGridViewTextBoxColumn.Name = "bldtypeDataGridViewTextBoxColumn";
-            this.bldtypeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // willcodeDataGridViewTextBoxColumn
             // 
             this.willcodeDataGridViewTextBoxColumn.DataPropertyName = "willcode";
             this.willcodeDataGridViewTextBoxColumn.HeaderText = "رمز الولاية";
             this.willcodeDataGridViewTextBoxColumn.Name = "willcodeDataGridViewTextBoxColumn";
-            this.willcodeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // villageidDataGridViewTextBoxColumn
             // 
             this.villageidDataGridViewTextBoxColumn.DataPropertyName = "villageid";
             this.villageidDataGridViewTextBoxColumn.HeaderText = "رمز القرية";
             this.villageidDataGridViewTextBoxColumn.Name = "villageidDataGridViewTextBoxColumn";
-            this.villageidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // AllBuildings
             // 

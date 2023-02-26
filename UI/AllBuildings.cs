@@ -188,29 +188,57 @@ namespace ApprovedMedicalSurvey.UI
         private void button1_Click(object sender, EventArgs e)
         {
             string message = string.Empty;
-            int num = 0;
             foreach (DataGridViewRow row in dgScans.Rows)
             {
 
 
 
-                bool isSelected = Convert.ToBoolean(row.Cells["checklist"].Value);
+                bool isSelected = Convert.ToBoolean(row.Cells["multiusers"].Value);
 
                 if (isSelected)
                 {
-                    num = +1;
-                    //message += Environment.NewLine;
-                    //message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string URL = GlobalVariables.BaseUrl + "survey/status/" + row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString() + "/active";
+
+                    string wncode = row.Cells["willcodeDataGridViewTextBoxColumn"].Value.ToString();
+                    string willaya_uuid = row.Cells["willcodeDataGridViewTextBoxColumn"].Value.ToString();
+                    string volunteer_uuid = cbUsers.SelectedValue.ToString();
+                    string village_uuid = row.Cells["villageidDataGridViewTextBoxColumn"].Value.ToString();
+                    string tncode = row.Cells["districtDataGridViewTextBoxColumn"].Value.ToString();
+                    string template_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string status = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string rncode = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string lng = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string lat = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string governorat_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string destrict_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string building_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string bncode = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string admin_uuid = GlobalVariables.Uuid;
+                   
+                    string postData = "wncode=" + wncode +
+                  "&willaya_uuid=" + willaya_uuid +
+                  "&volunteer_uuid=" + volunteer_uuid +
+                  "&village_uuid=" + village_uuid+
+                  "&tncode=" + tncode+
+                  "template_uuid"+ template_uuid+
+                  "&status=" + status +
+                  "&rncode=" + rncode +
+                  "&lng"+ lng + 
+                  "&lat="+lat+
+                  "&governorat_uuid=" + governorat_uuid +
+                  "&destrict_uuid=" + destrict_uuid +
+                  "&building_uuid=" + building_uuid +
+                  "&bncode=" + bncode +
+                  "&admin_uuid=" + admin_uuid
+                  ;
+
+                    string URL = GlobalVariables.BaseUrl + "order/new";
+                    
                     WebRequsets webRequsets = new WebRequsets();
-                    var data = webRequsets.webGetMethod(URL);
+                    var response = webRequsets.webPostMethod(postData, URL,true);
                 }
             }
 
-            if (num == 0)
-            {
-                MessageBox.Show("الرجاء اختيار مستخدم اولا ");
-            }
+          
         }
     }
 }
