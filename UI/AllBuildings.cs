@@ -2,6 +2,7 @@
 using ApprovedMedicalSurvey.Services;
 using ApprovedMedicalSurvey.Shared;
 using Microsoft.Office.Interop.Excel;
+using Newtonsoft.Json;
 using System;
 using System.Data;
 using System.Drawing;
@@ -9,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Web.Helpers;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
@@ -22,6 +24,9 @@ namespace ApprovedMedicalSurvey.UI
         {
             InitializeComponent();
         }
+        string Vuuid;
+        string Wuuid;
+        string guuid;
         Boolean flag ;
         private FlatLightTheme mainForm = null;
         string jwt;
@@ -56,6 +61,7 @@ namespace ApprovedMedicalSurvey.UI
             cbState.DataSource = dt;
             cbState.DisplayMember = "name_ar";
             cbState.ValueMember = "wncode";
+          Vuuid =dt.Select(x => x.uuid).ToString();
         }
 
         private void Villages()
@@ -92,6 +98,8 @@ namespace ApprovedMedicalSurvey.UI
             GetAllBuildings("building",Convert.ToInt32( cbVillage.SelectedValue));
 
             allBuildingsBindingSource.DataSource = buildings;
+
+            label3.Text = buildings.Count().ToString();
 
 
 
@@ -157,12 +165,18 @@ namespace ApprovedMedicalSurvey.UI
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //var dt  = GovernantesServices.GetAllGovernorate("governorates");
+            //Wuuid = dt.Where(x => x.rncode == cbGovernance.SelectedValue).SingleOrDefault().uuid;
             States();
+
+         
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             Villages();
+            //var dt = WillayatServices.GetAllWillayatbyId("willayat", cbGovernance.SelectedValue.ToString());
+            //Wuuid = dt.Where(x => x.wncode == cbState.SelectedValue).SingleOrDefault().uuid;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -199,46 +213,48 @@ namespace ApprovedMedicalSurvey.UI
                 {
 
                     string wncode = row.Cells["willcodeDataGridViewTextBoxColumn"].Value.ToString();
-                    string willaya_uuid = row.Cells["willcodeDataGridViewTextBoxColumn"].Value.ToString();
+                    string willaya_uuid = "3217c347-4490-48bf-ae2d-70e6cdbe4fe0";
                     string volunteer_uuid = cbUsers.SelectedValue.ToString();
-                    string village_uuid = row.Cells["villageidDataGridViewTextBoxColumn"].Value.ToString();
-                    string tncode = row.Cells["districtDataGridViewTextBoxColumn"].Value.ToString();
-                    string template_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string status = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string rncode = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string lng = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string lat = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string governorat_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string destrict_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string village_uuid = "1f54eab2-2832-4c86-aa39-3183f138a3b9";
+                    string tncode = row.Cells["villageidDataGridViewTextBoxColumn"].Value.ToString();
+                    string template_uuid = "fb19b96d-5a24-442e-ae7c-949bf6158f79";// row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
+                    string status = "new";
+                    string rncode = row.Cells["govcodeDataGridViewTextBoxColumn"].Value.ToString();
+                    string lng = row.Cells["xcoardDataGridViewTextBoxColumn"].Value.ToString();
+                    string lat = row.Cells["ycoardDataGridViewTextBoxColumn"].Value.ToString();
+                    string governorat_uuid = "260063e0-1494-4a5e-915f-f8afaa89e114";
+                    string destrict_uuid = "0f8cc492-05af-4c38-942c-0fe532aa954e";// row.Cells["districtDataGridViewTextBoxColumn"].Value.ToString();
                     string building_uuid = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string bncode = row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string admin_uuid = GlobalVariables.Uuid;
+                    string bncode = row.Cells["buildingcoDataGridViewTextBoxColumn"].Value.ToString();
+                    string admin_uuid = "7330866a-193f-4f12-a53e-4371b308be71";
                    
-                    string postData = "wncode=" + wncode +
-                  "&willaya_uuid=" + willaya_uuid +
-                  "&volunteer_uuid=" + volunteer_uuid +
-                  "&village_uuid=" + village_uuid+
-                  "&tncode=" + tncode+
-                  "template_uuid"+ template_uuid+
-                  "&status=" + status +
-                  "&rncode=" + rncode +
-                  "&lng"+ lng + 
-                  "&lat="+lat+
-                  "&governorat_uuid=" + governorat_uuid +
-                  "&destrict_uuid=" + destrict_uuid +
-                  "&building_uuid=" + building_uuid +
-                  "&bncode=" + bncode +
-                  "&admin_uuid=" + admin_uuid
-                  ;
+                 
 
+                    string str = "{\"wncode\":\""+ wncode+ "\",\"willaya_uuid\":\""+ willaya_uuid + "\"," +
+                        "\"volunteer_uuid\":\""+ volunteer_uuid + "\",\"village_uuid\":\""+ village_uuid + "\",\"tncode\":\""+ tncode +
+                        "\",\"template_uuid\":\""+ template_uuid + "\",\"status\":\""+ status + "\",\"rncode\":\""+ rncode + "\",\"lng\":"+lng+"," +
+                        "\"lat\":"+ lat + ",\"governorat_uuid\":\""+ governorat_uuid + "\",\"destrict_uuid\":\""+ destrict_uuid + "\",\"building_uuid\":\""+ building_uuid + "\",\"bncode\":\""+ bncode + "\",\"admin_uuid\":\""+ admin_uuid + "\" }";
                     string URL = GlobalVariables.BaseUrl + "order/new";
+
                     
                     WebRequsets webRequsets = new WebRequsets();
-                    var response = webRequsets.webPostMethod(postData, URL,true);
-                }
+                    var response = webRequsets.webPostMethod(str, URL,true);
+
+                };
             }
 
           
+        }
+
+        private void cbVillage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //var dt = VillageServices.GetAllVIllagesbyStateID("villages", cbState.SelectedValue.ToString());
+            //Vuuid = dt.Where(c=>c.wncode == cbVillage.SelectedValue).SingleOrDefault().uuid;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
