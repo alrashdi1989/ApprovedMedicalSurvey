@@ -79,8 +79,7 @@ namespace ApprovedMedicalSurvey.UI
 
 
                 Shared.WebRequsets webRequsets = new Shared.WebRequsets();
-                json.Remove(11);
-                json.Remove(10);
+               
                 var data = "{\"objects\":" + json + "}";
                 webRequsets.webPostMethod(data, url,true);
 
