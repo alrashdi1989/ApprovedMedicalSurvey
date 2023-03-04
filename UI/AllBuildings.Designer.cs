@@ -30,9 +30,9 @@ namespace ApprovedMedicalSurvey.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbGovernance = new System.Windows.Forms.ComboBox();
             this.txtUser = new System.Windows.Forms.TextBox();
@@ -229,24 +229,24 @@ namespace ApprovedMedicalSurvey.UI
             // dgScans
             // 
             this.dgScans.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgScans.AutoGenerateColumns = false;
             this.dgScans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgScans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgScans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.multiusers,
@@ -265,14 +265,14 @@ namespace ApprovedMedicalSurvey.UI
             this.dgScans.Name = "dgScans";
             this.dgScans.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgScans.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgScans.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgScans.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgScans.RowTemplate.Height = 32;
             this.dgScans.Size = new System.Drawing.Size(1802, 720);
             this.dgScans.TabIndex = 0;
@@ -354,9 +354,9 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.cbUsers);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(458, 24);
+            this.panel5.Location = new System.Drawing.Point(660, 24);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(521, 89);
+            this.panel5.Size = new System.Drawing.Size(319, 103);
             this.panel5.TabIndex = 6;
             // 
             // label1
@@ -365,7 +365,7 @@ namespace ApprovedMedicalSurvey.UI
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 22);
+            this.label1.Location = new System.Drawing.Point(112, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 24);
             this.label1.TabIndex = 1000006;
@@ -381,10 +381,10 @@ namespace ApprovedMedicalSurvey.UI
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 55);
+            this.button1.Location = new System.Drawing.Point(86, 69);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 31);
+            this.button1.Size = new System.Drawing.Size(94, 31);
             this.button1.TabIndex = 5;
             this.button1.Text = "اسناد المبنى";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -398,10 +398,10 @@ namespace ApprovedMedicalSurvey.UI
             this.cbUsers.DisplayMember = "username";
             this.cbUsers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUsers.FormattingEnabled = true;
-            this.cbUsers.Location = new System.Drawing.Point(0, 22);
+            this.cbUsers.Location = new System.Drawing.Point(5, 33);
             this.cbUsers.Name = "cbUsers";
             this.cbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbUsers.Size = new System.Drawing.Size(313, 29);
+            this.cbUsers.Size = new System.Drawing.Size(190, 29);
             this.cbUsers.TabIndex = 1000005;
             this.cbUsers.ValueMember = "uuid";
             // 
@@ -414,9 +414,9 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6.Controls.Add(this.addBuilding);
             this.panel6.Controls.Add(this.btnShowResults);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(398, 0);
+            this.panel6.Location = new System.Drawing.Point(196, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(123, 89);
+            this.panel6.Size = new System.Drawing.Size(123, 103);
             this.panel6.TabIndex = 7;
             // 
             // addBuilding
@@ -472,7 +472,7 @@ namespace ApprovedMedicalSurvey.UI
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(227, 29);
+            this.panel7.Location = new System.Drawing.Point(429, 40);
             this.panel7.Margin = new System.Windows.Forms.Padding(6);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(222, 81);

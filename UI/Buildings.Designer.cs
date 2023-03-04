@@ -37,6 +37,8 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNumberOfBuildings = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -117,11 +119,30 @@ namespace ApprovedMedicalSurvey.UI
             this.label1.TabIndex = 0;
             this.label1.Text = "اضافة المباني";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(120, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = ":عدد المباني المضافة";
+            // 
+            // lblNumberOfBuildings
+            // 
+            this.lblNumberOfBuildings.AutoSize = true;
+            this.lblNumberOfBuildings.Location = new System.Drawing.Point(79, 31);
+            this.lblNumberOfBuildings.Name = "lblNumberOfBuildings";
+            this.lblNumberOfBuildings.Size = new System.Drawing.Size(0, 13);
+            this.lblNumberOfBuildings.TabIndex = 11;
+            // 
             // Buildings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 223);
+            this.ClientSize = new System.Drawing.Size(641, 235);
+            this.Controls.Add(this.lblNumberOfBuildings);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -134,6 +155,7 @@ namespace ApprovedMedicalSurvey.UI
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -146,5 +168,7 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNumberOfBuildings;
     }
 }

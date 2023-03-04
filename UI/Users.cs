@@ -117,11 +117,10 @@ namespace ApprovedMedicalSurvey.UI
                 if (isSelected)
                 {
                     num = +1;
-                    //message += Environment.NewLine;
-                    //message += row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString();
-                    string URL = GlobalVariables.BaseUrl + "survey/status/" + row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString()+"/active";
+                  
+                    string URL = GlobalVariables.BaseUrl + "user/status/" + row.Cells["uuidDataGridViewTextBoxColumn"].Value.ToString()+"/active";
                     WebRequsets webRequsets = new WebRequsets();
-                    var data = webRequsets.webGetMethod(URL);
+                    var data = webRequsets.webPostMethod("",URL,true);
                 }
             }
 

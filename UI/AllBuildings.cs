@@ -96,7 +96,7 @@ namespace ApprovedMedicalSurvey.UI
         {
             var buildings = BuildingsServices.
             GetAllBuildings("building",Convert.ToInt32( cbVillage.SelectedValue));
-
+            MessageBox.Show(cbVillage.SelectedValue.ToString());
             allBuildingsBindingSource.DataSource = buildings;
 
             label3.Text = buildings.Count().ToString();
@@ -254,14 +254,13 @@ namespace ApprovedMedicalSurvey.UI
 
                 };
             }
-
+            MessageBox.Show("تم اسناد المباني للمستخدم ");
 
         }
 
         private void cbVillage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //var dt = VillageServices.GetAllVIllagesbyStateID("villages", cbState.SelectedValue.ToString());
-            //Vuuid = dt.Where(c=>c.wncode == cbVillage.SelectedValue).SingleOrDefault().uuid;
+           
         }
 
         private void label2_Click(object sender, EventArgs e)

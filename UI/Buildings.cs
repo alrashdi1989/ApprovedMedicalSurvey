@@ -1,5 +1,6 @@
 ﻿using ApprovedMedicalSurvey.Shared;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -43,7 +44,11 @@ namespace ApprovedMedicalSurvey.UI
 
             foreach (string line in lines) {
 
-                csv.Add(line.Split(','));
+                if (!String.IsNullOrEmpty(lines.ToString()))
+                {
+                    csv.Add(line.Split(','));
+                }
+               
 
               
             }
@@ -62,14 +67,22 @@ namespace ApprovedMedicalSurvey.UI
                 progressBar1.Maximum = lines.Length;
                 progressBar1.Value = i+1;
                 var objResult = new Dictionary<string, string>();
+                
                 for (int j = 0; j < properties.Length; j++)
 
-                    objResult.Add(properties[j], csv[i][j]);
+                objResult.Add(properties[j], csv[i][j]);
+                objResult.Remove("uuid");
+                objResult.Remove("wkb_geometry");
                 listObjResult.Add(objResult);
+              
+                var json = JsonConvert.SerializeObject(listObjResult) ;
 
-                var json = JsonConvert.SerializeObject(listObjResult);
+
                 Shared.WebRequsets webRequsets = new Shared.WebRequsets();
-                webRequsets.webPostMethod(json.ToString(), url,true);
+                json.Remove(11);
+                json.Remove(10);
+                var data = "{\"objects\":" + json + "}";
+                webRequsets.webPostMethod(data, url,true);
 
             }
 
