@@ -89,10 +89,9 @@ namespace ApprovedMedicalSurvey.Services
             //filling UserPrivileges states calss with data 
 
             List<UserPrivileges> userPrivileges = new List<UserPrivileges>() {
-            new UserPrivileges {UserPrivilegesArabic="جامع بيان /  متطوع",UserPrivilegesEnglish="Volunteer"},
-            new UserPrivileges {UserPrivilegesArabic="مستوى المحافظة",UserPrivilegesEnglish="Government Level"},
-            new UserPrivileges {UserPrivilegesArabic="مستوى الولاية",UserPrivilegesEnglish="state Level"},
-            new UserPrivileges {UserPrivilegesArabic="مستوى المركزي",UserPrivilegesEnglish="Central Level"}
+            new UserPrivileges {UserPrivilegesArabic="جامع بيان /  متطوع",UserPrivilegesEnglish="volunteer"},
+            new UserPrivileges {UserPrivilegesArabic="مستوى المحافظة",UserPrivilegesEnglish="admin"},
+            new UserPrivileges {UserPrivilegesArabic="مستوى المركزي",UserPrivilegesEnglish="super-admin"}
 
             };
 
