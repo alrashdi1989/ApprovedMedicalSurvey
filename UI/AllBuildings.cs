@@ -139,7 +139,6 @@ namespace ApprovedMedicalSurvey.UI
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
             //filtering data after showing in the  grid by user name
-            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("user LIKE '%{0}%'", txtUser.Text);
 
         }
 
@@ -147,20 +146,17 @@ namespace ApprovedMedicalSurvey.UI
         {
             //filtering data after showing in the  grid by scan number
 
-            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("Surveyid LIKE '%{0}%'", txtScanNumbers.Text);
 
         }
 
         
         private void textBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            txtUser.Text = string.Empty;
 
         }
 
         private void textBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            txtScanNumbers.Text = string.Empty;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -182,7 +178,6 @@ namespace ApprovedMedicalSurvey.UI
         {
             //filtering data after showing in the  grid date
 
-            (dgScans.DataSource as System.Data.DataTable).DefaultView.RowFilter = string.Format("surveydate = '{0}'", dtScanDate.Text);
 
         }
 

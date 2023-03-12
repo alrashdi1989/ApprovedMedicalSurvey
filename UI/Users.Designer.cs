@@ -202,6 +202,7 @@ namespace ApprovedMedicalSurvey.UI
             this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
             this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Visible = false;
             this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
             // 
             // cbVocalPoint

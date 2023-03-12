@@ -131,5 +131,15 @@ namespace ApprovedMedicalSurvey.UI
           
 
         }
+
+        private void txtUserNumber_MouseDown(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void txtUserNumber_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
     }
 }

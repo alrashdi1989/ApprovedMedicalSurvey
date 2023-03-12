@@ -35,13 +35,10 @@ namespace ApprovedMedicalSurvey.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbGovernance = new System.Windows.Forms.ComboBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dtScanDate = new System.Windows.Forms.DateTimePicker();
             this.cbState = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbVillage = new System.Windows.Forms.ComboBox();
-            this.txtScanNumbers = new System.Windows.Forms.TextBox();
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dgScans = new System.Windows.Forms.DataGridView();
@@ -66,7 +63,6 @@ namespace ApprovedMedicalSurvey.UI
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,14 +72,14 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.cbUsers);
             this.panel1.Controls.Add(this.cbGovernance);
-            this.panel1.Controls.Add(this.txtUser);
             this.panel1.Location = new System.Drawing.Point(1484, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
@@ -103,45 +99,16 @@ namespace ApprovedMedicalSurvey.UI
             this.cbGovernance.TabIndex = 1000002;
             this.cbGovernance.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // txtUser
-            // 
-            this.txtUser.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUser.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(0, 52);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtUser.Size = new System.Drawing.Size(341, 29);
-            this.txtUser.TabIndex = 1000001;
-            this.txtUser.Text = "جامع البيانات...";
-            this.txtUser.Visible = false;
-            this.txtUser.TextChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
-            this.txtUser.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
-            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.dtScanDate);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.cbState);
             this.panel2.Location = new System.Drawing.Point(1222, 41);
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 81);
             this.panel2.TabIndex = 1;
-            // 
-            // dtScanDate
-            // 
-            this.dtScanDate.CalendarFont = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtScanDate.CalendarMonthBackground = System.Drawing.Color.Gainsboro;
-            this.dtScanDate.CalendarTitleBackColor = System.Drawing.Color.Gainsboro;
-            this.dtScanDate.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtScanDate.Location = new System.Drawing.Point(0, 52);
-            this.dtScanDate.Name = "dtScanDate";
-            this.dtScanDate.Size = new System.Drawing.Size(250, 29);
-            this.dtScanDate.TabIndex = 1000004;
-            this.dtScanDate.Visible = false;
-            this.dtScanDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // cbState
             // 
@@ -159,8 +126,8 @@ namespace ApprovedMedicalSurvey.UI
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.addBuilding);
             this.panel3.Controls.Add(this.cbVillage);
-            this.panel3.Controls.Add(this.txtScanNumbers);
             this.panel3.Location = new System.Drawing.Point(988, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
@@ -179,22 +146,6 @@ namespace ApprovedMedicalSurvey.UI
             this.cbVillage.Size = new System.Drawing.Size(222, 29);
             this.cbVillage.TabIndex = 1000004;
             this.cbVillage.SelectedIndexChanged += new System.EventHandler(this.cbVillage_SelectedIndexChanged);
-            // 
-            // txtScanNumbers
-            // 
-            this.txtScanNumbers.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtScanNumbers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtScanNumbers.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtScanNumbers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScanNumbers.Location = new System.Drawing.Point(0, 52);
-            this.txtScanNumbers.Name = "txtScanNumbers";
-            this.txtScanNumbers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtScanNumbers.Size = new System.Drawing.Size(222, 29);
-            this.txtScanNumbers.TabIndex = 1000002;
-            this.txtScanNumbers.Text = "رقم المسح...";
-            this.txtScanNumbers.Visible = false;
-            this.txtScanNumbers.TextChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
-            this.txtScanNumbers.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox2_MouseDown);
             // 
             // btnShowResults
             // 
@@ -350,9 +301,7 @@ namespace ApprovedMedicalSurvey.UI
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.cbUsers);
+            this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(660, 24);
             this.panel5.Name = "panel5";
@@ -365,7 +314,7 @@ namespace ApprovedMedicalSurvey.UI
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 6);
+            this.label1.Location = new System.Drawing.Point(260, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 24);
             this.label1.TabIndex = 1000006;
@@ -381,7 +330,7 @@ namespace ApprovedMedicalSurvey.UI
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(86, 69);
+            this.button1.Location = new System.Drawing.Point(150, 49);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 31);
@@ -398,7 +347,7 @@ namespace ApprovedMedicalSurvey.UI
             this.cbUsers.DisplayMember = "username";
             this.cbUsers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUsers.FormattingEnabled = true;
-            this.cbUsers.Location = new System.Drawing.Point(5, 33);
+            this.cbUsers.Location = new System.Drawing.Point(64, 52);
             this.cbUsers.Name = "cbUsers";
             this.cbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbUsers.Size = new System.Drawing.Size(190, 29);
@@ -411,7 +360,7 @@ namespace ApprovedMedicalSurvey.UI
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.addBuilding);
+            this.panel6.Controls.Add(this.label2);
             this.panel6.Controls.Add(this.btnShowResults);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(196, 0);
@@ -427,7 +376,7 @@ namespace ApprovedMedicalSurvey.UI
             this.addBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBuilding.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addBuilding.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addBuilding.Location = new System.Drawing.Point(6, 52);
+            this.addBuilding.Location = new System.Drawing.Point(107, 44);
             this.addBuilding.Margin = new System.Windows.Forms.Padding(6);
             this.addBuilding.Name = "addBuilding";
             this.addBuilding.Size = new System.Drawing.Size(109, 31);
@@ -448,7 +397,7 @@ namespace ApprovedMedicalSurvey.UI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(142, 28);
+            this.label2.Location = new System.Drawing.Point(40, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 24);
             this.label2.TabIndex = 1000007;
@@ -462,21 +411,10 @@ namespace ApprovedMedicalSurvey.UI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(69, 28);
+            this.label3.Location = new System.Drawing.Point(190, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 24);
             this.label3.TabIndex = 1000007;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(429, 40);
-            this.panel7.Margin = new System.Windows.Forms.Padding(6);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(222, 81);
-            this.panel7.TabIndex = 1000005;
             // 
             // AllBuildings
             // 
@@ -484,7 +422,6 @@ namespace ApprovedMedicalSurvey.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1846, 875);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -501,7 +438,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgScans)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).EndInit();
@@ -509,8 +445,7 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -525,12 +460,9 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.DataGridView dgScans;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtScanNumbers;
         private System.Windows.Forms.ComboBox cbGovernance;
         private System.Windows.Forms.ComboBox cbState;
         private System.Windows.Forms.ComboBox cbVillage;
-        private System.Windows.Forms.DateTimePicker dtScanDate;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.BindingSource allBuildingsBindingSource;
         private System.Windows.Forms.Button addBuilding;
@@ -550,6 +482,5 @@ namespace ApprovedMedicalSurvey.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn villageidDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel7;
     }
 }

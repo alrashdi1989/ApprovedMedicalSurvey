@@ -61,11 +61,13 @@ namespace ApprovedMedicalSurvey.UI
 
             //loop all remaining lines, except header so starting it from 1
             // instead of 0
+            var data = string.Empty;
             for (int i = 1; i < lines.Length; i++)
 
             {
                 progressBar1.Maximum = lines.Length;
                 progressBar1.Value = i+1;
+                lblNumberOfBuildings.Text = (i).ToString();
                 var objResult = new Dictionary<string, string>();
                 
                 for (int j = 0; j < properties.Length; j++)
@@ -78,13 +80,15 @@ namespace ApprovedMedicalSurvey.UI
                 var json = JsonConvert.SerializeObject(listObjResult) ;
 
 
-                Shared.WebRequsets webRequsets = new Shared.WebRequsets();
                
-                var data = "{\"objects\":" + json + "}";
-                webRequsets.webPostMethod(data, url,true);
+                 data = "{\"objects\":" + json + "}";
 
             }
+            Shared.WebRequsets webRequsets = new Shared.WebRequsets();
 
+            webRequsets.webPostMethod(data, url, true);
+            MessageBox.Show("تم اضافة المباني");
+            this.Close();
 
 
         }
