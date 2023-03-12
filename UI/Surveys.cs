@@ -60,7 +60,7 @@ namespace ApprovedMedicalSurvey.UI
             string URL = GlobalVariables.BaseUrl + "surevy/" + GlobalVariables.SurveyID;
             WebRequsets webRequsets = new WebRequsets();
            
-            var data = webRequsets.webPostMethod(postData, URL,true);
+            var data = webRequsets.webPostMethod(postData, URL,false);
 
             JavaScriptSerializer serializer = new JavaScriptSerializer();
             var orders = serializer.Deserialize<Rootobject>(data);

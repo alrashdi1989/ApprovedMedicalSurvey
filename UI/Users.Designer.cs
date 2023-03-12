@@ -37,6 +37,13 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgUsers = new System.Windows.Forms.DataGridView();
             this.checklist = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.createdatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnNewUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbStatus = new System.Windows.Forms.CheckBox();
@@ -45,19 +52,12 @@ namespace ApprovedMedicalSurvey.UI
             this.cbVocalPoint = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createdatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,110 +128,6 @@ namespace ApprovedMedicalSurvey.UI
             this.checklist.Name = "checklist";
             this.checklist.Width = 5;
             // 
-            // btnNewUser
-            // 
-            this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewUser.FlatAppearance.BorderSize = 0;
-            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnNewUser.ForeColor = System.Drawing.Color.Black;
-            this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
-            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewUser.Location = new System.Drawing.Point(1026, 9);
-            this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(192, 54);
-            this.btnNewUser.TabIndex = 1;
-            this.btnNewUser.Text = "اضافة مستخدم جديد";
-            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNewUser.UseVisualStyleBackColor = true;
-            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cbStatus);
-            this.panel2.Controls.Add(this.btnNewUser);
-            this.panel2.Controls.Add(this.cbVillage);
-            this.panel2.Controls.Add(this.btnUpdateUser);
-            this.panel2.Controls.Add(this.cbVocalPoint);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1227, 151);
-            this.panel2.TabIndex = 2;
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbStatus.AutoSize = true;
-            this.cbStatus.Checked = true;
-            this.cbStatus.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbStatus.ForeColor = System.Drawing.Color.Black;
-            this.cbStatus.Location = new System.Drawing.Point(304, 26);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(55, 25);
-            this.cbStatus.TabIndex = 20;
-            this.cbStatus.Text = "فعال";
-            this.cbStatus.UseVisualStyleBackColor = true;
-            // 
-            // cbVillage
-            // 
-            this.cbVillage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVillage.FormattingEnabled = true;
-            this.cbVillage.Location = new System.Drawing.Point(683, 24);
-            this.cbVillage.Name = "cbVillage";
-            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVillage.Size = new System.Drawing.Size(312, 29);
-            this.cbVillage.TabIndex = 19;
-            // 
-            // btnUpdateUser
-            // 
-            this.btnUpdateUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
-            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnUpdateUser.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateUser.Image")));
-            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateUser.Location = new System.Drawing.Point(81, 11);
-            this.btnUpdateUser.Name = "btnUpdateUser";
-            this.btnUpdateUser.Size = new System.Drawing.Size(217, 54);
-            this.btnUpdateUser.TabIndex = 2;
-            this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
-            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdateUser.UseVisualStyleBackColor = true;
-            this.btnUpdateUser.Visible = false;
-            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
-            // 
-            // cbVocalPoint
-            // 
-            this.cbVocalPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbVocalPoint.FormattingEnabled = true;
-            this.cbVocalPoint.Location = new System.Drawing.Point(365, 24);
-            this.cbVocalPoint.Name = "cbVocalPoint";
-            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
-            this.cbVocalPoint.TabIndex = 17;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Location = new System.Drawing.Point(1, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1227, 151);
-            this.panel3.TabIndex = 3;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // usernameDataGridViewTextBoxColumn
             // 
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
@@ -278,6 +174,113 @@ namespace ApprovedMedicalSurvey.UI
             // 
             this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
+            // btnNewUser
+            // 
+            this.btnNewUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewUser.FlatAppearance.BorderSize = 0;
+            this.btnNewUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnNewUser.ForeColor = System.Drawing.Color.Black;
+            this.btnNewUser.Image = ((System.Drawing.Image)(resources.GetObject("btnNewUser.Image")));
+            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewUser.Location = new System.Drawing.Point(1026, 9);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(192, 54);
+            this.btnNewUser.TabIndex = 1;
+            this.btnNewUser.Text = "اضافة مستخدم جديد";
+            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cbStatus);
+            this.panel2.Controls.Add(this.btnNewUser);
+            this.panel2.Controls.Add(this.cbVillage);
+            this.panel2.Controls.Add(this.btnUpdateUser);
+            this.panel2.Controls.Add(this.cbVocalPoint);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1227, 151);
+            this.panel2.TabIndex = 2;
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbStatus.AutoSize = true;
+            this.cbStatus.Checked = true;
+            this.cbStatus.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbStatus.ForeColor = System.Drawing.Color.Black;
+            this.cbStatus.Location = new System.Drawing.Point(304, 26);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(55, 25);
+            this.cbStatus.TabIndex = 20;
+            this.cbStatus.Text = "فعال";
+            this.cbStatus.UseVisualStyleBackColor = true;
+            this.cbStatus.Visible = false;
+            // 
+            // cbVillage
+            // 
+            this.cbVillage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbVillage.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVillage.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVillage.FormattingEnabled = true;
+            this.cbVillage.Location = new System.Drawing.Point(683, 24);
+            this.cbVillage.Name = "cbVillage";
+            this.cbVillage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVillage.Size = new System.Drawing.Size(312, 29);
+            this.cbVillage.TabIndex = 19;
+            this.cbVillage.Visible = false;
+            // 
+            // btnUpdateUser
+            // 
+            this.btnUpdateUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateUser.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateUser.Image")));
+            this.btnUpdateUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateUser.Location = new System.Drawing.Point(81, 11);
+            this.btnUpdateUser.Name = "btnUpdateUser";
+            this.btnUpdateUser.Size = new System.Drawing.Size(217, 54);
+            this.btnUpdateUser.TabIndex = 2;
+            this.btnUpdateUser.Text = "تحديث بيانات المستخدم";
+            this.btnUpdateUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Visible = false;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
+            // 
+            // cbVocalPoint
+            // 
+            this.cbVocalPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbVocalPoint.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbVocalPoint.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVocalPoint.FormattingEnabled = true;
+            this.cbVocalPoint.Location = new System.Drawing.Point(365, 24);
+            this.cbVocalPoint.Name = "cbVocalPoint";
+            this.cbVocalPoint.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbVocalPoint.Size = new System.Drawing.Size(312, 29);
+            this.cbVocalPoint.TabIndex = 17;
+            this.cbVocalPoint.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Location = new System.Drawing.Point(1, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1227, 151);
+            this.panel3.TabIndex = 3;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // villageBindingSource
             // 
             this.villageBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Village);
@@ -297,10 +300,10 @@ namespace ApprovedMedicalSurvey.UI
             this.Load += new System.EventHandler(this.Users_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villageBindingSource)).EndInit();
             this.ResumeLayout(false);
 

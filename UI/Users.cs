@@ -32,9 +32,12 @@ namespace ApprovedMedicalSurvey.UI
         private void Users_Load(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            if (GlobalVariables.UserRole=="super_admin")
+            if (GlobalVariables.UserRole== "super_admin")
             {
                 btnNewUser.Visible = true;
+                cbVillage.Visible = true;
+                cbVocalPoint.Visible = true;
+                cbStatus.Visible = true;
             }
             GetVillages();
             vocalpoint();
