@@ -34,10 +34,15 @@ namespace ApprovedMedicalSurvey.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbUsers = new System.Windows.Forms.ComboBox();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbGovernance = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.cbState = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.addBuilding = new System.Windows.Forms.Button();
             this.cbVillage = new System.Windows.Forms.ComboBox();
             this.btnShowResults = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -54,23 +59,18 @@ namespace ApprovedMedicalSurvey.UI
             this.villageidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.allBuildingsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbUsers = new System.Windows.Forms.ComboBox();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.addBuilding = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgScans)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,36 @@ namespace ApprovedMedicalSurvey.UI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(341, 81);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(260, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 24);
+            this.label1.TabIndex = 1000006;
+            this.label1.Text = "المستخدمين";
+            // 
+            // cbUsers
+            // 
+            this.cbUsers.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbUsers.DataSource = this.usersBindingSource;
+            this.cbUsers.DisplayMember = "username";
+            this.cbUsers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUsers.FormattingEnabled = true;
+            this.cbUsers.Location = new System.Drawing.Point(64, 52);
+            this.cbUsers.Name = "cbUsers";
+            this.cbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbUsers.Size = new System.Drawing.Size(190, 29);
+            this.cbUsers.TabIndex = 1000005;
+            this.cbUsers.ValueMember = "uuid";
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
             // 
             // cbGovernance
             // 
@@ -110,6 +140,26 @@ namespace ApprovedMedicalSurvey.UI
             this.panel2.Size = new System.Drawing.Size(250, 81);
             this.panel2.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(150, 49);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 31);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "اسناد المبنى";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // cbState
             // 
             this.cbState.BackColor = System.Drawing.Color.Gainsboro;
@@ -133,6 +183,24 @@ namespace ApprovedMedicalSurvey.UI
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(222, 81);
             this.panel3.TabIndex = 2;
+            // 
+            // addBuilding
+            // 
+            this.addBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addBuilding.BackColor = System.Drawing.Color.Green;
+            this.addBuilding.FlatAppearance.BorderSize = 0;
+            this.addBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBuilding.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBuilding.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addBuilding.Location = new System.Drawing.Point(107, 44);
+            this.addBuilding.Margin = new System.Windows.Forms.Padding(6);
+            this.addBuilding.Name = "addBuilding";
+            this.addBuilding.Size = new System.Drawing.Size(109, 31);
+            this.addBuilding.TabIndex = 4;
+            this.addBuilding.Text = "اضافة مبنى";
+            this.addBuilding.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addBuilding.UseVisualStyleBackColor = false;
+            this.addBuilding.Click += new System.EventHandler(this.addBuilding_Click);
             // 
             // cbVillage
             // 
@@ -308,55 +376,17 @@ namespace ApprovedMedicalSurvey.UI
             this.panel5.Size = new System.Drawing.Size(319, 103);
             this.panel5.TabIndex = 6;
             // 
-            // label1
+            // label3
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(260, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 24);
-            this.label1.TabIndex = 1000006;
-            this.label1.Text = "المستخدمين";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(150, 49);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "اسناد المبنى";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cbUsers
-            // 
-            this.cbUsers.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbUsers.DataSource = this.usersBindingSource;
-            this.cbUsers.DisplayMember = "username";
-            this.cbUsers.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbUsers.FormattingEnabled = true;
-            this.cbUsers.Location = new System.Drawing.Point(64, 52);
-            this.cbUsers.Name = "cbUsers";
-            this.cbUsers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbUsers.Size = new System.Drawing.Size(190, 29);
-            this.cbUsers.TabIndex = 1000005;
-            this.cbUsers.ValueMember = "uuid";
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(ApprovedMedicalSurvey.Models.Users);
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(190, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 24);
+            this.label3.TabIndex = 1000007;
             // 
             // panel6
             // 
@@ -367,28 +397,6 @@ namespace ApprovedMedicalSurvey.UI
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(123, 103);
             this.panel6.TabIndex = 7;
-            // 
-            // addBuilding
-            // 
-            this.addBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.addBuilding.BackColor = System.Drawing.Color.Green;
-            this.addBuilding.FlatAppearance.BorderSize = 0;
-            this.addBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addBuilding.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBuilding.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addBuilding.Location = new System.Drawing.Point(107, 44);
-            this.addBuilding.Margin = new System.Windows.Forms.Padding(6);
-            this.addBuilding.Name = "addBuilding";
-            this.addBuilding.Size = new System.Drawing.Size(109, 31);
-            this.addBuilding.TabIndex = 4;
-            this.addBuilding.Text = "اضافة مبنى";
-            this.addBuilding.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.addBuilding.UseVisualStyleBackColor = false;
-            this.addBuilding.Click += new System.EventHandler(this.addBuilding_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
             // 
@@ -404,17 +412,9 @@ namespace ApprovedMedicalSurvey.UI
             this.label2.Text = "عدد المباني";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // timer1
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(190, 69);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 24);
-            this.label3.TabIndex = 1000007;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // AllBuildings
             // 
@@ -436,6 +436,7 @@ namespace ApprovedMedicalSurvey.UI
             this.Load += new System.EventHandler(this.Scans_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -443,7 +444,6 @@ namespace ApprovedMedicalSurvey.UI
             ((System.ComponentModel.ISupportInitialize)(this.allBuildingsBindingSource)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.ResumeLayout(false);
