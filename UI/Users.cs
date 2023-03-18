@@ -34,18 +34,29 @@ namespace ApprovedMedicalSurvey.UI
             Cursor.Current = Cursors.WaitCursor;
             if (GlobalVariables.UserRole== "super_admin")
             {
-                btnNewUser.Visible = true;
-                cbVillage.Visible = true;
-                cbVocalPoint.Visible = true;
-                cbStatus.Visible = true;
+                btnNewUser.Enabled = true;
+               
+                cbStatus.Enabled = true;
             }
             GetVillages();
+            GetRoles();
             vocalpoint();
             FillingTheGridWithData();
             Cursor.Current = Cursors.Default;
         }
 
-      
+        private void GetRoles()
+        {
+            var dt = UserServices.GetUserPrivliges();
+          
+            cbUserRoles.DataSource = dt;
+            cbUserRoles.DisplayMember = "UserPrivilegesArabic";
+            cbUserRoles.ValueMember = "UserPrivilegesEnglish";
+
+
+        }
+
+
         public void FillingTheGridWithData()
         {
             //filling data grid with all users info 
@@ -143,6 +154,27 @@ namespace ApprovedMedicalSurvey.UI
         {
             
 
+        }
+
+        private void txtnumber_TextChanged(object sender, EventArgs e)
+        {
+
+
+            var user = UserServices.GetAllUsers("users");
+
+            usersBindingSource.DataSource = user.Where(c => c.username.Contains(txtnumber.Text));
+        }
+
+        private void txtnumber_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtnumber.Text = string.Empty;
+        }
+
+        private void cbUserRoles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var user = UserServices.GetAllUsers("users");
+
+            usersBindingSource.DataSource = user.Where(c => c.role ==(cbUserRoles.SelectedValue.ToString()));
         }
     }
 }

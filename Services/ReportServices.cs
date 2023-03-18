@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.Services
 {
@@ -54,10 +55,16 @@ namespace ApprovedMedicalSurvey.Services
             {
                 var data = response.Content.ReadAsStringAsync().Result;
 
-                if (data != null)
+                if (data != "{\"results\":[],\"all\":{\"aggregate\" : {\"sum\" : {\"count\" : null}}}}")
                 {
                     AllReports.Root result = JsonConvert.DeserializeObject<AllReports.Root>(data);
                     res = result.results.ToList();
+                }
+
+                else {
+
+
+                    MessageBox.Show("لا يوجد بيانات للعرض ");
                 }
 
 

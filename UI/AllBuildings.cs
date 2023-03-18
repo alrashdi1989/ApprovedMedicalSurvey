@@ -242,20 +242,9 @@ namespace ApprovedMedicalSurvey.UI
                         "\"lat\":" + lat + ",\"governorat_uuid\":\"" + governorat_uuid + "\",\"destrict_uuid\":\"" + destrict_uuid + "\",\"building_uuid\":\"" + building_uuid + "\",\"bncode\":\"" + bncode + "\",\"admin_uuid\":\"" + admin_uuid + "\" }";
                     string URL = GlobalVariables.BaseUrl + "order/new";
 
-                    if (GlobalVariables.UserRole =="super_admin")
-                    {
-                        WebRequsets webRequsets = new WebRequsets();
+                    WebRequsets webRequsets = new WebRequsets();
 
-                        var response = webRequsets.webPostMethod(str, URL, false);
-
-                    }
-                    else
-                    if(GlobalVariables.UserRole == "admin")
-                    {
-                        WebRequsets webRequsets = new WebRequsets();
-
-                        var response = webRequsets.webPostMethod(str, URL, true);
-                    }
+                    var response = webRequsets.webPostMethod(str, URL, true);
 
 
                 };
