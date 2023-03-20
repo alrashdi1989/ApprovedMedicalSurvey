@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ApprovedMedicalSurvey.Services
 {
@@ -26,7 +27,17 @@ namespace ApprovedMedicalSurvey.Services
             ,new FormUrlEncodedContent(parameters));
             var contents = await response.Content.ReadAsStringAsync();
             Models.jwt.Root result = JsonConvert.DeserializeObject<Models.jwt.Root>(contents);
-             return result.login.jwt;
+            if (result.login == null )
+            {
+                return string.Empty;
+
+            }
+
+            else
+            {
+                return result.login.jwt;
+
+            }
 
             
 

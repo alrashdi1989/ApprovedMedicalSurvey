@@ -52,19 +52,22 @@ namespace ApprovedMedicalSurvey.UI
             GlobalVariables.Password = textBox1.Text + textBox2.Text + textBox3.Text + textBox4.Text;
             GlobalVariables.jwt =    await Services.UserLogIn.LogIn(Shared.GlobalVariables.Mobile.ToString(), Shared.GlobalVariables.Password);
             var handler = new JwtSecurityTokenHandler();
-            var jsonToken = handler.ReadToken(GlobalVariables.jwt);
-            var tokenS = jsonToken as JwtSecurityToken;
-            string  jti = tokenS.Claims.First(claim => claim.Type == "https://hasura.io/jwt/claims").Value;
-            var data = (JObject)JsonConvert.DeserializeObject(jti);//convert to JObject
-            GlobalVariables.UserRole = data["x-hasura-default-role"].ToString();  //get the property value...
-            GlobalVariables.Uuid = data["X-Hasura-User-Uuid"].ToString();  //get the property value...
-
-            if (GlobalVariables.jwt != null     )
+            if (GlobalVariables.jwt != string.Empty)
             {
-              
+                var jsonToken = handler.ReadToken(GlobalVariables.jwt);
+                var tokenS = jsonToken as JwtSecurityToken;
+                string jti = tokenS.Claims.First(claim => claim.Type == "https://hasura.io/jwt/claims").Value;
+                var data = (JObject)JsonConvert.DeserializeObject(jti);//convert to JObject
+                GlobalVariables.UserRole = data["x-hasura-default-role"].ToString();  //get the property value...
+                GlobalVariables.Uuid = data["X-Hasura-User-Uuid"].ToString();  //get the property value...
+
                 FlatLightTheme mainform = new FlatLightTheme();
                 mainform.Show();
             }
+
+          
+             
+           
 
             else
             {
